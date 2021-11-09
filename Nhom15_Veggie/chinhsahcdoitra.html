@@ -15,7 +15,6 @@
 
         .main-menu ul li {
             display: inline-block;
-           
         }
 
         .main-menu {
@@ -38,7 +37,6 @@
         .main-menu li {
             position: relative;
             color: #417505;
-          
         }
 
             .main-menu li:hover .sub-menu {
@@ -47,15 +45,15 @@
 
             .main-menu li .sub-menu {
                 position: absolute;
-                top: 20;
+                top: 10;
                 left: 0;
             }
 
         .main-menu .sub-menu li {
             display: block;
             background: rgb(0, 0, 0);
-            width: 250px;
-            padding: 20px 0;
+            width: 150px;
+            padding: 5px 0;
             color: white;
         }
 
@@ -69,11 +67,64 @@
 
         input {
             border: 2px solid black;
-            height: 25px;
+            height: 20px;
             width: 150px;
             border-radius: 20px;
             padding: 5px;
             font-size: 15px;
+        }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .images {
+            display: flex;
+            width: 100%;
+        }
+
+            .images img {
+                height: 40%;
+                width: 100%;
+                transition: all 0.15s ease;
+            }
+
+            .images input {
+                display: none;
+            }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+        }
+
+            .dots label {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: solid #417505 1px;
+                cursor: pointer;
+                transition: all 0.15s ease;
+                margin: 5px;
+            }
+
+                .dots label:hover {
+                    background: #417505;
+                }
+
+        #img1:checked ~ .m1 {
+            margin-left: 0;
+        }
+
+        #img2:checked ~ .m2 {
+            margin-left: -100%;
+        }
+
+        #img3:checked ~ .m3 {
+            margin-left: -200%;
         }
     </style>
 </head>
@@ -81,18 +132,20 @@
 
     <div class='main-menu'>
         <ul>
-            <li style="margin-right: 20px;"><img src="phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
-            <li><img src="email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
-            <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
-            <li>Đăng kí</li>
+            <ol>
+                <li style="margin-right: 20px;"><img src="./image_header/phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
+                <li><img src="./image_header/email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
+                <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
+                <li>Đăng kí</li>
         </ul>
         <p style="margin-top: 10px; color: #417505;"> Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7</p>
+        <p style="margin-left: 98%; margin-top: -50px;" href=""><img src="./image_header/gio_hang.png" alt="" width="20px" height="20px"></p>
     </div>
     <div class='main-menu' style="margin-left: 40%;">
         <ul>
-            <li> <a href='#'>TRANG CHỦ</a> </li>
+            <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
             <li>
-                <a href='#'>SẢN PHẨM</a>
+                <a href='#'><b>SẢN PHẨM</b> </a>
                 <ul class='sub-menu'>
                     <li><a href='#'>Gananola</a></li>
                     <li><a href='#'>Bánh ăn kiêng</a></li>
@@ -100,11 +153,11 @@
                     <li><a href='#'>Sản phẩm khác</a></li>
                 </ul>
             </li>
-            <li> <a href='#'>BLOG</a> </li>
-            <li> <a href='#'>LIÊN HỆ</a> </li>
-            <li> <a href='#'>GIỚI THIỆU</a> </li>
+            <li> <a href='#'><b>BLOG</b></a> </li>
+            <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
+            <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
             <li>
-                <img src="search.png" alt="" width="20px" height="20px">
+                <img src="./image_header/search.png" alt="" width="20px" height="20px">
                 <ul class='sub-menu'>
                     <div class="search">
                         <input type="text" name="box" placeholder="Tìm sản phẩm">
@@ -116,17 +169,23 @@
 
         </ul>
     </div>
-    <div style="margin-top: -80px;margin-bottom: 40px; margin-left:120px ;"><img src="Logo.png" width="100px" height="100px" alt=""></div>
-    <div style="background-image:url(banner2.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="150px" height="150px" alt=""></div>
+
+   
+    <div style="background-image:url(./image_header/banner3.png); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2 style="text-align:center;">Chính sách đổi trả</h2>
-        <p style="text-align:center"><a href="#">Trang chủ</a> / Chính sách đổi trả </p>
+        <h2 style="text-align:center;">Điều khoản dịch vụ</h2>
+        <p style="text-align:center"><a href="#">Trang chủ</a> / Điểu khoản dịch vụ </p>
     </div>
+
+
+
+
 
 
     <div style="margin:20px;padding:120px">
