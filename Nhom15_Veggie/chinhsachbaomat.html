@@ -3,7 +3,8 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Chính sách đổi trả</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Chính sách bảo mật</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,11 +12,11 @@
         * {
             margin: 0;
             padding: 0;
+            font-family: Roboto;
         }
 
         .main-menu ul li {
             display: inline-block;
-           
         }
 
         .main-menu {
@@ -38,7 +39,6 @@
         .main-menu li {
             position: relative;
             color: #417505;
-          
         }
 
             .main-menu li:hover .sub-menu {
@@ -47,15 +47,15 @@
 
             .main-menu li .sub-menu {
                 position: absolute;
-                top: 20;
+                top: 10;
                 left: 0;
             }
 
         .main-menu .sub-menu li {
             display: block;
             background: rgb(0, 0, 0);
-            width: 250px;
-            padding: 20px 0;
+            width: 150px;
+            padding: 5px 0;
             color: white;
         }
 
@@ -69,30 +69,145 @@
   
         input {
             border: 2px solid black;
-            height: 25px;
+            height: 20px;
             width: 150px;
             border-radius: 20px;
             padding: 5px;
             font-size: 15px;
         }
+
+        .slider {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .images {
+            display: flex;
+            width: 100%;
+        }
+
+            .images img {
+                height: 40%;
+                width: 100%;
+                transition: all 0.15s ease;
+            }
+
+            .images input {
+                display: none;
+            }
+
+        .dots {
+            display: flex;
+            justify-content: center;
+            margin: 5px;
+        }
+
+            .dots label {
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                border: solid #417505 1px;
+                cursor: pointer;
+                transition: all 0.15s ease;
+                margin: 5px;
+            }
+
+                .dots label:hover {
+                    background: #417505;
+                }
+
+        #img1:checked ~ .m1 {
+            margin-left: 0;
+        }
+
+        #img2:checked ~ .m2 {
+            margin-left: -100%;
+        }
+
+        #img3:checked ~ .m3 {
+            margin-left: -200%;
+        }
+
+        footer {
+            position: page;
+            width: fit-content;
+            height: auto;
+            padding: 25px 25px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+            footer .container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+        .links h2 {
+            position: relative;
+            color: #000000;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+        .links h2 {
+            position: relative;
+            color: #000000;
+            font-weight: 500;
+            margin-bottom: 5px;
+        }
+
+            .links h2:before {
+                content: '';
+                position: absolute;
+                bottom: -5px;
+                left: 0;
+                width: 100px;
+                height: 2px;
+            }
+
+        .links {
+            position: center;
+            width: 300px;
+        }
+
+            .links ul li {
+                list-style: none;
+            }
+
+                .links ul li a {
+                    color: #000000;
+                    text-decoration: none;
+                    margin-bottom: 5px;
+                    display: inline-block;
+                }
+
+                    .links ul li a:hover {
+                        color: #000000;
+                    }
     </style>
 </head>
 <body>
 
     <div class='main-menu'>
         <ul>
-            <li style="margin-right: 20px;"><img src="phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
-            <li><img src="email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
-            <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
-            <li>Đăng kí</li>
+           
+                <li style="margin-right: 20px;"><img src="./image_header/phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
+                <li><img src="./image_header/email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
+                <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
+                <li>Đăng kí</li>
         </ul>
         <p style="margin-top: 10px; color: #417505;"> Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7</p>
+        <p style="margin-left: 98%; margin-top: -50px;" href=""><img src="./image_header/gio_hang.png" alt="" width="20px" height="20px"></p>
     </div>
     <div class='main-menu' style="margin-left: 40%;">
         <ul>
-            <li> <a href='#'>TRANG CHỦ</a> </li>
+            <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
             <li>
-                <a href='#'>SẢN PHẨM</a>
+                <a href='#'><b>SẢN PHẨM</b> </a>
                 <ul class='sub-menu'>
                     <li><a href='#'>Gananola</a></li>
                     <li><a href='#'>Bánh ăn kiêng</a></li>
@@ -100,11 +215,11 @@
                     <li><a href='#'>Sản phẩm khác</a></li>
                 </ul>
             </li>
-            <li> <a href='#'>BLOG</a> </li>
-            <li> <a href='#'>LIÊN HỆ</a> </li>
-            <li> <a href='#'>GIỚI THIỆU</a> </li>
+            <li> <a href='#'><b>BLOG</b></a> </li>
+            <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
+            <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
             <li>
-                <img src="search.png" alt="" width="20px" height="20px">
+                <img src="./image_header/search.png" alt="" width="20px" height="20px">
                 <ul class='sub-menu'>
                     <div class="search">
                         <input type="text" name="box" placeholder="Tìm sản phẩm">
@@ -116,32 +231,121 @@
 
         </ul>
     </div>
-    <div style="margin-top: -80px;margin-bottom: 40px; margin-left:120px ;"><img src="Logo.png" width="100px" height="100px" alt=""></div>
-    
-    <div style="background-image:url(banner2.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
+    <div style="margin-top: -20px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="150px" height="150px" alt=""></div>
+
+
+    <div style="background-image:url(./Images/banner3.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2 style="text-align:center;">Chính sách bảo mật</h2>
-        <p style="text-align:center"><a href="#">Trang chủ</a> / Chính sách đổi trả </p>
+        <h2 style="text-align:center; color:white">Chính sách bảo mật</h2>
+        <p style="text-align:center; color:white"><a href="#">Trang chủ</a> / Chính sách bảo mật </p>
     </div>
-    
+
+
+
+
+
+
 
 
     <div style="margin:10px;padding:120px">
         <h2 style="margin:10px">Chính sách bảo mật</h2>
-        <hr style="border:solid;color:gray;margin:10px;"/>
+        <hr style="border:solid;color:gray;margin:10px;" />
         <p style="margin:15px">
-            Chính sách bảo mật này nhằm giúp Quý khách hiểu về cách website thu thập và sử dụng thông tin cá nhân của mình thông qua việc sử dụng trang web, bao gồm mọi thông tin có thể cung cấp thông qua trang web khi Quý khách đăng ký tài khoản, đăng ký nhận thông tin liên lạc từ chúng tôi, hoặc khi Quý khách mua sản phẩm, dịch vụ, yêu cầu thêm thông tin dịch vụ từ chúng tôi.                             
+            Chính sách bảo mật này nhằm giúp Quý khách hiểu về cách website thu thập và sử dụng thông tin cá nhân của mình thông qua việc sử dụng trang web, bao gồm mọi thông tin có thể cung cấp thông qua trang web khi Quý khách đăng ký tài khoản, đăng ký nhận thông tin liên lạc từ chúng tôi, hoặc khi Quý khách mua sản phẩm, dịch vụ, yêu cầu thêm thông tin dịch vụ từ chúng tôi.
         </p>
         <p style="margin:15px">Chúng tôi sử dụng thông tin cá nhân của Quý khách để liên lạc khi cần thiết liên quan đến việc Quý khách sử dụng website của chúng tôi, để trả lời các câu hỏi hoặc gửi tài liệu và thông tin Quý khách yêu cầu.</p>
         <p style="margin:15px"> Trang web của chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.</p>
         <p style="margin:15px"> Mọi thông tin giao dịch sẽ được bảo mật ngoại trừ trong trường hợp cơ quan pháp luật yêu cầu.</p>
     </div>
 
+
+
+
+
+
+
+
+    <h2 style="text-align:center">
+        ĐĂNG KÍ NHẬN TIN TỪ CHÚNG TÔI      <input type="email" class="form__field" placeholder="Email của bạn" />
+    </h2>
+    <h4 style="text-align:center">
+        (Vui lòng nhập email để nhận thông tin mới nhất của chúng tôi)
+
+        <br />
+        <img src="logoveggie.png" style="text-align:center" />
+    </h4>
+
+
+
+
+    <footer>
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="container">
+            <div class="links">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul>
+
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>
+                            Đường Số 1 Quận 1,<br />
+                            Thành Phố Hồ Chí Minh<br />
+                            Việt Nam
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>+84 39 576265</span>
+
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <span>veggie@gmail.com</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="links">
+            <h2>Mua hàng</h2>
+            <ul>
+
+                <li><a>Granola</a></li>
+                <li><a>Bánh ăn kiêng</a></li>
+                <li><a>Sản phẩm khác</a></li>
+                <li><a>HẠT DINH DƯỠNG</a></li>
+
+            </ul>
+
+        </div>
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Hỗ trợ khách hàng</h2>
+            <ul>
+
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="chinhsachdoitra">Chính sách đổi trả</a></li>
+                <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                <li><a href="dieukhoandichvu.html">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+        <div>
+            <h2>Fanpage</h2>
+            <img src="fanpage.png" style="text-align:center; width:300px; height:200px" />
+        </div>
+
+
+    </footer>
 
 </body>
 </html>
