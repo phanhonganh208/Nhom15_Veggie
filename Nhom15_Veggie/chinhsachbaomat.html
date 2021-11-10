@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <title>Chính sách bảo mật</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +12,28 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: Roboto;
         }
-
+        .duongdan {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin-top: 20px
+        }
+        .duongdan a:hover{
+            color:white;
+        }
+        .duongdan a:link{
+            color:aquamarine;
+        }
+        .phannoidung {
+            font-size: 18px;
+            text-align:justify;
+            
+        }
+            .phannoidung p {
+                margin: 20px;
+            }
         .main-menu ul li {
             display: inline-block;
         }
@@ -66,7 +85,7 @@
         .search {
             display: inline-block;
         }
-
+  
         input {
             border: 2px solid black;
             height: 20px;
@@ -130,10 +149,10 @@
         }
 
         footer {
-            position: relative;
-            width: 50%;
+            position: page;
+            width: fit-content;
             height: auto;
-            padding: 5px 5px;
+            padding: 25px 25px;
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
@@ -145,38 +164,6 @@
                 flex-wrap: wrap;
                 flex-direction: row;
             }
-
-                footer .container .noi-dung {
-                    margin-right: 30px;
-                }
-
-                    footer .container .noi-dung.about {
-                        width: 20%;
-                        width: 250px;
-                        text-align: left;
-                        margin: 50px;
-                    }
-
-                        footer .container .noi-dung.about h2 {
-                            position: relative;
-                            color: #000000;
-                            font-weight: 500;
-                            margin-bottom: 10px;
-                        }
-
-                            footer .container .noi-dung.about h2:before {
-                                content: '';
-                                position: absolute;
-                                bottom: -5px;
-                                left: 0;
-                                width: 50px;
-                                height: 2px;
-                            }
-
-                        footer .container .noi-dung.about p {
-                            color: #000000;
-                        }
-
 
         .links h2 {
             position: relative;
@@ -197,16 +184,13 @@
                 position: absolute;
                 bottom: -5px;
                 left: 0;
-                width: 50px;
+                width: 100px;
                 height: 2px;
             }
 
         .links {
-            position: relative;
-            width: 25%;
-            width: 250px;
-            text-align: left;
-            margin: 50px;
+            position: center;
+            width: 300px;
         }
 
             .links ul li {
@@ -223,37 +207,13 @@
                     .links ul li a:hover {
                         color: #000000;
                     }
-
-        .contact h2 {
-            position: relative;
-            color: #000000;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-            .contact h2::before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 50px;
-                height: 2px;
-            }
-
-        .canchinh {
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            min-height: auto;
-            flex-direction: column;
-        }
     </style>
 </head>
 <body>
 
     <div class='main-menu'>
         <ul>
-            <ol>
+           
                 <li style="margin-right: 20px;"><img src="./image_header/phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
                 <li><img src="./image_header/email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
                 <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
@@ -290,18 +250,18 @@
 
         </ul>
     </div>
-    <div style="margin-top: -20px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="150px" height="150px" alt=""></div>
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="150px" height="150px" alt=""></div>
 
 
-    <div style="background-image:url(./Images/banner3.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
+    <div style="background-image:url(./Images/banner4.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2 style="text-align:center; color:white">Chính sách bảo mật</h2>
-        <p style="text-align:center; color:white"><a href="#">Trang chủ</a> / Chính sách bảo mật </p>
+        <h2 style="text-align:center; color:white;font-size:20px;">CHÍNH SÁCH BẢO MẬT</h2>
+        <p class="duongdan" ><a href="#">Trang chủ</a> / Chính sách bảo mật </p>
     </div>
 
 
@@ -311,15 +271,15 @@
 
 
 
-    <div style="margin:10px;padding:120px">
-        <h2 style="margin:10px">Chính sách bảo mật</h2>
-        <hr style="border:solid;color:gray;margin:10px;" />
-        <p style="margin:15px">
+    <div style="padding:120px; " class="phannoidung">
+        <h2 style="margin:10px">CHÍNH SÁCH BẢO MẬT</h2>
+        <hr style="border:solid;color:gray;font-size:20px;margin:15px" />
+        <p >
             Chính sách bảo mật này nhằm giúp Quý khách hiểu về cách website thu thập và sử dụng thông tin cá nhân của mình thông qua việc sử dụng trang web, bao gồm mọi thông tin có thể cung cấp thông qua trang web khi Quý khách đăng ký tài khoản, đăng ký nhận thông tin liên lạc từ chúng tôi, hoặc khi Quý khách mua sản phẩm, dịch vụ, yêu cầu thêm thông tin dịch vụ từ chúng tôi.
         </p>
-        <p style="margin:15px">Chúng tôi sử dụng thông tin cá nhân của Quý khách để liên lạc khi cần thiết liên quan đến việc Quý khách sử dụng website của chúng tôi, để trả lời các câu hỏi hoặc gửi tài liệu và thông tin Quý khách yêu cầu.</p>
-        <p style="margin:15px"> Trang web của chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.</p>
-        <p style="margin:15px"> Mọi thông tin giao dịch sẽ được bảo mật ngoại trừ trong trường hợp cơ quan pháp luật yêu cầu.</p>
+        <p >Chúng tôi sử dụng thông tin cá nhân của Quý khách để liên lạc khi cần thiết liên quan đến việc Quý khách sử dụng website của chúng tôi, để trả lời các câu hỏi hoặc gửi tài liệu và thông tin Quý khách yêu cầu.</p>
+        <p > Trang web của chúng tôi coi trọng việc bảo mật thông tin và sử dụng các biện pháp tốt nhất để bảo vệ thông tin cũng như việc thanh toán của khách hàng.</p>
+        <p > Mọi thông tin giao dịch sẽ được bảo mật ngoại trừ trong trường hợp cơ quan pháp luật yêu cầu.</p>
     </div>
 
 
@@ -329,102 +289,82 @@
 
 
 
-    <div style="text-align:center; " class="canchinh">
-        <h1 style="text-align:center">ĐĂNG KÍ NHẬN TIN TỪ CHÚNG TÔI </h1>
-        <h4 style="text-align:center">
-            (Vui lòng nhập email để nhận thông tin mới nhất của chúng tôi)
-            <br />
-            <img src="logoveggie.png" style="text-align:center" />
-        </h4>
+    <h2 style="text-align:center">
+        ĐĂNG KÍ NHẬN TIN TỪ CHÚNG TÔI      <input type="email" class="form__field" placeholder="Email của bạn" />
+    </h2>
+    <h4 style="text-align:center">
+        (Vui lòng nhập email để nhận thông tin mới nhất của chúng tôi)
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="style.css">
+        <br />
+        <img src="logoveggie.png" style="text-align:center" />
+    </h4>
 
 
 
 
-        <footer>
-            <!--Bắt Đâu Nội Dung Liên Hệ-->
-            <table style="text-align:center">
-                <tr>
-                    <td>
-                        <div class="noi-dung contact" style="width:250px; text-align:left; margin:50px; margin-left:-200px;">
-                            <h2>Thông Tin Liên Hệ</h2>
-                            <ul class="info">
-                                <li>
-                                    <span><i class="fa fa-map-marker"></i></span>
-                                    <span>
-                                        Đường Số 1 Quận 1,<br />
-                                        Thành Phố Hồ Chí Minh<br />
-                                        Việt Nam
-                                    </span>
-                                </li>
-                                <li>
-                                    <span><i class="fa fa-phone"></i></span>
-                                    <p>
-                                        <a href="#">+84 39 576265</a>
-                                        <br />
-                                        <a href="#">+84 98 128963</a>
-                                    </p>
-                                </li>
-                                <li>
-                                    <span><i class="fa fa-envelope"></i></span>
-                                    <p><a href="#">veggie@gmail.com</a></p>
-                                </li>
+    <footer>
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div class="container">
+            <div class="links">
+                <h2>Thông Tin Liên Hệ</h2>
+                <ul>
 
-                            </ul>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="container">
-                            <!--Bắt Đầu Nội Dung Giới Thiệu-->
-                            <div class="noi-dung about">
-                                <h2>Mua hàng</h2>
-                                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>
+                            Đường Số 1 Quận 1,<br />
+                            Thành Phố Hồ Chí Minh<br />
+                            Việt Nam
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>+84 39 576265</span>
 
-                                    <li><a href="#">Granola</a></li>
-                                    <li><a href="#">Bánh ăn kiêng</a></li>
-                                    <li><a href="#">Sản phẩm khác</a></li>
-                                    <li><a href="#">HẠT DINH DƯỠNG</a></li>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <span>veggie@gmail.com</span>
+                    </li>
 
-                                </ul>
+                </ul>
+            </div>
+        </div>
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="links">
+            <h2>Mua hàng</h2>
+            <ul>
 
-                            </div>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="container">
-                            <div class="noi-dung links">
-                                <h2 style="width:100px">Hỗ trợ khách hàng</h2>
-                                <ul>
+                <li><a>Granola</a></li>
+                <li><a>Bánh ăn kiêng</a></li>
+                <li><a>Sản phẩm khác</a></li>
+                <li><a>HẠT DINH DƯỠNG</a></li>
 
-                                    <li><a href="#">Liên hệ</a></li>
-                                    <li><a href="#">Giới thiệu</a></li>
-                                    <li><a href="chinhsachdoitra.html">Chính sách đổi trả</a></li>
-                                    <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
-                                    <li><a href="dieukhoandichvu.html">Điều khoản dịch vụ</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </td>
-                    <td>
+            </ul>
 
-                        <div class="container" style="margin:50px;">
-                            <div>
-                                <h2>Fanpage</h2>
-                                <img src="fanpage.png" style="text-align:center" />
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-            </table>
+        </div>
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Hỗ trợ khách hàng</h2>
+            <ul>
+
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="chinhsachdoitra">Chính sách đổi trả</a></li>
+                <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
+                <li><a href="dieukhoandichvu.html">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+        <div>
+            <h2>Fanpage</h2>
+            <img src="fanpage.png" style="text-align:center; width:300px; height:200px" />
+        </div>
 
 
+    </footer>
 
-        </footer>
-    </div>
 </body>
 </html>
