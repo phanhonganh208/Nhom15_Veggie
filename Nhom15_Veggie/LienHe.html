@@ -65,7 +65,7 @@
         }
 
         input {
-            border: 2px solid black;
+            border: 1px solid black;
             height: 45px;
             width: 325px;
             border-radius: 20px;
@@ -74,7 +74,7 @@
         }
         .g-grid {
             display: grid;            
-            grid-template-columns: calc(60% - (30px * 1/2)) calc(60% - (30px * 1/2));
+            grid-template-columns: calc(60% - (30px * 1/2)) calc(40% - (30px * 1/2));
             grid-column-gap: 30px;
         }
 
@@ -124,7 +124,7 @@
         }
 
         .mb-3, .my-3 {
-            margin-bottom: 1rem !important;
+            margin-bottom: 1rem;
         }
         
 
@@ -147,7 +147,22 @@
             background-color: transparent;
             color: #f00;
         }
-
+        
+        .input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        .input-group > .form-control:not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .input-group-append, .input-group-prepend {
+            display: -ms-flexbox;
+            display: flex;
+        }
+        .input-group-append {
+            margin-left: -1px;
+        }
         .input-group i {
             width: 16px;
             color: #43a047;
@@ -164,10 +179,32 @@
             text-rendering: auto;
             line-height: 1;
         }
+        .input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
+            position: relative;
+            -ms-flex: 1 1 0%;
+            flex: 1 1 0%;
+            min-width: 0;
+            margin-bottom: 0;
+        }
 
         .input-group.required .input-group-text {
             background-color: transparent;
             color: #f00;
+        }
+        .form-control {
+            display: block;
+            width: 100%;
+            height: calc(1.5 em + 0.75 rem + 2 px );
+            padding: 0.375 rem 0.75 rem;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            background-clip: padding-box;
+            border: 1 px solid #ced4da;
+            border-radius: 0.25 rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
         }
         .alert {
             text-align: justify;
@@ -322,25 +359,40 @@
             padding:30px;
             text-align:center;
         }
-        .f-grid {
-            margin-top: 100px;
-            margin-bottom:100px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            flex-flow: row wrap;
-            text-align: center;
+        .grid {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: -30px;
         }
 
-        .f-grid-col {
-            flex: 1 0;
-            background-color: #fafafa;
-            margin-left: 6rem;
-            margin-right: 6rem;
-            margin-bottom: 1rem;
-            padding: 4rem;
+        .large--one-third {
+            width: 33.333%;
         }
-        .footer-subscribe {
+        .grid__item {
+            box-sizing: border-box;
+            float: left;
+            min-height: 1px;
+            padding-left: 30px;
+            vertical-align: top;
+        }
+        .contact-item {
+            text-align: center;
+            padding: 80px 30px;
+            background: #fafafa;
+            margin: 80px 0px 100px;
+            height: 250px;
+        }
+        .wrapper {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 0 30px;
+            text-align:center;
+        }
+        .page-head {
+            margin-top: 380px;
+        }
+            .footer-subscribe {
             position: absolute;
             
             left: 50%;
@@ -430,9 +482,9 @@
     </section>
 
 
-
-    <div class="f-grid">
-        <div class="f-grid-col">
+    <div class="wrapper">
+    <div class="grid">
+        <div class="grid__item large--one-third medium--one-third small--one-whole">
             <div class="contact-item">
                 <div class="contact-title">
                     <div class="contact-icon">
@@ -447,7 +499,7 @@
                 </div>
             </div>
         </div>
-        <div class="f-grid-col">
+        <div class="grid__item large--one-third medium--one-third small--one-whole">
             <div class="contact-item">
                 <div class="contact-title">
                     <div class="contact-icon">
@@ -462,7 +514,7 @@
                 </div>
             </div>
         </div>
-        <div class="f-grid-col">
+        <div class="grid__item large--one-third medium--one-third small--one-whole">
             <div class="contact-item">
                 <div class="contact-icon">
                     <i class="fas fa-envelope" style="font-size:36px;color:#094125"></i>
@@ -478,6 +530,7 @@
             </div>
         </div>
     </div>
+    </div>
 
 
     <div class="page-head" style="border-bottom:1px solid #e2e2e2; padding: 20px">
@@ -490,7 +543,7 @@
         <div class="g-grid-col">
             <ul class="list_contact">
                 <li class="item-contact">
-                    <img src="icon_contact_1.png" alt="Địa chỉ">
+                    <img src="Images/icon_contact_1.png" alt="Địa chỉ">
                     <h5>
                         Địa chỉ
                     </h5>
@@ -499,7 +552,7 @@
                     </p>
                 </li>
                 <li class="item-contact">
-                    <img src="icon_contact_2.png" alt="Điện thoại">
+                    <img src="Images/icon_contact_2.png" alt="Điện thoại">
                     <h5>
                         Điện thoại
                     </h5>
@@ -508,7 +561,7 @@
                     </p>
                 </li>
                 <li class="item-contact">
-                    <img src="icon_contact_3.png" alt="Shopee">
+                    <img src="Images/icon_contact_3.png" alt="Shopee">
                     <h5>
                         Shopee
                     </h5>
@@ -517,7 +570,7 @@
                     </p>
                 </li>
                 <li class="item-contact">
-                    <img src="icon_contact_4.png" alt="Email">
+                    <img src="Images/icon_contact_4.png" alt="Email">
                     <h5>
                         Email
                     </h5>
@@ -526,7 +579,7 @@
                     </p>
                 </li>
                 <li class="item-contact">
-                    <img src="icon_contact_5.png" alt="Facebook">
+                    <img src="Images/icon_contact_5.png" alt="Facebook">
                     <h5>
                         Facebook
                     </h5>
@@ -535,7 +588,7 @@
                     </p>
                 </li>
                 <li class="item-contact">
-                    <img src="icon_contact_6.png" alt="Instagram">
+                    <img src="Images/icon_contact_6.png" alt="Instagram">
                     <h5>
                         Instagram
                     </h5>
@@ -586,7 +639,7 @@
                                 </span>
                             </div>
                             <input name="ctl00$content$input_Email" type="text" id="content_input_Email" class="form-control" placeholder="Mời nhập email">
-                            <div class="input-group-append">
+                            <div class="input-group-append" style="width:32px">
                                 <span class="input-group-text"></span>
                             </div>
                         </div>
