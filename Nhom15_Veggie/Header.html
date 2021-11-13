@@ -94,62 +94,104 @@ padding: 20px;
   background: #417505;
   font-size:18px;
 }
+        /*        .................... */
 
-.header_input
-{
-    border: 2px solid black;
-    height: 20px;
-    width: 150px;
-    border-radius: 20px;
-    padding: 5px;
-    font-size: 15px;
-}
-        .slider-banner {
-            margin-top: 130px;  
-            position: relative;
-            width: 97%;
-            margin-left: 1.5%;
+        .slider {
+            margin-top: 13%;
+            width: 100%;
+            height: 500px;
+            border-radius: 10px;
             overflow: hidden;
         }
-        .images-banner {
-            display: flex;
-            width:fit-content;
-            
-        }
-            .images-banner img {
-                border: dashed 3px solid #F7C551;
-                height: 40%;
-                width: 100%;
-                transition: all 0.15s ease;
-            }
-.images-banner input
-{
-    display: none;
-}
-.dots-banner
-{
-    display: flex;
-    justify-content: center;
-    margin: 5px;
-}
-.dots-banner label
-{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    border: solid #417505 1px;
-    cursor: pointer;
-    transition: all 0.15s ease;
-    margin: 5px;
 
-}
-.dots label:hover {
-    background: #417505;
-}
-#img1:checked ~ .m1{margin-left: 0;}
-#img2:checked ~ .m2{margin-left: -100%;}
-#img3:checked ~ .m3{margin-left: -200%;}
-      
+        .slides {
+            width: 500%;
+            height: 500px;
+            display: flex;
+        }
+
+            .slides input {
+                display: none;
+            }
+
+        .slide {
+            width: 20%;
+            transition: 2s;
+        }
+
+            .slide img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                object-position: 0 50%;
+            }
+        /* ..*/
+        .navigation-manual {
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .manual-btn {
+            border: 2px solid #417505;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+            .manual-btn:not(:last-child) {
+                margin-right: 40px;
+            }
+
+            .manual-btn:hover {
+                background: #F7C551;
+            }
+
+        #radio1:checked ~ .first {
+            margin-left: 0;
+        }
+
+        #radio2:checked ~ .first {
+            margin-left: -20%;
+        }
+
+        #radio3:checked ~ .first {
+            margin-left: -40%;
+        }
+
+        .navigation-auto {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 460px;
+        }
+
+            .navigation-auto div {
+                border: 2px solid #417505;
+                padding: 5px;
+                border-radius: 10px;
+                transition: 1s;
+            }
+
+                .navigation-auto div:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+        #radio1:checked ~ .navigation-auto .auto-btn1 {
+            background: #417505;
+        }
+
+        #radio2:checked ~ .navigation-auto .auto-btn2 {
+            background: #417505;
+        }
+
+        #radio3:checked ~ .navigation-auto .auto-btn3 {
+            background: #417505;
+        }
 
     </style>
     </head>
@@ -169,25 +211,50 @@ padding: 20px;
     <br><br>
     <!--PHÂN SLIDE-->
     <div>
-        <div class="slider-banner">
-            <div class="images-banner">
-                <input type="radio" name="slide" id="img1">
-                <input type="radio" name="slide" id="img2">
-                <input type="radio" name="slide" id="img3">
-                <img src="./image_header/p1.png" class="m1" alt="img1">
-                <img src="./image_header/p2.png" class="m2" alt="img2">
-                <img src="./image_header/p3.png" class="m3" alt="img3">
+        <div class="slider">
+            <div class="slides">
+                <!--radio button-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!---->
+                <div class="slide first">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img1.jpg?v=270" height="100%">
+                </div>
+                <div class="slide">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img2.jpg?v=270" height="100%">
+                </div>
+                <div class="slide">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img3.jpg?v=270" height="100%">
+                </div>
 
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
             </div>
-            <div class="dots-banner">
-                <label for="img1"></label>
-                <label for="img2"></label>
-                <label for="img3"></label>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
             </div>
         </div>
+        <script type="text/javascript">
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked =true;
+            counter++;
+              if(counter>3)  {
+                  counter=1;
+                }
+        }, 5000);
+        </script>
     </div>
     <!-- phần menu #####     MENU    MENU     MENU ###########-->
-    <div style="margin-top: -630px">
+    <div style="margin-top: -680px">
         <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
         <div class='main-menu' style="margin-left: 30%;">
             <ul>
