@@ -37,9 +37,29 @@
         .phannoidung ul {
             list-style:disc
         }
-        .main-menu ul li {
-            display: inline-block;
+        .call-mail {
+            font-size: 16px;
+            color: #417505;
+            margin-top: 20px;
+            margin-left: 60px;
         }
+
+            .call-mail a {
+                font-size: 16px;
+                color: #417505;
+            }
+
+        .log-sign {
+            font-size: 16px;
+            color: #417505;
+            margin-top: -40px;
+            margin-left: 80%;
+        }
+
+            .log-sign a {
+                font-size: 16px;
+                color: #417505;
+            }
 
         .main-menu {
             background: rgb(255, 255, 255);
@@ -47,108 +67,159 @@
             padding: 20px;
         }
 
-            .main-menu ul li a {
+            .main-menu li {
+                position: relative;
                 color: #417505;
-                text-decoration: none;
-                padding: 20px;
+                font-size: 16px;
             }
 
-        .sub-menu {
-            display: none;
-            padding: 20px;
-        }
+            .main-menu ul li {
+                display: inline-block;
+            }
 
-        .main-menu li {
-            position: relative;
-            color: #417505;
-        }
+                .main-menu ul li a {
+                    color: #417505;
+                    text-decoration: none;
+                    padding: 20px;
+                }
+
+                    .main-menu ul li a:hover {
+                        color: #F7C551;
+                        font-size: 18px;
+                    }
+
+                .main-menu ul li .sub-menu li {
+                    padding: 5px;
+                }
+
+                    .main-menu ul li .sub-menu li a {
+                        color: white;
+                    }
+
+                        .main-menu ul li .sub-menu li a:hover {
+                            color: #F7C551;
+                            font-size: 16px;
+                        }
 
             .main-menu li:hover .sub-menu {
                 display: block;
             }
 
-            .main-menu li .sub-menu {
-                position: absolute;
-                top: 10;
+            .main-menu .sub-menu {
+                top: 30px;
                 left: 0;
+                padding: 5px;
+                position: absolute;
+                display: none;
+                background: rgb(0, 0, 0);
+                border-radius: 20px;
+                width: 170px;
             }
 
-        .main-menu .sub-menu li {
-            display: block;
-            background: rgb(0, 0, 0);
-            width: 150px;
-            padding: 5px 0;
-            color: white;
+        .search-container button {
         }
 
-            .main-menu .sub-menu li a {
-                color: white;
+            .search-container button:hover {
+                background: #417505;
+                font-size: 18px;
             }
-
-        .search {
-            display: inline-block;
-        }
-
-        input {
-            border: 2px solid black;
-            height: 20px;
-            width: 150px;
-            border-radius: 20px;
-            padding: 5px;
-            font-size: 15px;
-        }
+        /*        .................... */
 
         .slider {
-            position: relative;
+            margin-top: 13%;
             width: 100%;
+            height: 500px;
+            border-radius: 10px;
             overflow: hidden;
         }
 
-        .images {
+        .slides {
+            width: 500%;
+            height: 500px;
             display: flex;
-            width: 100%;
         }
 
-            .images img {
-                height: 40%;
-                width: 100%;
-                transition: all 0.15s ease;
-            }
-
-            .images input {
+            .slides input {
                 display: none;
             }
 
-        .dots {
-            display: flex;
-            justify-content: center;
-            margin: 5px;
+        .slide {
+            width: 20%;
+            transition: 2s;
         }
 
-            .dots label {
-                height: 15px;
-                width: 15px;
-                border-radius: 50%;
-                border: solid #417505 1px;
-                cursor: pointer;
-                transition: all 0.15s ease;
-                margin: 5px;
+            .slide img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                object-position: 0 50%;
+            }
+        /* ..*/
+        .navigation-manual {
+            position: absolute;
+            width: 100%;
+            margin-top: -40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .manual-btn {
+            border: 2px solid #417505;
+            padding: 5px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 1s;
+        }
+
+            .manual-btn:not(:last-child) {
+                margin-right: 40px;
             }
 
-                .dots label:hover {
-                    background: #417505;
-                }
+            .manual-btn:hover {
+                background: #F7C551;
+            }
 
-        #img1:checked ~ .m1 {
+        #radio1:checked ~ .first {
             margin-left: 0;
         }
 
-        #img2:checked ~ .m2 {
-            margin-left: -100%;
+        #radio2:checked ~ .first {
+            margin-left: -20%;
         }
 
-        #img3:checked ~ .m3 {
-            margin-left: -200%;
+        #radio3:checked ~ .first {
+            margin-left: -40%;
+        }
+
+        .navigation-auto {
+            position: absolute;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-top: 460px;
+        }
+
+            .navigation-auto div {
+                border: 2px solid #417505;
+                padding: 5px;
+                border-radius: 10px;
+                transition: 1s;
+            }
+
+                .navigation-auto div:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+        #radio1:checked ~ .navigation-auto .auto-btn1 {
+            background: #417505;
+        }
+
+        #radio2:checked ~ .navigation-auto .auto-btn2 {
+            background: #417505;
+        }
+
+        #radio3:checked ~ .navigation-auto .auto-btn3 {
+            background: #417505;
         }
 
         footer {
@@ -214,46 +285,52 @@
 </head>
 <body>
 
-    <div class='main-menu'>
-        <ul>
-            <ol>
-                <li style="margin-right: 20px;"><img src="./image_header/phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
-                <li><img src="./image_header/email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
-                <li style="margin-left: 60%;margin-right: 20px;">Đăng nhập</li>
-                <li>Đăng kí</li>
-        </ul>
-        <p style="margin-top: 10px; color: #417505;"> Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7</p>
-        <p style="margin-left: 98%; margin-top: -50px;" href=""><img src="./image_header/gio_hang.png" alt="" width="20px" height="20px"></p>
+    <div class="call-mail">
+        <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 39 5762954</a> &emsp;
+        <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">Thefittuna2019@gmail.com</a>
+        <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+        Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
     </div>
-    <div class='main-menu' style="margin-left: 40%;">
-        <ul>
-            <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
-            <li>
-                <a href='#'><b>SẢN PHẨM</b> </a>
-                <ul class='sub-menu'>
-                    <li><a href='#'>Gananola</a></li>
-                    <li><a href='#'>Bánh ăn kiêng</a></li>
-                    <li><a href='#'>Hạt dinh dưỡng</a></li>
-                    <li><a href='#'>Sản phẩm khác</a></li>
-                </ul>
-            </li>
-            <li> <a href='#'><b>BLOG</b></a> </li>
-            <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
-            <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
-            <li>
-                <img src="./image_header/search.png" alt="" width="20px" height="20px">
-                <ul class='sub-menu'>
-                    <div class="search">
-                        <input type="text" name="box" placeholder="Tìm sản phẩm">
-                    </div>
-                    <div class="search-button">
-                    </div>
-                </ul>
-            </li>
+    <div class="log-sign">
+        <a href="#" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="#" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+        <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
+    </div>
+    <br><br>
+    <br><br>
 
-        </ul>
+    <!-- phần menu #####     MENU    MENU     MENU ###########-->
+    <div style="margin-top: 20px">
+        <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+        <div class='main-menu' style="margin-left: 30%;">
+            <ul>
+                <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
+                <li>
+                    <a href='#'><b>SẢN PHẨM</b> </a>
+                    <!--sub menu-->
+                    <ul class='sub-menu'>
+                        <li><a href='#'>Gananola</a></li>
+                        <li><a href='#'>Bánh ăn kiêng</a></li>
+                        <li><a href='#'>Hạt dinh dưỡng</a></li>
+                        <li><a href='#'>Sản phẩm khác</a></li>
+                    </ul>
+                </li>
+                <li> <a href='#'><b>BLOG</b></a> </li>
+                <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
+                <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
+                <li>
+                    <!--Thanh SEARCH-->
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </ul>
+        </div>
     </div>
-    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="150px" height="150px" alt=""></div>
+
+    <!--Cái logo-->
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
 
 
     <div style="background-image:url(./Images/banner4.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
@@ -279,10 +356,10 @@
             <li>
                 <p style="margin:15px"><b>Điều kiện đổi trả</b></p>
                 <p style="margin-left:-10px; margin-bottom:15px;margin-top:10px">Quý Khách hàng cần kiểm tra tình trạng hàng hóa và có thể đổi hàng/ trả lại hàng ngay tại thời điểm giao/nhận hàng trong những trường hợp sau:</p>
-                <ul >
-                    <li >Hàng không đúng chủng loại, mẫu mã trong đơn hàng đã đặt hoặc như trên website tại thời điểm đặt hàng.</li>
-                    <li >Không đủ số lượng, không đủ bộ như trong đơn hàng.</li>
-                    <li >Tình trạng bên ngoài bị ảnh hưởng như rách bao bì, bể vỡ…</li>
+                <ul>
+                    <li>Hàng không đúng chủng loại, mẫu mã trong đơn hàng đã đặt hoặc như trên website tại thời điểm đặt hàng.</li>
+                    <li>Không đủ số lượng, không đủ bộ như trong đơn hàng.</li>
+                    <li>Tình trạng bên ngoài bị ảnh hưởng như rách bao bì, bể vỡ…</li>
 
                 </ul>
                 <p style="margin-left:-10px; margin-bottom:30px;margin-top:15px">Chỉ giải quyết đổi trả hàng hoá khi có hoá đơn.</pstyle="margin-left:-10px;>
@@ -290,10 +367,10 @@
 
             <li>
                 <p style="margin:15px"><b>Quy định về thời gian thông báo và gửi sản phẩm đổi trả</b></p>
-                <ul >
-                    <li ><b>Thời gian thông báo đổi trả:</b> trong vòng 72h 3 ngày kể từ khi nhận sản phẩm đối với trường hợp sản phẩm thiếu hàng hoặc bể vỡ.</li>
-                    <li ><b>Thời gian gửi chuyển trả sản phẩm:</b> trong vòng 7 ngày kể từ khi nhận sản phẩm.</listyle="margin:10px">
-                    <li ><b>Địa điểm đổi trả sản phẩm:</b> Khách hàng có thể mang hàng trực tiếp đến cửa hàng của chúng tôi hoặc chuyển qua các đơn vị vận chuyển trong nước.</li>
+                <ul>
+                    <li><b>Thời gian thông báo đổi trả:</b> trong vòng 72h 3 ngày kể từ khi nhận sản phẩm đối với trường hợp sản phẩm thiếu hàng hoặc bể vỡ.</li>
+                    <li><b>Thời gian gửi chuyển trả sản phẩm:</b> trong vòng 7 ngày kể từ khi nhận sản phẩm.</listyle="margin:10px">
+                    <li><b>Địa điểm đổi trả sản phẩm:</b> Khách hàng có thể mang hàng trực tiếp đến cửa hàng của chúng tôi hoặc chuyển qua các đơn vị vận chuyển trong nước.</li>
 
                 </ul>
                 <p style="margin-left:-10px; margin-bottom:10px;margin-top:15px">Trong trường hợp Quý Khách hàng có ý kiến đóng góp/khiếu nại liên quan đến chất lượng sản phẩm, Quý Khách hàng vui lòng liên hệ đường dây chăm sóc khách hàng của VEGGIE trong khung giờ 9:00 AM - 5:30 PM  Thứ 2- Thứ 7 </p>
