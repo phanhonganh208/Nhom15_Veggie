@@ -4,140 +4,100 @@
 <head>
     <meta charset="utf-8" />
     <title>Đăng ký</title>
-    <style type="text/css">
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        .main-menu ul li {
-            display: inline-block;
-        }
-
-        .main-menu {
-            background: rgb(255, 255, 255);
-            height: 50px;
-            padding: 20px;
-        }
-
-            .main-menu ul li a {
-                color: #417505;
-                text-decoration: none;
-                padding: 20px;
-            }
-
-        .sub-menu {
-            display: none;
-            padding: 20px;
-        }
-
-        .main-menu li {
-            position: relative;
-            color: #417505;
-        }
-
-            .main-menu li:hover .sub-menu {
-                display: block;
-            }
-
-            .main-menu li .sub-menu {
-                position: absolute;
-                top: 20;
-                left: 0;
-            }
-
-        .main-menu .sub-menu li {
-            display: block;
-            background: rgb(0, 0, 0);
-            width: 250px;
-            padding: 20px 0;
-            color: white;
-        }
-
-            .main-menu .sub-menu li a {
-                color: white;
-            }
-
-        .search {
-            display: inline-block;
-        }
-
-        .duongdan {
-            text-align: center;
-            color: white;
-            font-size: 18px;
-            margin-top: 20px
-        }
-
-            .duongdan a:hover {
-                color: white;
-            }
-
-
-            .duongdan a:link {
-                color: aquamarine;
-            }
-
-        .form-vertical {
-            position: relative;
-            line-height: 24px;
-            font-size: 18px;
-            line-height: 1.6;
-            font-family: Roboto;
-            color: #131111;
-            font-weight: 300;
-            text-align: center;
-            list-style: none;
-            margin-left: -30px;
-        }
-
-
-        h1 {
-            color: #131111;
-            padding: 0px 0px 15px 0px;
-            margin: 30px 0px 15px 0px;
-            border-bottom: 1px solid #e2e2e2;
-        }
-
-        input {
-            border: 1px solid #e2e2e2;
-            width: 400px;
-            padding: 8px 10px;
-            margin-bottom: 7px;
-            border-radius: 3px;
-            font-family: inherit;
-            font-size: inherit;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 8px 10px;
-            width: 400px;
-            margin: 0;
-            line-height: 1.42;
-            font-weight: bold;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            border: 1px solid transparent;
-            user-select: none;
-            border-radius: 3px;
-            background-color: #094125;
-            color: #fff;
-        }
-
-        a {
-            color: #094125;
-            text-decoration: none;
-            background: transparent;
-        }
-
-            a:hover {
-                color: #417505;
-            }
-    </style>
+    <link rel="stylesheet" href="CSS/Header.css" type="text/css" media="screen" />
 </head>
+
+
 <body>
+    <div class="call-mail">
+        <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 39 5762954</a> &emsp;
+        <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">Thefittuna2019@gmail.com</a>
+        <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+        Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
+    </div>
+    <div class="log-sign">
+        <a href="#" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="#" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+        <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
+    </div>
+    <br><br>
+    <br><br>
+    <!--PHÂN SLIDE-->
+    <div>
+        <div class="slider">
+            <div class="slides">
+                <!--radio button-->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <!---->
+                <div class="slide first">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img1.jpg?v=270" height="100%">
+                </div>
+                <div class="slide">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img2.jpg?v=270" height="100%">
+                </div>
+                <div class="slide">
+                    <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img3.jpg?v=270" height="100%">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+            </div>
+
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+            </div>
+        </div>
+        <script type="text/javascript">
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio'+counter).checked =true;
+            counter++;
+              if(counter>3)  {
+                  counter=1;
+                }
+        }, 5000);
+        </script>
+    </div>
+    <!-- phần menu #####     MENU    MENU     MENU ###########-->
+    <div>
+        <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+        <div class='main-menu' style="margin-left: 30%;">
+            <ul>
+                <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
+                <li>
+                    <a href='#'><b>SẢN PHẨM</b> </a>
+                    <!--sub menu-->
+                    <ul class='sub-menu'>
+                        <li><a href='#'>Gananola</a></li>
+                        <li><a href='#'>Bánh ăn kiêng</a></li>
+                        <li><a href='#'>Hạt dinh dưỡng</a></li>
+                        <li><a href='#'>Sản phẩm khác</a></li>
+                    </ul>
+                </li>
+                <li> <a href='#'><b>BLOG</b></a> </li>
+                <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
+                <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
+                <li>
+                    <!--Thanh SEARCH-->
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--Cái logo-->
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
+
     <div style="background-image:url(./Images/banner4.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
         <br />
         <br />
@@ -168,9 +128,6 @@
             </p>
         </form>
     </div>
-
-
-
 
 </body>
 </html>
