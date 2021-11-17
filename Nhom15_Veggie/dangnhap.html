@@ -3,65 +3,32 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Đăng nhập</title>
-    <style type="text/css" >
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <style type="text/css">
 
-        .main-menu ul li {
-            display: inline-block;
-        }
-
-        .main-menu {
-            background: rgb(255, 255, 255);
-            height: 50px;
-            padding: 20px;
-        }
-
-        .main-menu ul li a {
-            color: #417505;
-            text-decoration: none;
-            padding: 20px;
-        }
-
-        .sub-menu {
-            display: none;
-            padding: 20px;
-        }
-
-        .main-menu li {
-            position: relative;
-            color: #417505;
-        }
-
-        .main-menu li:hover .sub-menu {
-            display: block;
-        }
-
-        .main-menu li .sub-menu {
-            position: absolute;
-            top: 20;
-            left: 0;
-        }
-
-        .main-menu .sub-menu li {
-            display: block;
-            background: rgb(0, 0, 0);
-            width: 250px;
-            padding: 20px 0;
+       
+        /*------BANNER------*/
+        .duongdan {
+            text-align: center;
             color: white;
+            font-size: 18px;
+            margin-top: 20px
         }
 
-        .main-menu .sub-menu li a {
-            color: white;
-        }
+            .duongdan a:hover {
+                color: white;
+            }
 
-        .search {
-            display: inline-block;
-        }
 
+            .duongdan a:link {
+                color: aquamarine;
+            }
+
+
+        /*------DANG NHAP--------*/
 
         .form-vertical {
             position: relative;
@@ -117,52 +84,68 @@
             background: transparent;
         }
 
-        a:hover {
-            color: #417505;
+            a:hover {
+                color: #417505;
+            }
+
+        .logins {
+            width: 400px;
+            text-align: center;
+            display: inline-block;
         }
 
+        .socials-login {
+            text-align: center;
+            margin-bottom: 4px;
+        }
+
+            .socials-login a {
+                padding: 4px 30px;
+                color: #fff;
+                line-height: 2.5em;
+                text-decoration: none;
+                border-radius: 2px;
+                white-space: nowrap;
+                display: inline-block;
+                margin-top: 8px;
+                width: 300px;
+            }
+
+            .socials-login span.fa {
+                margin-right: 3px;
+            }
+
+        .bg-facebook {
+            background: #3a5899;
+        }
+
+            .bg-facebook:hover, .bg-facebook:focus {
+                background: #1d418d;
+            }
+
+
+        .bg-google-plus {
+            background: #db4437;
+        }
+
+            .bg-google-plus:hover, .bg-google-plus:focus {
+                background: #bb2a1d;
+            }
     </style>
 </head>
 <body>
-    <div class='main-menu'>
-        <ul>
-            <li style="margin-right: 20px;"><img src="phone.png" alt="" width="20px" height="20px">+84 123 456789</li>
-            <li><img src="email.png" alt="" width="20px" height="20px"> veggie@gmail.com </li>
-            <li style="margin-left: 60%;margin-right: 20px;"><a href="dangnhap.html">Đăng nhập</a></li>
-            <li><a href="dangky.html">Đăng kí</a></li>
-        </ul>
-        <p style="margin-top: 10px; color: #417505;"> Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7</p>
-    </div>
-    <div class='main-menu' style="margin-left: 40%;">
-        <ul>
-            <li> <a href='#'>TRANG CHỦ</a> </li>
-            <li>
-                <a href='#'>SẢN PHẨM</a>
-                <ul class='sub-menu'>
-                    <li><a href='#'>Gananola</a></li>
-                    <li><a href='#'>Bánh ăn kiêng</a></li>
-                    <li><a href='#'>Hạt dinh dưỡng</a></li>
-                    <li><a href='#'>Sản phẩm khác</a></li>
-                </ul>
-            </li>
-            <li> <a href='#'>BLOG</a> </li>
-            <li> <a href='#'>LIÊN HỆ</a> </li>
-            <li> <a href='#'>GIỚI THIỆU</a> </li>
-            <li>
-                <img src="search.png" alt="" width="20px" height="20px">
-                <ul class='sub-menu'>
-                    <div class="search">
-                        <input type="text" name="box" placeholder="Tìm sản phẩm">
-                    </div>
-                    <div class="search-button">
-                    </div>
-                </ul>
-            </li>
 
-        </ul>
+    <div style="background-image:url(./Images/banner4.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2 style="text-align:center; color:white">ĐĂNG NHẬP</h2>
+        <p class="duongdan"><a href="#">Trang chủ</a> / Đăng nhập </p>
     </div>
-    <div style="margin-top: -80px;margin-bottom: 40px; margin-left:120px ;"><img src="Logo.png" width="100px" height="100px" alt=""></div>
-    <div><img width="100%" height="350px" src="https://theskinhouse.com.vn/Images/banner_white.jpg" alt="banner"></div>
+
     <div id="CustomerLoginForm" class="form-vertical">
         <h1>ĐĂNG NHẬP</h1>
         <form>
@@ -172,17 +155,22 @@
             <p>
                 <input type="submit" class="btn" value="Đăng nhập">
             </p>
+            <div class="logins">
+                <div class="socials-login">
+                    <a class="bg-facebook" href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+                </div>
+                <div class="socials-login">
+                    <a class="bg-google-plus" href="https://accounts.google.com/signin/v2/identifier?hl=vi&passive=true&continue=https%3A%2F%2Fwww.google.com.vn%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><span class="fa fa-google-plus"></span> Google</a>
+                </div>
+            </div>
             <p>
-                <a href="/">Trở về</a>
-            </p>
-            <p>
-                <a href="/account/register" id="customer_register_link">Đăng kí</a>
-            </p>
-            <p>
-                <a href="#recover" id="RecoverPassword">Quên mật khẩu?</a>
+                <a href="DangKy.html" id="customer_register_link">Tạo tài khoản</a>
             </p>
         </form>
     </div>
+
+
+
 
 </body>
 </html>
