@@ -9,109 +9,7 @@
     <link rel="stylesheet" href="CSS/Header.css" type="text/css" media="screen" />
     <title>Đăng nhập</title>
     <style>
-        /*------DANG NHAP--------*/
-
-        .form-vertical {
-            position: relative;
-            line-height: 24px;
-            font-size: 18px;
-            line-height: 1.6;
-            font-family: Roboto;
-            color: #131111;
-            font-weight: 300;
-            text-align: center;
-            list-style: none;
-            margin-left: -30px;
-        }
-
-
-        h1 {
-            color: #131111;
-            padding: 0px 0px 15px 0px;
-            margin: 30px 0px 15px 0px;
-            border-bottom: 1px solid #e2e2e2;
-        }
-
-        input {
-            border: 1px solid #e2e2e2;
-            width: 400px;
-            padding: 8px 10px;
-            margin-bottom: 7px;
-            border-radius: 3px;
-            font-family: inherit;
-            font-size: inherit;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 8px 10px;
-            width: 400px;
-            margin: 0;
-            line-height: 1.42;
-            font-weight: bold;
-            text-align: center;
-            vertical-align: middle;
-            cursor: pointer;
-            border: 1px solid transparent;
-            user-select: none;
-            border-radius: 3px;
-            background-color: #094125;
-            color: #fff;
-        }
-
-        a {
-            color: #094125;
-            text-decoration: none;
-            background: transparent;
-        }
-
-            a:hover {
-                color: #417505;
-            }
-
-        .logins {
-            width: 400px;
-            text-align: center;
-            display: inline-block;
-        }
-
-        .socials-login {
-            text-align: center;
-            margin-bottom: 4px;
-        }
-
-            .socials-login a {
-                padding: 4px 30px;
-                color: #fff;
-                line-height: 2.5em;
-                text-decoration: none;
-                border-radius: 2px;
-                white-space: nowrap;
-                display: inline-block;
-                margin-top: 8px;
-                width: 300px;
-            }
-
-            .socials-login span.fa {
-                margin-right: 3px;
-            }
-
-        .bg-facebook {
-            background: #3a5899;
-        }
-
-            .bg-facebook:hover, .bg-facebook:focus {
-                background: #1d418d;
-            }
-
-
-        .bg-google-plus {
-            background: #db4437;
-        }
-
-            .bg-google-plus:hover, .bg-google-plus:focus {
-                background: #bb2a1d;
-            }
+       
     </style>
 </head>
 
@@ -175,14 +73,14 @@
     </div>
 
 
-    <div id="CustomerLoginForm" class="form-vertical">
-        <h1>ĐĂNG NHẬP</h1>
+    <div id="CustomerLoginForm" class="dn-form-vertical">
+        <h1 class="dn-h1">ĐĂNG NHẬP</h1>
         <form>
             <input type="email" name="customer[email]" id="CustomerEmail" placeholder="Email">
             <br />
             <input type="password" value="" name="customer[password]" id="CustomerPassword" placeholder="Mật khẩu">
             <p>
-                <input type="submit" class="btn" value="Đăng nhập">
+                <input type="submit" class="dn-btn" value="Đăng nhập">
             </p>
             <div class="logins">
                 <div class="socials-login">
@@ -193,7 +91,7 @@
                 </div>
             </div>
             <p>
-                <a href="DangKy.html" id="customer_register_link">Tạo tài khoản</a>
+                <a class="dn-a" href="DangKy.html" id="customer_register_link">Tạo tài khoản</a>
             </p>
         </form>
     </div>
