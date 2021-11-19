@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="CSS/Header.css" type="text/css" media="screen" />
 </head>
 
-
 <body>
     <div class="call-mail">
         <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 39 5762954</a> &emsp;
@@ -59,7 +58,7 @@
     <!--Cái logo-->
     <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
 
-    <div style="background-image:url(./Images/banner4.jpg); width:1500px ;height:300px;text-align:center;background-repeat:no-repeat; position:center ">
+    <div class="banner-trang" style="background-image:url(./Images/banner7.jpg)">
         <br />
         <br />
         <br />
@@ -67,20 +66,20 @@
         <br />
         <br />
         <h2 style="text-align:center; color:white">TẠO TÀI KHOẢN</h2>
-        <p class="duongdan"><a href="#">Trang chủ</a> / Tạo tài khoản </p>
+        <p class="duongdan"><a class="back-home" href="TrangChu.html">Trang chủ</a> / Tạo tài khoản </p>
     </div>
 
 
     <div id="CustomerLoginForm" class="dk-form-vertical">
         <h1 class="dk-h1">ĐĂNG KÝ</h1>
         <form>
-            <input type="text" name="customer[name]" id="CustomerName" class="inputform" placeholder="Tên" />
+            <input type="text" name="customer[name]" id="CustomerName" class="dk-input" placeholder="Tên" />
             <br />
-            <input type="text" name="customer[firstname]" id="CustomerFirstName" class="inputform" placeholder="Họ" />
+            <input type="text" name="customer[firstname]" id="CustomerFirstName" class="dk-input" placeholder="Họ" />
             <br />
-            <input type="text" name="customer[email]" id="CustomerEmail" class="inputform" placeholder="Email">
+            <input type="text" name="customer[email]" id="CustomerEmail" class="dk-input" placeholder="Email">
             <br />
-            <input type="password" value="" name="customer[password]" id="CustomerPassword" class="inputform" placeholder="Mật khẩu">
+            <input type="password" value="" name="customer[password]" id="CustomerPassword" class="dk-input" placeholder="Mật khẩu">
             <p>
                 <input type="submit" class="dk-btn" value="Đăng ký">
             </p>

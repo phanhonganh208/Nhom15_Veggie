@@ -197,7 +197,7 @@
     }
 
         .duongdan a:hover {
-            color: white;
+            color: aquamarine;
         }
 
         .duongdan a:link {
@@ -212,6 +212,10 @@
         .phannoidung p {
             margin: 20px;
         }
+
+
+
+
 
 
 
@@ -319,6 +323,21 @@
                 }
 
 /*---------ĐĂNG KÝ----------*/
+.banner-trang {
+    width: 1500px;
+    height: 300px;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: center
+}
+
+.back-home{
+    color: white;
+}
+    .back-home:hover {
+        color: aquamarine;
+    }
 
 
 .dk-form-vertical {
