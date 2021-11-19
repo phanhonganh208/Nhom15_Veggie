@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Header.css" type="text/css" media="screen" />
+    <title>Đăng nhập</title>
+    <style>
+       
+    </style>
+</head>
+
+<body>
+    <div class="call-mail">
+        <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 39 5762954</a> &emsp;
+        <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">Thefittuna2019@gmail.com</a>
+        <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+        Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
+    </div>
+    <div class="log-sign">
+        <a href="#" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="#" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+        <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
+    </div>
+    <br><br>
+    <br><br>
+
+    <!-- phần menu #####     MENU    MENU     MENU ###########-->
+    <div>
+        <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+        <div class='main-menu' style="margin-left: 30%;">
+            <ul>
+                <li> <a href='#'><b>TRANG CHỦ</b></a> </li>
+                <li>
+                    <a href='#'><b>SẢN PHẨM</b> </a>
+                    <!--sub menu-->
+                    <ul class='sub-menu'>
+                        <li><a href='#'>Gananola</a></li>
+                        <li><a href='#'>Bánh ăn kiêng</a></li>
+                        <li><a href='#'>Hạt dinh dưỡng</a></li>
+                        <li><a href='#'>Sản phẩm khác</a></li>
+                    </ul>
+                </li>
+                <li> <a href='#'><b>BLOG</b></a> </li>
+                <li> <a href='#'><b>LIÊN HỆ</b></a> </li>
+                <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
+                <li>
+                    <!--Thanh SEARCH-->
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--Cái logo-->
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
+
+    <div style="background-image:url(./Images/banner6.jpg); width:1500px ;height:300px;text-align:center; background-size:cover; background-repeat:no-repeat; position:center">
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h2 style="text-align:center; color:white">TẠO TÀI KHOẢN</h2>
+        <p class="duongdan"><a href="#">Trang chủ</a> / Tạo tài khoản </p>
+    </div>
+
+
+    <div id="CustomerLoginForm" class="dn-form-vertical">
+        <h1 class="dn-h1">ĐĂNG NHẬP</h1>
+        <form>
+            <input class="dn-input" type="email" name="customer[email]" id="CustomerEmail" placeholder="Email">
+            <br />
+            <input class="dn-input" type="password" value="" name="customer[password]" id="CustomerPassword" placeholder="Mật khẩu">
+            <p>
+                <input type="submit" class="dn-btn" value="Đăng nhập">
+            </p>
+            <div class="logins">
+                <div class="socials-login">
+                    <a class="bg-facebook" href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+                </div>
+                <div class="socials-login">
+                    <a class="bg-google-plus" href="https://accounts.google.com/signin/v2/identifier?hl=vi&passive=true&continue=https%3A%2F%2Fwww.google.com.vn%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><span class="fa fa-google-plus"></span> Google</a>
+                </div>
+            </div>
+            <p>
+                <a class="dn-a" href="DangKy.html" id="customer_register_link">Tạo tài khoản</a>
+            </p>
+        </form>
+    </div>
+
+
+</body>
+</html>

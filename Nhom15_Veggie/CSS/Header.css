@@ -334,6 +334,7 @@
 
 .back-home{
     color: white;
+    text-decoration-color: white;
 }
     .back-home:hover {
         color: aquamarine;
@@ -501,3 +502,31 @@
     .bg-google-plus:hover, .bg-google-plus:focus {
         background: #bb2a1d;
     }
+
+
+.hr {
+    height: 0;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.txt {
+    font-family: roboto;
+    color: #000000;
+    font-size: 16.5pt;
+    margin-left: 40px;
+    text-align: center;
+}
+.eman {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: #000000;
+    text-align: center;
+}
+
+.regen {
+    color: #757171;
+    margin-top: 10px;
+    font-size: 15pt;
+    text-align: center;
+}
