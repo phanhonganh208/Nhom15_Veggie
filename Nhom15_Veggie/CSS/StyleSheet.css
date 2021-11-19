@@ -222,6 +222,11 @@
 
 /*---------FOOTER---------*/
 
+
+    footer {
+        margin-top: 150px;
+    }
+
     .footer-subscribe {
         position: absolute;
         left: 50%;
@@ -340,7 +345,15 @@
         color: aquamarine;
     }
 
-
+.aabb {
+    margin-left: 300px;
+    margin-right: 10px;
+    margin-top: 20px;
+    position: center;
+    float: left;
+    width: 400px;
+    height: 650px;
+}
 .dk-form-vertical {
     position: relative;
     line-height: 24px;
@@ -502,32 +515,4 @@
     .bg-google-plus:hover, .bg-google-plus:focus {
         background: #bb2a1d;
     }
-
-
-.hr {
-    height: 0;
-    -moz-box-sizing: content-box;
-    box-sizing: content-box;
-}
-.txt {
-    font-family: roboto;
-    color: #000000;
-    font-size: 16.5pt;
-    margin-left: 40px;
-    text-align: center;
-}
-.eman {
-    margin-top: 10px;
-    font-family: sans-serif;
-    font-size: 20pt;
-    color: #000000;
-    text-align: center;
-}
-
-.regen {
-    color: #757171;
-    margin-top: 10px;
-    font-size: 15pt;
-    text-align: center;
-}
 
