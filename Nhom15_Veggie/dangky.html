@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Đăng ký</title>
-    <link rel="stylesheet" href="CSS/Header.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="Images/logo.png"/>
 </head>
 
 <body>
@@ -56,9 +57,9 @@
     </div>
 
     <!--Cái logo-->
-    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="Images/logo.png" width="120" height="120" alt="Veggie"></div>
 
-    <div class="banner-trang" style="background-image:url(./Images/banner7.jpg)">
+    <div class="banner-trang" style="background-image:url(./Images/banner5.jpg)">
         <br />
         <br />
         <br />
@@ -72,7 +73,8 @@
 
     <div id="CustomerLoginForm" class="dk-form-vertical">
         <h1 class="dk-h1">ĐĂNG KÝ</h1>
-        <form>
+        <span class="aabb"><img src="Images/register.png" width="90%" /></span>
+        <form style="margin-top: 40px">
             <input type="text" name="customer[name]" id="CustomerName" class="dk-input" placeholder="Tên" />
             <br />
             <input type="text" name="customer[firstname]" id="CustomerFirstName" class="dk-input" placeholder="Họ" />
@@ -88,6 +90,99 @@
             </p>
         </form>
     </div>
+   
+    <footer style="margin-top: 400px">
+        <!--Gửi mail cho chúng tôi-->
+        <div class="footer-subscribe">
+            <div class="grid">
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-subscribe-info">
+                        <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                        <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                    </div>
+                </div>
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-sub-wrapper">
 
+                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                            <input name="form_type" type="hidden" value="customer">
+                            <input name="utf8" type="hidden" value="✓">
+
+                            <div class="input-group">
+                                <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                        <img src="Images/logoveggie.png" style="text-align:center" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div style="margin-top: 200px" class="container">
+            <div class="links">
+                <h2>Thông tin liên hệ</h2>
+                <ul>
+                    <li>
+                        <span><i class="fa fa-map-marker"></i></span>
+                        <span>
+                            Đường Số 1 Quận 1,<br />
+                            Thành Phố Hồ Chí Minh<br />
+                            Việt Nam
+                        </span>
+                    </li>
+                    <li>
+                        <span><i class="fa fa-phone"></i></span>
+                        <span>+84 39 576265</span>
+
+                    </li>
+                    <li>
+                        <span><i class="fa fa-envelope"></i></span>
+                        <span>veggie@gmail.com</span>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="links">
+            <h2>Mua hàng</h2>
+            <ul>
+
+                <li><a>Granola</a></li>
+                <li><a>Bánh ăn kiêng</a></li>
+                <li><a>Sản phẩm khác</a></li>
+                <li><a>HẠT DINH DƯỠNG</a></li>
+
+            </ul>
+
+        </div>
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="noi-dung links">
+            <h2>Hỗ trợ khách hàng</h2>
+            <ul>
+
+                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
+            </ul>
+        </div>
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+        <div>
+            <h2>Fanpage</h2>
+
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
+                 data-width="500"></div>
+        </div>
+    </footer>
 </body>
 </html>
