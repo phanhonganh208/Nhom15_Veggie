@@ -192,7 +192,7 @@
     .duongdan {
         text-align: center;
         color: white;
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 20px
     }
 
@@ -204,13 +204,15 @@
             color: aquamarine;
         }
 
-    .phannoidung {
-        font-size: 18px;
-        text-align: justify;
-    }
+.phannoidung {
+    font-size: 20px;
+    text-align: justify;
+    padding: 150px;
+    margin:20px;
+}
 
         .phannoidung p {
-            margin: 20px;
+            margin: 30px;
         }
 
 /*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
@@ -231,7 +233,7 @@
             margin-left: -10px;
             margin-bottom: 30px;
             margin-top: 15px;
-            font-size: 18px;
+            font-size: 20px;
         }
  /*---------FOOTER---------*/
             footer {
