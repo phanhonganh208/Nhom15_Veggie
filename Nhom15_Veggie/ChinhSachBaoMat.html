@@ -8,7 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image_footer/logoveggie.png" />
-    <title>Document</title>
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
 </head>
 
@@ -94,24 +93,42 @@
 
 
 
-    <h2 style="text-align:center">
-        ĐĂNG KÍ NHẬN TIN TỪ CHÚNG TÔI      <input type="email" class="form__field" placeholder="Email của bạn" />
-    </h2>
-    <h4 style="text-align:center">
-        (Vui lòng nhập email để nhận thông tin mới nhất của chúng tôi)
+    <!--Gửi mail cho chúng tôi-->
+    <div class="footer-subscribe">
+        <div class="grid">
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-subscribe-info">
+                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                </div>
+            </div>
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-sub-wrapper">
 
-        <br />
-        <img src="logoveggie.png" style="text-align:center" />
-    </h4>
+                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                        <input name="form_type" type="hidden" value="customer">
+                        <input name="utf8" type="hidden" value="✓">
 
-
+                        <div class="input-group">
+                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <img src="image_footer/logoveggie.png" style="text-align:center" />
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
         <!--Bắt Đâu Nội Dung Liên Hệ-->
         <div class="container">
             <div class="links">
-                <h2>Thông Tin Liên Hệ</h2>
+                <h2>Thông tin liên hệ</h2>
                 <ul>
 
                     <li>
@@ -157,18 +174,20 @@
 
                 <li><a href="#">Liên hệ</a></li>
                 <li><a href="#">Giới thiệu</a></li>
-                <li><a href="chinhsachdoitra">Chính sách đổi trả</a></li>
-                <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
-                <li><a href="dieukhoandichvu.html">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
             </ul>
         </div>
         <!--Kết Thúc Nội Dung Đường Dẫn-->
         <div>
             <h2>Fanpage</h2>
-            <img src="fanpage.png" style="text-align:center; width:300px; height:200px" />
+
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
+                 data-width="500"></div>
         </div>
-
-
     </footer>
 
 </body>

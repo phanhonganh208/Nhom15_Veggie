@@ -213,17 +213,28 @@
             margin: 20px;
         }
 
+/*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
+        .phannoidung ul li {
+            margin: 15px;
+        }
 
+    .phannoidung ul {
+        list-style: disc
+    }
 
+/*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
+        .phannoidung ol li {
+            font-size: 20px;
+        }
 
-
-
-
-
-/*---------FOOTER---------*/
-
-
-    footer {
+        .phannoidung p {
+            margin-left: -10px;
+            margin-bottom: 30px;
+            margin-top: 15px;
+            font-size: 18px;
+        }
+ /*---------FOOTER---------*/
+            footer {
         margin-top: 150px;
     }
 

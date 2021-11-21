@@ -9,282 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="image_footer/logoveggie.png" />
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Roboto;
-        }
-        .duongdan {
-            text-align: center;
-            color: white;
-            font-size: 18px;
-            margin-top: 20px
-        }
-
-            .duongdan a:hover {
-                color: white;
-            }
-            
-
-            .duongdan a:link {
-                color: aquamarine;
-            }
-        .phannoidung ol li{
-            font-size:20px;
-        }
-        .phannoidung p{
-            margin-left: -10px;
-            margin-bottom: 30px;
-            margin-top: 15px;
-            font-size:18px;
-        }
-        .call-mail {
-            font-size: 16px;
-            color: #417505;
-            margin-top: 20px;
-            margin-left: 60px;
-        }
-
-            .call-mail a {
-                font-size: 16px;
-                color: #417505;
-            }
-
-        .log-sign {
-            font-size: 16px;
-            color: #417505;
-            margin-top: -40px;
-            margin-left: 80%;
-        }
-
-            .log-sign a {
-                font-size: 16px;
-                color: #417505;
-            }
-
-        .main-menu {
-            background: rgb(255, 255, 255);
-            height: 50px;
-            padding: 20px;
-        }
-
-            .main-menu li {
-                position: relative;
-                color: #417505;
-                font-size: 16px;
-            }
-
-            .main-menu ul li {
-                display: inline-block;
-            }
-
-                .main-menu ul li a {
-                    color: #417505;
-                    text-decoration: none;
-                    padding: 20px;
-                }
-
-                    .main-menu ul li a:hover {
-                        color: #F7C551;
-                        font-size: 18px;
-                    }
-
-                .main-menu ul li .sub-menu li {
-                    padding: 5px;
-                }
-
-                    .main-menu ul li .sub-menu li a {
-                        color: white;
-                    }
-
-                        .main-menu ul li .sub-menu li a:hover {
-                            color: #F7C551;
-                            font-size: 16px;
-                        }
-
-            .main-menu li:hover .sub-menu {
-                display: block;
-            }
-
-            .main-menu .sub-menu {
-                top: 30px;
-                left: 0;
-                padding: 5px;
-                position: absolute;
-                display: none;
-                background: rgb(0, 0, 0);
-                border-radius: 20px;
-                width: 170px;
-            }
-
-        .search-container button {
-        }
-
-            .search-container button:hover {
-                background: #417505;
-                font-size: 18px;
-            }
-        /*        .................... */
-
-        .slider {
-            margin-top: 13%;
-            width: 100%;
-            height: 500px;
-            border-radius: 10px;
-            overflow: hidden;
-        }
-
-        .slides {
-            width: 500%;
-            height: 500px;
-            display: flex;
-        }
-
-            .slides input {
-                display: none;
-            }
-
-        .slide {
-            width: 20%;
-            transition: 2s;
-        }
-
-            .slide img {
-                width: 100%;
-                height: 500px;
-                object-fit: cover;
-                object-position: 0 50%;
-            }
-        /* ..*/
-        .navigation-manual {
-            position: absolute;
-            width: 100%;
-            margin-top: -40px;
-            display: flex;
-            justify-content: center;
-        }
-
-        .manual-btn {
-            border: 2px solid #417505;
-            padding: 5px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 1s;
-        }
-
-            .manual-btn:not(:last-child) {
-                margin-right: 40px;
-            }
-
-            .manual-btn:hover {
-                background: #F7C551;
-            }
-
-        #radio1:checked ~ .first {
-            margin-left: 0;
-        }
-
-        #radio2:checked ~ .first {
-            margin-left: -20%;
-        }
-
-        #radio3:checked ~ .first {
-            margin-left: -40%;
-        }
-
-        .navigation-auto {
-            position: absolute;
-            display: flex;
-            width: 100%;
-            justify-content: center;
-            margin-top: 460px;
-        }
-
-            .navigation-auto div {
-                border: 2px solid #417505;
-                padding: 5px;
-                border-radius: 10px;
-                transition: 1s;
-            }
-
-                .navigation-auto div:not(:last-child) {
-                    margin-right: 40px;
-                }
-
-        #radio1:checked ~ .navigation-auto .auto-btn1 {
-            background: #417505;
-        }
-
-        #radio2:checked ~ .navigation-auto .auto-btn2 {
-            background: #417505;
-        }
-
-        #radio3:checked ~ .navigation-auto .auto-btn3 {
-            background: #417505;
-        }
-
-
-        footer {
-            position: page;
-            width: fit-content;
-            height: auto;
-            padding: 25px 25px;
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-            footer .container {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                flex-direction: row;
-            }
-
-        .links h2 {
-            position: relative;
-            color: #000000;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-        .links h2 {
-            position: relative;
-            color: #000000;
-            font-weight: 500;
-            margin-bottom: 5px;
-        }
-
-            .links h2:before {
-                content: '';
-                position: absolute;
-                bottom: -5px;
-                left: 0;
-                width: 100px;
-                height: 2px;
-            }
-
-        .links {
-            position: center;
-            width: 300px;
-        }
-
-            .links ul li {
-                list-style: none;
-            }
-
-                .links ul li a {
-                    color: #000000;
-                    text-decoration: none;
-                    margin-bottom: 5px;
-                    display: inline-block;
-                }
-
-                    .links ul li a:hover {
-                        color: #000000;
-                    }
-    </style>
+    <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
 </head>
 <body>
 
@@ -374,24 +99,42 @@
 
 
 
-    <h2 style="text-align:center">
-        ĐĂNG KÍ NHẬN TIN TỪ CHÚNG TÔI      <input type="email" class="form__field" placeholder="Email của bạn" />
-    </h2>
-    <h4 style="text-align:center">
-        (Vui lòng nhập email để nhận thông tin mới nhất của chúng tôi)
+    <!--Gửi mail cho chúng tôi-->
+    <div class="footer-subscribe">
+        <div class="grid">
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-subscribe-info">
+                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                </div>
+            </div>
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-sub-wrapper">
 
-        <br />
-        <img src="logoveggie.png" style="text-align:center" />
-    </h4>
+                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                        <input name="form_type" type="hidden" value="customer">
+                        <input name="utf8" type="hidden" value="✓">
 
-
+                        <div class="input-group">
+                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                            </span>
+                        </div>
+                    </form>
+                    <img src="image_footer/logoveggie.png" style="text-align:center" />
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <footer>
         <!--Bắt Đâu Nội Dung Liên Hệ-->
         <div class="container">
             <div class="links">
-                <h2>Thông Tin Liên Hệ</h2>
+                <h2>Thông tin liên hệ</h2>
                 <ul>
 
                     <li>
@@ -437,18 +180,21 @@
 
                 <li><a href="#">Liên hệ</a></li>
                 <li><a href="#">Giới thiệu</a></li>
-                <li><a href="chinhsachdoitra">Chính sách đổi trả</a></li>
-                <li><a href="chinhsachbaomat.html">Chính sách bảo mật</a></li>
-                <li><a href="dieukhoandichvu.html">Điều khoản dịch vụ</a></li>
+                <li><a href="#">Chính sách đổi trả</a></li>
+                <li><a href="#">Chính sách bảo mật</a></li>
+                <li><a href="#">Điều khoản dịch vụ</a></li>
             </ul>
         </div>
         <!--Kết Thúc Nội Dung Đường Dẫn-->
         <div>
             <h2>Fanpage</h2>
-            <img src="fanpage.png" style="text-align:center; width:300px; height:200px" />
+
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
+                 data-width="500"></div>
         </div>
-
-
     </footer>
+
 </body>
 </html>
