@@ -606,14 +606,6 @@ a, .text-link {
     z-index: 1;
 }
 
-input {
-    border: 1px solid black;
-    height: 45px;
-    width: 325px;
-    border-radius: 20px;
-    padding: 5px;
-    font-size: 15px;
-}
 
 
 .g-grid {
