@@ -340,6 +340,11 @@
                     color: #094125;
                 }
 
+
+
+
+
+
 /*---------ĐĂNG KÝ----------*/
 .banner-trang {
     width: 1500px;
@@ -382,7 +387,7 @@
 
 
 .dk-h1 {
-    color: #131111;
+    color: #094125;
     padding: 0px 0px 15px 0px;
     margin: 30px 0px 15px 0px;
     border-bottom: 1px solid #e2e2e2;
@@ -397,12 +402,16 @@
     font-family: inherit;
     font-size: inherit;
 }
+    .dk-input:hover {
+        color: #F7C551
+    }
 
 .dk-btn {
     display: inline-block;
+    margin: 0;
     padding: 8px 10px;
     width: 400px;
-    margin: 0;
+    font-size: 15px;
     line-height: 1.42;
     font-weight: bold;
     text-align: center;
@@ -414,15 +423,20 @@
     background-color: #094125;
     color: #fff;
 }
+    .dk-btn:hover {
+        background-color: #417505;
+        color: #fff;
+    }
 
-.dk-back {
-    color: #094125;
-    text-decoration: none;
-    background: transparent;
-}
+
+    .dk-back {
+        color: #094125;
+        text-decoration: none;
+        background: transparent;
+    }
 
     .dk-back:hover {
-        color: #417505;
+        color: #F7C551;
     }
 
 /*------DANG NHAP--------*/
@@ -442,7 +456,7 @@
 
 
 .dn-h1 {
-    color: #131111;
+    color: #094125;
     padding: 0px 0px 15px 0px;
     margin: 30px 0px 15px 0px;
     border-bottom: 1px solid #e2e2e2;
@@ -457,12 +471,16 @@
     font-family: inherit;
     font-size: inherit;
 }
+    .dn-input:hover {
+        color: #F7C551
+    }
 
 .dn-btn {
     display: inline-block;
+    margin: 0;
     padding: 8px 10px;
     width: 400px;
-    margin: 0;
+    font-size: 15px;
     line-height: 1.42;
     font-weight: bold;
     text-align: center;
@@ -474,6 +492,10 @@
     background-color: #094125;
     color: #fff;
 }
+    .dn-btn:hover {
+        background-color: #417505;
+        color: #fff;
+    }
 
 .dn-a {
     color: #094125;
@@ -482,7 +504,7 @@
 }
 
     .dn-a:hover {
-        color: #417505;
+        color: #F7C551;
     }
 
 .logins {
@@ -499,7 +521,7 @@
     .socials-login a {
         padding: 4px 30px;
         color: #fff;
-        line-height: 2.5em;
+        line-height: 2.0em;
         text-decoration: none;
         border-radius: 2px;
         white-space: nowrap;

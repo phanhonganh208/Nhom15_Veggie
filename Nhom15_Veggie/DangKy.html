@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Đăng ký</title>
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
-    <link rel="shortcut icon" href="image_footer/logoveggie.png" />
+    <link rel="shortcut icon" href="Images/logo.png"/>
 </head>
 
 <body>
@@ -57,7 +57,7 @@
     </div>
 
     <!--Cái logo-->
-    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./image_header/Logo.png" width="120" height="120" alt="Veggie"></div>
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="Images/logo.png" width="120" height="120" alt="Veggie"></div>
 
     <div class="banner-trang" style="background-image:url(./Images/banner5.jpg)">
         <br />
@@ -73,8 +73,8 @@
 
     <div id="CustomerLoginForm" class="dk-form-vertical">
         <h1 class="dk-h1">ĐĂNG KÝ</h1>
-        <span class="aabb"><img src="Images/dangky.jpg" width="90%" /></span>
-        <form>
+        <span class="aabb"><img src="Images/register.png" width="90%" /></span>
+        <form style="margin-top: 40px">
             <input type="text" name="customer[name]" id="CustomerName" class="dk-input" placeholder="Tên" />
             <br />
             <input type="text" name="customer[firstname]" id="CustomerFirstName" class="dk-input" placeholder="Họ" />
@@ -90,79 +90,42 @@
             </p>
         </form>
     </div>
-    <div class="footer-subscribe" style="margin-top:350px">
-        <div class="grid">
-            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                <div class="ft-subscribe-info">
-                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
-                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+   
+    <footer style="margin-top: 400px">
+        <!--Gửi mail cho chúng tôi-->
+        <div class="footer-subscribe">
+            <div class="grid">
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-subscribe-info">
+                        <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                        <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                    </div>
                 </div>
-            </div>
-            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                <div class="ft-sub-wrapper">
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-sub-wrapper">
 
-                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-                        <input name="form_type" type="hidden" value="customer">
-                        <input name="utf8" type="hidden" value="✓">
+                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                            <input name="form_type" type="hidden" value="customer">
+                            <input name="utf8" type="hidden" value="✓">
 
-
-
-                        <div class="input-group">
-                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
-                            <input type="hidden" name="contact[tags]" value="newsletter">
-                            <span class="input-group-btn">
-                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
-                            </span>
-                        </div>
-                    </form>
-
+                            <div class="input-group">
+                                <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                        <img src="Images/logoveggie.png" style="text-align:center" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <style>
-        .footer-subscribe {
-            position: absolute;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 90%;
-            background: #317932;
-            padding: 30px 40px;
-        }
-
-            .footer-subscribe .grid {
-                display: flex;
-                align-items: center;
-            }
-
-        .large--one-half {
-            width: 50%;
-        }
-
-        .footer-subscribe form {
-            border-bottom: 1px solid #e2e2e2;
-            margin-left: 50px;
-        }
-
-            .footer-subscribe form .input-group-field {
-                background: none;
-                border: 0px;
-                outline: none;
-                color: #fff;
-            }
-
-        svg:not(:root).svg-inline--fa {
-            overflow: visible;
-        }
-    </style>
-    <footer>
         <!--Bắt Đâu Nội Dung Liên Hệ-->
-        <div class="container">
+        <div style="margin-top: 200px" class="container">
             <div class="links">
-                <h2>THÔNG TIN LIÊN HỆ</h2>
+                <h2>Thông tin liên hệ</h2>
                 <ul>
-
                     <li>
                         <span><i class="fa fa-map-marker"></i></span>
                         <span>
