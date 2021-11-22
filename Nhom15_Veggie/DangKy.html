@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Đăng ký</title>
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
-    <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="shortcut icon" href="Images/logo.png"/>
 </head>
 
 <body>
@@ -90,44 +90,42 @@
             </p>
         </form>
     </div>
-
-
-    <div class="footer-subscribe" style="margin-top:400px">
-        <div class="grid">
-            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                <div class="ft-subscribe-info">
-                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
-                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+   
+    <footer style="margin-top: 400px">
+        <!--Gửi mail cho chúng tôi-->
+        <div class="footer-subscribe">
+            <div class="grid">
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-subscribe-info">
+                        <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                        <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                    </div>
                 </div>
-            </div>
-            <div class="grid__item large--one-half medium--one-half small--one-whole">
-                <div class="ft-sub-wrapper">
+                <div class="grid__item large--one-half medium--one-half small--one-whole">
+                    <div class="ft-sub-wrapper">
 
-                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-                        <input name="form_type" type="hidden" value="customer">
-                        <input name="utf8" type="hidden" value="✓">
+                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                            <input name="form_type" type="hidden" value="customer">
+                            <input name="utf8" type="hidden" value="✓">
 
-                        <div class="input-group">
-                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
-                            <input type="hidden" name="contact[tags]" value="newsletter">
-                            <span class="input-group-btn">
-                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
-                            </span>
-                        </div>
-                    </form>
-
+                            <div class="input-group">
+                                <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                                <input type="hidden" name="contact[tags]" value="newsletter">
+                                <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                                </span>
+                            </div>
+                        </form>
+                        <img src="Images/logoveggie.png" style="text-align:center" />
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer style="margin-top: 200px">
         <!--Bắt Đâu Nội Dung Liên Hệ-->
-        <div class="container">
+        <div style="margin-top: 200px" class="container">
             <div class="links">
                 <h2>Thông tin liên hệ</h2>
                 <ul>
-
                     <li>
                         <span><i class="fa fa-map-marker"></i></span>
                         <span>
@@ -186,6 +184,5 @@
                  data-width="500"></div>
         </div>
     </footer>
-
 </body>
 </html>
