@@ -411,7 +411,7 @@
     margin: 0;
     padding: 8px 10px;
     width: 400px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.42;
     font-weight: bold;
     text-align: center;
@@ -480,7 +480,7 @@
     margin: 0;
     padding: 8px 10px;
     width: 400px;
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.42;
     font-weight: bold;
     text-align: center;
@@ -521,7 +521,7 @@
     .socials-login a {
         padding: 4px 30px;
         color: #fff;
-        line-height: 2.0em;
+        line-height: 1.5em;
         text-decoration: none;
         border-radius: 2px;
         white-space: nowrap;
