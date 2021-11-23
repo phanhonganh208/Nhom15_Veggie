@@ -17,6 +17,8 @@
                 font-size: 16px;
                 color: #417505;
             }
+
+
         .log-sign
         {
             font-size: 16px;
@@ -28,6 +30,9 @@
                 font-size: 16px;
                 color: #417505;
             }
+        .log-sign a:hover {
+            color: #F7C551;
+        }
         .main-menu {
         background: rgb(255, 255, 255);
         height: 50px;
