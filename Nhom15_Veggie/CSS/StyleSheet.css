@@ -204,6 +204,7 @@
     }
 
     .duongdan a{
+        color:white;
 
     }
 
@@ -927,8 +928,13 @@ a {
 }
 
 .page-head {
-    margin-top: 420px;
+    margin-top: 460px;
+    border-bottom: 1px solid #e2e2e2
+}
+.page-head h1
+{
     text-align: center;
+    margin-left:47%;
 }
 
 
