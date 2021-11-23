@@ -208,15 +208,11 @@
         margin-top: 20px
     }
 
-    .duongdan a{
-        color:white;
-
-    }
-
-        .duongdan a:link {
+        .duongdan a {
             color: white;
         }
-            .duongdan a:link:hover {
+
+            .duongdan a:hover {
                 color: #F7C551;
             }
 
