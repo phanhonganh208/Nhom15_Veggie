@@ -1012,17 +1012,18 @@ a {
     width: calc(33%-13px);
     text-align: center;
     margin-top: 14px;
+    margin-right:45px;
     padding: 16px;
     color: darkorange;
     background-color: #fafafa;
-    font-size:16px;
+    font-size:14px;
 }
     .cartegory-right-content-item:hover {
         width: calc(40%-13px);
         padding: 10px;
         background-color: forestgreen;
         color: white;
-        font-size: 20px;
+        font-size: 16px;
     }
 
 .cartegory-right-content-item h2 {
@@ -1045,15 +1046,15 @@ a {
 }
 .cartegory-left ul li>a{
     color:black;
-    font-size:18px;
+    font-size:16px;
      font-weight:bold;
 }
 .cartegory-left ul li ul li{
-    padding-left:10px;
+    padding-left:5px;
 }
 
 .cartegory-left ul li ul li a {
-    color: black;
+    color:#333333;
     font-size:14px;
 }
 .row{
@@ -1063,6 +1064,12 @@ a {
 .spcontainer{
     max-width:1200px;
     margin:auto;
+}
+.cartegory-left-li ul{
+    display:none;
+}
+.cartegory-left-li.block ul {
+    display: block;
 }
 
 
