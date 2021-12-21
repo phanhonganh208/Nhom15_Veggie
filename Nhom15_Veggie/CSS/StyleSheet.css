@@ -1095,10 +1095,38 @@ a {
 .regen {
     color: #000000;
     margin-top: 0px;
-    font-size: 13pt;
+    font-size: 13px;
     text-align: center;
 }
 
+/*----TRANG CÔNG THỨC NẤU ĂN----*/
+.cook {
+    padding: 100px 0 0 ;
+}
 
+.recipe {
+    margin-top: 20px;
+    justify-content: space-between; 
 
+}
+.recipe-item{
+    width:100%;
+    text-align:left;
+    margin-top:50px;
+    font-size:13px;
+    height:350px;
+    background-color:khaki;
+    color:black;
+    padding: 100px 0 0;
+}
+.recipe-item h1{
+    font-size:55px;
+    margin-left:65px;
+}
+    .recipe-item span img{
+    width:250px;
+    height:250px;
+    margin:-50px 150px 150px 150px;
+    text-align:center;
+}
 
