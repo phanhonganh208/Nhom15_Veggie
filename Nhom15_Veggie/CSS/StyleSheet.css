@@ -38,10 +38,14 @@
         height: 50px;
         padding: 20px;
         }
+        .main-menu muc_lon
+        {
+            padding:5px;
+        }
         .main-menu li {
             position: relative;
             color: #417505;
-            font-size: 16px;
+            font-size: 20px;
         }
         .main-menu ul li {
             display: inline-block;
@@ -50,7 +54,7 @@
             .main-menu ul li a {
                 color: #417505;
                 text-decoration: none;
-                padding: 20px;
+                padding: 10px;
             }
                 .main-menu ul li a:hover {
                     color: #F7C551;
@@ -58,7 +62,7 @@
                 }
                 .main-menu ul li .sub-menu li
                 {
-                    padding: 5px;
+                    padding: 10px;
                 }
                 .main-menu ul li .sub-menu li a
                 {
@@ -66,23 +70,23 @@
                 }
                     .main-menu ul li .sub-menu li a:hover {
                         color: #F7C551;
-                        font-size: 16px;
+                        font-size: 18px;
                     }
 
     .main-menu li:hover .sub-menu{
     display: block;
     }
-       
-    .main-menu .sub-menu {
-        top: 30px;
-        left: 0;
-        padding: 5px;
-        position: absolute;
-    display: none;
-    background: rgb(0, 0, 0);
-    border-radius: 20px;
-    width: 170px;
-    }
+
+            .main-menu .sub-menu {
+                top: 10px;
+                left: 0px;
+                padding: 0;
+                position: absolute;
+                display: none;
+                background: rgb(0, 0, 0);
+                border-radius: 20px;
+                width: 180px;
+            }
 
     .search-container button {
 
