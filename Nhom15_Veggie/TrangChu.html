@@ -8,345 +8,6 @@
     <title>Trang chủ</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="Images/logo.png" />
-
-    <style>
-        .wrapper {
-            *zoom: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-            .wrapper:after {
-                content: '';
-                display: table;
-                clear: both;
-            }
-
-        @media screen and (min-width: 480px) {
-            .wrapper {
-                padding: 0 30px;
-            }
-        }
-
-        .main-content {
-            display: block;
-        }
-
-        .inner {
-            font-size: 16px;
-            font-family: Roboto;
-            color: #131111;
-            font-weight: 300;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: 100%;
-            line-height: 24px;
-            box-sizing: border-box;
-        }
-
-        .section-title h2 {
-            margin-top:-150px auto 100px auto;
-           
-            text-align: center;
-            font-size: 60px;
-            /* text-transform: capitalize; */
-            color: #000000;
-            height:10%;
-        }
-
-        #home-collections {
-            padding: 100px 0px;
-        }
-
-        .tab {
-            margin: 100px auto 20px;
-            text-align: center;
-            display: table;
-            border-bottom: 1px solid #e2e2e2;
-        }
-
-            .tab button {
-                position: relative;
-                padding: 5px 15px;
-                outline: none;
-                margin: 0px 10px;
-            }
-
-                .tab button:after {
-                    content: '';
-                    position: absolute;
-                    left: 0px;
-                    bottom: 0px;
-                    width: 0px;
-                    background: #094125;
-                    height: 3px;
-                }
-
-                .tab button.active, .tab button:hover {
-                    color: #094125;
-                }
-
-                    .tab button.active:after, .tab button:hover:after {
-                        width: 100%;
-                    }
-
-                .tab button.active, .tab button:hover {
-                    color: #094125;
-                }
-
-            .tab button {
-                position: relative;
-                padding: 5px 15px;
-                /* outline: none; */
-                margin: 0px 10px;
-            }
-
-        .tablinks {
-            box-sizing: border-box;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: 100%;
-            overflow: visible;
-            user-select: text;
-            -webkit-appearance: none;
-            background: none;
-            border: none;
-            display: inline-block;
-            cursor: pointer;
-            line-height: normal;
-            font-size: 16px;
-            font-family: Roboto !important;
-            font-weight: bold !important;
-            text-transform: uppercase !important;
-            transition: all 0.3s ease;
-            position: relative;
-            padding: 5px 15px;
-            outline: none;
-            margin: 0px 10px;
-            color: #094125;
-        }
-
-        .tab button.active:after, .tab button:hover:after {
-            width: 100%;
-        }
-
-        .tab button:after {
-            content: '';
-            position: absolute;
-            left: 0px;
-            bottom: 0px;
-            width: 0px;
-            background: #094125;
-            height: 3px;
-        }
-
-        @keyframes fadeEffect {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-
-        .tabcontent {
-            animation: fadeEffect 1s;
-            /* Fading effect takes 1 second */
-            color: #131111;
-        }
-
-            .tabcontent h2 {
-                margin-bottom: 100px;
-                color: #131111;
-            }
-
-        .grid, .grid--rev, .grid--full,
-        .grid-uniform {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: -30px;
-        }
-
-        .grid__item {
-            box-sizing: border-box;
-            float: left;
-            /* min-height: 1px; */
-            padding-left: 30px;
-            vertical-align: top;
-            /* width: 100%; */
-        }
-
-        .grid--rev {
-            direction: rtl;
-            text-align: left;
-        }
-
-            .grid--rev > .grid__item {
-                direction: ltr;
-                text-align: left;
-                float: right;
-            }
-
-        /* Gutterless grids have all the properties of regular grids, minus any spacing. */
-        .grid--full {
-            margin-left: 0;
-        }
-
-            .grid--full > .grid__item {
-                padding-left: 0;
-            }
-
-        .large--one-quarter {
-            width: 25%;
-        }
-
-        input, :before, :after {
-            box-sizing: border-box;
-        }
-
-        #tab1 .tabcontent {
-            animation: fadeEffect 1s;
-            color: #131111;
-        }
-
-        .product-item {
-            position: relative;
-            border: 1px solid #e2e2e2;
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-
-            .product-item:hover {
-                box-shadow: 3.5px 6px 25px 0 rgba(0, 0, 0, 0.1);
-                transform: translateY(-5px);
-            }
-
-                .product-item:hover .product-info {
-                    transform: translate(0px);
-                    background: #094125;
-                }
-
-                    .product-item:hover .product-info .product-price span.current-price, .product-item:hover .product-info .product-price span.original-price {
-                        color: #fff;
-                    }
-
-            .product-item .product-img {
-                position: relative;
-            }
-
-                .product-item .product-img a {
-                    display: block;
-                }
-
-                    .product-item .product-img a img {
-                        width: 100%;
-                    }
-
-                .product-item .product-img .product-tags {
-                    position: absolute;
-                    top: 5px;
-                    right: 5px;
-                    z-index: 1;
-                }
-
-                    .product-item .product-img .product-tags .product-title span {
-                        display: inline-block;
-                        height: 40px;
-                        width: 40px;
-                        line-height: 40px;
-                        border-radius: 50%;
-                        color: #fff;
-                        margin-left: 3px;
-                    }
-
-                    .product-item .product-img .product-tags span.tag-saleoff {
-                        background: #094125;
-                    }
-
-                    .product-item .product-img .product-tags span.tag-new {
-                        background: #000;
-                    }
-
-            .product-item .product-info {
-                text-align: center;
-                background: #fafafa;
-                font-weight: bold;
-                padding: 10px;
-                transform: translateY(50px);
-            }
-
-                .product-item .product-info .product-title a {
-                    color: rgb(0, 0, 0);
-                    text-decoration: none;
-                }
-
-                    .product-item .product-info .product-title a:hover {
-                        color: yellow;
-                    }
-
-                .product-item .product-info .product-price {
-                    margin: 5px 0px 10px;
-                }
-
-                    .product-item .product-info .product-price span.current-price {
-                        color: #094125;
-                    }
-
-                    .product-item .product-info .product-price span.original-price {
-                        color: #7f7171;
-                        margin-left: 10px;
-                    }
-
-                .product-item .product-info .product-actions button {
-                    display: inline-block;
-                    height: 35px;
-                    margin: 0px 5px;
-                    color: rgb(255 255 255 / 30%);
-                    background-color: #094125;
-                    border: 1px solid;
-                    line-height: 35px;
-                }
-
-                    .product-item .product-info .product-actions button.btn-quickview, .product-item .product-info .product-actions button.btn-addToCart {
-                        width: 35px;
-                        border-radius: 50%;
-                    }
-
-                    .product-item .product-info .product-actions button.btn-buyNow {
-                        border-radius: 20px;
-                        padding: 0px 10px;
-                    }
-
-                    .product-item .product-info .product-actions button:hover {
-                        color: rgb(255, 255, 255);
-                    }
-
-        .svg-inline--fa.fa-w-18 {
-            width: 1.125em;
-        }
-
-        .svg-inline--fa {
-            display: inline-block;
-            font-size: inherit;
-            height: 1em;
-            /* overflow: visible; */
-            vertical-align: -.125em;
-        }
-
-        .tab2 {
-            font-size: 16px;
-            font-family: Roboto;
-            font-weight: 300;
-            -webkit-font-smoothing: antialiased;
-            -webkit-text-size-adjust: 100%;
-            line-height: 24px;
-            box-sizing: border-box;
-            animation: fadeEffect 1s;
-            color: #131111;
-            display: none;
-        }
-    </style>
 </head>
 <body>
 
@@ -414,7 +75,7 @@
             <div class='main-menu' style="margin-left: 15%;">
                 <ul>
                     <li class="muc_lon"> <a href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
-                    <li class="muc_lon" >
+                    <li class="muc_lon">
                         <a href='#'><b>SẢN PHẨM</b> </a>
                         <!--sub menu-->
                         <ul class='sub-menu'>
@@ -444,9 +105,6 @@
         <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
     </div>
 
-
-
-    <!--THAN .......................-->
     <div class="than_trang_chu" style="margin-top: 550px;"></div>
     <section id="home-collections">
         <div class="wrapper">
@@ -1149,7 +807,363 @@
                                             -10%
                                         </span>
 
+                                    </div>
+                                </div>
 
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">BƠ ĐẬU PHỘNG DỪA</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">189,000₫</span>
+
+                                        <span class="original-price"><s>210,000₫</s></span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427184"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/combo-3-hu-bo-hat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427184"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                <!--TAB444444444444444444444444444444444444444444444TAB1 TAB1 TB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
+
+
+                <div id="tab4" class="tabcontent">
+                    <div class="grid-uniform md-mg-left-10">
+
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1031708627" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạnh Nhân Rang Mộc Mỹ 150g/hanh-nhan-tach-vo-rang-moc-150g-bazanland-600x600.jpg"
+                                             alt="Hạnh Nhân Rang Mộc Mỹ 150g">
+                                    </a>
+
+                                    <div class="product-tags">
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạnh Nhân Rang Mộc...</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">169,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069426983"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/nhan-ban-tu-bo-dau-phong-100-nguyen-chat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069426983"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1031701444" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạnh Nhân Rang Mộc Mỹ 300g/hanh-nhan-rang-moc-300g-600x600.jpg"
+                                             alt="Hạnh Nhân Rang Mộc Mỹ 300g">
+                                    </a>
+
+                                    <div class="product-tags">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạnh Nhân Rang...300g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">300,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069411375"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-dau-phong-100-nguyen-chat-230g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069411375"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1031708566" class="lazyload"
+                                             src="./SẢN PHẨM//HẠT/Hạt Chia 350g/hat-chia-200g-600x600.jpg"
+                                             alt="Hạt Chia 350g">
+                                    </a>
+
+                                    <div class="product-tags">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạt Chia 350g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">95,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069426817"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/nhan-ban-tu-bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069426817"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1030973490" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạt Dẻ Cười Mỹ 120g/hat-de-cuoi-120g-bazanland-600x600.jpg"
+                                             alt="Hạt Dẻ Cười Mỹ 120g">
+                                    </a>
+
+                                    <div class="product-tags">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạt Dẻ Cười Mỹ 120g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">95,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067929452"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067929452"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1031708657" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạt Macca Úc Nguyên Vỏ 120g/hat-macca-nguyen-vo-120g-bazanland-600x600.jpg"
+                                             alt="/Hạt Macca Úc Nguyên Vỏ 120g">
+                                    </a>
+
+                                    <div class="product-tags">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạt Macca Úc...120g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">99,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427038"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hat-dieu-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427038"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1030973570" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạt Óc Chó Mỹ Nguyên Vỏ 200g/nhan-hat-oc-cho-200g-600x600 (2).jpg"
+                                             alt="Hạt Óc Chó Mỹ Nguyên Vỏ 200g">
+                                    </a>
+                                    <div class="product-tags">
+
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="\">Hạt Óc Chó Mỹ...200g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">99,000₫</span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067929680"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hat-dieu-nguyen-chat-khong-duong-200g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067929680"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+
+
+
+                            <div class="product-item">
+
+                                <div class="product-img">
+                                    <a href="">
+                                        <img id="1031708704" class="lazyload"
+                                             src="./SẢN PHẨM/HẠT/Hạt Điều Vỏ Lụa 250g/hat-dieu-vo-lua-250g-600x600.jpg"
+                                             alt="Hạt Điều Vỏ Lụa 250g">
+                                    </a>
+
+                                    <div class="product-tags">
+
+
+                                        <span class="tag-saleoff text-center">
+                                            -10%
+                                        </span>
+
+                                    </div>
+                                </div>
+
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="">Hạt Điều Vỏ Lụa 250g</a>
+                                    </div>
+
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">89,000₫</span>
+
+                                        <span class="original-price"><s>110,000₫</s></span>
+
+                                    </div>
+
+                                    <div class="product-actions text-center clearfix">
+                                        <div>
+                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427184"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
+                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/combo-3-hu-bo-hat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
+                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427184"> Mua ngay</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+
+    </section>
+
+    <script>
+        function openTabs(event, id) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(id).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        openTabs(event, 'tab1')
+    </script>
 
     <!--Gửi mail cho chúng tôi-->
     <div style="margin-top: 800px">
