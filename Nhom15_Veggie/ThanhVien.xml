@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<company>
+	<member>
+		<name>Phan Hồng Ánh</name>
+		<position>Co-Founder - CEO</position>
+	</member>
+	<member>
+		<name>Nguyễn Thị Kim Liên</name>
+		<position>Co-Founder - Marketing Manager</position>
+	</member>
+	<member>
+		<name>Nguyễn Thị Hồng Thắm</name>
+		<position>Co-Founder - HR Manager</position>
+	</member>
+	<member>
+		<name>Võ Thu Thảo</name>
+		<position>Co-Founder - Sales Manager</position>
+	</member>
+	<member>
+		<name>Nguyễn Thị Hoàn Châu</name>
+		<position>Co-Founder - CRM Manger</position>
+	</member>
+</company>

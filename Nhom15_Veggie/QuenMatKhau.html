@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Đăng ký</title>
+    <title>Đăng nhập</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
@@ -30,7 +30,7 @@
         <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
         <div class='main-menu' style="margin-left: 30%;">
             <ul>
-                <li> <a href='TrangChu.html'><b>TRANG CHỦ</b></a> </li>
+                <li> <a href='TrangCHu.html'><b>TRANG CHỦ</b></a> </li>
                 <li>
                     <a href='#'><b>SẢN PHẨM</b> </a>
                     <!--sub menu-->
@@ -57,43 +57,34 @@
     </div>
 
     <!--Cái logo-->
-    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="Images/logo.png" width="120" height="120" alt="Veggie"></div>
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
 
-    <div style="background-image: url(./Images/banner5.jpg); width: 100%; background-size: cover; height: 300px; text-align: center; background-repeat: no-repeat; position: center; margin: 20px 0px 20px 0px">
+    <div style="background-image: url(./Images/banner3.jpg); width: 100%; background-size: cover; height: 300px; text-align: center; background-repeat: no-repeat; position: center; margin: 20px 0px 20px 0px">
         <br />
         <br />
         <br />
         <br />
         <br />
         <br />
-        <h2 style="text-align:center; color:white;font-size:20px;">ĐĂNG KÝ</h2>
-        <p class="duongdan"><a href="TrangChu.html">Trang chủ</a> / Đăng ký</p>
+        <h2 style="text-align:center; color:white;font-size:20px;">ĐĂNG NHẬP</h2>
+        <p class="duongdan"><a href="TrangChu.html">Trang chủ</a> / Quên mật khẩu</p>
     </div>
 
 
-    <div id="CustomerLoginForm" class="dk-form-vertical">
-        <h1 class="dk-h1">ĐĂNG KÝ</h1>
-        <span class="aabb"><img src="Images/register.png" width="90%" /></span>
-        <form style="margin-top: 40px">
-            <input type="text" name="customer[name]" id="CustomerName" class="dk-input" placeholder="Họ" />
-            <br />
-            <input type="text" name="customer[firstname]" id="CustomerFirstName" class="dk-input" placeholder="Tên" />
-            <br />
-            <input type="text" name="customer[email]" id="CustomerEmail" class="dk-input" placeholder="Email">
-            <br />
-            <input type="password" value="" name="customer[password]" id="CustomerPassword" class="dk-input" placeholder="Mật khẩu">
-            <br/>
-            <input type="password" value="" name="customer[repassword]" id="CustomerRePassword" class="dk-input" placeholder="Nhập lại mật khẩu">
+    <div id="CustomerLoginForm" class="dn-form-vertical">
+        <h1 class="dn-h1">QUÊN MẬT KHẨU</h1>
+        <form>
+            <input class="dn-input" type="email" name="customer[email]" id="CustomerEmail" placeholder="Email">
             <p>
-                <input type="submit" class="dk-btn" value="Đăng ký">
+                <input type="submit" class="dn-btn" value="Lấy mã OTP">
             </p>
             <p>
-                <a class="dk-back" href="/">Trở về</a>
+                <a class="dn-a" href="DangNhap.html" id="customer_register_link">Quay lại</a>
             </p>
         </form>
     </div>
 
-    <div style="margin-top: 400px">
+    <div style="margin-top: 100px">
         <div class="footer-subscribe">
             <div class="grid">
                 <div class="grid__item large--one-half medium--one-half small--one-whole">
@@ -189,5 +180,6 @@
             </div>
         </footer>
     </div>
+
 </body>
 </html>

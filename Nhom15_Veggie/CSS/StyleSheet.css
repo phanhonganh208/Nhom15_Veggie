@@ -938,6 +938,30 @@ a {
     margin-left:47%;
 }
 
+/*----TRANG GIỚI THIỆU----*/
+.hr {
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.eman {
+    margin-top: 10px;
+    font-family: Arial;
+    font-size: 16pt;
+    color: #417505;
+    text-align: center;
+}
+
+.regen {
+    color: #000000;
+    margin-top: 0px;
+    font-size: 13pt;
+    text-align: center;
+}
+
 
 
 
