@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            margin: 40px;
+        }
+        .tc-gt-title {
+            text-align: center;
+            font-size: 40px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 70px;
+        }
+        .gt_grid {
+            box-sizing:border-box;
+            display: grid;
+            grid-template-columns: 20% 50% 20%;
+            margin-left:5%;
+            margin-right:5%;
+            grid-gap: 10px;
+            text-align:center;
+        }
+        .box {
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        .b {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+        }
+        .about-title{
+            font-weight:bold;
+           font-size:20px;
+           font-family:Century
+        }
+        .about-desc{
+            font-family:'Times New Roman'
+        }
+
+        .section-title h2 {
+            text-align: center;
+            font-size: 60px;
+            text-transform: capitalize;
+            color: #000000;
+            margin-bottom: 70px;
+        }
+        .article-readmore {
+            display: block;
+            margin: 10px 0px;
+            color: #131111;
+        }
+        svg:not(:root).svg-inline--fa {
+            overflow: visible;
+        }
+        .svg-inline--fa.fa-w-14 {
+            width: 0.875em;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+
+
+        /*--------------------------------TIN TỨC------------------------------*/
+        
+
+        /*--------------SẢN PHẨM NỔI BẬT -----------------------*/
+        * {
+            box-sizing: border-box;
+        }
+        #home-featured-products {
+            padding-top: 100px;
+            background: #fbfbfb;
+        }
+        .wrapper {
+            padding: 0 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        .grid {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: -30px;
+            display: table;
+        }
+
+        .grid__item {
+            box-sizing: border-box;
+            float: left;
+            min-height: 27px;
+            padding-left: 37px;
+            vertical-align: top;
+            width: 100%;
+        }
+
+        .large--one-third {
+            width: 33.333%;
+        }
+
+        .large--two-thirds {
+            width: 66.666%;
+        }
+        #home-featured-products .product-info .product-title a {
+            font-size: 30px;
+            color: black;
+            margin-bottom: 15px;
+        }
+        #home-featured-products .product-img img {
+            width: 100%;
+            vertical-align: middle;
+        }
+        #home-featured-products .product-info .product-price-review > div.product-price .current-price {
+            color: #094125;
+            font-size: 24px;
+        }
+        #home-featured-products .product-info .product-action button {
+            margin: 20px 10px 0px 0px;
+        }
+
+        .btnHome {
+            display: inline-block;
+            border-radius: 20px;
+            outline: none;
+            width: 150px;
+            border: 1px solid #094125;
+            line-height: 35px;
+            color: #ffffff;
+            background: #094125;
+        }
+
+        #home-featured-products .product-info .product-action button:last-child {
+            margin-right: 0px;
+            background: #fff;
+            color: #094125;
+        }
+    </style>
+</head>
+<body>
+    <div class="tc-gioithieu">
+        <div class="tc-gt-title">
+            <h2>Giới thiệu</h2>
+        </div>
+        <div class="tc-gt-content">
+            <div class="gt_grid">
+                <div class="box a">
+                    <div class="about-item wow slideInLeft" data-delay="0.5s" style="visibility: visible; animation-name: slideInLeft;">
+                        <div class="about-icon">
+                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_1.png?v=270" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-title">
+                                100% Tự Nhiên
+                            </div>
+                            <div class="about-desc">
+                                VEGGIE chọn nguyên liệu đảm bảo nguồn gốc tự nhiên, không chất bảo quản, không hoá chất độc hại, không màu thực phẩm. Đảm bảo cho sức khoẻ người dùng.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box b">
+                    <img style="vertical-align:middle; width:100%" src="//theme.hstatic.net/200000274813/1000673375/14/hab_center_img.png?v=270" alt="">
+                </div>
+                <div class="box c">
+                    <div class="about-item wow slideInRight" data-delay="0.5s" style="visibility: visible; animation-name: slideInRight;">
+                        <div class="about-icon">
+                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_1.png?v=270" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-title">
+                                Không đường tinh luyện
+                            </div>
+                            <div class="about-desc">
+                                Chúng tôi đảm bảo tất cả sản phẩm đều không sử dụng đường tinh luyện. Vị ngọt đến từ hạt quả tự nhiên và mật ong sạch tự nhiên. Mang sự ngọt dịu của thiên nhiên vào trong sản phẩm.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box d">
+                    <div class="about-item wow slideInLeft" data-delay="0.9s" style="visibility: visible; animation-name: slideInLeft;">
+                        <div class="about-icon">
+                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_2.png?v=270" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-title">
+                                Luôn tươi mới
+                            </div>
+                            <div class="about-desc">
+                                Các sản phẩm luôn được làm mới mỗi ngày, để đảm bảo chất lượng cũng như hương vị. Với mong muốn gửi đến bạn những sản phẩm chất lượng nhất.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box f">
+                    <div class="about-item wow slideInRight" data-delay="0.9s" style="visibility: visible; animation-name: slideInRight;">
+                        <div class="about-icon">
+                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_2.png?v=270" alt="">
+                        </div>
+                        <div class="about-content">
+                            <div class="about-title">
+                                Chế biến thủ công
+                            </div>
+                            <div class="about-desc">
+                                Sản phẩm được sản xuất thủ công bằng tay tất cả các công đoạn. Đủ tiêu chuẩn vệ sinh an toàn thực phẩm. Đảm bảo trao đến tay người dùng những sản phẩm an toàn và hoàn thiện nhất.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------------------TIN TUC--------------------- -->
+
+
+
+
+
+
+
+
+    <!-- ----------------------------SAN PHAM NOI BAT--------------------- -->
+    <section id="home-featured-products">
+        <div class="wrapper">
+            <div class="inner">
+                <div class="section-title">
+
+                    <h2>
+                        Sản phẩm nổi bật
+                    </h2>
+                </div>
+                <div class="section-content">
+                    <div class="grid">
+                        <div class="product-deal">
+                            <div class="grid__item large--two-thirds medium--one-half small--one-whole">
+                                <div class="product-img">
+                                    <img src="//product.hstatic.net/200000274813/product/153811533_819902058939199_5702681727673053914_o_1bea07413c6a484e894c198232655b3f_master.jpg" alt="Bánh Biscotti Nguyên Cám Ăn Kiêng 250g">
+                                </div>
+                            </div>
+                            <div class="grid__item large--one-third medium--one-half small--one-whole">
+                                <div class="product-info">
+                                    <div class="product-title">
+                                        <a href="/products/banh-biscotti-nguyen-cam-an-kieng-250g">Bánh Biscotti Nguyên Cám Ăn Kiêng 250g </a>
+                                    </div>
+                                    <div class="product-price-review">
+                                        <div class="product-price">
+                                            <span class="current-price">135,000₫</span>
+
+                                        </div>
+
+                                    </div>
+                                    <div class="product-desc">
+                                        <p>🌿 Thành Phần: Bột nguyên cám ( không tẩy), mật ong nguyên chất, các loại hạt ( hạnh nhân, điều, bí xanh, nho)<br>🌿 Hướng dẫn sử dụng: Dùng trực tiếp 2-3 miếng trước các buổi tập, dùng cho bữa ăn phụ thay Snack thông thường, dùng ăn sáng ăn vặt, không nên dùng quá nhiều một lần để tránh khó tiêu.<br>🌿 Công dụng: tinh bột trong bột nguyên cám chuyển hoá chậm giúp nó lâu, ức chế cơn thèm ăn, giúp giảm cân nhưng không mất sức.<br>🌿Bánh làm từ bột nguyên cám, không bơ sữa, đường kính nên có thể cứng hơn so với bánh thông thường. đây là sản phẩm ăn kiêng nên khách đừng so sánh với bánh thường nha.<br>🌿Đây là món ăn vặt siêu tiện lợi, siêu ngon mà còn không lo béo. Với những bạn eatclean, giảm cân, hay những healthy lifestyle thì món bánh này chắc chắn không làm bạn thất vọng.<br>&nbsp;HSD: 2 tháng kể từ ngày sản xuất in trên bao bì.<br>Nutrition fact trong 100g&nbsp;<br>Calo 340 ~ 370 calo<br>Protein: 10g<br>Carb: 49g<br>Fat: 4,5g<br>SẢN PHẨM NHÀ TUNA CAM KẾT:<br>🌿 KHÔNG ĐƯỜNG TRẮNG<br>🌿 KHÔNG CHẤT BẢO QUẢN, PHẨM MÀU<br>🌿THÀNH PHẦN TỪ NHIÊN<br>🌿 XUẤT XỨ NGUYÊN LIỆU RÕ RÀNG<br>🌿 CÓ GIẤY CN ĐỦ ĐIỀU KIỆN VSATTP<br>⚠️ Khách lưu ý giúp shop: vì số lượng đơn hàng nhiều nên shop check bằng máy và đi theo bill chứ không đi theo note của khách được, mong khách thông cảm ạ. Nếu khách cần gấp có thể gọi cho shop nhé &nbsp;❤️<br>⚠️ Bánh có thể bị bể vỡ trong quá trình vận chuyển đi xa. Khách ở các tỉnh vui lòng cân nhắc trước khi đặt hàng ạ. Shop Cảm ơn❤️<br>⚠️ ĐƯỜNG TRONG NUTRITION LÀ TỪ MẬT ONG VÀ HẠT TRÁI. SẢN PHẨM HOÀN TOÀN NGỌT TỰ NHIÊN. KHÔNG ĐƯỜNG TRẮNG. PHÁT HIỆN ĐƯỜNG TRẮNG ĐỀN GẤP 100 .<br>&nbsp;</p>
+                                    </div>
+                                    <div class="product-action">
+                                        <button type="button" class="btnHome btn-addToCart add-to-cart   "> <span>Thêm vào giỏ</span></button>
+                                        <button type="button" class=" btnHome btn-buyNow buy-now "> Mua ngay</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
