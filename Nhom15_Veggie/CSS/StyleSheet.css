@@ -1354,14 +1354,15 @@ a {
     margin-top: 14px;
     margin-right:45px;
     padding: 16px;
-    color: darkorange;
+    color:darkgreen;
     background-color: #fafafa;
     font-size:14px;
+    height:430px;
 }
     .cartegory-right-content-item:hover {
         width: calc(40%-13px);
         padding: 10px;
-        background-color: forestgreen;
+        background-color: darkgreen;
         color: white;
         font-size: 16px;
     }
@@ -1371,6 +1372,24 @@ a {
     margin-top: 14px;
     
 }
+.cartegory-right-top-item-icon {
+    
+    border: 2px solid red;
+    border-radius: 150px;
+    width:100px;
+    height:100px;
+    padding:8px;
+    font-size:18px;
+    
+    margin-right:10px;
+}
+.cartegory-right-top-item-icon a{
+    color:cadetblue;
+   
+}
+    .cartegory-right-top-item-icon a:hover{
+        color:white;
+    }
 
 
     .cartegory-right-content-item img {
