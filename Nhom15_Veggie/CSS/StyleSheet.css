@@ -537,6 +537,298 @@ input, :before, :after {
     color: #131111;
     display: none;
 }
+
+
+
+/*-----------TRANG CHỦ-------------*/
+
+#home-aboutus .wrapper {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home-aboutus .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    display: table;
+    clear: both;
+}
+
+#home-aboutus .grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#home-aboutus .large--six-twelfths {
+    width: 50%;
+}
+
+#home-aboutus .large--three-twelfths {
+    width: 25%;
+}
+
+#home-aboutus .large--three-twelfths {
+    width: 25%;
+}
+
+#home-aboutus .about-center {
+    width: 100%;
+}
+
+#home-aboutus .section-title h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
+#home-aboutus .text-center {
+    text-align: center !important;
+}
+
+#home-aboutus img, iframe {
+    max-width: 100%;
+}
+
+
+#home-aboutus .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#home-aboutus .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+#home-aboutus .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    #home-aboutus .about-item .about-title {
+        color: black;
+        margin: 20px 0px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+/*--------------------------------TIN TỨC------------------------------*/
+#home-articles .wrapper {
+    padding: 0 30px;
+}
+
+#home-articles .tt_grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#home-articles .grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#home-articles .large--one-half {
+    width: 50%;
+}
+
+#home-articles .article-item {
+    background: #fbfbfb;
+    margin-bottom: 0px;
+}
+
+    #home-articles .article-item .article-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+        #home-articles .article-item .article-img a {
+            display: block;
+            overflow: hidden;
+        }
+
+#home-articles a, .text-link {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+#home-articles .article-item .article-img a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#home-articles .article-item .article-img a .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+
+#home-articles .article-item.article-featured .article-info {
+    padding: 20px 30px 20px;
+}
+
+#home-articles .article-item .article-info .article-title {
+    font-size: 20px;
+    color: #131111;
+    display: block;
+    font-weight: bold;
+}
+
+#home-articles .large--one-half {
+    width: 50%;
+}
+
+#home-articles .article-item {
+    background: #fbfbfb;
+    margin-bottom: 30px;
+}
+
+#home-articles .large--one-third {
+    width: 33.333%;
+}
+
+#home-articles .large--two-thirds {
+    width: 66.666%;
+}
+
+#home-articles .article-item .article-info {
+    padding: 15px 30px;
+}
+
+    #home-articles .article-item .article-info .article-author {
+        margin: 5px 0px;
+    }
+
+    #home-articles .article-item .article-info .article-readmore {
+        display: block;
+        margin: 10px 0px;
+        color: #131111;
+    }
+
+#home-articles svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+#home-articles .svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+
+#home-articles .article-viewmore {
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #7f7171;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    text-transform: uppercase !important;
+}
+
+#home-articles .text-center {
+    text-align: center !important;
+}
+
+/*--------------SẢN PHẨM NỔI BẬT -----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+#home-featured-products {
+    padding-top: 100px;
+    background: #fbfbfb;
+}
+
+    #home-featured-products .wrapper {
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    #home-featured-products .grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-left: -30px;
+        display: table;
+    }
+
+    #home-featured-products .grid__item {
+        box-sizing: border-box;
+        float: left;
+        min-height: 27px;
+        padding-left: 37px;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #home-featured-products .large--one-third {
+        width: 33.333%;
+    }
+
+    #home-featured-products .large--two-thirds {
+        width: 66.666%;
+    }
+
+#home-featured-products .product-info .product-title a {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#home-featured-products .product-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#home-featured-products .product-info .product-price-review > div.product-price .current-price {
+    color: #094125;
+    font-size: 24px;
+}
+
+#home-featured-products .product-info .product-action button {
+    margin: 20px 10px 0px 0px;
+}
+
+    #home-featured-products .btnHome {
+        display: inline-block;
+        border-radius: 20px;
+        outline: none;
+        width: 150px;
+        border: 1px solid #094125;
+        line-height: 35px;
+        color: #ffffff;
+        background: #094125;
+    }
+
+#home-featured-products .product-info .product-action button:last-child {
+    margin-right: 0px;
+    background: #fff;
+    color: #094125;
+}
 /*------CHÍNH SÁCH BẢO MẬT-------*/
 
     .duongdan {
