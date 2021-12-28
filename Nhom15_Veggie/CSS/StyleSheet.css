@@ -1,10 +1,28 @@
 ﻿
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root {
+    --header-height: 3rem;
+    --nav-width: 68px;
+    /*===== Colors =====*/
+    --first-color: #ffc764;
+    --first-color-light: #F7F6FB;
+    --white-color: #F7F6FB;
+    /*===== Font and typography =====*/
+    --body-font: 'Nunito', sans-serif;
+    --normal-font-size: 1rem;
+    /*===== z index =====*/
+    --z-fixed: 100;
+}
+
+
 
 /*--------HEADER-------------*/
 * {
     margin: 0;
     padding: 0;
-    font-family: Roboto;
 }
         .call-mail
         {
@@ -537,6 +555,298 @@ input, :before, :after {
     color: #131111;
     display: none;
 }
+
+
+
+/*-----------TRANG CHỦ-------------*/
+
+#home-aboutus .wrapper {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#home-aboutus .grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    display: table;
+    clear: both;
+}
+
+#home-aboutus .grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#home-aboutus .large--six-twelfths {
+    width: 50%;
+}
+
+#home-aboutus .large--three-twelfths {
+    width: 25%;
+}
+
+#home-aboutus .large--three-twelfths {
+    width: 25%;
+}
+
+#home-aboutus .about-center {
+    width: 100%;
+}
+
+#home-aboutus .section-title h2 {
+    text-align: center;
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
+#home-aboutus .text-center {
+    text-align: center !important;
+}
+
+#home-aboutus img, iframe {
+    max-width: 100%;
+}
+
+
+#home-aboutus .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#home-aboutus .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+#home-aboutus .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    #home-aboutus .about-item .about-title {
+        color: black;
+        margin: 20px 0px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+/*--------------------------------TIN TỨC------------------------------*/
+#home-articles .wrapper {
+    padding: 0 30px;
+}
+
+#home-articles .tt_grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#home-articles .grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+
+#home-articles .large--one-half {
+    width: 50%;
+}
+
+#home-articles .article-item {
+    background: #fbfbfb;
+    margin-bottom: 0px;
+}
+
+    #home-articles .article-item .article-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+        #home-articles .article-item .article-img a {
+            display: block;
+            overflow: hidden;
+        }
+
+#home-articles a, .text-link {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+#home-articles .article-item .article-img a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#home-articles .article-item .article-img a .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+
+#home-articles .article-item.article-featured .article-info {
+    padding: 20px 30px 20px;
+}
+
+#home-articles .article-item .article-info .article-title {
+    font-size: 20px;
+    color: #131111;
+    display: block;
+    font-weight: bold;
+}
+
+#home-articles .large--one-half {
+    width: 50%;
+}
+
+#home-articles .article-item {
+    background: #fbfbfb;
+    margin-bottom: 30px;
+}
+
+#home-articles .large--one-third {
+    width: 33.333%;
+}
+
+#home-articles .large--two-thirds {
+    width: 66.666%;
+}
+
+#home-articles .article-item .article-info {
+    padding: 15px 30px;
+}
+
+    #home-articles .article-item .article-info .article-author {
+        margin: 5px 0px;
+    }
+
+    #home-articles .article-item .article-info .article-readmore {
+        display: block;
+        margin: 10px 0px;
+        color: #131111;
+    }
+
+#home-articles svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+#home-articles .svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+
+#home-articles .article-viewmore {
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid;
+    color: #7f7171;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    text-transform: uppercase !important;
+}
+
+#home-articles .text-center {
+    text-align: center !important;
+}
+
+/*--------------SẢN PHẨM NỔI BẬT -----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+#home-featured-products {
+    padding-top: 100px;
+    background: #fbfbfb;
+}
+
+    #home-featured-products .wrapper {
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+
+    #home-featured-products .grid {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-left: -30px;
+        display: table;
+    }
+
+    #home-featured-products .grid__item {
+        box-sizing: border-box;
+        float: left;
+        min-height: 27px;
+        padding-left: 37px;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    #home-featured-products .large--one-third {
+        width: 33.333%;
+    }
+
+    #home-featured-products .large--two-thirds {
+        width: 66.666%;
+    }
+
+#home-featured-products .product-info .product-title a {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+#home-featured-products .product-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+#home-featured-products .product-info .product-price-review > div.product-price .current-price {
+    color: #094125;
+    font-size: 24px;
+}
+
+#home-featured-products .product-info .product-action button {
+    margin: 20px 10px 0px 0px;
+}
+
+    #home-featured-products .btnHome {
+        display: inline-block;
+        border-radius: 20px;
+        outline: none;
+        width: 150px;
+        border: 1px solid #094125;
+        line-height: 35px;
+        color: #ffffff;
+        background: #094125;
+    }
+
+#home-featured-products .product-info .product-action button:last-child {
+    margin-right: 0px;
+    background: #fff;
+    color: #094125;
+}
 /*------CHÍNH SÁCH BẢO MẬT-------*/
 
     .duongdan {
@@ -596,8 +906,8 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right:50px;
-    margin-left:30px;
+    margin-right: 50px;
+    margin-left: 30px;
 }
 
     footer .container {
@@ -1354,14 +1664,15 @@ a {
     margin-top: 14px;
     margin-right:45px;
     padding: 16px;
-    color: darkorange;
+    color:darkgreen;
     background-color: #fafafa;
     font-size:14px;
+    height:430px;
 }
     .cartegory-right-content-item:hover {
         width: calc(40%-13px);
         padding: 10px;
-        background-color: forestgreen;
+        background-color: darkgreen;
         color: white;
         font-size: 16px;
     }
@@ -1371,6 +1682,24 @@ a {
     margin-top: 14px;
     
 }
+.cartegory-right-top-item-icon {
+    border: 2px solid indianred;
+    border-radius: 200px;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.cartegory-right-top-item-icon a{
+    color:cadetblue;
+   
+}
+    .cartegory-right-top-item-icon a:hover{
+        color:white;
+    }
 
 
     .cartegory-right-content-item img {
@@ -1411,8 +1740,72 @@ a {
 .cartegory-left-li.block ul {
     display: block;
 }
-
-
+/*----TIN TỨC----*/
+.tintuc{
+    width:100%;
+    padding:120px;
+    margin-top:-100px;
+}
+.tintuc-content {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.tintuc-content-item {
+    width: calc(33%-15px);
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 15px;
+    padding: 14px;
+    color: black;
+    margin-bottom:20px;
+    background-color: #fafafa;
+    font-size: 14px;
+    height: 490px;
+   
+}
+    .tintuc-content-item:hover {
+        padding: 10px;
+        background-color:gainsboro;
+        color: darkgreen;
+        font-size: 16px;
+    }
+    .tintuc-content-item img {
+        width: 300px;
+        height: 200px;
+        margin-top:8px;
+    }
+.tintuc-content-item-date {
+    font-size: 13px;
+    color: gray;
+    margin: 5px 20px 5px 20px;
+    text-align: left;
+}
+.tintuc-content-item-content {
+    font-size: 16px;
+    color: gray;
+    width: 280px;
+    margin: 10px 20px 10px 20px;
+    text-align: left;
+}
+.tintuc-content-item h3 {
+    width: 280px;
+    margin: 10px 20px 10px 20px;
+    text-align:left;
+    color:darkgreen;
+}
+    .tintuc-content-item h3 a {
+        color: darkgreen;
+       
+    }
+    .tintuc-content-item h4 a {
+        width: 280px;
+        margin: 10px 20px 10px 1px;
+        text-align: left;
+        color: darkgreen;
+    }
+.tintuc-content-ite-hr{
+    margin:10px;
+}
 /*----TRANG GIỚI THIỆU----*/
 .hr {
     margin-left: 30px;
@@ -1433,10 +1826,170 @@ a {
 .regen {
     color: #000000;
     margin-top: 0px;
-    font-size: 13pt;
+    font-size: 13px;
     text-align: center;
+}
+
+/*----TRANG CÔNG THỨC NẤU ĂN----*/
+.cook {
+    padding: 100px 0 0 ;
+}
+
+.recipe {
+    margin-top: 20px;
+    justify-content: space-between; 
+
+}
+.recipe-item{
+    width:100%;
+    text-align:left;
+    margin-top:50px;
+    font-size:13px;
+    height:350px;
+    background-color:khaki;
+    color:black;
+    padding: 100px 0 0;
+}
+.recipe-item h1{
+    font-size:55px;
+    margin-left:65px;
+}
+    .recipe-item span img{
+    width:250px;
+    height:250px;
+    margin:-50px 150px 150px 150px;
+    text-align:center;
 }
 
 
 
+
+    /*------TRANG TIN TỨC CHI TIẾT---------*/
+.blog {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+.blog-content {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.aside-item {
+    border: 1px #ebebeb solid;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+    .aside-item .aside-title {
+        border-radius: 15px;
+        background: #417505;
+        padding: 6px 20px;
+        position: relative;
+        margin-bottom: 1.5rem !important;
+    }
+
+        .aside-item .aside-title h2 {
+            font-size: 17px;
+            color: #FFF;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 24px;
+            margin: 0;
+            display: inline-block;
+            padding-right: 10px;
+            background: none;
+            font-family: 'Quicksand', sans-serif;
+        }
+
+.title-head {
+    font-size: 1.875em;
+    color: #333;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+}
+
+.blog-link {
+    color: #363636;
+    text-decoration: none;
+    background: transparent;
+}
+
+.blog-list .blog-bar {
+    min-height: 80px;
+    overflow: hidden;
+    padding: 20px 0px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+    .blog-list .blog-bar .thumb-left {
+        width: 80px;
+        max-width: 80px;
+        height: auto;
+        display: block;
+        float: left;
+    }
+
+        .blog-list .blog-bar .thumb-left a {
+            background: #ebebeb;
+            overflow: hidden;
+        }
+
+
+    .blog-list .blog-bar .name-right {
+        display: block;
+        float: left;
+        width: calc(100% - 100px);
+        margin-left: 10px;
+        text-align: left;
+    }
+
+        .blog-list .blog-bar .name-right h3 {
+            line-height: 18px;
+            margin-bottom: 7px;
+        }
+
+        .blog-list .blog-bar .name-right h3 {
+            font-weight: 700;
+            position: relative;
+            line-height: 24px;
+            margin-top: -7px;
+            margin-bottom: 3px;
+        }
+
+        .blog-list .blog-bar .name-right .post-time {
+            margin-bottom: 3px;
+        }
+
+.article-title {
+    font-size: 30px;
+}
+
+
+.post-time {
+    color: #898989;
+    font-size: 1em;
+    text-align: left;
+}
+
+
+.rte {
+    color: #363636;
+    font-weight: 100;
+}
+
+.content-details {
+    font-weight: 100;
+    line-height: 2;
+    font-size: 18px;
+}
+
+
+.article-content {
+    font-size: 1em;
+}
 
