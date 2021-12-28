@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="CSS/GioHang.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="phan_dau_trangchu">
+        <div class="call-mail">
+            <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
+            <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
+            <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+            Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
+        </div>
+        <div class="log-sign">
+            <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;
+            <a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+            <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
+        </div>
+        <br><br>
+        <br><br>
+      
+        <!-- phần menu #####     MENU    MENU     MENU ###########-->
+        <div style="margin-top: 0px">
+            <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+            <div class='main-menu' style="margin-left: 15%;">
+                <ul>
+                    <li class="muc_lon"> <a href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
+                    <li class="muc_lon">
+                        <a href='#'><b>SẢN PHẨM</b> </a>
+                        <!--sub menu-->
+                        <ul class='sub-menu'>
+                            <li><a href='#'>Gananola</a></li>
+                            <li><a href='#'>Trái cây</a></li>
+                            <li><a href='#'>Bơ hạt</a></li>
+                            <li><a href='#'>Hạt khô</a></li>
+                        </ul>
+                    </li>
+                    <li class="muc_lon"> <a href='#'><b>BLOG</b></a> </li>
+                    <li class="muc_lon"> <a href='#'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
+                    <li class="muc_lon"> <a href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
+                    <li class="muc_lon"> <a href=''><b>GIỚI THIỆU</b></a> </li>
+                    <li>
+                        <!--Thanh SEARCH-->
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                                <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </form>
+                        </div>
+                </ul>
+            </div>
+        </div>
+
+        <!--Cái logo-->
+        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img style="margin-top:30" src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+    </div>
+    <div class="giohang">
+        <h1>Giỏ hàng</h1>
+        <form action="/cart" method="post" novalidate="" class="cart-table">
+            <table class="cart-table full table--responsive">
+                <thead class="hang">
+                    <tr>
+                        <th colspan="3" class="text-form">Thông tin chi tiết sản phẩm</th>
+                        <th class="text-form">Đơn giá</th>
+                        <th class="text-form">Số lượng</th>
+                        <th class="text-form">Tổng giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr class="cart__row table__section">
+                        <td data-label="Sản phẩm" class="ha">
+                            <a href="/products/banh-mi-den-nguyen-cam-500g-bao-quan-lanh-ship-hcm" class="cart__image">
+
+
+                                <img src="./SẢN PHẨM/TRÁI CÂY/CHUỐI/chuoi2.png" alt="Bánh mì đen nguyên cám 500g  - Bảo quản lạnh- Ship HCM">
+
+                            </a>
+                        </td>
+                        <td colspan="2">
+                            <a href="" class="nd">
+                                Chuối sấy 200g không đường
+                            </a>
+                            <a href="" class="form a"><i class="fa fa-trash-o" style="font-size:24px;color: #094125"></i></a>
+
+
+                        </td>
+                        <td data-label="Đơn giá">
+                            <span class="h3">
+                                90,000₫
+                            </span>
+                        </td>
+                        <td data-label="Số lượng">
+
+
+                            <div class="js-qty">
+                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                                </button>
+                                <input type="number" class="js-qty__num" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_">
+                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                                </button>
+                            </div>
+
+
+                        </td>
+                        <td data-label="Tổng giá" class="giohang_text-right">
+
+                            <span class="h3">
+                                99,000₫
+                            </span>
+
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td data-label="Sản phẩm" class="ha">
+                            <a href="/products/banh-mi-den-nguyen-cam-500g-bao-quan-lanh-ship-hcm" class="cart__image">
+
+
+                                <img src="./SẢN PHẨM/HẠT/Hạt Óc Chó Mỹ Nguyên Vỏ 200g/nhan-hat-oc-cho-200g-600x600 (2).jpg" alt="Hạt Óc Chó Mỹ Nguyên Vỏ 200g">
+
+                            </a>
+                        </td>
+                        <td colspan="2">
+                            <a href="" class="nd">
+                                Hạt Óc Chó Mỹ Nguyên Vỏ 200g
+                            </a>
+
+
+
+
+
+
+
+
+                            <a href="" class="form_a"><i class="fa fa-trash-o" style="font-size:24px;color: #094125"></i></a>
+
+                        </td>
+                        <td data-label="Đơn giá">
+                            <span class="h3">
+                             99,000đ
+                            </span>
+                        </td>
+                        <td data-label="Số lượng">
+
+
+                            <div class="js-qty">
+                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                                </button>
+                                <input type="number" class="js-qty__num" value="1" min="1" data-id="" aria-label="quantity" pattern="[0-9]*" name="updates[]" id="updates_">
+                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                <span class="visually-hidden"></span>
+                                </button>
+                            </div>
+
+                        </td>
+                        <td data-label="Tổng giá" class="giohang_text-right">
+
+                            <span class="h3">
+                                85,000₫
+                            </span>
+
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+            <div class="tongtien">
+                <div class="tongtien_thanhtoan">
+                    <p>
+                        <span class="">Tổng tiền</span>
+                        <span class="">295,000₫</span>
+                    </p>
+                    <button type="submit" name="update" class="btn">Cập nhật</button>
+                    <button type="submit" name="checkout" class="btn">Thanh toán</button>
+                </div>
+                <div class="chuthich">
+                    <label><h2>Chú thích cho chủ cửa hàng</h2></label>
+                    <textarea name="note" class="input-full"></textarea>
+                </div>
+
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
