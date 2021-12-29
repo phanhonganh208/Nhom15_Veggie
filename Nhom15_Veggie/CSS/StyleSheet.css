@@ -55,6 +55,7 @@
         background: rgb(255, 255, 255);
         height: 50px;
         padding: 20px;
+        margin-left: 5%;
         }
         .main-menu muc_lon
         {
@@ -63,7 +64,7 @@
         .main-menu li {
             position: relative;
             color: #417505;
-            font-size: 20px;
+            font-size: 18px;
         }
         .main-menu ul li {
             display: inline-block;
@@ -88,7 +89,7 @@
                 }
                     .main-menu ul li .sub-menu li a:hover {
                         color: #F7C551;
-                        font-size: 18px;
+                        font-size: 21px;
                     }
 
     .main-menu li:hover .sub-menu{
@@ -402,84 +403,7 @@ input, :before, :after {
 
 
 /*-----------------TRANG SAN PHAM CHI TIET*/
-* {
-    box-sizing: border-box;
-}
 
-
-
-#products-detail .wrapper {
-    padding: 0 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-#products-detail {
-    padding-top: 100px;
-}
-
-    #products-detail .grid {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        margin-left: -30px;
-        display: table;
-    }
-
-    #products-detail .grid__item {
-        box-sizing: border-box;
-        float: left;
-        min-height: 27px;
-        padding-left: 37px;
-        vertical-align: top;
-        width: 100%;
-    }
-
-    #products-detail .large--one-third {
-        width: 65%;
-    }
-
-    #products-detail .large--two-thirds {
-        width: 35%;
-    }
-
-    #products-detail .product-info .product-title a {
-        font-size: 30px;
-        color: black;
-        margin-bottom: 15px;
-    }
-
-    #products-detail .product-img img {
-        width: 100%;
-        vertical-align: middle;
-    }
-
-    #products-detail .product-info .product-price-review > div.product-price .current-price {
-        color: #094125;
-        font-size: 24px;
-    }
-
-    #products-detail .product-info .product-action button {
-        margin: 20px 10px 0px 0px;
-    }
-
-    #products-detail .btnHome {
-        display: inline-block;
-        border-radius: 20px;
-        outline: none;
-        width: 150px;
-        border: 1px solid #094125;
-        line-height: 35px;
-        color: #ffffff;
-        background: #094125;
-    }
-
-    #products-detail .product-info .product-action button:last-child {
-        margin-right: 0px;
-        background: #fff;
-        color: #094125;
-    }
 
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
@@ -1245,7 +1169,7 @@ a {
 
 /*----Trái cây sấy-----*/
 .cartegory{
-    padding:100px 0 0;
+    padding:100px 50px 50px;
 }
 .cartegory-top{
     margin-bottom:50px;
@@ -1263,23 +1187,27 @@ a {
     border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
     border-image-slice: 1;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 18px;
     font-stretch: inherit;
     font-style: inherit;
     font-variant: inherit;
     font-weight: inherit;
     line-height: inherit;
-    margin-left: 20px;
-    padding: 0px;
+    margin-left: 15px;
+    padding: 10px;
     vertical-align: baseline;
-
+    text-align: left;
+ 
 }
-    .cartegory-left li {
-        list-style-type: none;
-    }
-    .cartegory-right{
-    width:80%;
+.cartegory-left ul li ul li{
+    margin-left:-30px;
+}
+.cartegory-left li {
+    list-style-type: none;
+}
 
+.cartegory-right {
+    width: 80%;
 }
 .cartegory-right-top-item:first-child{
     flex:2;
@@ -1317,7 +1245,7 @@ a {
     width: calc(33%-13px);
     text-align: center;
     margin-top: 14px;
-    margin-right:45px;
+    margin-right:10px;
     padding: 16px;
     color:darkgreen;
     background-color: #fafafa;
