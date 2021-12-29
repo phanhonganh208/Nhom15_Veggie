@@ -1245,7 +1245,7 @@ a {
 
 /*----Trái cây sấy-----*/
 .cartegory{
-    padding:100px 0 0;
+    padding:100px 50px 50px;
 }
 .cartegory-top{
     margin-bottom:50px;
@@ -1263,23 +1263,27 @@ a {
     border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
     border-image-slice: 1;
     font-family: inherit;
-    font-size: 14px;
+    font-size: 18px;
     font-stretch: inherit;
     font-style: inherit;
     font-variant: inherit;
     font-weight: inherit;
     line-height: inherit;
-    margin-left: 20px;
-    padding: 0px;
+    margin-left: 15px;
+    padding: 10px;
     vertical-align: baseline;
-
+    text-align: left;
+ 
 }
-    .cartegory-left li {
-        list-style-type: none;
-    }
-    .cartegory-right{
-    width:80%;
+.cartegory-left ul li ul li{
+    margin-left:-30px;
+}
+.cartegory-left li {
+    list-style-type: none;
+}
 
+.cartegory-right {
+    width: 80%;
 }
 .cartegory-right-top-item:first-child{
     flex:2;
@@ -1317,7 +1321,7 @@ a {
     width: calc(33%-13px);
     text-align: center;
     margin-top: 14px;
-    margin-right:45px;
+    margin-right:10px;
     padding: 16px;
     color:darkgreen;
     background-color: #fafafa;
