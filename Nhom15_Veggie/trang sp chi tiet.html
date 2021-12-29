@@ -6,6 +6,8 @@
     <title>TRANG CHI TIẾT SẢN PHẨM</title>
     <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/3b47ca6d18.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="Images/logo.png" />
@@ -13,259 +15,260 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <style>
-        * {
-            box-sizing: border-box;
-        }
+                * {
+                    box-sizing: border-box;
+                }
 
 
 
-        #products-detail .wrapper {
-            padding: 0 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
+                #products-detail .wrapper {
+                    padding: 0 30px;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    padding: 0 15px;
+                }
 
-        #products-detail {
-            padding-top: 100px;
-        }
+                #products-detail {
+                    padding-top: 100px;
+                }
 
-            #products-detail .grid {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                margin-left: -30px;
-                display: table;
-            }
+                    #products-detail .grid {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        margin-left: -30px;
+                        display: table;
+                    }
 
-            #products-detail .grid__item {
-                box-sizing: border-box;
-                float: left;
-                min-height: 27px;
-                padding-left: 37px;
-                vertical-align: top;
-                width: 100%;
-            }
+                    #products-detail .grid__item {
+                        box-sizing: border-box;
+                        float: left;
+                        min-height: 27px;
+                        padding-left: 37px;
+                        vertical-align: top;
+                        width: 100%;
+                    }
 
-            #products-detail .large--one-third {
-                width: 65%;
-            }
+                    #products-detail .large--one-third {
+                        width: 65%;
+                    }
 
-            #products-detail .large--two-thirds {
-                width: 35%;
-            }
+                    #products-detail .large--two-thirds {
+                        width: 35%;
+                    }
 
-            #products-detail .product-info .product-title a {
-                font-size: 30px;
-                color: black;
-                margin-bottom: 15px;
-            }
+                    #products-detail .product-info .product-title a {
+                        font-size: 30px;
+                        color: black;
+                        margin-bottom: 15px;
+                    }
 
-            #products-detail .product-img img {
-                width: 100%;
-                vertical-align: middle;
-            }
+                    #products-detail .product-img img {
+                        width: 100%;
+                        vertical-align: middle;
+                    }
 
-            #products-detail .product-info .product-price-review > div.product-price .current-price {
-                color: #094125;
-                font-size: 24px;
-            }
+                    #products-detail .product-info .product-price-review > div.product-price .current-price {
+                        color: #094125;
+                        font-size: 24px;
+                    }
 
-            #products-detail .product-info .product-action button {
-                margin: 20px 10px 0px 0px;
-            }
+                    #products-detail .product-info .product-action button {
+                        margin: 20px 10px 0px 0px;
+                    }
 
-            #products-detail .btnHome {
-                display: inline-block;
-                border-radius: 20px;
-                outline: none;
-                width: 150px;
-                border: 1px solid #094125;
-                line-height: 35px;
-                color: #ffffff;
-                background: #094125;
-            }
+                    #products-detail .btnHome {
+                        display: inline-block;
+                        border-radius: 20px;
+                        outline: none;
+                        width: 150px;
+                        border: 1px solid #094125;
+                        line-height: 35px;
+                        color: #ffffff;
+                        background: #094125;
+                    }
 
-            #products-detail .product-info .product-action button:last-child {
-                margin-right: 0px;
-                background: #fff;
-                color: #094125;
-            }
-        #breadcrumb-wrapper.breadcrumb-w-img {
-            height: 300px;
-            padding: 30px 0;
-            background:url(Images/breadcrumb_bg5.png);
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-        }
+                    #products-detail .product-info .product-action button:last-child {
+                        margin-right: 0px;
+                        background: #fff;
+                        color: #094125;
+                    }
 
-            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 1;
-            }
+                #breadcrumb-wrapper.breadcrumb-w-img {
+                    height: 300px;
+                    padding: 30px 0;
+                    background: url(Images/breadcrumb_bg5.png);
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    position: relative;
+                }
 
-            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                z-index: 1;
-                width: 100%;
-            }
+                    #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: rgba(0, 0, 0, 0.5);
+                        z-index: 1;
+                    }
 
-        /*#products-detail .wrapper {
-            padding: 0 30px;
-            *zoom: 1;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+                    #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        z-index: 1;
+                        width: 100%;
+                    }
+
+                        /*#products-detail .wrapper {
+                    padding: 0 30px;
+                    *zoom: 1;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
 
 
-        #products-detail .text-center {
-            text-align: center !important;
-        }
-*/
-        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
-            font-size: 24px;
-            color: #fff;
-            padding: 0px;
-            margin: 0px 0px 5px 0px;
-        }
+                #products-detail .text-center {
+                    text-align: center !important;
+                }
+        */
+                        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
+                            font-size: 24px;
+                            color: #fff;
+                            padding: 0px;
+                            margin: 0px 0px 5px 0px;
+                        }
 
-        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a {
-            display: inline-block;
-            position: relative;
-        }
+                        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a {
+                            display: inline-block;
+                            position: relative;
+                        }
 
-        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
-            color: #fff;
-        }
+                        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
+                            color: #fff;
+                        }
 
-        a, .text-link {
-            color: #094125;
-            text-decoration: none;
-            background: transparent;
-        }
+                a, .text-link {
+                    color: #094125;
+                    text-decoration: none;
+                    background: transparent;
+                }
 
-        #products-detail .product-content .pro-content-head .pro-brand, .product-content .pro-content-head .pro-type {
-            display: inline-block;
-        }
-
-            #products-detail .product-content .pro-content-head .pro-brand a, .product-content .pro-content-head .pro-type a {
-                display: inline-block;
-                color: #094125;
-            }
-
-        #products-detail .product-content .pro-price .current-price {
-            display: inline-block;
-            margin-right: 15px;
-            color: #094125;
-            font-size: 24px;
-            font-weight: bold;
-        }
-
-        #products-detail .button {
-            display: inline-block;
-            border-radius: 20px;
-            outline: none;
-            width: 170px;
-            border: 1px solid #094125;
-            line-height: 35px;
-            color: #ffffff;
-            background: #094125;
-            cursor: pointer;
-            overflow: visible;
-        }
-
-        #products-detail .button1 {
-            color: #ffffff;
-            background: #094125;
-        }
-
-            #products-detail .button1:hover {
-                background-color: #FFFFFF;
-                color: #094125;
-            }
-
-        #products-detail .button2 {
-            color: #ffffff;
-            background: #094125;
-        }
-
-            #products-detail .button2:hover {
-                background-color: #FFFFFF;
-                color: #094125;
-            }
-
-        #products-detail .quantity {
-            display: inline-block;
-        }
-
-            #products-detail .quantity .input-text.qty {
-                width: 35px;
-                height: 39px;
-                padding: 0 5px;
-                text-align: center;
-                background-color: transparent;
-                border: 1px solid #efefef;
-            }
-
-            #products-detail .quantity.buttons_added {
-                text-align: left;
-                position: relative;
-                white-space: nowrap;
-                vertical-align: top;
-            }
-
-                #products-detail .quantity.buttons_added input {
+                #products-detail .product-content .pro-content-head .pro-brand, .product-content .pro-content-head .pro-type {
                     display: inline-block;
-                    margin: 0;
-                    vertical-align: top;
-                    box-shadow: none;
                 }
 
-                #products-detail .quantity.buttons_added .minus,
-                .quantity.buttons_added .plus {
-                    padding: 7px 10px 8px;
-                    height: 41px;
-                    background-color: #ffffff;
-                    border: 1px solid #efefef;
+                    #products-detail .product-content .pro-content-head .pro-brand a, .product-content .pro-content-head .pro-type a {
+                        display: inline-block;
+                        color: #094125;
+                    }
+
+                #products-detail .product-content .pro-price .current-price {
+                    display: inline-block;
+                    margin-right: 15px;
+                    color: #094125;
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+
+                #products-detail .button {
+                    display: inline-block;
+                    border-radius: 20px;
+                    outline: none;
+                    width: 170px;
+                    border: 1px solid #094125;
+                    line-height: 35px;
+                    color: #ffffff;
+                    background: #094125;
                     cursor: pointer;
+                    overflow: visible;
                 }
 
-                #products-detail .quantity.buttons_added .minus {
-                    border-right: 0;
+                #products-detail .button1 {
+                    color: #ffffff;
+                    background: #094125;
                 }
 
-                #products-detail .quantity.buttons_added .plus {
-                    border-left: 0;
+                    #products-detail .button1:hover {
+                        background-color: #FFFFFF;
+                        color: #094125;
+                    }
+
+                #products-detail .button2 {
+                    color: #ffffff;
+                    background: #094125;
                 }
 
-                #products-detail .quantity.buttons_added .minus:hover,
-                .quantity.buttons_added .plus:hover {
-                    background: #eeeeee;
+                    #products-detail .button2:hover {
+                        background-color: #FFFFFF;
+                        color: #094125;
+                    }
+
+                #products-detail .quantity {
+                    display: inline-block;
                 }
 
-        .quantity input::-webkit-outer-spin-button,
-        .quantity input::-webkit-inner-spin-button {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            margin: 0;
-        }
+                    #products-detail .quantity .input-text.qty {
+                        width: 35px;
+                        height: 39px;
+                        padding: 0 5px;
+                        text-align: center;
+                        background-color: transparent;
+                        border: 1px solid #efefef;
+                    }
 
-        .quantity.buttons_added .minus:focus,
-        .quantity.buttons_added .plus:focus {
-            outline: none;
-        }
+                    #products-detail .quantity.buttons_added {
+                        text-align: left;
+                        position: relative;
+                        white-space: nowrap;
+                        vertical-align: top;
+                    }
+
+                        #products-detail .quantity.buttons_added input {
+                            display: inline-block;
+                            margin: 0;
+                            vertical-align: top;
+                            box-shadow: none;
+                        }
+
+                        #products-detail .quantity.buttons_added .minus,
+                        .quantity.buttons_added .plus {
+                            padding: 7px 10px 8px;
+                            height: 41px;
+                            background-color: #ffffff;
+                            border: 1px solid #efefef;
+                            cursor: pointer;
+                        }
+
+                        #products-detail .quantity.buttons_added .minus {
+                            border-right: 0;
+                        }
+
+                        #products-detail .quantity.buttons_added .plus {
+                            border-left: 0;
+                        }
+
+                        #products-detail .quantity.buttons_added .minus:hover,
+                        .quantity.buttons_added .plus:hover {
+                            background: #eeeeee;
+                        }
+
+                .quantity input::-webkit-outer-spin-button,
+                .quantity input::-webkit-inner-spin-button {
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    margin: 0;
+                }
+
+                .quantity.buttons_added .minus:focus,
+                .quantity.buttons_added .plus:focus {
+                    outline: none;
+                }
     </style>
     <script>
         function wcqib_refresh_quantity_increments() {
@@ -294,53 +297,56 @@
 </head>
 <body>
 
-    <div class="call-mail">
-        <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
-        <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
-        <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
-        Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
-    </div>
-
-    <div class="log-sign">
-        <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
-        <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
-    </div>
-    <br><br>
-    <br><br>
-
-    <!-- phần menu #####     MENU    MENU     MENU ###########-->
-    <div style="margin-top: 20px">
-        <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
-        <div class='main-menu' style="margin-left: 30%;">
-            <ul>
-                <li> <a href='TrangChu.html'><b>TRANG CHỦ</b></a> </li>
-                <li>
-                    <a href='#'><b>SẢN PHẨM</b> </a>
-                    <!--sub menu-->
-                    <ul class='sub-menu'>
-                        <li><a href='#'>Gananola</a></li>
-                        <li><a href='#'>Bánh ăn kiêng</a></li>
-                        <li><a href='#'>Hạt dinh dưỡng</a></li>
-                        <li><a href='#'>Sản phẩm khác</a></li>
-                    </ul>
-                </li>
-                <li> <a href='#'><b>BLOG</b></a> </li>
-                <li> <a href='LienHe.html'><b>LIÊN HỆ</b></a> </li>
-                <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
-                <li>
-                    <!--Thanh SEARCH-->
-                    <div class="search-container">
-                        <form action="/action_page.php">
-                            <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
-                            <button type="submit"><i class="fa fa-search"></i></button>
-                        </form>
-                    </div>
-            </ul>
+    <div class="phan_dau_trangchu">
+        <div class="call-mail">
+            <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
+            <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
+            <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+            Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
         </div>
-    </div>
+        <div class="log-sign">
+            <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;
+            <a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+            <a href="GioHang.html"><i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i></a>
+        </div>
+        <br><br>
+        <br><br>
+       
+        <!-- phần menu #####     MENU    MENU     MENU ###########-->
+        <div>
+            <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+            <div class='main-menu' style="margin-left: 20%;">
+                <ul>
+                    <li class="muc_lon"> <a href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
+                    <li class="muc_lon">
+                        <a href='#'><b>SẢN PHẨM</b> </a>
+                        <!--sub menu-->
+                        <ul class='sub-menu'>
+                            <li><a href='Granola.html'>Granola</a></li>
+                            <li><a href='TraiCaySay.html'>Trái cây</a></li>
+                            <li><a href='Bo.html'>Bơ hạt</a></li>
+                            <li><a href='Hat1.html'>Hạt khô</a></li>
+                        </ul>
+                    </li>
+                    <li class="muc_lon"> <a href='TinTuc.html'><b>BLOG</b></a> </li>
+                    <li class="muc_lon"> <a href='CongThucNauAn.html'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
+                    <li class="muc_lon"> <a href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
+                    <li class="muc_lon"> <a href='GioiThieu.html'><b>GIỚI THIỆU</b></a> </li>
+                    <li>
+                        <!--Thanh SEARCH-->
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                                <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </form>
+                        </div>
+                </ul>
+            </div>
+        </div>
 
-    <!--Cái logo-->
-    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+        <!--Cái logo-->
+        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img style="margin-top:30" src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+    </div>
 
 
     <section id="breadcrumb-wrapper" class="breadcrumb-w-img">
@@ -624,109 +630,113 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                </div>
+                            </div>
     </section>
 
     <!--Gửi mail cho chúng tôi-->
-    <div style="margin-top: 100px">
-        <div class="footer-subscribe">
-            <div class="grid">
-                <div class="grid__item large--one-half medium--one-half small--one-whole">
-                    <div class="ft-subscribe-info">
-                        <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
-                        <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
-                    </div>
-                </div>
-                <div class="grid__item large--one-half medium--one-half small--one-whole">
-                    <div class="ft-sub-wrapper">
-
-                        <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
-                            <input name="form_type" type="hidden" value="customer">
-                            <input name="utf8" type="hidden" value="✓">
-
-                            <div class="input-group">
-                                <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
-                                <input type="hidden" name="contact[tags]" value="newsletter">
-                                <span class="input-group-btn">
-                                    <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
-                                </span>
-                            </div>
-                        </form>
-
-                    </div>
+    <div style="margin-top: 50px" class="footer-subscribe">
+        <div class="grid">
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-subscribe-info">
+                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
                 </div>
             </div>
-        </div>
-        <div style="text-align:center; margin-top:80px;margin-bottom:-100px;">
-            <img src="Images/logo.png" style="text-align:center;width:150px;height:150px;margin-top:80px;" />
-        </div>
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-sub-wrapper">
 
-        <footer>
-            <!--Bắt Đâu Nội Dung Liên Hệ-->
-            <div class="container">
-                <div class="links">
-                    <h2><b>Thông tin liên hệ</b></h2>
-                    <ul>
+                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                        <input name="form_type" type="hidden" value="customer">
+                        <input name="utf8" type="hidden" value="✓">
 
-                        <li>
-                            <span><i class="fa fa-map-marker"></i></span>
-                            <span>
-                                Đường Số 1 Quận 1,<br />
-                                Thành Phố Hồ Chí Minh<br />
-                                Việt Nam
+                        <div class="input-group">
+                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
                             </span>
-                        </li>
-                        <li>
-                            <span><i class="fa fa-phone"></i></span>
-                            <span>+84 283 724 4500</span>
+                        </div>
+                    </form>
 
-                        </li>
-                        <li>
-                            <span><i class="fa fa-envelope"></i></span>
-                            <span>veggie2021@gmail.com</span>
-                        </li>
-
-                    </ul>
                 </div>
             </div>
-            <!--Kết Thúc Nội Dung Liên Hệ-->
-            <!--Bắt Đầu Nội Dung Giới Thiệu-->
-            <div class="links">
-                <h2><b>Mua hàng</b></h2>
-                <ul>
-
-                    <li><a>Granola</a></li>
-                    <li><a>Bánh ăn kiêng</a></li>
-                    <li><a>Sản phẩm khác</a></li>
-                    <li><a>HẠT DINH DƯỠNG</a></li>
-
-                </ul>
-
-            </div>
-            <!--Kết Thúc Nội Dung Giới Thiệu-->
-            <!--Bắt Đầu Nội Dung Đường Dẫn-->
-            <div class="noi-dung links">
-                <h2><b>Hỗ trợ khách hàng</b></h2>
-                <ul>
-
-                    <li><a href="LienHe.html">Liên hệ</a></li>
-                    <li><a href="#">Giới thiệu</a></li>
-                    <li><a href="ChinhSachDoiTra.html">Chính sách đổi trả</a></li>
-                    <li><a href="ChinhSachBaoMat.html">Chính sách bảo mật</a></li>
-                    <li><a href="DieuKhoanDichVu.html">Điều khoản dịch vụ</a></li>
-                </ul>
-            </div>
-            <!--Kết Thúc Nội Dung Đường Dẫn-->
-            <div>
-                <h2>Fanpage</h2>
-
-                <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">offscreenBuffering</script>
-                <div class="fb-post"
-                     data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
-                     data-width="500"></div>
-            </div>
-        </footer>
+        </div>
     </div>
+    <div style="text-align:center; margin-top:80px;margin-bottom:-100px;">
+        <img src="Images/logo.png" style="text-align:center;width:200px;height:200px; margin-top: 80px" />
+    </div>
+
+
+
+
+    <footer class="footer-container">
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <div style="margin-left: 100px" class="links">
+            <h3><b>THÔNG TIN LIÊN HỆ</b></h3>
+            <p style="line-height: 1.5">
+                <span><i class="fa fa-map-marker" style="color: #417505"></i></span>
+                <span style="margin-bottom: 5px">
+                    Số 669, QL1, Khu phố 3, Phường Linh Xuân,
+                    Quận Thủ Đức, Tp. Hồ Chí Minh<br />
+                </span>
+                <span style="margin-bottom: 10px"><i class="fa fa-phone" style="color: #417505"></i></span>
+                <span>+84 39 576265</span><br />
+
+                <span style="margin-bottom: 10px"><i class="fa fa-envelope" style="color: #417505"></i></span>
+                <span>veggie2021@gmail.com</span>
+            </p>
+
+
+        </div>
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <div class="links">
+            <h3><b>MUA HÀNG</b></h3>
+            <p>
+                <a>Granola</a><br />
+                <a>Trái cây</a><br />
+                <a>Bơ hạt</a><br />
+                <a>Hạt khô</a><br />
+            </p>
+
+        </div>
+
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <div class="links">
+            <h3><b>HỖ TRỢ KHÁCH HÀNG</b></h3>
+            <p>
+                <a href="LienHe.html">Liên hệ</a><br />
+                <a href="GioiThieu.html">Giới thiệu</a><br />
+                <a href="ChinhSachDoiTra.html">Chính sách đổi trả</a><br />
+                <a href="ChinhSachBaoMat.html">Chính sách bảo mật</a><br />
+                <a href="DieuKhoanDichVu.html">Điều khoản dịch vụ</a><br />
+            </p>
+
+        </div>
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+
+
+        <div style="margin-right: 100px" class="links">
+            <h3><b>KẾT NỐI VỚI CHÚNG TÔI</b></h3>
+            <div>
+                <span><i class="fab fa-facebook-square" style="font-size: 30px; color: #094125"></i></span>
+                <span><i class="fab fa-instagram" style="font-size: 30px; color: #094125"></i></span>
+                <span><i class="fab fa-youtube" style="font-size: 30px; color: #094125"></i></span>
+            </div>
+
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
+                 data-width="500">
+            </div>
+            <div class="img-inner dark">
+                <img width="340" height="130" src="https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti.png 600w, https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti-510x193.png 510w" sizes="(max-width: 600px) 100vw, 600px">
+            </div>
+        </div>
+    </footer>
+    <div style="text-align: center; background-color: #A9A9A9; color: black ">  Copyrights © 2021 by Veggie </div>
 
 </body>
 </html>

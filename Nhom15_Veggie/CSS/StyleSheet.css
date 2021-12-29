@@ -55,6 +55,7 @@
         background: rgb(255, 255, 255);
         height: 50px;
         padding: 20px;
+        margin-left: 5%;
         }
         .main-menu muc_lon
         {
@@ -63,7 +64,7 @@
         .main-menu li {
             position: relative;
             color: #417505;
-            font-size: 20px;
+            font-size: 18px;
         }
         .main-menu ul li {
             display: inline-block;
@@ -88,7 +89,7 @@
                 }
                     .main-menu ul li .sub-menu li a:hover {
                         color: #F7C551;
-                        font-size: 18px;
+                        font-size: 21px;
                     }
 
     .main-menu li:hover .sub-menu{
