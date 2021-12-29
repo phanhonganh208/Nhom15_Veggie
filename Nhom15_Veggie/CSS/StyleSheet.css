@@ -500,14 +500,15 @@ svg:not(:root).svg-inline--fa {
 
 
 .footer-container {
+    margin: 0 50px;
     margin-top: 80px;
     position: page;
     background-color: #F0F0F0;
-    height: auto;
+    /* height: auto; */
     padding: 25px 25px;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
 }
 
 
@@ -1158,7 +1159,7 @@ a {
 }
 
 .page-head {
-    margin-top: 460px;
+    margin-top: 0%;
     border-bottom: 1px solid #e2e2e2
 }
 .page-head h1
@@ -1451,8 +1452,8 @@ a {
 }
 
 .blog-content {
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 100px;
 }
 

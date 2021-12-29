@@ -146,6 +146,7 @@
 
 .wrap_vanchuyen {
     padding: 10% gray;
+    color: black;
     margin: 50px;
     display: flex;
     flex-direction: row-reverse;
@@ -154,11 +155,11 @@
 .sidebar {
     margin: 20px;
     width: 38%;
-    background-color: rgb(178, 236, 150);
+    background-color: #F8F8F8;
     padding: 5%;
     background-position: left top;
     position: relative;
-    color: #717171;
+    color: black;
     /* float: right; */
 }
 
@@ -169,7 +170,7 @@
 .main_vanchuyen {
     padding: 5%;
     margin: 20px;
-    background-color: rgb(245, 241, 212);
+    background-color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -180,7 +181,7 @@
 }
 
 .section1 {
-    color: #737373;
+    color: black;
     font-size: 20px;
     line-height: 1.3em;
     overflow-wrap: break-word;
@@ -190,16 +191,24 @@
     padding-top: 0;
 }
 
-.btn_magiamgia {
-    background-color: #094125;
-    padding: 2px;
-    color: white;
-    filter: brightness(1.2);
-    flex: 0 0 auto;
-    float: right;
-    margin-top: -6%;
-    border-radius: 5px;
+.section1-content-text a {
+    color: #094125;
 }
+
+    .section1-content-text a:hover {
+        color: #F7C551;
+    }
+
+    .btn_magiamgia {
+        background-color: #094125;
+        padding: 2px;
+        color: white;
+        filter: brightness(1.2);
+        flex: 0 0 auto;
+        float: right;
+        margin-top: -6%;
+        border-radius: 5px;
+    }
 
 .btn_phuongthuc {
     background-color: #00646b;
@@ -218,7 +227,6 @@
     border: #094125 0.1px;
     border-radius: 15px;
     display: block;
-    margin-left: 10%;
     box-sizing: border-box;
     width: 70%;
     padding: 0.94em 2.8em 0.94em 0.8em;
@@ -263,5 +271,12 @@
     border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
     border-image-slice: 1;
 }
+
+
+
+
+
+
+
 
 
