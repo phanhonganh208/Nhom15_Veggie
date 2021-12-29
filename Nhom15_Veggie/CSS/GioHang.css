@@ -247,3 +247,28 @@
     .mota_gia tr {
         padding: 10px;
     }
+
+  /* PHƯƠNG THỨC THANH TOÁN*/
+
+.ptvanchuyen {
+    padding: 20px;
+    font-size: 21px;
+    width: 500px;
+    background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
+    border-radius: 3px;
+    border: 3px solid #d5d5d500;
+    color: #333333;
+    border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+    border-image-slice: 1;
+    font-family: inherit;
+
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    
+    vertical-align: baseline;
+}
+

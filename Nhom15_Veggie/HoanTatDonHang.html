@@ -11,14 +11,14 @@
 </head>
 <body>
     <div style="margin-top: 0px;margin-bottom: 0px; margin-left:120px ;"><img style="margin-top:30" src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
-    <h4 style="color: #094125; margin: 0 100px; margin-bottom: -10; font-weight: initial;">Giỏ hàng >   <b>Thông tin vận chuyển </b>  > Phương thức thanh toán</h4>
+    <h4 style="color: #094125; margin: 0 100px; margin-bottom: -10; font-weight: initial;">Giỏ hàng > Thông tin vận chuyển > Phương thức thanh toán ><b> Hoàn tất đơn hàng</b> </h4>
 
     <div class="wrap_vanchuyen">
         <div class="sidebar">
 
             <h2 class="tieude">Thông tin đơn hàng</h2>
 
-            <table class="product-table">
+            <table class="product-table" cellspacing="50">
                 <thead>
                     <tr>
                         <th scope="col"><span class="visually-hidden">Hình ảnh</span></th>
@@ -37,7 +37,7 @@
                             </div>
                         </td>
                         <td class="">
-                            <span class="">BÁNH COOKIE CHOCO HẠNH NHÂN 200G</span>
+                            <span class="">CHUỐI SẤY 200G KHÔNG ĐƯỜNG</span>
 
                         </td>
                         <td class="slg">3</td>
@@ -54,10 +54,14 @@
                             </div>
                         </td>
                         <td class="">
-                            <span class="">BÁNH COOKIE CHOCO HẠNH NHÂN 200G</span>
+                            <span class="">
+                                HẠT ÓC CHÓ MỸ NGUYÊN VỎ 200G
+                            </span>
 
                         </td>
-                        <td class="slg">3</td>
+                        <td class="slg">
+                            3
+                        </td>
                         <td class="product-price">
                             <span class="">90,000₫</span>
                         </td>
@@ -103,10 +107,12 @@
 
 
                     <tr class="total-line total-line-shipping">
-                        <td class="total-line-name">Phí ship</td>
-                        <td class="total-line-price">
-                            <span class="order-summary-emphasis" data-checkout-total-shipping-target="4000000">
-
+                        <td class="total-line-name">
+                            Phí ship
+                        </td>
+                        <td>
+                            <span class="" data-checkout-payment-due-target="0">
+                                0₫
                             </span>
                         </td>
                     </tr>
@@ -135,39 +141,50 @@
     <div class="main_vanchuyen">
         <div class="section1">
             <div class="section1-header">
-                <h2 class="tieude">Thông tin thanh toán</h2>
+                <h2 class="tieude"> Hoàn tất đặt hàng </h2>
             </div>
-
-            <p class="section1-content-text">
-                Bạn đã có tài khoản?
-                <a href="login.html">Đăng nhập</a>
-            </p>
-
 
             <div class="fieldset">
                 <div class="field">
                     <div class="field-input-wrapper">
-                        <label class="field-label" for="billing_address_full_name">Họ và tên</label>
-                        <input placeholder="Họ và tên" spellcheck="false" class="field-input" size="30" type="text" value="" autocomplete="false">
+                        <table cellpadding="0" cellspacing="0" class="ptvanchuyen">
+                            <tr>
+                                <td>
+                                    
+                                    <span style="text-align:right"> ĐẶT HÀNG THÀNH CÔNG </p> </span>
+                                    <span style="text-align:right"> Mã đơn hàng #100017 </p> </span>
+                                    <span style="text-align:right"> Cảm ơn bạn đã mua hàng ! </span>
+                                </td>
+                            </tr>
+                        </table>
 
-                        <label class="field-label" for="checkout_user_email">Email</label>
-                        <input autocomplete="false" placeholder="Email" autocapitalize="off" spellcheck="false" class="field-input" size="30" type="email" id="checkout_user_email" name="checkout_user[email]" value="">
-                        <label class="field-label" for="billing_address_phone">Điện thoại</label>
-                        <input autocomplete="false" placeholder="Điện thoại" autocapitalize="off" spellcheck="false" class="field-input" size="30" maxlength="15" type="tel" value="">
-                        <label class="field-label">Địa chỉ</label>
-                        <input placeholder="Địa chỉ" spellcheck="false" class="field-input" size="30" type="text" value="" autocomplete="false">
-                        <label class="field-label">Xã/Phường</label>
-                        <input placeholder="Xã/Phường" spellcheck="false" class="field-input" size="30" type="text" value="" autocomplete="false">
-                        <label class="field-label">Quận/Huyện</label>
-                        <input placeholder="Quận/Huyện" spellcheck="false" class="field-input" size="30" type="text" value="" autocomplete="false">
-                        <label class="field-label">Tỉnh/Thành phố</label>
-                        <input placeholder="Tỉnh/Thành phố" spellcheck="false" class="field-input" size="30" type="text" value="" autocomplete="false">
-                        <br>
-                        <button class="btn_phuongthuc" type="submit" class="">
-                            <span class="btn_phuongthuc">Phương thức thanh toán</span>
-                            <i class="btn-spinner icon icon-button-spinner"></i>
-                        </button>
+                        <div class="section1-header">
+                            <h2 class="tieude">Phương thức thanh toán</h2>
+                        </div>
+                        <table border="1" cellpadding="5" cellspacing="0">
+                          
+                            <tr>
+                                <td class="ptvanchuyen">
+                                    <p>   THÔNG TIN ĐƠN HÀNG</p>
+                                    Thông tin vận chuyển
+                                    <p>-  Võ Thu Thảo </p>
+                                    <p>- 0867 987 278 </p>
+                                    <p>- Hàm Tân, Huyện Yên Minh,  Hà Giang, Việt Nam </p>
 
+                                </td>
+                            </tr>
+
+                      
+                            <tr>
+                                <td class="ptvanchuyen">
+                                    <p>Phương thức thanh toán</p>
+
+                                    <p>Chuyển khoản qua ngân hàng</p>
+                                    
+                                </td>
+                            </tr>
+
+                        </table>
                     </div>
 
                 </div>
