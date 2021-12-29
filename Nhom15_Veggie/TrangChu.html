@@ -3,11 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
-    <title>Trang chủ</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/Trangchu.css" type="text/css" media="screen" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript">
+        const itemSliderbar = document.querySelectorAll(".cartegory-left-li")
+        itemSliderbar.forEach(function (menu, index) {
+            menu.addEventListener("click", function () {
+                menu.classList.toggle("block")
+            })
+        })
+    </script>
+    <style>
+        .sptab {
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+            /*....................*/
+           
+    </style>
 </head>
 <body>
 
@@ -102,1373 +120,660 @@
         </div>
 
         <!--Cái logo-->
-        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img style="margin-top:30" src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
     </div>
 
-    <div class="than_trang_chu" style="margin-top: 550px;"></div>
-    <section id="home-collections">
-        <div class="wrapper">
-            <div class="inner">
-                <div class="section-title">
-                    <h2>Sản phẩm của chúng tôi</h2>
-                </div>
-                <div class="section-content">
-                    <div class="tab">
-
-                        <button class="tablinks" onclick="openTabs(event,'tab1')">GRANOLA</button>
-
-                        <button class="tablinks" onclick="openTabs(event,'tab2')">TRÁI CÂY</button>
-
-                        <button class="tablinks" onclick="openTabs(event,'tab3')"> BƠ HẠT</button>
-
-                        <button class="tablinks" onclick="openTabs(event,'tab4')">HẠT KHÔ</button>
-                    </div>
-                    <!--TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
-                    <div id="tab1" class="tabcontent">
-                        <div class="grid-uniform md-mg-left-10">
-
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="COMBOMUAHA">
-                                            <img id="1030966970" class="lazyload" src="./SẢN PHẨM/GRANOLA/COMBO MÙA HẠ CAM/combo_299_dozen_bbb6ba2101834eaf8285e68b9ba2ea35_master.png"
-                                                 alt="COMBO MÙA HẠ CAM ">
-                                        </a>
-                                        <div class="product-tags">
-                                        </div>
-                                    </div>
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="/products/granola-an-kieng-khong-duong-vi-matcha-500g">COMBO MÙA HẠ CAM...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">299,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067906678"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-vi-matcha-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067906678"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="/products/granola-an-kieng-khong-duong-super-nuts-vi-matcha-500g">
-                                            <img id="1030968650" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/COMBO MÙA HẠ ĐỎ/combo_299_berries_6cde7091d5b646f5a523391ab1db346c_master.png"
-                                                 alt="COMBO MÙA HẠ ĐỎ 500G">
-                                        </a>
-                                        <div class="product-tags">
-                                        </div>
-                                    </div>
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="COMBO MÙA HẠ ĐỎ">COMBO MÙA HẠ ĐỎ...</a>
-                                        </div>
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">299,000₫</span>
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067911529"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-super-nuts-vi-matcha-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067911529"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030968667" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/COMBO ĐỎ/combo_do-01_cad40521c43b48fc9e36ef2aa923a640_master.png"
-                                                 alt="COMBO ĐỎ 500G">
-                                        </a>
-
-                                        <div class="product-tags">
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">COMBO ĐỎ...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">599,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067911571"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-super-nuts-vi-thong-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067911571"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="/products/granola-an-kieng-khong-duong-super-nuts-vi-cacao-500g">
-                                            <img id="1030968613" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/HỘP QUÀ 8 TÚI GRANOLA - BỘ SƯU TẬP TÚI HẠT AN LÀNH/hop_1_3b86c650b0ca4bd5b2c3b2c16c7c136c_master.png"
-                                                 alt="HỘP QUÀ 8 TÚI GRANOLA - BỘ SƯU TẬP TÚI HẠT AN LÀNH">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="/products/granola-an-kieng-khong-duong-super-nuts-vi-cacao-500g">HỘP QUÀ 8 TÚI GRANOLA ...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">599,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067911435"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-super-nuts-vi-cacao-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067911435"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030636983" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/SET SNACK S24/set_snack_s24-05_e409acab858047d6976389d22bd050bb_master.png"
-                                                 alt="SET SNACK S24">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">SET SNACK S24...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">399,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067102267"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-truyen-thong-vi-que-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067102267"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030966608" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/SET SNACK S24/happioha_199772986_153208210130215_6180564829808344777_n_fe3462da7f64478c846ef57b816eb6ce_master.jpg"
-                                                 alt="SET SNACK S24/">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">SET SNACK S24/...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">399,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067904899"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-vi-cacao-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067904899"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030967315" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/HỘP QUÀ 8 TÚI GRANOLA - BỘ SƯU TẬP TÚI HẠT AN LÀNH/hop_1_3b86c650b0ca4bd5b2c3b2c16c7c136c_master.png"
-                                                 alt="HỘP QUÀ 8 TÚI GRANOLA - BỘ SƯU TẬP TÚI HẠT AN LÀNH">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">BỘ SƯU TẬP TÚI HẠT AN...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">450,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067907374"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/granola-an-kieng-khong-duong-vi-dua-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067907374"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030969106" class="lazyload"
-                                                 src="./SẢN PHẨM/GRANOLA/SET ĂN SÁNG ĐONG ĐẦY/set_an_sang_dong_day_479_0c9f2aa318254c9cafd7d636f9174ea5_master.png"
-                                                 alt="SET ĂN SÁNG ĐONG ĐẦY">
-                                        </a>
-
-                                        <div class="product-tags">
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">SET ĂN SÁNG ĐONG ĐẦY...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">479,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067913081"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/yen-mach-an-kieng-loai-can-mong-500g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067913081"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
+    <div class="than_trang_chu" style="margin-top: 50%;">
+        <div class="than_trang_chu">
+            <section id="trangchusp">
+                <div class="wrapper1">
+                    <div class="inner">
+                        <div class="section-title">
+                            <h2 style="margin-bottom: 5%">Sản phẩm của chúng tôi</h2>
                         </div>
-                    </div>
+                        <div class="section-content">
+                            <div class="tab">
 
-                    <!--TAB2 TAB2 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
+                                <button class="tablinks" onclick="openTabs(event,'tab1')">GRANOLA</button>
 
-                    <div id="tab2" class="tabcontent">
-                        <div class="grid-uniform md-mg-left-10">
+                                <button class="tablinks" onclick="openTabs(event,'tab2')">TRÁI CÂY</button>
 
+                                <button class="tablinks" onclick="openTabs(event,'tab3')"> BƠ HẠT</button>
 
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+                                <button class="tablinks" onclick="openTabs(event,'tab4')">HẠT KHÔ</button>
+                            </div>
+                            <!--TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
+                            <div id="tab1" class="tabcontent">
+                                <div class="sptab">
 
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030968556" class="lazyload"
-                                                 src="./SẢN PHẨM/TRÁI CÂY/CHUỐI/chuoi2.png"
-                                                 alt="CHUỐI SẤY DINH DƯỠNG">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/setsnack24.png" alt="" />
+                                        <h4>SET SNACK S24</h4>
+                                        <p>479.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="/products/banh-biscotti-nguyen-cam-an-kieng-250g">CHUỐI SẤY DINH DƯỠNG</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">95,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067911320"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/banh-biscotti-nguyen-cam-an-kieng-250g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067911320"> Mua ngay</button>
-                                            </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/setsang.png" alt="" />
+                                        <h4>SET ĂN SÁNG ĐONG ĐẦY</h4>
+                                        <p>479.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/cbo8.png" alt="" />
+                                        <h4>HỘP QUÀ 8 TÚI GRANOLA</h4>
+                                        <p>299.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/combodo.png" alt="" />
+                                        <h4>COMBO MÙA HẠ ĐỎ</h4>
+                                        <p>299.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/combocam.png" alt="" />
+                                        <h4>COMBO MÙA HẠ CAM</h4>
+                                        <p>299.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/combodo01.png" alt="" />
+                                        <h4>COMBO ĐỎ</h4>
+                                        <p>599.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
 
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+                            <!--TAB2 TAB2 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
 
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030969002" class="lazyload"
-                                                 src="./SẢN PHẨM/TRÁI CÂY/DỨA SẤY/dứa.png"
-                                                 alt="DỨA SẤY">
-                                        </a>
-
-                                        <div class="product-tags">
+                            <div id="tab2" class="tabcontent">
+                                <div class="sptab">
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/namvietquat.png" alt="" />
+                                        <h4>NAM VIỆT QUẤT</h4>
+                                        <p>150.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">DỨA SẤY</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">90,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067912721"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/banh-cookie-choco-hanh-nhan-200g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067912721"> Mua ngay</button>
-                                            </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/mo.png" alt="" />
+                                        <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                                        <p>100.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/mix1.png" alt="" />
+                                        <h4>MIXED FRUITS</h4>
+                                        <p>199.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/dua.png" alt="" />
+                                        <h4>DỨA SẤY MỘC 250G</h4>
+                                        <p>150.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/chuoi2.png" alt="" />
+                                        <h4>CHUỐI SẤY KHÔNG ĐƯỜNG</h4>
+                                        <p>54.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
 
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
+                            <!--TAB1 TAB1 TAB1 TAB1 TAB1 BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
 
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030968950" class="lazyload"
-                                                 src="./SẢN PHẨM/TRÁI CÂY/MIX/mix1.png"
-                                                 alt="MIX - THẬP CẨM SẤY">
-                                        </a>
-
-                                        <div class="product-tags">
+                            <div id="tab3" class="tabcontent">
+                                <div class="sptab">
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/combo2.png" alt="" />
+                                        <h4>COMBO 2 LOẠI BƠ 1 </h4>
+                                        <p>178.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">MIX - THẬP CẨM SẤY</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">155,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067912578"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/banh-mi-den-nguyen-cam-500g-bao-quan-lanh-ship-hcm"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067912578"> Mua ngay</button>
-                                            </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/bodieu.png" alt="" />
+                                        <h4>BƠ ĐIỀU SOCOLA</h4>
+                                        <p>99.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/dieumin.png" alt="" />
+                                        <h4>BƠ ĐIỀU MỊN</h4>
+                                        <p>79.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/bodau.png" alt="" />
+                                        <h4>BƠ ĐẬU PHỘNG DỪA</h4>
+                                        <p>70.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/dauphong.png" alt="" />
+                                        <h4>BƠ ĐẬU PHỘNG TỰ NHIÊN</h4>
+                                        <p>99.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/combo21.png" alt="" />
+                                        <h4>COMBO 2 LOẠI BƠ 2 </h4>
+                                        <p>138.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/dauphongcb.png" alt="" />
+                                        <h4>BƠ ĐẬU PHỘNG (COMBO 2)</h4>
+                                        <p>129.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-
                             </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
+                            <!--TAB444444444444444444444444444444444444444444444TAB1 TAB1 TB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
 
 
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-
-                                            <img id="1030969042" class="lazyload"
-                                                 src="./SẢN PHẨM/TRÁI CÂY/NAM VIỆT QUẤT/e3632318-8763-4f31-b92d-9784d7dc64d8_6d0d85a853b448f7bbb7f1f8290c7ae4_master.png"
-                                                 alt="NAM VIỆT QUẤT SẤY DẺO">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
+                            <div id="tab4" class="tabcontent">
+                                <div class="sptab">
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/occho350g.jpg" alt="" />
+                                        <h4>NHÂN HẠT ÓC CHÓ MỸ 350g</h4>
+                                        <p>195.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">NAM VIỆT QUẤT SẤY DẺO</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">169,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067912909"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/banh-ngoi-hanh-nhan-healthy-200g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067912909"> Mua ngay</button>
-                                            </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/occho200g.jpg" alt="" />
+                                        <h4>NHÂN HẠT ÓC CHÓ MỸ 200g</h4>
+                                        <p>135.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                                         </div>
                                     </div>
-
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/occho100g.jpg" alt="" />
+                                        <h4>NHÂN HẠT ÓC CHÓ MỸ 100g</h4>
+                                        <p>85.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/bi.jpg" alt="" />
+                                        <h4>NHÂN HẠT BÍ RANG MỘC MONGOLIA</h4>
+                                        <p>125.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/occhovo300g.jpg" alt="" />
+                                        <h4>HẠT ÓC CHÓ MỸ NGUYÊN VỎ 300g</h4>
+                                        <p>105.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/occhovo200g.jpg" alt="" />
+                                        <h4>HẠT ÓC CHÓ MỸ NGUYÊN VỎ 200g</h4>
+                                        <p>85.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/macca120g.jpg" alt="" />
+                                        <h4>HẠT MACCA ÚC NGUYÊN VỎ 300g</h4>
+                                        <p>155.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/macca120g.jpg" alt="" />
+                                        <h4>HẠT MACCA ÚC NGUYÊN VỎ 120g</h4>
+                                        <p>95.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
+                                    <div class="cartegory-right-content-item">
+                                        <img src="Images/dieu250g.jpg" alt="" />
+                                        <h4>HẠT ĐIỀU VỎ LỤA 250g</h4>
+                                        <p>145.000 <sup>đ</sup></p>
+                                        <div style="margin-top:20px;">
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                        </div>
+                                    </div>
                                 </div>
-
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <!--TAB1 TAB1 TAB1 TAB1 TAB1 BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ BƠ  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
-
-                    <div id="tab3" class="tabcontent">
-                        <div class="grid-uniform md-mg-left-10">
-
-
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1031701444" class="lazyload"
-                                                 src="./SẢN PHẨM/BƠ/BƠ HẠNH NHÂN 100_/bo_hanh_nhan_989d538701cd465ba247aa325ee9329f_master.png"
-                                                 alt="BƠ HẠNH NHÂN">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">BƠ HẠNH NHÂN</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">90,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069411375"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-dau-phong-100-nguyen-chat-230g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069411375"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1031708566" class="lazyload"
-                                                 src="./SẢN PHẨM/BƠ/BƠ ĐIỀU MỊN/bo_dieu_2370eb6a34a8491cb0f4a78184636585_master.png"
-                                                 alt="BƠ ĐIỀU MỊN">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">BƠ ĐIỀU MỊN</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">95,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069426817"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/nhan-ban-tu-bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069426817"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1030973490" class="lazyload"
-                                                 src="./SẢN PHẨM/BƠ/BƠ ĐIỀU SOCOLA/bo_dieu_socola_26002163074f4f11ab18255eca29e084_master (1).png"
-                                                 alt="BƠ ĐIỀU SOCOLA">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">BƠ ĐIỀU SOCOLA</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">135,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067929452"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067929452"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                                <div class="product-item">
-
-                                    <div class="product-img">
-                                        <a href="">
-                                            <img id="1031708657" class="lazyload"
-                                                 src="./SẢN PHẨM/BƠ/BƠ ĐẬU PHỘNG (COMBO2)/peco___pea_1661990c375a428ba2683f0822afc08d_master.png"
-                                                 alt="BƠ ĐẬU PHỘNG(COMBO 2)">
-                                        </a>
-
-                                        <div class="product-tags">
-
-
-                                        </div>
-                                    </div>
-
-                                    <div class="product-info">
-                                        <div class="product-title">
-                                            <a href="">COMBO 2 BƠ ĐẬU PH...</a>
-                                        </div>
-
-                                        <div class="product-price clearfix">
-                                            <span class="current-price">169,000₫</span>
-
-                                        </div>
-
-                                        <div class="product-actions text-center clearfix">
-                                            <div>
-                                                <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427038"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                                <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hat-dieu-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                                <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427038"> Mua ngay</button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-
                             </div>
 
                         </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031708704" class="lazyload"
-                                             src="./SẢN PHẨM/BƠ/BƠ ĐẬU PHỘNG DỪA/peanut_coconut_details_copy_e74f417276414b1483c5e1f2dc5b0422_master.png"
-                                             alt="BƠ ĐẬU PHỘNG DỪA">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                        <span class="tag-saleoff text-center">
-                                            -10%
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">BƠ ĐẬU PHỘNG DỪA</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">189,000₫</span>
-
-                                        <span class="original-price"><s>210,000₫</s></span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427184"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/combo-3-hu-bo-hat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427184"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-
                     </div>
                 </div>
-                <!--TAB444444444444444444444444444444444444444444444TAB1 TAB1 TB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  TAB1 TAB1  -->
-
-
-                <div id="tab4" class="tabcontent">
-                    <div class="grid-uniform md-mg-left-10">
-
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031708627" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạnh Nhân Rang Mộc Mỹ 150g/hanh-nhan-tach-vo-rang-moc-150g-bazanland-600x600.jpg"
-                                             alt="Hạnh Nhân Rang Mộc Mỹ 150g">
-                                    </a>
-
-                                    <div class="product-tags">
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạnh Nhân Rang Mộc...</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">169,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069426983"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/nhan-ban-tu-bo-dau-phong-100-nguyen-chat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069426983"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031701444" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạnh Nhân Rang Mộc Mỹ 300g/hanh-nhan-rang-moc-300g-600x600.jpg"
-                                             alt="Hạnh Nhân Rang Mộc Mỹ 300g">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạnh Nhân Rang...300g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">300,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069411375"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-dau-phong-100-nguyen-chat-230g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069411375"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031708566" class="lazyload"
-                                             src="./SẢN PHẨM//HẠT/Hạt Chia 350g/hat-chia-200g-600x600.jpg"
-                                             alt="Hạt Chia 350g">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạt Chia 350g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">95,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069426817"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/nhan-ban-tu-bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069426817"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1030973490" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạt Dẻ Cười Mỹ 120g/hat-de-cuoi-120g-bazanland-600x600.jpg"
-                                             alt="Hạt Dẻ Cười Mỹ 120g">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạt Dẻ Cười Mỹ 120g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">95,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067929452"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hanh-nhan-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067929452"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031708657" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạt Macca Úc Nguyên Vỏ 120g/hat-macca-nguyen-vo-120g-bazanland-600x600.jpg"
-                                             alt="/Hạt Macca Úc Nguyên Vỏ 120g">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạt Macca Úc...120g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">99,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427038"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hat-dieu-nguyen-chat-khong-duong-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427038"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1030973570" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạt Óc Chó Mỹ Nguyên Vỏ 200g/nhan-hat-oc-cho-200g-600x600 (2).jpg"
-                                             alt="Hạt Óc Chó Mỹ Nguyên Vỏ 200g">
-                                    </a>
-                                    <div class="product-tags">
-
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="\">Hạt Óc Chó Mỹ...200g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">99,000₫</span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1067929680"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/bo-hat-dieu-nguyen-chat-khong-duong-200g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1067929680"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                        <div class="md-pd-left10 grid__item large--one-quarter medium--one-third small--one-half">
-
-
-
-                            <div class="product-item">
-
-                                <div class="product-img">
-                                    <a href="">
-                                        <img id="1031708704" class="lazyload"
-                                             src="./SẢN PHẨM/HẠT/Hạt Điều Vỏ Lụa 250g/hat-dieu-vo-lua-250g-600x600.jpg"
-                                             alt="Hạt Điều Vỏ Lụa 250g">
-                                    </a>
-
-                                    <div class="product-tags">
-
-
-                                        <span class="tag-saleoff text-center">
-                                            -10%
-                                        </span>
-
-                                    </div>
-                                </div>
-
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="">Hạt Điều Vỏ Lụa 250g</a>
-                                    </div>
-
-                                    <div class="product-price clearfix">
-                                        <span class="current-price">89,000₫</span>
-
-                                        <span class="original-price"><s>110,000₫</s></span>
-
-                                    </div>
-
-                                    <div class="product-actions text-center clearfix">
-                                        <div>
-                                            <button type="button" class="btn-addToCart add-to-cart medium--hide small--hide" data-id="1069427184"> <span><svg class="svg-inline--fa fa-cart-plus fa-w-18" aria-hidden="true" data-prefix="fa" data-icon="cart-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M504.717 320H211.572l6.545 32h268.418c15.401 0 26.816 14.301 23.403 29.319l-5.517 24.276C523.112 414.668 536 433.828 536 456c0 31.202-25.519 56.444-56.824 55.994-29.823-.429-54.35-24.631-55.155-54.447-.44-16.287 6.085-31.049 16.803-41.548H231.176C241.553 426.165 248 440.326 248 456c0 31.813-26.528 57.431-58.67 55.938-28.54-1.325-51.751-24.385-53.251-52.917-1.158-22.034 10.436-41.455 28.051-51.586L93.883 64H24C10.745 64 0 53.255 0 40V24C0 10.745 10.745 0 24 0h102.529c11.401 0 21.228 8.021 23.513 19.19L159.208 64H551.99c15.401 0 26.816 14.301 23.403 29.319l-47.273 208C525.637 312.246 515.923 320 504.717 320zM408 168h-48v-40c0-8.837-7.163-16-16-16h-16c-8.837 0-16 7.163-16 16v40h-48c-8.837 0-16 7.163-16 16v16c0 8.837 7.163 16 16 16h48v40c0 8.837 7.163 16 16 16h16c8.837 0 16-7.163 16-16v-40h48c8.837 0 16-7.163 16-16v-16c0-8.837-7.163-16-16-16z"></path></svg><!-- <i class="fa fa-cart-plus" aria-hidden="true"></i> --></span></button>
-                                            <button type="button" class="btn-quickview quick-view medium--hide small--hide" data-handle="/products/combo-3-hu-bo-hat-100g"><span><svg class="svg-inline--fa fa-search-plus fa-w-16" aria-hidden="true" data-prefix="fa" data-icon="search-plus" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path></svg><!-- <i class="fa fa-search-plus" aria-hidden="true"></i> --></span> </button>
-                                            <button type="button" class="btn-buyNow buy-now medium--hide small--hide" data-id="1069427184"> Mua ngay</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-
-
-                        </div>
-
-
-                    </div>
-
-
-                </div>
-            </div>
-
-
-
+            </section>
         </div>
-
-    </section>
-
-    <script>
-        function openTabs(event, id) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        <script>
+            function openTabs(event, id) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(id).style.display = "block";
+                evt.currentTarget.className += " active";
             }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(id).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        openTabs(event, 'tab1')
-    </script>
-    <section id="home-aboutus">
-        <div class="wrapper">
-            <div class="inner">
-                <div class="section-title">
-                    <h2>Giới thiệu</h2>
-                </div>
-                <div class="grid">
-                    <div class="grid__item large--three-twelfths medium--one-whole small--one-whole">
-                        <div class="about-left">
-                            <div class="grid">
-                                <div class="grid__item lagre--one-whole medium--one-half small--one-whole">
-                                    <div class="about-item wow slideInLeft" data-delay="0.5s" style="visibility: visible; animation-name: slideInLeft;">
-                                        <div class="about-icon">
-                                            <div class="about-circle">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_1.png?v=270" alt="">
-                                        </div>
-                                        <div class="about-content">
-                                            <div class="about-title">
-                                                100% Tự Nhiên
-                                            </div>
-                                            <div class="about-desc">
-                                                Tuna  chọn nguyên liệu đảm bảo nguồn gốc tự nhiên, không chất bảo quản, không hoá chất độc hại, không màu thực phẩm. Đảm bảo cho sức khoẻ người dùng.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__item lagre--one-whole medium--one-half small--one-whole">
-                                    <div class="about-item wow slideInLeft" data-delay="0.9s" style="visibility: visible; animation-name: slideInLeft;">
-                                        <div class="about-icon">
-                                            <div class="about-circle">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_2.png?v=270" alt="">
-                                        </div>
-                                        <div class="about-content">
-                                            <div class="about-title">
-                                                Luôn tươi mới
-                                            </div>
-                                            <div class="about-desc">
-                                                Các sản phẩm luôn được làm mới mỗi ngày, để đảm bảo chất lượng cũng như hương vị. Với mong muốn gửi đến bạn những sản phẩm chất lượng nhất.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            openTabs(event, 'tab1')
+        </script>
+    </div>
+
+
+    <div class="tham">
+        <div class="gioithieu">
+            <section id="gioithieu">
+                <div class="wrapper2">
+                    <div class="inner">
+                        <div class="section-title">
+                            <h2>Giới thiệu</h2>
                         </div>
-                    </div>
-                    <div class="grid__item large--six-twelfths medium--one-whole small--one-whole">
-                        <div class="about-center wow zoomIn  text-center" data-delay="0.5s" style="visibility: visible; animation-name: zoomIn;">
-                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_center_img.png?v=270" alt="">
-                        </div>
-                    </div>
-                    <div class="grid__item large--three-twelfths medium--one-whole small--one-whole">
-                        <div class="about-right ">
-                            <div class="grid">
-                                <div class="grid__item lagre--one-whole medium--one-half small--one-whole">
-                                    <div class="about-item wow slideInRight" data-delay="0.5s" style="visibility: visible; animation-name: slideInRight;">
-                                        <div class="about-icon">
-                                            <div class="about-circle">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_1.png?v=270" alt="">
-                                        </div>
-                                        <div class="about-content">
-                                            <div class="about-title">
-                                                Không đường tinh luyện
-                                            </div>
-                                            <div class="about-desc">
-                                                Chúng tôi đảm bảo tất cả sản phẩm đều không sử dụng đường tinh luyện. Vị ngọt đến từ hạt quả tự nhiên và mật ong sạch tự nhiên. Mang sự ngọt dịu của thiên nhiên vào trong sản phẩm.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="grid__item lagre--one-whole medium--one-half small--one-whole">
-                                    <div class="about-item wow slideInRight" data-delay="0.9s" style="visibility: visible; animation-name: slideInRight;">
-                                        <div class="about-icon">
-                                            <div class="about-circle">
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                                <div class="circle"></div>
-                                            </div>
-                                            <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_2.png?v=270" alt="">
-                                        </div>
-                                        <div class="about-content">
-                                            <div class="about-title">
-                                                Chế biến thủ công
-                                            </div>
-                                            <div class="about-desc">
-                                                Sản phẩm được sản xuất thủ công bằng tay tất cả các công đoạn. Đủ tiêu chuẩn vệ sinh an toàn thực phẩm. Đảm bảo trao đến tay người dùng những sản phẩm an toàn và hoàn thiện nhất.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- ----------------------------TIN TUC--------------------- -->
-
-
-
-    <section id="home-articles">
-        <div class="wrapper">
-            <div class="inner">
-                <div class="section-title">
-                    <h2>Tin tức</h2>
-                </div>
-                <div class="section-content" style="margin-top:50px">
-                    <div class="tt_grid">
-                        <div class="grid__item large--one-half medium--one-whole small--one--whole">
-                            <div class="article-item article-featured">
-                                <div class="article-img">
-                                    <a href="#">
-                                        <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-di-bo-giam-can-1_9c05781b48c6484db5a27e7c44348213_large.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-di-bo-giam-can-1_9c05781b48c6484db5a27e7c44348213_large.jpeg" alt="6 Lời khuyên mà bạn cần phải thực hiện nếu muốn duy trì kế hoạch đi bộ giảm cân của mình">
-                                        <div class="overlay">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="article-info">
-                                    <a href="#" class="article-title">
-                                        6 Lời khuyên mà bạn cần phải thực hiện nếu muốn duy trì kế hoạch đi bộ giảm cân của mình
-                                    </a>
-                                    <div class="article-author">
-                                        <span>Công Ty TNHH VEGGIE</span>
-                                    </div>
-                                    <div class="article-desc ">
-                                        <p style="text-align: justify;">
-                                            Nhiều năm trở lại đây, hoạt động đi bộ dường như đã trở thành xu hướng trong cộng đồng. Điều này có nghĩa là mọi người bắt đầu quan tâm hơn đến sức khỏe của mình. Trên thực tế, Bộ Y tế và Dịch vụ Nhân sinh Hoa Kỳ khuyên rằng mọi người nên di chuyển nhiều hơn thay vì ngồi hàng tiếng đồng hồ ở nhà, quán...
-                                        </p>
-                                    </div>
-                                    <a href="" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
-                                    <div class="article-info-relate">
-                                        <div class="article-published-at">
-                                            <svg class="svg-inline--fa fa-calendar fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></path></svg><!-- <i class="fa fa-calendar"></i> --> 04/11/2021
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid__item large--one-half medium--one-whole small--one--whole">
-                            <div class="article-list">
-                                <div class="article-item">
-                                    <div class="grid">
-                                        <div class="grid__item large--one-third medium--one-third small--one-half">
-                                            <div class="article-img">
-                                                <a href="#">
-                                                    <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-giam-nguy-co-dot-quy_d6d2fce5edef4ecea910c09d99fb1cc5_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-giam-nguy-co-dot-quy_d6d2fce5edef4ecea910c09d99fb1cc5_medium.jpeg" alt="5 cách tốt nhất để giảm nguy cơ đột quỵ">
-                                                    <div class="overlay">
-
+                        <div class="grid1">
+                            <div class="grid1__item large--three-twelfths medium--one-whole small--one-whole">
+                                <div class="about-left">
+                                    <div class="grid1">
+                                        <div class="grid1__item lagre--one-whole medium--one-half small--one-whole">
+                                            <div class="about-item wow slideInLeft" data-delay="0.5s" style="visibility: visible; animation-name: slideInLeft;">
+                                                <div class="about-icon">
+                                                    <div class="about-circle">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
                                                     </div>
-                                                </a>
+                                                    <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_1.png?v=270" alt="">
+                                                </div>
+                                                <div class="about-content">
+                                                    <div class="about-title">
+                                                        100% Tự Nhiên
+                                                    </div>
+                                                    <div class="about-desc">
+                                                        Tuna  chọn nguyên liệu đảm bảo nguồn gốc tự nhiên, không chất bảo quản, không hoá chất độc hại, không màu thực phẩm. Đảm bảo cho sức khoẻ người dùng.
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="grid__item large--two-thirds medium--two-thirds small--one-half article-info">
+                                        <div class="grid1__item lagre--one-whole medium--one-half small--one-whole">
+                                            <div class="about-item wow slideInLeft" data-delay="0.9s" style="visibility: visible; animation-name: slideInLeft;">
+                                                <div class="about-icon">
+                                                    <div class="about-circle">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_left_icon_2.png?v=270" alt="">
+                                                </div>
+                                                <div class="about-content">
+                                                    <div class="about-title">
+                                                        Luôn tươi mới
+                                                    </div>
+                                                    <div class="about-desc">
+                                                        Các sản phẩm luôn được làm mới mỗi ngày, để đảm bảo chất lượng cũng như hương vị. Với mong muốn gửi đến bạn những sản phẩm chất lượng nhất.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="grid1__item large--six-twelfths medium--one-whole small--one-whole">
+                                <div class="about-center wow zoomIn  text-center" data-delay="0.5s" style="visibility: visible; animation-name: zoomIn;">
+                                    <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_center_img.png?v=270" alt="">
+                                </div>
+                            </div>
+                            <div class="grid1__item large--three-twelfths medium--one-whole small--one-whole">
+                                <div class="about-right ">
+                                    <div class="grid1">
+                                        <div class="grid1__item lagre--one-whole medium--one-half small--one-whole">
+                                            <div class="about-item wow slideInRight" data-delay="0.5s" style="visibility: visible; animation-name: slideInRight;">
+                                                <div class="about-icon">
+                                                    <div class="about-circle">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_1.png?v=270" alt="">
+                                                </div>
+                                                <div class="about-content">
+                                                    <div class="about-title">
+                                                        Không đường tinh luyện
+                                                    </div>
+                                                    <div class="about-desc">
+                                                        Chúng tôi đảm bảo tất cả sản phẩm đều không sử dụng đường tinh luyện. Vị ngọt đến từ hạt quả tự nhiên và mật ong sạch tự nhiên. Mang sự ngọt dịu của thiên nhiên vào trong sản phẩm.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid1__item lagre--one-whole medium--one-half small--one-whole">
+                                            <div class="about-item wow slideInRight" data-delay="0.9s" style="visibility: visible; animation-name: slideInRight;">
+                                                <div class="about-icon">
+                                                    <div class="about-circle">
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                        <div class="circle"></div>
+                                                    </div>
+                                                    <img src="//theme.hstatic.net/200000274813/1000673375/14/hab_right_icon_2.png?v=270" alt="">
+                                                </div>
+                                                <div class="about-content">
+                                                    <div class="about-title">
+                                                        Chế biến thủ công
+                                                    </div>
+                                                    <div class="about-desc">
+                                                        Sản phẩm được sản xuất thủ công bằng tay tất cả các công đoạn. Đủ tiêu chuẩn vệ sinh an toàn thực phẩm. Đảm bảo trao đến tay người dùng những sản phẩm an toàn và hoàn thiện nhất.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </div>
+        <!-- ----------------------------TIN TUC--------------------- -->
+
+        <div class="tintuc">
+
+            <section id="tintuc">
+                <div class="wrapper2">
+                    <div class="inner">
+                        <div class="section-title">
+                            <h2>Tin tức</h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="tt_grid1">
+                                <div class="grid1__item large--one-half medium--one-whole small--one--whole">
+                                    <div class="article-item article-featured">
+                                        <div class="article-img">
+                                            <a href=" #">
+                                                <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-di-bo-giam-can-1_9c05781b48c6484db5a27e7c44348213_large.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-di-bo-giam-can-1_9c05781b48c6484db5a27e7c44348213_large.jpeg" alt="6 Lời khuyên mà bạn cần phải thực hiện nếu muốn duy trì kế hoạch đi bộ giảm cân của mình">
+                                                <div class="overlay">
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="article-info">
                                             <a href="#" class="article-title">
-                                                5 cách tốt nhất để giảm nguy cơ đột quỵ
+                                                6 Lời khuyên mà bạn cần phải thực hiện nếu muốn duy trì kế hoạch đi bộ giảm cân của mình
                                             </a>
                                             <div class="article-author">
                                                 <span>Công Ty TNHH VEGGIE</span>
                                             </div>
-                                            <div class="article-desc small--hide">
+                                            <div class="article-desc ">
                                                 <p style="text-align: justify;">
-                                                    Đột quỵ xảy ra ở con người ngày càng cao. Thực tế, đột quỵ xảy ra với bất...
+                                                    Nhiều năm trở lại đây, hoạt động đi bộ dường như đã trở thành xu hướng trong cộng đồng. Điều này có nghĩa là mọi người bắt đầu quan tâm hơn đến sức khỏe của mình. Trên thực tế, Bộ Y tế và Dịch vụ Nhân sinh Hoa Kỳ khuyên rằng mọi người nên di chuyển nhiều hơn thay vì ngồi hàng tiếng đồng hồ ở nhà, quán...
                                                 </p>
                                             </div>
-                                            <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
+                                            <a href="" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
+                                            <div class="article-info-relate">
+                                                <div class="article-published-at">
+                                                    <svg class="svg-inline--fa fa-calendar fa-w-14" aria-hidden="true" data-prefix="fa" data-icon="calendar" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></path></svg><!-- <i class="fa fa-calendar"></i> --> 04/11/2021
+                                                </div>
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="grid1__item large--one-half medium--one-whole small--one--whole">
+                                    <div class="article-list">
+                                        <div class="article-item">
+                                            <div class="grid1">
+                                                <div class="grid1__item large--one-third medium--one-third small--one-half">
+                                                    <div class="article-img">
+                                                        <a href="#">
+                                                            <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-giam-nguy-co-dot-quy_d6d2fce5edef4ecea910c09d99fb1cc5_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-giam-nguy-co-dot-quy_d6d2fce5edef4ecea910c09d99fb1cc5_medium.jpeg" alt="5 cách tốt nhất để giảm nguy cơ đột quỵ">
+                                                            <div class="overlay">
 
-                                <div class="article-item">
-                                    <div class="grid">
-                                        <div class="grid__item large--one-third medium--one-third small--one-half">
-                                            <div class="article-img">
-                                                <a href="#">
-                                                    <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-che-do-an-uong_085eccd0f24f4baa966a4cadbab47c8b_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-che-do-an-uong_085eccd0f24f4baa966a4cadbab47c8b_medium.jpeg" alt="Bạn có biết: Cách ăn uống có thể kéo dài hoặc rút ngắn tuổi thọ của bạn?">
-                                                    <div class="overlay">
-
+                                                            </div>
+                                                        </a>
                                                     </div>
-                                                </a>
+                                                </div>
+                                                <div class="grid1__item large--two-thirds medium--two-thirds small--one-half article-info">
+                                                    <a href="#" class="article-title">
+                                                        5 cách tốt nhất để giảm nguy cơ đột quỵ
+                                                    </a>
+                                                    <div class="article-author">
+                                                        <span>Công Ty TNHH VEGGIE</span>
+                                                    </div>
+                                                    <div class="article-desc small--hide">
+                                                        <p style="text-align: justify;">
+                                                            Đột quỵ xảy ra ở con người ngày càng cao. Thực tế, đột quỵ xảy ra với bất...
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="grid__item large--two-thirds medium--two-thirds small--one-half article-info">
-                                            <a href="#" class="article-title">
-                                                Bạn có biết: Cách ăn uống có thể kéo dài hoặc rút ngắn tuổi thọ của bạn?
-                                            </a>
-                                            <div class="article-author">
-                                                <span>Công Ty TNHH VEGGIE</span>
+
+                                        <div class="article-item">
+                                            <div class="grid1">
+                                                <div class="grid1__item large--one-third medium--one-third small--one-half">
+                                                    <div class="article-img">
+                                                        <a href="#">
+                                                            <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-che-do-an-uong_085eccd0f24f4baa966a4cadbab47c8b_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-che-do-an-uong_085eccd0f24f4baa966a4cadbab47c8b_medium.jpeg" alt="Bạn có biết: Cách ăn uống có thể kéo dài hoặc rút ngắn tuổi thọ của bạn?">
+                                                            <div class="overlay">
+
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid1__item large--two-thirds medium--two-thirds small--one-half article-info">
+                                                    <a href="#" class="article-title">
+                                                        Bạn có biết: Cách ăn uống có thể kéo dài hoặc rút ngắn tuổi thọ của bạn?
+                                                    </a>
+                                                    <div class="article-author">
+                                                        <span>Công Ty TNHH VEGGIE</span>
+                                                    </div>
+                                                    <div class="article-desc small--hide">
+                                                        <p style="text-align: justify;">
+                                                            Trong cuộc sống hiện đại ngày nay, sự tiếp nạp chất dinh dưỡng một cách tràn lan, không...
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
+                                                </div>
                                             </div>
-                                            <div class="article-desc small--hide">
-                                                <p style="text-align: justify;">
-                                                    Trong cuộc sống hiện đại ngày nay, sự tiếp nạp chất dinh dưỡng một cách tràn lan, không...
-                                                </p>
+                                        </div>
+                                        <div class="article-item">
+                                            <div class="grid1">
+                                                <div class="grid1__item large--one-third medium--one-third small--one-half">
+                                                    <div class="article-img">
+                                                        <a href="#">
+                                                            <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-cung-cap-vitamin-d-1_5c578fa4ab6e49c693b8edbac8cdc1af_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-cung-cap-vitamin-d-1_5c578fa4ab6e49c693b8edbac8cdc1af_medium.jpeg" alt="Làm thế nào để cung cấp vitamin D nếu bạn đang thực hiện chế độ ăn thuần chay?">
+                                                            <div class="overlay">
+
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="grid1__item large--two-thirds medium--two-thirds small--one-half article-info">
+                                                    <a href="#" class="article-title">
+                                                        Làm thế nào để cung cấp vitamin D nếu bạn đang thực hiện chế độ ăn thuần chay?
+                                                    </a>
+                                                    <div class="article-author">
+                                                        <span>Công Ty TNHH VEGGIE</span>
+                                                    </div>
+                                                    <div class="article-desc small--hide">
+                                                        <p style="text-align: justify;">
+                                                            Hầu hết mọi người đều thắc mắc rằng chế độ ăn thuần chay có thực sự cung cấp...
+                                                        </p>
+                                                    </div>
+                                                    <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
+                                                </div>
                                             </div>
-                                            <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="article-item">
-                                    <div class="grid">
-                                        <div class="grid__item large--one-third medium--one-third small--one-half">
-                                            <div class="article-img">
-                                                <a href="#">
-                                                    <img class="lazyload" src="//file.hstatic.net/200000274813/article/the-fit-tuna-cung-cap-vitamin-d-1_5c578fa4ab6e49c693b8edbac8cdc1af_medium.jpeg" data-src="//file.hstatic.net/200000274813/article/the-fit-tuna-cung-cap-vitamin-d-1_5c578fa4ab6e49c693b8edbac8cdc1af_medium.jpeg" alt="Làm thế nào để cung cấp vitamin D nếu bạn đang thực hiện chế độ ăn thuần chay?">
-                                                    <div class="overlay">
-
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="grid__item large--two-thirds medium--two-thirds small--one-half article-info">
-                                            <a href="#" class="article-title">
-                                                Làm thế nào để cung cấp vitamin D nếu bạn đang thực hiện chế độ ăn thuần chay?
-                                            </a>
-                                            <div class="article-author">
-                                                <span>Công Ty TNHH VEGGIE</span>
-                                            </div>
-                                            <div class="article-desc small--hide">
-                                                <p style="text-align: justify;">
-                                                    Hầu hết mọi người đều thắc mắc rằng chế độ ăn thuần chay có thực sự cung cấp...
-                                                </p>
-                                            </div>
-                                            <a href="#" class="article-readmore">Xem thêm <svg class="svg-inline--fa fa-long-arrow-alt-right fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="long-arrow-alt-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""></svg><!-- <i class="fas fa-long-arrow-alt-right"></i> --></a>
-                                        </div>
-                                    </div>
+                                <div class="grid1__item text-center">
+                                    <a href="#" class="article-viewmore">Xem thêm</a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="grid__item text-center">
-                            <a href="#" class="article-viewmore">Xem thêm</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+
         </div>
-    </section>
+        <!-- ----------------------------SAN PHAM NOI BAT--------------------- -->
+        <div class="spnoibat">
+            <section id="spnoibat">
+                <div class="wrapper2">
+                    <div class="inner">
+                        <div class="section-title">
 
-
-
-
-    <!-- ----------------------------SAN PHAM NOI BAT--------------------- -->
-    <section id="home-featured-products" style="margin-top:50px;">
-        <div class="wrapper">
-            <div class="inner">
-                <div class="section-title">
-
-                    <h2>
-                        Sản phẩm nổi bật
-                    </h2>
-                </div>
-                <div class="section-content" style="margin-top:50px">
-                    <div class="grid">
-                        <div class="product-deal">
-                            <div class="grid__item large--two-thirds medium--one-half small--one-whole">
-                                <div class="product-img">
-                                    <img src="//product.hstatic.net/200000274813/product/153811533_819902058939199_5702681727673053914_o_1bea07413c6a484e894c198232655b3f_master.jpg" alt="Bánh Biscotti Nguyên Cám Ăn Kiêng 250g">
-                                </div>
-                            </div>
-                            <div class="grid__item large--one-third medium--one-half small--one-whole">
-                                <div class="product-info">
-                                    <div class="product-title">
-                                        <a href="/products/banh-biscotti-nguyen-cam-an-kieng-250g">Bánh Biscotti Nguyên Cám Ăn Kiêng 250g </a>
-                                    </div>
-                                    <div class="product-price-review">
-                                        <div class="product-price">
-                                            <span class="current-price">135,000₫</span>
-
+                            <h2>
+                                Sản phẩm nổi bật
+                            </h2>
+                        </div>
+                        <div class="section-content">
+                            <div class="grid1">
+                                <div class="product-deal">
+                                    <div class="grid1__item large--two-thirds medium--one-half small--one-whole">
+                                        <div class="product-img">
+                                            <img src="//product.hstatic.net/200000274813/product/153811533_819902058939199_5702681727673053914_o_1bea07413c6a484e894c198232655b3f_master.jpg" alt="Bánh Biscotti Nguyên Cám Ăn Kiêng 250g">
                                         </div>
+                                    </div>
+                                    <div class="grid1__item large--one-third medium--one-half small--one-whole">
+                                        <div class="product-info">
+                                            <div class="product-title">
+                                                <a href="/products/banh-biscotti-nguyen-cam-an-kieng-250g">Bánh Biscotti Nguyên Cám Ăn Kiêng 250g </a>
+                                            </div>
+                                            <div class="product-price-review">
+                                                <div class="product-price">
+                                                    <span class="current-price">135,000₫</span>
 
-                                    </div>
-                                    <div class="product-desc">
-                                        <p>🌿 Thành Phần: Bột nguyên cám ( không tẩy), mật ong nguyên chất, các loại hạt ( hạnh nhân, điều, bí xanh, nho)<br>🌿 Hướng dẫn sử dụng: Dùng trực tiếp 2-3 miếng trước các buổi tập, dùng cho bữa ăn phụ thay Snack thông thường, dùng ăn sáng ăn vặt, không nên dùng quá nhiều một lần để tránh khó tiêu.<br>🌿 Công dụng: tinh bột trong bột nguyên cám chuyển hoá chậm giúp nó lâu, ức chế cơn thèm ăn, giúp giảm cân nhưng không mất sức.<br>🌿Bánh làm từ bột nguyên cám, không bơ sữa, đường kính nên có thể cứng hơn so với bánh thông thường. đây là sản phẩm ăn kiêng nên khách đừng so sánh với bánh thường nha.<br>🌿Đây là món ăn vặt siêu tiện lợi, siêu ngon mà còn không lo béo. Với những bạn eatclean, giảm cân, hay những healthy lifestyle thì món bánh này chắc chắn không làm bạn thất vọng.<br>&nbsp;HSD: 2 tháng kể từ ngày sản xuất in trên bao bì.<br>Nutrition fact trong 100g&nbsp;<br>Calo 340 ~ 370 calo<br>Protein: 10g<br>Carb: 49g<br>Fat: 4,5g<br>SẢN PHẨM NHÀ TUNA CAM KẾT:<br>🌿 KHÔNG ĐƯỜNG TRẮNG<br>🌿 KHÔNG CHẤT BẢO QUẢN, PHẨM MÀU<br>🌿THÀNH PHẦN TỪ NHIÊN<br>🌿 XUẤT XỨ NGUYÊN LIỆU RÕ RÀNG<br>🌿 CÓ GIẤY CN ĐỦ ĐIỀU KIỆN VSATTP<br>⚠️ Khách lưu ý giúp shop: vì số lượng đơn hàng nhiều nên shop check bằng máy và đi theo bill chứ không đi theo note của khách được, mong khách thông cảm ạ. Nếu khách cần gấp có thể gọi cho shop nhé &nbsp;❤️<br>⚠️ Bánh có thể bị bể vỡ trong quá trình vận chuyển đi xa. Khách ở các tỉnh vui lòng cân nhắc trước khi đặt hàng ạ. Shop Cảm ơn❤️<br>⚠️ ĐƯỜNG TRONG NUTRITION LÀ TỪ MẬT ONG VÀ HẠT TRÁI. SẢN PHẨM HOÀN TOÀN NGỌT TỰ NHIÊN. KHÔNG ĐƯỜNG TRẮNG. PHÁT HIỆN ĐƯỜNG TRẮNG ĐỀN GẤP 100 .<br>&nbsp;</p>
-                                    </div>
-                                    <div class="product-action" sstyle="margin-bottom:20px">
-                                        <button type="button" class="btnHome btn-addToCart add-to-cart   "> <span>Thêm vào giỏ</span></button>
-                                        <button type="button" class=" btnHome btn-buyNow buy-now "> Mua ngay</button>
+                                                </div>
+
+                                            </div>
+                                            <div class="product-desc">
+                                                <p>🌿 Thành Phần: Bột nguyên cám ( không tẩy), mật ong nguyên chất, các loại hạt ( hạnh nhân, điều, bí xanh, nho)<br>🌿 Hướng dẫn sử dụng: Dùng trực tiếp 2-3 miếng trước các buổi tập, dùng cho bữa ăn phụ thay Snack thông thường, dùng ăn sáng ăn vặt, không nên dùng quá nhiều một lần để tránh khó tiêu.<br>🌿 Công dụng: tinh bột trong bột nguyên cám chuyển hoá chậm giúp nó lâu, ức chế cơn thèm ăn, giúp giảm cân nhưng không mất sức.<br>🌿Bánh làm từ bột nguyên cám, không bơ sữa, đường kính nên có thể cứng hơn so với bánh thông thường. đây là sản phẩm ăn kiêng nên khách đừng so sánh với bánh thường nha.<br>🌿Đây là món ăn vặt siêu tiện lợi, siêu ngon mà còn không lo béo. Với những bạn eatclean, giảm cân, hay những healthy lifestyle thì món bánh này chắc chắn không làm bạn thất vọng.<br>&nbsp;HSD: 2 tháng kể từ ngày sản xuất in trên bao bì.<br>Nutrition fact trong 100g&nbsp;<br>Calo 340 ~ 370 calo<br>Protein: 10g<br>Carb: 49g<br>Fat: 4,5g<br>SẢN PHẨM NHÀ TUNA CAM KẾT:<br>🌿 KHÔNG ĐƯỜNG TRẮNG<br>🌿 KHÔNG CHẤT BẢO QUẢN, PHẨM MÀU<br>🌿THÀNH PHẦN TỪ NHIÊN<br>🌿 XUẤT XỨ NGUYÊN LIỆU RÕ RÀNG<br>🌿 CÓ GIẤY CN ĐỦ ĐIỀU KIỆN VSATTP<br>⚠️ Khách lưu ý giúp shop: vì số lượng đơn hàng nhiều nên shop check bằng máy và đi theo bill chứ không đi theo note của khách được, mong khách thông cảm ạ. Nếu khách cần gấp có thể gọi cho shop nhé &nbsp;❤️<br>⚠️ Bánh có thể bị bể vỡ trong quá trình vận chuyển đi xa. Khách ở các tỉnh vui lòng cân nhắc trước khi đặt hàng ạ. Shop Cảm ơn❤️<br>⚠️ ĐƯỜNG TRONG NUTRITION LÀ TỪ MẬT ONG VÀ HẠT TRÁI. SẢN PHẨM HOÀN TOÀN NGỌT TỰ NHIÊN. KHÔNG ĐƯỜNG TRẮNG. PHÁT HIỆN ĐƯỜNG TRẮNG ĐỀN GẤP 100 .<br>&nbsp;</p>
+                                            </div>
+                                            <div class="product-action">
+                                                <button type="button" class="btnTrangChu btn-addToCart add-to-cart   "> <span>Thêm vào giỏ</span></button>
+                                                <button type="button" class=" btnTrangChu btn-buyNow buy-now "> Mua ngay</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
-
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
 
+    </div>
     <!--Gửi mail cho chúng tôi-->
     <div style="margin-top: 100px">
         <div class="footer-subscribe">
@@ -1563,7 +868,9 @@
             <div>
                 <h2>Fanpage</h2>
 
-                <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">offscreenBuffering</script>
+                <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2">
+
+                </script>
                 <div class="fb-post"
                      data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
                      data-width="500"></div>

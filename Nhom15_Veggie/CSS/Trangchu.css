@@ -1,0 +1,299 @@
+﻿.tham {
+    margin: 0;
+    padding: 2px;
+}
+#gioithieu
+{
+    margin:100px 0 100px 0;
+}
+.tham .section-title h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #000000;
+    margin-bottom: 5%;
+}
+
+    .tham #gioithieu .wrapper2 {
+        padding: 0 30px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .tham #gioithieu .grid1 {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-left: -30px;
+        display: table;
+        clear: both;
+    }
+
+    .tham #gioithieu .grid1__item {
+        box-sizing: border-box;
+        float: left;
+        min-height: 1px;
+        padding-left: 30px;
+        vertical-align: top;
+        width: 100%;
+    }
+
+    .tham #gioithieu .large--six-twelfths {
+        width: 50%;
+    }
+
+    .tham #gioithieu .large--three-twelfths {
+        width: 25%;
+    }
+
+    .tham #gioithieu .large--three-twelfths {
+        width: 25%;
+    }
+
+    .tham #gioithieu .about-center {
+        width: 100%;
+    }
+
+
+    .tham #gioithieu .text-center {
+        text-align: center !important;
+    }
+
+    .tham #gioithieu img, iframe {
+        max-width: 100%;
+    }
+
+element.style {
+    visibility: visible;
+    animation-name: slideInLeft;
+}
+
+.tham #gioithieu .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.tham #gioithieu .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+}
+
+.tham #gioithieu .about-item {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    .tham #gioithieu .about-item .about-title {
+        color: black;
+        margin: 20px 0px 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+/*--------------------------------TIN TỨC------------------------------*/
+.tham #tintuc .wrapper2 {
+    padding: 0 30px;
+}
+
+.tham #tintuc .tt_grid1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.tham #tintuc .grid1__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.tham #tintuc .large--one-half {
+    width: 50%;
+}
+
+.tham #tintuc .article-item {
+    background: .tham #fbfbfb;
+    margin-bottom: 0px;
+}
+
+    .tham #tintuc .article-item .article-img {
+        position: relative;
+        overflow: hidden;
+    }
+
+        .tham #tintuc .article-item .article-img a {
+            display: block;
+            overflow: hidden;
+        }
+
+.tham #tintuc a, .text-link {
+    color: .tham #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+.tham #tintuc .article-item .article-img a img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tham #tintuc .article-item .article-img a .overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+}
+
+.tham #tintuc .article-item.article-featured .article-info {
+    padding: 20px 30px 20px;
+}
+
+.tham #tintuc .article-item .article-info .article-title {
+    font-size: 20px;
+    color: .tham #131111;
+    display: block;
+    font-weight: bold;
+}
+
+.tham #tintuc .large--one-half {
+    width: 50%;
+}
+
+.tham #tintuc .article-item {
+    background: .tham #fbfbfb;
+    margin-bottom: 30px;
+}
+
+.tham #tintuc .large--one-third {
+    width: 33.333%;
+}
+
+.tham #tintuc .large--two-thirds {
+    width: 66.666%;
+}
+
+.tham #tintuc .article-item .article-info {
+    padding: 15px 30px;
+}
+
+    .tham #tintuc .article-item .article-info .article-author {
+        margin: 5px 0px;
+    }
+
+    .tham #tintuc .article-item .article-info .article-readmore {
+        display: block;
+        margin: 10px 0px;
+        color: .tham #131111;
+    }
+
+.tham #tintuc svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+.tham #tintuc .svg-inline--fa.fa-w-14 {
+    width: 0.875em;
+}
+
+.tham #tintuc .article-viewmore {
+    display: inline-block;
+    margin-top: 30px;
+    border: 1px solid;
+    color: .tham #7f7171;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 20px;
+    text-transform: uppercase !important;
+}
+
+.tham #tintuc .text-center {
+    text-align: center !important;
+}
+
+/*--------------SẢN PHẨM NỔI BẬT -----------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.tham #spnoibat {
+    padding-top: 100px;
+    background: .tham #fbfbfb;
+}
+
+.tham .wrapper2 {
+    padding: 0 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.tham .grid1 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+    display: table;
+}
+
+.tham .grid1__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 27px;
+    padding-left: 37px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.tham .large--one-third {
+    width: 33.333%;
+}
+
+.tham .large--two-thirds {
+    width: 66.666%;
+}
+
+.tham #spnoibat .product-info .product-title a {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.tham #spnoibat .product-img img {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.tham #spnoibat .product-info .product-price-review > div.product-price .current-price {
+    color: .tham #094125;
+    font-size: 24px;
+}
+
+.tham #spnoibat .product-info .product-action button {
+    margin: 20px 10px 0px 0px;
+}
+
+.tham .btnTrangChu {
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    width: 150px;
+    border: 1px solid .tham #094125;
+    line-height: 35px;
+    color: .tham #ffffff;
+    background: .tham #094125;
+}
+
+.tham #spnoibat .product-info .product-action button:last-child {
+    margin-right: 0px;
+    background: #fff;
+    color: #094125;
+}
