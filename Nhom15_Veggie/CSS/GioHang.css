@@ -136,7 +136,8 @@
     }
 
 .giohang .chuthich textarea {
-    width: 80%;
+    width: 50%;
+    text-align:left;
 }
 
 .giohang .form_a i:hover {
@@ -180,7 +181,7 @@
 
 .section1 {
     color: #737373;
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.3em;
     overflow-wrap: break-word;
     word-break: break-word;
@@ -250,25 +251,17 @@
 
   /* PHƯƠNG THỨC THANH TOÁN*/
 
-.ptvanchuyen {
-    padding: 20px;
-    font-size: 21px;
-    width: 500px;
-    background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
-    border-radius: 3px;
-    border: 3px solid #d5d5d500;
+    .ptvanchuyen
+
+{
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+    background: linear-gradient( 40deg,#4caf5014,#ffeb3b17);
+    border: 5px solid #d5d5d500;
     color: #333333;
     border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
     border-image-slice: 1;
-    font-family: inherit;
-
-    font-stretch: inherit;
-    font-style: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    margin: 0px;
-    
-    vertical-align: baseline;
 }
+
 
