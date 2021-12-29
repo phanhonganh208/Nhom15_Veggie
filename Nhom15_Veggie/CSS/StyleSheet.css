@@ -897,110 +897,129 @@ input, :before, :after {
         }
  /*---------FOOTER---------*/
 
-footer {
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-subscribe {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: #094125;
+    padding: 30px 40px;
+    margin-bottom: 150px;
+    color: white;
+}
+
+    .footer-subscribe .grid {
+        display: flex;
+        align-items: center;
+    }
+
+.large--one-half {
+    width: 50%;
+}
+
+.footer-subscribe form {
+    border-bottom: 1px solid #e2e2e2;
+    margin-left: 50px;
+}
+
+    .footer-subscribe form .input-group-field {
+        background: none;
+        border: 0px;
+        outline: none;
+        color: #fff;
+    }
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+
+
+.footer-container {
     margin-top: 80px;
     position: page;
-    width: fit-content;
+    background-color: #F0F0F0;
     height: auto;
     padding: 25px 25px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-right: 50px;
-    margin-left: 30px;
 }
 
-    footer .container {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    .footer-subscribe {
+
+
+.links h3 {
+    position: relative;
+    color: #417505;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+    .links h3:before {
+        content: '';
         position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
-        background: #094125;
-        padding: 30px 40px;
-        color: white;
+        bottom: -5px;
+        left: 0;
+        width: 100px;
+        height: 2px;
     }
 
-        .footer-subscribe .grid {
-            display: flex;
-            align-items: center;
+.links {
+    position: center;
+    width: 300px;
+}
+
+    .links ul li {
+        list-style: none;
+    }
+
+        .links ul li a {
+            color: #000000;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: inline-block;
         }
 
-    .large--one-half {
-        width: 50%;
-    }
-
-    .footer-subscribe form {
-        border-bottom: 1px solid #e2e2e2;
-        margin-left: 50px;
-    }
-
-        .footer-subscribe form .input-group-field {
-            background: none;
-            border: 0px;
-            outline: none;
-            color: #fff;
-        }
-
-    svg:not(:root).svg-inline--fa {
-        overflow: visible;
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        font-family: Roboto;
-    }
-
-
-
-    .links h2 {
-        position: relative;
-        color: #000000;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
-
-    .links h2 {
-        position: relative;
-        color: #000000;
-        font-weight: 500;
-        margin-bottom: 5px;
-    }
-
-        .links h2:before {
-            content: '';
-            position: absolute;
-            bottom: -5px;
-            left: 0;
-            width: 100px;
-            height: 2px;
-        }
-
-    .links {
-        position: center;
-        width: 300px;
-    }
-
-        .links ul li {
-            list-style: none;
-        }
-
-            .links ul li a {
-                color: #000000;
-                text-decoration: none;
-                margin-bottom: 5px;
-                display: inline-block;
+            .links ul li a:hover {
+                color: #F7C551;
             }
 
-                .links ul li a:hover {
-                    color: #094125;
-                }
+    .links span {
+        margin-bottom: 5px;
+    }
+
+.links p {
+    line-height: 1.5;
+}
+    .links p a {
+        color: #000000;
+        text-decoration: none;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    .links p a:hover {
+        color: #F7C551;
+    }
+
+
+
+.fb-post {
+    width: 340px;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-inner {
+    width: 340px;
+    height: 130px;
+}
 
 
 
@@ -1059,7 +1078,7 @@ footer {
     border: 1px solid #e2e2e2;
     width: 400px;
     padding: 8px 10px;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
     border-radius: 3px;
     font-family: inherit;
     font-size: inherit;
@@ -1070,7 +1089,7 @@ footer {
 
 .dk-btn {
     display: inline-block;
-    margin: 0;
+    margin-bottom: 15px;
     padding: 8px 10px;
     width: 400px;
     font-size: 18px;
@@ -1104,6 +1123,7 @@ footer {
 /*------DANG NHAP--------*/
 
 .dn-form-vertical {
+    padding-top: 20px;
     position: relative;
     line-height: 24px;
     font-size: 18px;
@@ -1114,6 +1134,7 @@ footer {
     text-align: center;
     list-style: none;
     margin-left: -30px;
+    padding-bottom: 50px;
 }
 
 
@@ -1128,7 +1149,7 @@ footer {
     border: 1px solid #e2e2e2;
     width: 400px;
     padding: 8px 10px;
-    margin-bottom: 7px;
+    margin-bottom: 15px;
     border-radius: 3px;
     font-family: inherit;
     font-size: inherit;
@@ -1139,7 +1160,7 @@ footer {
 
 .dn-btn {
     display: inline-block;
-    margin: 0;
+    margin-bottom: 15px;
     padding: 8px 10px;
     width: 400px;
     font-size: 18px;
@@ -1826,7 +1847,7 @@ a {
 .regen {
     color: #000000;
     margin-top: 0px;
-    font-size: 13px;
+    font-size: 13pt;
     text-align: center;
 }
 
@@ -1866,8 +1887,6 @@ a {
 
     /*------TRANG TIN TỨC CHI TIẾT---------*/
 .blog {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
     line-height: 1.5;
     color: #333;
     background-color: #fff;
@@ -1876,6 +1895,7 @@ a {
 .blog-content {
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 100px;
 }
 
 .aside-item {
