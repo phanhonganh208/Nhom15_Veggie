@@ -13,10 +13,88 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        #products-detail .wrapper {
+            padding: 0 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        #products-detail {
+            padding-top: 100px;
+        }
+
+            #products-detail .grid {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                margin-left: -30px;
+                display: table;
+            }
+
+            #products-detail .grid__item {
+                box-sizing: border-box;
+                float: left;
+                min-height: 27px;
+                padding-left: 37px;
+                vertical-align: top;
+                width: 100%;
+            }
+
+            #products-detail .large--one-third {
+                width: 65%;
+            }
+
+            #products-detail .large--two-thirds {
+                width: 35%;
+            }
+
+            #products-detail .product-info .product-title a {
+                font-size: 30px;
+                color: black;
+                margin-bottom: 15px;
+            }
+
+            #products-detail .product-img img {
+                width: 100%;
+                vertical-align: middle;
+            }
+
+            #products-detail .product-info .product-price-review > div.product-price .current-price {
+                color: #094125;
+                font-size: 24px;
+            }
+
+            #products-detail .product-info .product-action button {
+                margin: 20px 10px 0px 0px;
+            }
+
+            #products-detail .btnHome {
+                display: inline-block;
+                border-radius: 20px;
+                outline: none;
+                width: 150px;
+                border: 1px solid #094125;
+                line-height: 35px;
+                color: #ffffff;
+                background: #094125;
+            }
+
+            #products-detail .product-info .product-action button:last-child {
+                margin-right: 0px;
+                background: #fff;
+                color: #094125;
+            }
         #breadcrumb-wrapper.breadcrumb-w-img {
             height: 300px;
             padding: 30px 0;
-            background: url(//theme.hstatic.net/200000274813/1000673375/14/breadcrumb_bg1.png?v=270);
+            background:url(Images/breadcrumb_bg5.png);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -331,7 +409,7 @@
 
                                             </div>
 
-                                            <div class="pro-short-desc">
+                                            <div class="pro-short-desc" style="text-align:left">
                                                 <p>
                                                     1. SET GỒM 6 SẢN PHẨM<br />
                                                     - Ngũ cốc nguyên hạt 400g (tự chọn: Super Berries, Super Nutty, Original Mix, Choco Bana, Matcha Maca) hoặc bộ 8 vị granola x 40g<br />
