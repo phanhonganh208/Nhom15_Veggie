@@ -297,3 +297,39 @@ element.style {
     background: #fff;
     color: #094125;
 }
+.tham #spnoibat .button {
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    width: 170px;
+    border: 1px solid #094125;
+    line-height: 35px;
+    color: #ffffff;
+    background: #094125;
+    cursor: pointer;
+    overflow: visible;
+}
+
+.tham #spnoibat .button1 {
+    color: #ffffff;
+    background: #094125;
+}
+
+    .tham #spnoibat .button1:hover {
+        background-color: #FFFFFF;
+        color: #094125;
+    }
+
+.tham #spnoibat .button2 {
+    color: #ffffff;
+    background: #094125;
+}
+
+    .tham #spnoibat .button2:hover {
+        background-color: #FFFFFF;
+        color: #094125;
+    }
+
+a {
+    color: #094125
+}
