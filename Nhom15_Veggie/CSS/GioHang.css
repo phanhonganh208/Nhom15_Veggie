@@ -1,153 +1,383 @@
-﻿/*/////////////////////////////////////////GIO HANG*/
-.giohang {
-    font-size: 20px;
-    line-height: 1.6;
-    font-family: Roboto;
-    font-weight: normal;
-    color: #131111;
-    font-weight: 300;
-    text-align: center;
+﻿
+
+/*--------HEADER-------------*/
+* {
+    margin: 0;
+    padding: 0;
 }
 
-    .giohang a {
-        text-decoration: none;
+.call-mail {
+    font-size: 16px;
+    color: #417505;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+    .call-mail a {
+        font-size: 16px;
+        color: #417505;
     }
 
-    .giohang .cart-table {
-        margin: 0 100px 0;
+
+.log-sign {
+    font-size: 16px;
+    color: #417505;
+    margin-top: -40px;
+    margin-left: 80%;
+}
+
+    .log-sign a {
+        font-size: 16px;
+        color: #417505;
     }
 
-        .giohang .cart-table td, .cart-table th {
-            padding: 30px 15px;
-            border: none;
-            background: #dbffdd;
+        .log-sign a:hover {
+            color: #F7C551;
         }
 
-    .giohang .js-qty, .ajaxcart__qty {
+.main-menu {
+    background: rgb(255, 255, 255);
+    height: 50px;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+    .main-menu muc_lon text {
+        padding: 5px;
+        font-size: 17px;
+    }
+
+    .main-menu li {
         position: relative;
-        margin-bottom: 1em;
-        max-width: 100px;
-        min-width: 75px;
-        overflow: visible;
-        margin: 0;
+        color: #417505;
+        font-size: 17px;
     }
 
-    .giohang .js-qty__adjust--minus, .ajaxcart__qty--minus {
-        left: 0;
-        border-right: 1px solid #e2e2e2;
+    .main-menu ul li {
+        display: inline-block;
     }
 
-.giohang_text-right {
-    text-align: right !important;
-}
+        .main-menu ul li a {
+            color: #417505;
+            text-decoration: none;
+            padding: 10px;
+        }
 
-.giohang textarea {
-    height: 200px;
-    background-color: lightgray;
-}
+            .main-menu ul li a:hover {
+                color: #F7C551;
+                font-size: 18px;
+            }
 
-.giohang textarea {
-    border: 1px solid #e2e2e2;
-    max-width: 100%;
-    padding: 8px 10px;
-    border-radius: 3px;
-}
+        .main-menu ul li .sub-menu li {
+            padding: 10px;
+        }
 
-.giohang .one-third {
-    width: 33.333%;
-}
+            .main-menu ul li .sub-menu li a {
+                color: white;
+                /* flex: none; */
+                display: block;
+                width: 180px;
+                padding: 2px;
+                text-align: left;
+            }
 
-.giohang .two-thirds {
-    width: 66.666%;
-}
+                .main-menu ul li .sub-menu li a:hover {
+                    color: #F7C551;
+                }
 
-.giohang .tongtien {
-    margin-top: 0%;
-}
+    .main-menu li:hover .sub-menu {
+        display: block;
+    }
 
-.giohang .tongtien_thanhtoan {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1px;
-    padding-left: 65%;
-    width: 100%;
-}
 
-.giohang .js-qty input, .ajaxcart__qty input {
+    .main-menu .sub-menu {
+        top: 10px;
+        /* left: 16px; */
+        padding: 0;
+        position: absolute;
+        display: none;
+        background: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 150px;
+    }
+
+ul {
     display: block;
-    background: white;
-    text-align: center;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    /* margin-block-end: 1em; */
+    /* margin-inline-start: 0px; */
+    /* margin-inline-end: 0px; */
+    /* padding-inline-start: 40px; */
+}
+
+.search-container button {
+}
+
+    .search-container button:hover {
+        background: #417505;
+        font-size: 18px;
+    }
+
+
+/********************************/
+
+/*////////////////////////////*/
+
+.giohang {
+    width: 80%;
+    margin: 5% 10% 10%;
+    font-size:20px;
+}
+
+    .giohang .large-12 {
+        max-width: 70%;
+        flex-basis: 100%;
+    }
+a {
+    text-decoration: none;
+    color: #094125;
+}
+ a:hover {
+        color: #F7C551;
+    }
+table {
     width: 100%;
-    padding: 5px 5px;
+    margin-bottom: 1em;
+    border-color: #ececec;
+    border-spacing: 0;
+}
+
+.giohang .product-name {
+    letter-spacing: .05em;
+    /* text-transform: uppercase; */
+
+    width: 30%;
+    color: #111;
+}
+
+.giohang .product-price {
+    border-spacing: 0;
+    box-sizing: border-box;
+    padding: 0.5em;
+    line-height: 1.05;
+}
+
+.giohang .product-quatity {
+    border-spacing: 0;
+    padding: .5em;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+    font-size: .9em;
+    line-height: 1.05;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+.giohang .product-thumbnail {
+    border-spacing: 0;
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+    width: fit-content;
+}
+
+.giohang .product-subtotal {
+    width: 10%;
+    /* border-spacing: 10px; */
+    padding: 0.5em;
+    text-align: left;
+    /* border-bottom: 1px solid #ececec; */
+}
+
+.giohang .product-remove {
+    width: 20px;
+    padding: 0;
+}
+
+.giohang th, td {
+    padding: 0.5em;
+    text-align: left;
+    border-bottom: 1px solid #ececec;
+}
+
+.giohang a.remove, a.icon-remove {
+    display: block;
+    width: 24px;
+    height: 24px;
+    font-size: 15px !important;
+    line-height: 19px !important;
+    border-radius: 100%;
+    color: #ccc;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid currentColor;
+}
+
+img {
+    max-width: 50%;
+    margin-left: 10%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.giohang .show-for-small {
+    display: none !important;
+}
+
+.giohang .text-center .quantity, .quantity {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    margin-right: 1em;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.giohang .text-center .button + .quantity, .button + .quantity {
+    margin-right: 0
+}
+
+.giohang .quantity + .button {
+    margin-right: 0;
+    font-size: 1em
+}
+
+.giohang .quantity .button.minus {
+    margin-right: 0;
+    border-right: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important
+}
+
+.quantity button.plus {
+    border-left: 0 !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important
+}
+
+.quantity .minus, .quantity .plus {
+    padding-left: 0.5em;
+    padding-right: 0.5em
+}
+
+.giohang .quantity input {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    vertical-align: top;
     margin: 0;
 }
 
-.giohang .cart-table td, .cart-table th {
-    padding: 30px 15px;
-    border: none;
-}
-
-.giohang td:hover {
-    background-color: #417505;
-    color: rgb(255, 255, 255);
-}
-
-.giohang .hang {
-    background-color: #094125;
-    color: rgb(0, 0, 0);
-}
-
-.giohang .table-wrap {
-    max-width: 100%;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-.giohang .btn {
-    padding: 8px 10px;
-    text-decoration: none;
-    border-radius: 3px;
-    background-color: #094125;
-    color: #fff;
-}
-
-
-.giohang .nd {
-    color: #131111;
-    padding: 30px;
-}
-
-    .giohang .nd:hover {
-        color: #ffffff;
-    }
-
-.giohang .ha {
-    width: fit-content;
-    padding: 30 black;
-}
-
-    .giohang .ha a img {
+    .giohang .quantity input[type="number"] {
+        max-width: 2.5em;
+        width: 2.5em;
         text-align: center;
-        color: #094125;
-        box-sizing: border-box;
-        border: 0 none;
-        display: block;
-        max-width: 50%;
+        -moz-appearance: textfield;
+        font-size: 1em;
     }
 
-.giohang .chuthich textarea {
-    width: 50%;
-    text-align:left;
+
+@media (max-width: 549px) {
+    .quantity input[type="number"] {
+        width: 2em
+    }
 }
 
-.giohang .form_a i:hover {
-    color: #ffffff;
+.quantity input[type="number"]::-webkit-outer-spin-button, .quantity input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0
 }
+
+.giohang .is-form, button.is-form, input[type='submit'].is-form, input[type='reset'].is-form, input[type='button'].is-form {
+    overflow: hidden;
+    position: relative;
+    background-color: #f9f9f9;
+    text-shadow: 1px 1px 1px #fff;
+    color: #666;
+    border: 1px solid #ddd;
+    text-transform: none;
+    font-weight: normal;
+}
+
+.giohang .btnthanhtoan {
+    background-color: #00b4f2;
+    display: inline-block;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-right: 1em;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    margin-left: 70%;
+    border-radius: 10px;
+}
+
+.giohang .btntieptucxem {
+    color: #417505;
+    background-color: #f9f9f9;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: .9em;
+    letter-spacing: .02em;
+    cursor: pointer;
+    font-weight: bolder;
+    border: 2px solid #417505;
+    margin-right: 1em;
+    line-height: 2.4em;
+    min-height: 2.5em;
+    padding: 0 1.2em;
+    box-sizing: border-box;
+}
+
+.giohang .screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+}
+
+.giohang .tong th {
+    margin-left: 70%;
+}
+
+.giohang button, input[type='submit'], input[type='submit'].button, input[type='reset'].button, input[type='button'].button {
+    color: #91af5f;
+    background-color: #f9f9f9;
+    /* border-color: #666; */
+}
+
+.giohang span.amount {
+    white-space: nowrap;
+    color: #111;
+    font-weight: bold;
+}
+
+.giohang a {
+    text-decoration: none;
+    color: black;
+}
+
+    .giohang a.remove, a.icon-remove {
+        display: block;
+        width: 24px;
+        height: 24px;
+        font-size: 15px !important;
+        line-height: 19px !important;
+        border-radius: 100%;
+        color: #ccc;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid currentColor;
+    }
+
+/*/////////////////////////////////////////GIO HANG*/
 
 .wrap_vanchuyen {
     padding: 10% gray;
     color: black;
-    margin: 50px;
+    margin: 0 50px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -228,13 +458,13 @@
     border-radius: 15px;
     display: block;
     box-sizing: border-box;
-    width: 70%;
+    width: 100%;
     padding: 0.94em 2.8em 0.94em 0.8em;
 }
 
 .product-image {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: auto;
 }
 
 .magiamgia {
