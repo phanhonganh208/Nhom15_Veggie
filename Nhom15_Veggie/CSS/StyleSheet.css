@@ -1288,7 +1288,7 @@ a {
     .cartegory-right-content-item:hover {
         width: calc(40%-13px);
         padding: 10px;
-        background-color: darkgreen;
+        background-color: #ffc764;
         color: white;
         font-size: 16px;
     }
@@ -1298,7 +1298,7 @@ a {
     }
 
 .cartegory-right-top-item-icon {
-    border: 2px solid indianred;
+    border: 2px solid darkgreen;
     border-radius: 200px;
     width: 100px;
     height: 100px;
