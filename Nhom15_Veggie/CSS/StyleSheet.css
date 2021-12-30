@@ -1225,7 +1225,10 @@ a {
 }
 
     .cartegory-left ul li ul li {
-        margin-left: -30px;
+        margin-left: -25px;
+    }
+    .cartegory-left ul li ul li a:hover{
+        color:orange;
     }
 
     .cartegory-left li {
@@ -1360,6 +1363,10 @@ a {
 
 .cartegory-left-li ul {
     display: none;
+
+}
+.cartegory-left-li{
+    
 }
 
 .cartegory-left-li.block ul {
