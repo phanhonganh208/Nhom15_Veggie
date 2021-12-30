@@ -225,15 +225,14 @@ element.style {
 }
 
 .tham #spnoibat {
-    padding-top: 100px;
+    padding-top: 3%;
     background: .tham #fbfbfb;
 }
 
 .tham .wrapper2 {
-    padding: 0 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    padding: 0%;
+    max-width: 100%;
+    margin: 0%;
 }
 
 .tham .grid1 {
@@ -248,9 +247,9 @@ element.style {
     box-sizing: border-box;
     float: left;
     min-height: 27px;
-    padding-left: 37px;
-    vertical-align: top;
-    width: 100%;
+    /* padding-left: 37px; */
+    /* vertical-align: top; */
+    /* width: 100%; */
 }
 
 .tham .large--one-third {
@@ -268,7 +267,7 @@ element.style {
 }
 
 .tham #spnoibat .product-img img {
-    width: 100%;
+    width: 80%;
     vertical-align: middle;
 }
 
@@ -277,9 +276,6 @@ element.style {
     font-size: 24px;
 }
 
-.tham #spnoibat .product-info .product-action button {
-    margin: 20px 10px 0px 0px;
-}
 
 .tham .btnTrangChu {
     display: inline-block;
@@ -333,3 +329,4 @@ element.style {
 a {
     color: #094125
 }
+

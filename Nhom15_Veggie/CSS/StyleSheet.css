@@ -267,12 +267,11 @@ ul {
 }
 
 .inner {
+    margin: 0 10%;
+    object-fit: scale-down;
     font-size: 16px;
     font-family: Roboto;
     color: #131111;
-    font-weight: 300;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
     line-height: 24px;
     box-sizing: border-box;
 }
@@ -281,7 +280,8 @@ ul {
     text-align: center;
     font-size: 36px;
     color: #000000;
-    margin-bottom: 5%;
+    margin-top: 5%;
+    margin-bottom: -5%;
 }
 
 #trangchusp {
@@ -1183,6 +1183,7 @@ a {
     border-bottom: 1px solid #e2e2e2
 }
 
+
     .page-head h1 {
         text-align: center;
         margin-left: 47%;
@@ -1367,10 +1368,10 @@ a {
 /*----TIN TỨC----*/
 .tintuc {
     width: 100%;
-    padding: 120px;
-    margin-top: -100px;
+    /* padding: 110px; */
+    margin-top: -110px;
+    margin-bottom: 15px;
 }
-
 .tintuc-content {
     margin-top: 20px;
     justify-content: space-between;
