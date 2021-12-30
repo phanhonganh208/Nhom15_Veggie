@@ -202,7 +202,7 @@
             </div>
         </footer>
         <div style="text-align: center; background-color: #A9A9A9; color: black ">  Copyrights © 2021 by Veggie </div>
-
+     
         <script type="text/javascript">
             function validateForm() {
                 var email = document.getElementById("CustomerEmail").value;
@@ -211,7 +211,7 @@
                 if (email == null || email == "") {
                     alert("Bạn phải điền email!");
                     return false;
-                } else {
+                } else if (pass == null || pass == "") {
                     alert("Bạn phải điền password!");
                     return false;
                 }
