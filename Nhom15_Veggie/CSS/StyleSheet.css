@@ -444,35 +444,89 @@ input, :before, :after {
         }
 
 .phannoidung {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    padding: 150px;
-    margin: 20px;
+    padding: 9%;
+    margin: -2% 3% 35% 3%;
 }
 
     .phannoidung p {
-        margin: 30px;
+        margin: 1%;
+    }
+@media screen and (min-width:480px ){
+    .phannoidung {
+        font-size: 20px;
+        padding: 10%;
+        margin: -2% 2% 10% 2%;
     }
 
-    /*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
-    .phannoidung ul li {
-        margin: 15px;
+        .phannoidung p {
+            margin: 2%;
+        }
+}
+@media screen and (min-width:1024px ) {
+    .phannoidung {
+        font-size: 22px;
+        padding: 11%;
+        margin: -2% 2% 1% 2%;
     }
+
+        .phannoidung p {
+            margin: 1%;
+        }
+}
+/*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
+.phannoidung ul li {
+    margin: 1%;
+}
 
     .phannoidung ul {
-        list-style: disc
+        list-style: disc;
     }
-
-    /*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
+@media screen and (min-width:480px ) {
+    .phannoidung ul li {
+        margin: 2%;
+    }
+}
+    @media screen and (min-width:1024px ) {
+        .phannoidung ul li {
+            margin: 2%;
+        }
+    }
+ /*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
     .phannoidung ol li {
         font-size: 20px;
     }
 
     .phannoidung p {
-        margin-left: -10px;
-        margin-bottom: 30px;
-        margin-top: 15px;
+        margin-left: -1%;
+        margin-bottom: 3%;
+        margin-top: 1%;
         font-size: 20px;
+    }
+    @media screen and (min-width:480px ) {
+        .phannoidung ol li {
+            font-size: 20px;
+        }
+
+        .phannoidung p {
+            margin-left: -1%;
+            margin-bottom: 3%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
+    }
+    @media screen and (min-width:1024px ) {
+        .phannoidung ol li {
+            font-size: 20px;
+        }
+
+        .phannoidung p {
+            margin-left: -1%;
+            margin-bottom: 3%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
     }
 /*---------FOOTER---------*/
 
@@ -1330,10 +1384,16 @@ a {
     justify-content: space-between;
     margin: 100px 0 100px 70%;
 }
+    .cartegory-right-bottom a{
+        color:black;
+    }
+    .cartegory-right-bottom a:hover {
+        color: orange;
+    }
 
-.cartegory-left ul li {
-    padding: 12px 0;
-}
+    .cartegory-left ul li {
+        padding: 12px 0;
+    }
 
     .cartegory-left ul li > a {
         color: black;
@@ -1416,7 +1476,7 @@ a {
 
 .tintuc {
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     margin-top: -1%;
     margin-bottom: 1%;
     text-align: center;
@@ -1443,7 +1503,7 @@ a {
 }
 
     .tintuc-content-item:hover {
-        padding: 1%;
+        padding: 4%;
         background-color: gainsboro;
         color: darkgreen;
         font-size: 15px;
@@ -1495,7 +1555,13 @@ a {
     margin: 3% 1% 20% 25%;
     font-size: 16px;
 }
+.ttcartegory-right-bottom a {
+    color: black;
+}
 
+    .ttcartegory-right-bottom a:hover {
+        color: orange;
+    }
 .tintuc-content-ite-hr {
     margin: 10px;
 }
@@ -1510,7 +1576,7 @@ a {
     .ttcontainer {
         margin-right: 1%;
         text-align: left;
-        margin-left: 1%;
+        margin-left: 1.5%;
     }
 
     .ttcartegory-right-top-item {
@@ -1559,7 +1625,7 @@ a {
         }
 
         .tintuc-content-item img {
-            width: 88%;
+            width: 86%;
             height: 35%;
             margin-top: 1.5%;
         }
@@ -1631,14 +1697,15 @@ a {
 
     .tintuc-content {
         margin-top: 1%;
+        padding: 1%;
     }
 
     .tintuc-content-item {
-        width: calc(31%);
+        width: calc(30%);
         margin: 0.5%;
         padding: 2% 1% 2% 1%;
         margin-bottom: 1%;
-        font-size: 17px;
+        font-size: 16px;
         height: 32%;
     }
 
@@ -1646,12 +1713,12 @@ a {
             padding: 1%;
             font-size: 15px;
             width: calc(31.5%);
-            height: 33%;
+            height: 32%;
         }
 
         .tintuc-content-item img {
             width: 90%;
-            height: 37%;
+            height: 39%;
             margin-top: 1.5%;
         }
 
@@ -1661,7 +1728,7 @@ a {
     }
 
     .tintuc-content-item-content {
-        font-size: 19px;
+        font-size: 18px;
         width: 100%;
         margin: 2%;
     }
