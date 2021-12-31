@@ -880,57 +880,6 @@ svg:not(:root).svg-inline--fa {
 
 /*------------PHẦN LIÊN HỆ---------------*/
 
-#lh-breadcrumb-wrapper5.lh-breadcrumb-w-img {
-    height: 300px;
-    padding: 30px 0;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-    #lh-breadcrumb-wrapper5.lh-breadcrumb-w-img .lh-breadcrumb-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 1;
-    }
-
-    #lh-breadcrumb-wrapper5.lh-breadcrumb-w-img .lh-breadcrumb-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        width: 100%;
-    }
-
-        #lh-breadcrumb-wrapper5.lh-breadcrumb-w-img .lh-breadcrumb-content .lh-breadcrumb-small a {
-            display: inline-block;
-            position: relative;
-        }
-
-a, .text-link {
-    color: white;
-    text-decoration: none;
-    background: transparent;
-}
-
-#breadcrumb-wrapper5.breadcrumb-w-img .breadcrumb-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
 
 
 .g-grid {
