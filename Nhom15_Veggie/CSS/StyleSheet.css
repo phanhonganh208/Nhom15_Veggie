@@ -1422,7 +1422,7 @@ a {
 
 .tintuc-content-item {
     width: calc(83%);
-    text-align: center;
+   text-align: center;
     margin-top: 2%;
     margin-right: 5%;
     margin-left: 9%;
@@ -1432,7 +1432,7 @@ a {
     background-color: #fafafa;
     font-size: 14px;
     height: 10.5%;
-    margin-top: 1%;
+    margin-top: 1%; 
 }
 
     .tintuc-content-item:hover {
