@@ -487,7 +487,7 @@ input, :before, :after {
     .phannoidung ul li {
         margin: 2%;
     }
-
+}
     @media screen and (min-width:1024px ) {
         .phannoidung ul li {
             margin: 2%;
@@ -504,18 +504,18 @@ input, :before, :after {
         margin-top: 1%;
         font-size: 20px;
     }
-@media screen and (min-width:480px ) {
-    .phannoidung ol li {
-        font-size: 20px;
-    }
+    @media screen and (min-width:480px ) {
+        .phannoidung ol li {
+            font-size: 20px;
+        }
 
-    .phannoidung p {
-        margin-left: -1%;
-        margin-bottom: 3%;
-        margin-top: 1%;
-        font-size: 20px;
+        .phannoidung p {
+            margin-left: -1%;
+            margin-bottom: 3%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
     }
-
     @media screen and (min-width:1024px ) {
         .phannoidung ol li {
             font-size: 20px;
@@ -1384,10 +1384,16 @@ a {
     justify-content: space-between;
     margin: 100px 0 100px 70%;
 }
+    .cartegory-right-bottom a{
+        color:black;
+    }
+    .cartegory-right-bottom a:hover {
+        color: orange;
+    }
 
-.cartegory-left ul li {
-    padding: 12px 0;
-}
+    .cartegory-left ul li {
+        padding: 12px 0;
+    }
 
     .cartegory-left ul li > a {
         color: black;
@@ -1549,7 +1555,13 @@ a {
     margin: 3% 1% 20% 25%;
     font-size: 16px;
 }
+.ttcartegory-right-bottom a {
+    color: black;
+}
 
+    .ttcartegory-right-bottom a:hover {
+        color: orange;
+    }
 .tintuc-content-ite-hr {
     margin: 10px;
 }
