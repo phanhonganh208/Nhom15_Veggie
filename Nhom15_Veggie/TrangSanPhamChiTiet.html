@@ -13,87 +13,7 @@
     <link rel="shortcut icon" href="Images/logo.png" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        #chitietsanpham .wrapper {
-            padding: 0 30px;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-   
-
-        #products-detail {
-            padding-top: 100px;
-        }
-
-            #products-detail .grid {
-                list-style: none;
-                margin: 0;
-                padding: 0;
-                margin-left: -30px;
-                display: table;
-            }
-
-            #products-detail .grid__item {
-                box-sizing: border-box;
-                float: left;
-                min-height: 27px;
-                padding-left: 37px;
-                vertical-align: top;
-                width: 100%;
-            }
-
-            #products-detail .large--one-third {
-                width: 65%;
-            }
-
-            #products-detail .large--two-thirds {
-                width: 35%;
-            }
-
-            #products-detail .product-info .product-title a {
-                font-size: 30px;
-                color: black;
-                margin-bottom: 15px;
-            }
-
-            #products-detail .product-img img {
-                width: 100%;
-                vertical-align: middle;
-            }
-
-            #products-detail .product-info .product-price-review > div.product-price .current-price {
-                color: #094125;
-                font-size: 24px;
-            }
-
-            #products-detail .product-info .product-action button {
-                margin: 20px 10px 0px 0px;
-            }
-
-            #products-detail .btnHome {
-                display: inline-block;
-                border-radius: 20px;
-                outline: none;
-                width: 150px;
-                border: 1px solid #094125;
-                line-height: 35px;
-                color: #ffffff;
-                background: #094125;
-            }
-
-            #products-detail .product-info .product-action button:last-child {
-                margin-right: 0px;
-                background: #fff;
-                color: #094125;
-            }
-
         #breadcrumb-wrapper.breadcrumb-w-img {
             height: 300px;
             padding: 30px 0;
@@ -125,7 +45,7 @@
                 width: 100%;
             }
 
-                
+
                 #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
                     font-size: 24px;
                     color: #fff;
@@ -148,24 +68,23 @@
             background: transparent;
         }
 
-        #products-detail .product-content .pro-content-head .pro-brand, .product-content .pro-content-head .pro-type {
-            display: inline-block;
+        .main_product-img {
+            width: 40%;
+            padding-top: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+            margin-top: 20px
         }
 
-            #products-detail .product-content .pro-content-head .pro-brand a, .product-content .pro-content-head .pro-type a {
-                display: inline-block;
-                color: #094125;
-            }
-
-        #products-detail .product-content .pro-price .current-price {
-            display: inline-block;
-            margin-right: 15px;
+        .main_product-info a {
             color: #094125;
-            font-size: 24px;
-            font-weight: bold;
+            text-decoration: none;
+            background: transparent;
         }
 
-        #products-detail .button {
+        #ChiTietSanPham .button {
             display: inline-block;
             border-radius: 20px;
             outline: none;
@@ -178,31 +97,41 @@
             overflow: visible;
         }
 
-        #products-detail .button1 {
+        #ChiTietSanPham .button1 {
             color: #ffffff;
             background: #094125;
         }
 
-            #products-detail .button1:hover {
+            #ChiTietSanPham .button1:hover {
                 background-color: #FFFFFF;
                 color: #094125;
             }
 
-        #products-detail .button2 {
+        #ChiTietSanPham .button2 {
             color: #ffffff;
             background: #094125;
         }
 
-            #products-detail .button2:hover {
+            #ChiTietSanPham .button2:hover {
                 background-color: #FFFFFF;
                 color: #094125;
             }
 
-        #products-detail .quantity {
+        #ChiTietSanPham .buttonXT {
+            background-color: #FFFFFF;
+            color: #094125;
+        }
+
+            #ChiTietSanPham .buttonXT:hover {
+                color: #ffffff;
+                background: #094125;
+            }
+
+        #ChiTietSanPham .quantity {
             display: inline-block;
         }
 
-            #products-detail .quantity .input-text.qty {
+            #ChiTietSanPham .quantity .input-text.qty {
                 width: 35px;
                 height: 39px;
                 padding: 0 5px;
@@ -211,21 +140,21 @@
                 border: 1px solid #efefef;
             }
 
-            #products-detail .quantity.buttons_added {
+            #ChiTietSanPham .quantity.buttons_added {
                 text-align: left;
                 position: relative;
                 white-space: nowrap;
                 vertical-align: top;
             }
 
-                #products-detail .quantity.buttons_added input {
+                #ChiTietSanPham .quantity.buttons_added input {
                     display: inline-block;
                     margin: 0;
                     vertical-align: top;
                     box-shadow: none;
                 }
 
-                #products-detail .quantity.buttons_added .minus,
+                #ChiTietSanPham .quantity.buttons_added .minus,
                 .quantity.buttons_added .plus {
                     padding: 7px 10px 8px;
                     height: 41px;
@@ -234,15 +163,15 @@
                     cursor: pointer;
                 }
 
-                #products-detail .quantity.buttons_added .minus {
+                #ChiTietSanPham .quantity.buttons_added .minus {
                     border-right: 0;
                 }
 
-                #products-detail .quantity.buttons_added .plus {
+                #ChiTietSanPham .quantity.buttons_added .plus {
                     border-left: 0;
                 }
 
-                #products-detail .quantity.buttons_added .minus:hover,
+                #ChiTietSanPham .quantity.buttons_added .minus:hover,
                 .quantity.buttons_added .plus:hover {
                     background: #eeeeee;
                 }
@@ -258,35 +187,186 @@
         .quantity.buttons_added .plus:focus {
             outline: none;
         }
-        #chitietsanpham .button {
-            display: inline-block;
-            border-radius: 20px;
-            outline: none;
-            width: 170px;
-            border: 1px solid #094125;
-            line-height: 35px;
-            color: #ffffff;
-            background: #094125;
-            cursor: pointer;
-            overflow: visible;
-            text-align:center;
-            margin-top:10px;
+
+        .cartegory {
+            padding: 100px 50px 50px;
         }
 
-        #chitietsanpham .buttonXT {
-            
-            background-color: #FFFFFF;
-            color: #094125;
+        .cartegory-top {
+            margin-bottom: 50px;
         }
 
-            #chitietsanpham .buttonXT:hover {
-                color: #ffffff;
-                background: #094125;
+            .cartegory-top p {
+                margin: 0 12px;
+                font-size: 12px;
             }
+
+        .cartegory-left {
+            width: 18%;
+            background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
+            border-radius: 3px;
+            border: 3px solid #d5d5d500;
+            color: #333333;
+            border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
+            border-image-slice: 1;
+            font-family: inherit;
+            font-size: 18px;
+            font-stretch: inherit;
+            font-style: inherit;
+            font-variant: inherit;
+            font-weight: inherit;
+            line-height: inherit;
+            margin-left: 15px;
+            padding: 10px;
+            vertical-align: baseline;
+            text-align: left;
+        }
+
+            .cartegory-left ul li ul li {
+                margin-left: -30px;
+            }
+
+            .cartegory-left li {
+                list-style-type: none;
+            }
+
+        .cartegory-right {
+            width: 80%;
+        }
+
+        .cartegory-right-top-item:first-child {
+            flex: 2;
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        .cartegory-right-top-item {
+            flex: 1;
+            padding: 0 12px;
+        }
+
+            .cartegory-right-top-item button {
+                width: 100%;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                background-color: #ffff;
+                border: 1px solid #dddddd;
+            }
+
+            .cartegory-right-top-item select {
+                width: 100%;
+                padding: 10px 15px;
+                display: flex;
+                justify-content: space-between;
+                cursor: pointer;
+                background-color: #ffff;
+                border: 1px solid #dddddd;
+            }
+
+        .cartegory-right-content {
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        .cartegory-right-content-item {
+            width: fit-content;
+            height: auto;
+            text-align: center;
+            margin-top: 14px;
+            /* margin-right: 10px; */
+            padding: 16px;
+            color: darkgreen;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+
+            .cartegory-right-content-item:hover {
+                width: calc(40%-13px);
+                padding: 10px;
+                background-color: darkgreen;
+                color: white;
+                font-size: 16px;
+            }
+
+            .cartegory-right-content-item h2 {
+                margin-top: 14px;
+            }
+
+        .cartegory-right-top-item-icon {
+            border: 2px solid indianred;
+            border-radius: 200px;
+            width: 100px;
+            height: 100px;
+            padding: 5px;
+            font-size: 18px;
+            text-align: center;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+            .cartegory-right-top-item-icon a {
+                color: cadetblue;
+            }
+
+                .cartegory-right-top-item-icon a:hover {
+                    color: white;
+                }
+
+
+        .cartegory-right-content-item img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cartegory-right-bottom {
+            justify-content: space-between;
+            margin: 100px 0 100px 70%;
+        }
+
+        .cartegory-left ul li {
+            padding: 12px 0;
+        }
+
+            .cartegory-left ul li > a {
+                color: black;
+                font-size: 16px;
+                font-weight: bold;
+            }
+
+            .cartegory-left ul li ul li {
+                padding-left: 5px;
+            }
+
+                .cartegory-left ul li ul li a {
+                    color: #333333;
+                    font-size: 14px;
+                    margin-left: 13%;
+                }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .spcontainer {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .cartegory-left-li ul {
+            display: none;
+        }
+
+        .cartegory-left-li.block ul {
+            display: block;
+        }
         .pagination {
             display: inline-block;
-            text-align:center
-
+            margin-left:40%;
+            margin-top:20px;
         }
 
             .pagination a {
@@ -295,51 +375,7 @@
                 padding: 8px 16px;
                 text-decoration: none;
             }
-    
     </style>
-    <script>
-        function wcqib_refresh_quantity_increments() {
-            jQuery("div.quantity:not(.buttons_added), td.quantity:not(.buttons_added)").each(function (a, b) {
-                var c = jQuery(b);
-                c.addClass("buttons_added"), c.children().first().before('<input type="button" value="-" class="minus" />'), c.children().last().after('<input type="button" value="+" class="plus" />')
-            })
-        }
-        String.prototype.getDecimals || (String.prototype.getDecimals = function () {
-            var a = this,
-                b = ("" + a).match(/(?:\.(\d+))?(?:[eE]([+-]?\d+))?$/);
-            return b ? Math.max(0, (b[1] ? b[1].length : 0) - (b[2] ? +b[2] : 0)) : 0
-        }), jQuery(document).ready(function () {
-            wcqib_refresh_quantity_increments()
-        }), jQuery(document).on("updated_wc_div", function () {
-            wcqib_refresh_quantity_increments()
-        }), jQuery(document).on("click", ".plus, .minus", function () {
-            var a = jQuery(this).closest(".quantity").find(".qty"),
-                b = parseFloat(a.val()),
-                c = parseFloat(a.attr("max")),
-                d = parseFloat(a.attr("min")),
-                e = a.attr("step");
-            b && "" !== b && "NaN" !== b || (b = 0), "" !== c && "NaN" !== c || (c = ""), "" !== d && "NaN" !== d || (d = 0), "any" !== e && "" !== e && void 0 !== e && "NaN" !== parseFloat(e) || (e = 1), jQuery(this).is(".plus") ? c && b >= c ? a.val(c) : a.val((b + parseFloat(e)).toFixed(e.getDecimals())) : d && b <= d ? a.val(d) : b > 0 && a.val((b - parseFloat(e)).toFixed(e.getDecimals())), a.trigger("change")
-        });
-
-
-    let tabHeader = document.getElementsByClassName("tab-header")[0];
-    let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-    let tabBody = document.getElementsByClassName("tab-body")[0];
-
-
-    let tabsPane = tabHeader.getElementsByTagName("div");
-    for (let i = 0; i < tabsPane.length; i++) {
-        tabsPane[i].addEventListener("click", function () {
-            tabHeader.getElementsByClassName("active")[0].classList.remove("active");
-            tabsPane[i].classList.add("active");
-
-            tabBody.getElementsByClassName("active")[0].classList.remove("active");
-            tabBody.getElementsByTagName("div")[i].classList.add("active");
-
-            tabIndicator.style.left = `calc(calc(50% / 4) * ${i})`;
-        })
-    }
-    </script>
 </head>
 <body>
 
@@ -390,7 +426,7 @@
     <!--Cái logo-->
     <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
 
- 
+
 
     <section id="breadcrumb-wrapper" class="breadcrumb-w-img">
         <div class="breadcrumb-overlay"></div>
@@ -414,357 +450,280 @@
             </div>
         </div>
     </section>
+    <section id="ChiTietSanPham" style="padding-right:10%">
+        <div class="sanphamchitiet">
+            
+            <div class="main_product" style="display:flex; padding-left:10%;  margin-top:5%">
+                <div class="main_product-img" style="background-image:url(Images/setsang.png); width:5%;height:5%;padding:5%">
 
-    <section id="products-detail" style="margin-top:-20px  ;background-color:white">
-        <div class="wrapper">
-            <div class="inner">
+                </div>
+                <div class="main_product-img" style="background-image:url(Images/setsang.png);width:30%;height:30%;margin-left:20px; padding-top:30%">
 
-                <div class="section-content" style="margin-top:10px">
-                    <div class="grid">
-                        <div class="product-deal" sstyle="text-align:center">
-                            <div class="grid__item large--two-thirds medium--one-half small--one-whole" style="display: flex;flex-wrap: wrap; text-align:center">
-                                <div class="product-img" style="width:376px; text-align:center">
-                                    <img src="Images/set_an_san_dong_day.png" alt="Set ăn sáng đong đầy">
-                                </div>
-                                <div class="product-img" style="width:calc(60%/3);margin-top:20px;display: flex;flex-wrap: nowrap; text-align:center ">
-                                    <img src="Images/set_an_san_dong_day.png" alt="Set ăn sáng đong đầy">
-                                    <img src="Images/set_an_san_dong_day.png" alt="Set ăn sáng đong đầy"style="margin-left:20px">
-                                    <img src="Images/set_an_san_dong_day.png" alt="Set ăn sáng đong đầy"style="margin-left:20px">
-                                    
-                                </div>
+                </div>
+
+                <div class="main_product-info" style="width:60%; margin-left:5%;margin-top:20px ">
+                    <h1 style="font-size:36px">SET ĂN SÁNG ĐONG ĐẦY</h1>
+                    <p>Thương hiệu: <a href="#">Khác</a> | Loại: <a href="#">Khác</a></p>
+                    <h2>200,000đ</h2>
+                    <p>
+                        1. SET GỒM 6 SẢN PHẨM<br />
+                        - Ngũ cốc nguyên hạt 400g (tự chọn: Super Berries, Super Nutty, Original Mix, Choco Bana, Matcha Maca) hoặc bộ 8 vị granola x 40g<br />
+                        - Yến mạch nguyên hạt cán dẹt 500g<br />
+                        - Bánh biscotti 3 vị 100g (original, choco, matcha)<br />
+                        - Bánh gạo lứt 170g<br />
+                        - Hạt chia 100g<br />
+                        - Bơ đậu phộng 100g<br />
+
+                        2. LỢI ÍCH CỦA GRANOLA HAPPI OHA<br />
+                        - Hàm lượng protein và chất xơ cao.<br />
+                        - Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa.<br />
+                        - Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc.<br />
+                        - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
+
+                        3. LỢI ÍCH CỦA BƠ HẠT HAPPI OHA<br />
+                        - Hàm lượng protein và chất xơ cao.<br />
+                        - Bơ hạt chứa nhiều dưỡng chất như vitamin E và B6, acid folic, niacin, magie, kẽm, đồng và kali rất tốt cho sức khỏe.<br />
+                        - Chứa chất béo tốt giúp giảm cholesterol xấu, giảm nguy cơ mắc bệnh tim mạch và tiểu đường, hỗ trợ ổn định đường huyế và insulin.<br />
+                        - Sản phẩm có hương vị vô cùng thơm ngon, ít béo nên ăn không bị ngán.<br />
+                        - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
+
+                        4. LỢI ÍCH CỦA BÁNH GẠO LỨT<br />
+                        - Gạo lứt có chứa rất nhiều chất xơ, giúp cho cơ thể tiêu hóa tốt hơn, no lâu hơn nhưng lại hấp thụ rất ít calo (năng lượng) vào cơ thể. Giúp giảm cân và hỗ trợ chức năng tiêu hóa.<br />
+                        - Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.<br />
+                        - Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.<br />
+
+                        5. ĐẶC ĐIỂM<br />
+                        ❌KHÔNG đường tinh luyện.<br />
+                        ❌KHÔNG chất bảo quản.<br />
+                        ❌KHÔNG phụ gia thực phẩm.<br />
+                        ❌KHÔNG dùng tinh bột mì.<br />
+                        ❌KHÔNG bơ, sữa động vật.<br />
+
+                        6. ĐỐI TƯỢNG<br />
+                        Thích hợp sử dụng cho mọi lứa tuổi, kể cả trẻ nhỏ và người cao tuổi.<br />
+                        Đặc biệt phù hợp với chế độ ăn chay, luyện tập gym/yoga, ăn kiêng, eat clean, giảm cân lành mạnh.<br />
+
+                        7. CÁCH DÙNG<br />
+                        - Với Granola: dùng trực tiếp, dùng với bánh mì và bơ hạt, chia pudding sữa hạt, sữa chua và trái cây, sữa tươi, sinh tố, kem.<br />
+                        - Với Bơ hạt: Dùng trực tiếp, ăn cùng bánh mì, bánh gạo lứt, hỗn hợp yến mạch và hạt, sinh tố, làm bánh hay dùng kèm các món chay.<br />
+
+                        8. BẢO QUẢN:<br />
+                        - Bảo quản trong bao bì kín, nơi khô ráo thoáng mát tránh ánh nắng trực tiếp.<br />
+                        - Có thể bảo quản trong ngăn mát tủ lạnh để sử dụng lâu hơn.<br />
+
+                        9. HẠN SỬ DỤNG<br />
+                        - 2 tháng kể từ ngày sản xuất, 6 tháng nếu được bảo quản trong tủ lạnh.<br />
+                        - Sử dụng trong vòng 14 ngày sau khi mở sản phẩm để có chất lượng tốt nhất.<br />
+                    </p>
+                    <div class="product-size-hotline" style="margin-top:10px">
+                        <div class="product-hotline">
+                            <a href="#"> <span><i class="fas fa-phone" aria-hidden="true"></i></span></a>
+                            Hotline hỗ trợ 24/7: <a href="tel:+84 39 5762954 ">+84 39 5762954 </a>
+                        </div>
+
+                        <div class="social-network-actions text-left">
+                            <div class="fb-like fb_iframe_widget" data-href="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="f5c2c2ed7b02a" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v10.0/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df75b043f9f30b%26domain%3Dthefittuna.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fthefittuna.com%252Ff2cb0ce1d8fd9b%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <table>
+                            <b>Số lượng</b>
+                            <td class="quantity buttons_added" width="150px">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </td>
+
+                            <td class="product-actions clearfix" style="margin-left:10px">
+                                <button class="button button1">THÊM VÀO GIỎ HÀNG</button>
+
+                            </td>
+                            <td class="product-actions clearfix" style="margin-left:10px">
+                                <button class="button button2">MUA NGAY</button>
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="chitietsanpham" style="padding-left: 10%; margin-top: 5%">
+                <hr />
+                <div>
+                    <h3 style="margin-top:15px">
+                        CHI TIẾT SẢN PHẨM:<br />
+                    </h3>
+                </div>
+                <div style="margin-top:15px">
+                    <p>- Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.</p>
+                    <p>- Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.</p>
+
+                </div>
+                <div style="text-align:center">
+                    <button class="button buttonXT" style="text-align:center">XEM THÊM</button>
+                </div>
+            </div>
+            <div class="danhgia" style="padding-left: 10%; margin-top: 5%">
+                <hr />
+                <div style="margin-top:15px">
+                    <h3>ĐÁNH GIÁ</h3>
+                </div>
+                <div style="margin-top:15px">
+                    <table style=" text-align:left">
+                        <tr>
+                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                            <td><b>Nguyễn Thị Kim Liên</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top:10px">
+                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                    </div>
+                </div>
+                <div style="margin-top:25px">
+                    <table style=" text-align:left">
+                        <tr>
+                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                            <td><b>Nguyễn Thị Kim Liên</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top:10px">
+                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                    </div>
+                </div>
+                <div style="margin-top:25px">
+                    <table style=" text-align:left">
+                        <tr>
+                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                            <td><b>Nguyễn Thị Kim Liên</b></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                                <i class="fas fa-star" style="color:yellow"></i>
+                            </td>
+                        </tr>
+                    </table>
+                    <div style="margin-top:10px">
+                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                    </div>
+                </div>
+                <div class="pagination" style="text-align:center">
+                    <a href="#">&laquo;</a>
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">&raquo;</a>
+                </div>
+                <hr />
+            </div>
+            <div id="related-product" style="padding-left: 10%; margin-top: 5%">
+                
+                <div class="section-title" style="text-align:center">
+                    <h1 style="font-size:36px; margin-bottom:10px">SẢN PHẨM LIÊN QUAN</h1>
+                </div>
+                <div class="section-content">
+                    <div class="cartegory-right-content row">
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/nho_baobi.png" alt="" />
+                            <h4>NHO KHO</h4>
+                            <p>90.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                             </div>
-                            <div class="grid__item large--one-third medium--one-half small--one-whole">
-                                <div class="product-info">
-                                    <!--<div class="product-title" >
-                                        <h1 style="font-weight:bold;font-size:2.25em">SET ĂN SÁNG ĐONG ĐẦY</h1>
-                                    </div>
-                                    <div class="product-price-review">
-                                        <div class="product-price">
-                                            <span class="current-price">479,000₫</span>
 
-                                        </div>
-
-                                    </div>-->
-                                    <div class="product-desc">
-                                        <div class="product-content" style="text-align:left">
-                                            <div class="pro-content-head clearfix">
-                                                <h1 itemprop="name" style="font-size:2.25em">SET ĂN SÁNG ĐONG ĐẦY</h1>
-                                                <div class="pro-brand" style="margin-top:10px; margin-bottom:10px">
-                                                    <span class="title">Thương hiệu: <a href="/collections/vendors?q=khac&amp;view=vendor-alt">Khác</a></span>
-                                                </div>
-                                                <span>|</span>
-                                                <div class="pro-type" style="margin-top:10px">
-                                                    <span class="title">Loại: <a href="/collections/types?q=khac&amp;view=type-alt">Khác</a></span>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="pro-price clearfix" style="margin-bottom:10px">
-                                                <span class="current-price ProductPrice">200,000₫</span>
-
-                                            </div>
-
-                                            <div class="pro-short-desc" >
-                                                <p>
-                                                    1. SET GỒM 6 SẢN PHẨM<br />
-                                                    - Ngũ cốc nguyên hạt 400g (tự chọn: Super Berries, Super Nutty, Original Mix, Choco Bana, Matcha Maca) hoặc bộ 8 vị granola x 40g<br />
-                                                    - Yến mạch nguyên hạt cán dẹt 500g<br />
-                                                    - Bánh biscotti 3 vị 100g (original, choco, matcha)<br />
-                                                    - Bánh gạo lứt 170g<br />
-                                                    - Hạt chia 100g<br />
-                                                    - Bơ đậu phộng 100g<br />
-
-                                                    2. LỢI ÍCH CỦA GRANOLA HAPPI OHA<br />
-                                                    - Hàm lượng protein và chất xơ cao.<br />
-                                                    - Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa.<br />
-                                                    - Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc.<br />
-                                                    - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
-
-                                                    3. LỢI ÍCH CỦA BƠ HẠT HAPPI OHA<br />
-                                                    - Hàm lượng protein và chất xơ cao.<br />
-                                                    - Bơ hạt chứa nhiều dưỡng chất như vitamin E và B6, acid folic, niacin, magie, kẽm, đồng và kali rất tốt cho sức khỏe.<br />
-                                                    - Chứa chất béo tốt giúp giảm cholesterol xấu, giảm nguy cơ mắc bệnh tim mạch và tiểu đường, hỗ trợ ổn định đường huyế và insulin.<br />
-                                                    - Sản phẩm có hương vị vô cùng thơm ngon, ít béo nên ăn không bị ngán.<br />
-                                                    - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
-
-                                                    4. LỢI ÍCH CỦA BÁNH GẠO LỨT<br />
-                                                    - Gạo lứt có chứa rất nhiều chất xơ, giúp cho cơ thể tiêu hóa tốt hơn, no lâu hơn nhưng lại hấp thụ rất ít calo (năng lượng) vào cơ thể. Giúp giảm cân và hỗ trợ chức năng tiêu hóa.<br />
-                                                    - Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.<br />
-                                                    - Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.<br />
-
-                                                    5. ĐẶC ĐIỂM<br />
-                                                    ❌KHÔNG đường tinh luyện.<br />
-                                                    ❌KHÔNG chất bảo quản.<br />
-                                                    ❌KHÔNG phụ gia thực phẩm.<br />
-                                                    ❌KHÔNG dùng tinh bột mì.<br />
-                                                    ❌KHÔNG bơ, sữa động vật.<br />
-
-                                                    6. ĐỐI TƯỢNG<br />
-                                                    Thích hợp sử dụng cho mọi lứa tuổi, kể cả trẻ nhỏ và người cao tuổi.<br />
-                                                    Đặc biệt phù hợp với chế độ ăn chay, luyện tập gym/yoga, ăn kiêng, eat clean, giảm cân lành mạnh.<br />
-
-                                                    7. CÁCH DÙNG<br />
-                                                    - Với Granola: dùng trực tiếp, dùng với bánh mì và bơ hạt, chia pudding sữa hạt, sữa chua và trái cây, sữa tươi, sinh tố, kem.<br />
-                                                    - Với Bơ hạt: Dùng trực tiếp, ăn cùng bánh mì, bánh gạo lứt, hỗn hợp yến mạch và hạt, sinh tố, làm bánh hay dùng kèm các món chay.<br />
-
-                                                    8. BẢO QUẢN:<br />
-                                                    - Bảo quản trong bao bì kín, nơi khô ráo thoáng mát tránh ánh nắng trực tiếp.<br />
-                                                    - Có thể bảo quản trong ngăn mát tủ lạnh để sử dụng lâu hơn.<br />
-
-                                                    9. HẠN SỬ DỤNG<br />
-                                                    - 2 tháng kể từ ngày sản xuất, 6 tháng nếu được bảo quản trong tủ lạnh.<br />
-                                                    - Sử dụng trong vòng 14 ngày sau khi mở sản phẩm để có chất lượng tốt nhất.<br />
-                                                </p>
-                                            </div>
-
-                                            <form action="/cart/add" method="post" enctype="multipart/form-data" id="AddToCartForm" class="form-vertical">
-                                                <div class="product-variants-wrapper">
-
-                                                    <div class="selector-wrapper" style="display: none;"><label for="productSelect-option-0">Tiêu đề</label><select class="single-option-selector" data-option="option1" id="productSelect-option-0"><option value="Default Title">Default Title</option></select></div><select name="id" id="productSelect" class="product-single__variants hide" style="display: none;">
-
-
-                                                        <option selected="selected" data-sku="" value="1067906678">Default Title - 200,000 VND</option>
-
-
-                                                    </select>
-                                                    <div id="product-select-watch" class="select-swatch">
-
-                                                    </div>
-
-                                                    <div class="product-size-hotline" style="margin-top:10px">
-                                                        <div class="product-hotline">
-                                                            <a href="#"> <span><i class="fas fa-phone" aria-hidden="true"></i></span></a>
-                                                        Hotline hỗ trợ 24/7: <a href="tel:+84 39 5762954 ">+84 39 5762954 </a>
-                                                        </div>
-
-                                                        <div class="social-network-actions text-left">
-                                                            <div class="fb-like fb_iframe_widget" data-href="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="f5c2c2ed7b02a" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v10.0/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df75b043f9f30b%26domain%3Dthefittuna.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fthefittuna.com%252Ff2cb0ce1d8fd9b%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <table>
-                                                        <b>Số lượng</b>
-                                                        <td class="quantity buttons_added" width="150px">
-                                                            <input type="button" value="-" class="minus">
-                                                            <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
-                                                            <input type="button" value="+" class="plus">
-                                                        </td>
-
-                                                        <td class="product-actions clearfix" style="margin-left:10px">
-                                                            <button class="button button1">THÊM VÀO GIỎ HÀNG</button>
-                                                            <button class="button button2">MUA NGAY</button>
-                                                        </td>
-
-                                                    </table>
-                                                </div>
-                                                <div class="grid mg-left-5">
-
-
-                                                    <div class="grid__item large--four-fifths medium--two-thirds small--one-whole pd-left5">
-
-                                                    </div>
-
-                                                </div>
-                                            </form>
-                                            <div class="pro-content-info">
-                                                <div class="pro-tag">
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!--<div class="product-action" sstyle="margin-bottom:20px">
-                                        <button type="button" class="btnHome btn-addToCart add-to-cart   "> <span>Thêm vào giỏ</span></button>
-                                        <button type="button" class=" btnHome btn-buyNow buy-now "> Mua ngay</button>
-                                    </div>-->
-                                </div>
+                        </div>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/namvietquat.png" alt="" />
+                            <h4>NAM VIỆT QUẤT</h4>
+                            <p>150.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                             </div>
                         </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section id="chitietsanpham" style="padding:10%; margin-top:-10%">
-        <hr />
-        <div>
-            <h3 style="margin-top:15px">
-                CHI TIẾT SẢN PHẨM:<br />
-            </h3>
-        </div>
-        <div style="margin-top:15px">
-            <p>- Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.</p><br />
-            <p>- Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.</p>
-
-        </div>
-        <div style="text-align:center">
-            <button class="button buttonXT" style="text-align:center">XEM THÊM</button>
-        </div>
-    </section>
-
-    <section id="danhgia" style="padding:10%;margin-top:-17%">
-        <hr />
-        <div style="margin-top:15px">
-            <h3>ĐÁNH GIÁ</h3>
-        </div>
-        <div style="margin-top:15px">
-            <table style=" text-align:left">
-                <tr>
-                    <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                    <td><b>Nguyễn Thị Kim Liên</b></td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                    </td>
-                </tr>
-            </table>
-            <div style="margin-top:10px">
-                <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
-            </div>
-        </div>
-        <div style="margin-top:25px">
-            <table style=" text-align:left">
-                <tr>
-                    <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                    <td><b>Nguyễn Thị Kim Liên</b></td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                    </td>
-                </tr>
-            </table>
-            <div style="margin-top:10px">
-                <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
-            </div>
-        </div>
-        <div style="margin-top:25px">
-            <table style=" text-align:left">
-                <tr>
-                    <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                    <td><b>Nguyễn Thị Kim Liên</b></td>
-                </tr>
-                <tr>
-                    <td>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                        <i class="fas fa-star" style="color:yellow"></i>
-                    </td>
-                </tr>
-            </table>
-            <div style="margin-top:10px">
-                <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
-            </div>
-        </div>
-        <div class="pagination" style="margin-left:40%; margin-top:20px; margin-bottom:20px">
-            <a href="#">&laquo;</a>
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">&raquo;</a>
-        </div>
-        <hr />
-    </section>
-    <section id="sanphamlienquan" style="padding:10%; margin-top:-180px">
-        <div id="related-product" style="margin-top:-100px">
-            <div class="section-title">
-                <h2>Sản phẩm liên quan</h2>
-            </div>
-            <div class="section-content" style="margin-top:70px">
-                <div class="cartegory-right-content row">
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/nho_baobi.png" alt="" />
-                        <h4>NHO KHO</h4>
-                        <p>90.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
-                        </div>
-
-                    </div>
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/namvietquat.png" alt="" />
-                        <h4>NAM VIỆT QUẤT</h4>
-                        <p>150.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
-                        </div>
-                    </div>
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/mo.png" alt="" />
-                        <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
-                        <p>100.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/mo.png" alt="" />
+                            <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                            <p>100.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="related-product" style="margin-top:100px; margin-bottom:50px">
-            <div class="section-title">
-                <h2>Sản phẩm đã xem</h2>
-            </div>
-            <div class="section-content" style="margin-top:50px">
-                <div class="cartegory-right-content row">
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/nho_baobi.png" alt="" />
-                        <h4>NHO KHO</h4>
-                        <p>90.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
-                        </div>
+            <div id="related-product" style="padding-left: 10%; margin-top: 5%">
+                <!--style="margin-top:-100px"-->
+                <div class="section-title" style="text-align:center">
+                    <h1 style="font-size:36px; margin-bottom:-10px">SẢN PHẨM ĐÃ XEM</h1>
+                </div>
+                <div class="section-content">
+                    <div class="cartegory-right-content row">
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/nho_baobi.png" alt="" />
+                            <h4>NHO KHO</h4>
+                            <p>90.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
 
-                    </div>
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/namvietquat.png" alt="" />
-                        <h4>NAM VIỆT QUẤT</h4>
-                        <p>150.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                         </div>
-                    </div>
-                    <div class="cartegory-right-content-item">
-                        <img src="Images/mo.png" alt="" />
-                        <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
-                        <p>100.000 <sup>đ</sup></p>
-                        <div style="margin-top:20px;">
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                            <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/namvietquat.png" alt="" />
+                            <h4>NAM VIỆT QUẤT</h4>
+                            <p>150.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
+                        </div>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/mo.png" alt="" />
+                            <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                            <p>100.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+
+
+
+
+
     </section>
-
-    
-
-
     <!--Gửi mail cho chúng tôi-->
-    <div style="margin-top: 50px" class="footer-subscribe">
+    <div style="margin-top: 130px" class="footer-subscribe">
         <div class="grid">
             <div class="grid__item large--one-half medium--one-half small--one-whole">
                 <div class="ft-subscribe-info">
@@ -792,14 +751,10 @@
             </div>
         </div>
     </div>
-    <div style="text-align:center; margin-top:80px;margin-bottom:-100px;">
+    <div style="text-align:center; margin-top:120px;margin-bottom:-100px;">
         <img src="Images/logo.png" style="text-align:center;width:200px;height:200px; margin-top: 80px" />
     </div>
-
-
-
-
-    <footer class="footer-container">
+    <footer class="footer-container" style="margin-top:100px">
         <!--Bắt Đâu Nội Dung Liên Hệ-->
         <div style="margin-left: 100px" class="links">
             <h3><b>THÔNG TIN LIÊN HỆ</b></h3>
