@@ -444,35 +444,89 @@ input, :before, :after {
         }
 
 .phannoidung {
-    font-size: 20px;
+    font-size: 18px;
     text-align: justify;
-    padding: 150px;
-    margin: 20px;
+    padding: 9%;
+    margin: -2% 3% 35% 3%;
 }
 
     .phannoidung p {
-        margin: 30px;
+        margin: 1%;
+    }
+@media screen and (min-width:480px ){
+    .phannoidung {
+        font-size: 20px;
+        padding: 10%;
+        margin: -2% 2% 10% 2%;
     }
 
-    /*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
-    .phannoidung ul li {
-        margin: 15px;
+        .phannoidung p {
+            margin: 2%;
+        }
+}
+@media screen and (min-width:1024px ) {
+    .phannoidung {
+        font-size: 22px;
+        padding: 11%;
+        margin: -2% 2% 1% 2%;
     }
+
+        .phannoidung p {
+            margin: 1%;
+        }
+}
+/*-----CHÍNH SÁCH ĐỔI TRẢ-------*/
+.phannoidung ul li {
+    margin: 1%;
+}
 
     .phannoidung ul {
-        list-style: disc
+        list-style: disc;
+    }
+@media screen and (min-width:480px ) {
+    .phannoidung ul li {
+        margin: 2%;
     }
 
-    /*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
+    @media screen and (min-width:1024px ) {
+        .phannoidung ul li {
+            margin: 2%;
+        }
+    }
+ /*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
     .phannoidung ol li {
         font-size: 20px;
     }
 
     .phannoidung p {
-        margin-left: -10px;
-        margin-bottom: 30px;
-        margin-top: 15px;
+        margin-left: -1%;
+        margin-bottom: 3%;
+        margin-top: 1%;
         font-size: 20px;
+    }
+@media screen and (min-width:480px ) {
+    .phannoidung ol li {
+        font-size: 20px;
+    }
+
+    .phannoidung p {
+        margin-left: -1%;
+        margin-bottom: 3%;
+        margin-top: 1%;
+        font-size: 20px;
+    }
+
+    @media screen and (min-width:1024px ) {
+        .phannoidung ol li {
+            font-size: 20px;
+        }
+
+        .phannoidung p {
+            margin-left: -1%;
+            margin-bottom: 3%;
+            margin-top: 1%;
+            font-size: 20px;
+        }
     }
 /*---------FOOTER---------*/
 
@@ -1416,7 +1470,7 @@ a {
 
 .tintuc {
     width: 100%;
-    padding: 1%;
+    padding: 2%;
     margin-top: -1%;
     margin-bottom: 1%;
     text-align: center;
@@ -1443,7 +1497,7 @@ a {
 }
 
     .tintuc-content-item:hover {
-        padding: 1%;
+        padding: 4%;
         background-color: gainsboro;
         color: darkgreen;
         font-size: 15px;
