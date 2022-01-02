@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TRANG CHI TIẾT SẢN PHẨM</title>
     <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" />
@@ -13,11 +14,19 @@
     <link rel="shortcut icon" href="Images/logo.png" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
     <style>
+        * {
+            font-family: 'Times New Roman'
+        }
+
         #breadcrumb-wrapper.breadcrumb-w-img {
             height: 300px;
             padding: 30px 0;
-            background: url(Images/breadcrumb_bg5.png);
+            background: url(Images/breadcrumb_bg1.png);
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -25,47 +34,14 @@
             position: relative;
         }
 
-            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: rgba(0, 0, 0, 0.5);
-                z-index: 1;
-            }
-
-            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                z-index: 1;
-                width: 100%;
-            }
-
-
-                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
-                    font-size: 24px;
-                    color: #fff;
-                    padding: 0px;
-                    margin: 0px 0px 5px 0px;
-                }
-
-                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a {
-                    display: inline-block;
-                    position: relative;
-                }
-
-                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
-                    color: #fff;
-                }
-
         a, .text-link {
             color: #094125;
             text-decoration: none;
             background: transparent;
+        }
+
+        .main_product {
+            display: flex;
         }
 
         .main_product-img {
@@ -188,185 +164,11 @@
             outline: none;
         }
 
-        .cartegory {
-            padding: 100px 50px 50px;
-        }
 
-        .cartegory-top {
-            margin-bottom: 50px;
-        }
-
-            .cartegory-top p {
-                margin: 0 12px;
-                font-size: 12px;
-            }
-
-        .cartegory-left {
-            width: 18%;
-            background: linear-gradient(40deg,#4caf5014,#ffeb3b17);
-            border-radius: 3px;
-            border: 3px solid #d5d5d500;
-            color: #333333;
-            border-image-source: linear-gradient(to right, #4caf5080, #9c27b0a8, #03a9f4a6);
-            border-image-slice: 1;
-            font-family: inherit;
-            font-size: 18px;
-            font-stretch: inherit;
-            font-style: inherit;
-            font-variant: inherit;
-            font-weight: inherit;
-            line-height: inherit;
-            margin-left: 15px;
-            padding: 10px;
-            vertical-align: baseline;
-            text-align: left;
-        }
-
-            .cartegory-left ul li ul li {
-                margin-left: -30px;
-            }
-
-            .cartegory-left li {
-                list-style-type: none;
-            }
-
-        .cartegory-right {
-            width: 80%;
-        }
-
-        .cartegory-right-top-item:first-child {
-            flex: 2;
-            font-size: 16px;
-            text-transform: uppercase;
-            font-weight: bold;
-        }
-
-        .cartegory-right-top-item {
-            flex: 1;
-            padding: 0 12px;
-        }
-
-            .cartegory-right-top-item button {
-                width: 100%;
-                padding: 10px 15px;
-                display: flex;
-                justify-content: space-between;
-                cursor: pointer;
-                background-color: #ffff;
-                border: 1px solid #dddddd;
-            }
-
-            .cartegory-right-top-item select {
-                width: 100%;
-                padding: 10px 15px;
-                display: flex;
-                justify-content: space-between;
-                cursor: pointer;
-                background-color: #ffff;
-                border: 1px solid #dddddd;
-            }
-
-        .cartegory-right-content {
-            margin-top: 20px;
-            justify-content: space-between;
-        }
-
-        .cartegory-right-content-item {
-            width: fit-content;
-            height: auto;
-            text-align: center;
-            margin-top: 14px;
-            /* margin-right: 10px; */
-            padding: 16px;
-            color: darkgreen;
-            background-color: #fafafa;
-            font-size: 14px;
-        }
-
-            .cartegory-right-content-item:hover {
-                width: calc(40%-13px);
-                padding: 10px;
-                background-color: darkgreen;
-                color: white;
-                font-size: 16px;
-            }
-
-            .cartegory-right-content-item h2 {
-                margin-top: 14px;
-            }
-
-        .cartegory-right-top-item-icon {
-            border: 2px solid indianred;
-            border-radius: 200px;
-            width: 100px;
-            height: 100px;
-            padding: 5px;
-            font-size: 18px;
-            text-align: center;
-            margin-left: 5px;
-            margin-right: 5px;
-        }
-
-            .cartegory-right-top-item-icon a {
-                color: cadetblue;
-            }
-
-                .cartegory-right-top-item-icon a:hover {
-                    color: white;
-                }
-
-
-        .cartegory-right-content-item img {
-            width: 300px;
-            height: 300px;
-        }
-
-        .cartegory-right-bottom {
-            justify-content: space-between;
-            margin: 100px 0 100px 70%;
-        }
-
-        .cartegory-left ul li {
-            padding: 12px 0;
-        }
-
-            .cartegory-left ul li > a {
-                color: black;
-                font-size: 16px;
-                font-weight: bold;
-            }
-
-            .cartegory-left ul li ul li {
-                padding-left: 5px;
-            }
-
-                .cartegory-left ul li ul li a {
-                    color: #333333;
-                    font-size: 14px;
-                    margin-left: 13%;
-                }
-
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .spcontainer {
-            max-width: 1200px;
-            margin: auto;
-        }
-
-        .cartegory-left-li ul {
-            display: none;
-        }
-
-        .cartegory-left-li.block ul {
-            display: block;
-        }
         .pagination {
             display: inline-block;
-            margin-left:40%;
-            margin-top:20px;
+            margin-left: 40%;
+            margin-top: 20px;
         }
 
             .pagination a {
@@ -375,7 +177,78 @@
                 padding: 8px 16px;
                 text-decoration: none;
             }
+
+        .main_product-img {
+            width: 40%;
+            height: 40%;
+            margin-left: 20px;
+            padding-top: 40%
+        }
+
+        .main_product-info {
+            width: 60%;
+            margin-left: 5%;
+            margin-top: 20px
+        }
+        /* Dành cho điện thoại */
+        @media only screen and (max-width:46.1875em) {
+            .main_product {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            #breadcrumb-wrapper {
+                height: 250px !important;
+            }
+
+                #breadcrumb-wrapper .breadcrumb-big h2 {
+                    font-size: 20px !important;
+                    line-height: normal !important;
+                }
+        }
+        /* Dành cho máy tính bảng */
+        @media only screen and (min-width:46.1875em) and (max-width: 63.9375em) {
+            .main_product {
+                flex-direction: column;
+            }
+
+            .main_product-img {
+                width: 95%;
+                height: 95%;
+                padding-top: 95%;
+            }
+
+            .nd1 {
+                display: none
+            }
+
+            .main_product-info {
+                width: 95%;
+                font-size: 36px
+            }
+
+                .main_product-info h1 {
+                    font-size: 60px
+                }
+
+            .main_product-desc {
+                font-size: 36px
+            }
+
+            #breadcrumb-wrapper.breadcrumb-w-img {
+                background-attachment: scroll !important;
+            }
+
+            #breadcrumb-wrapper {
+                height: 250px !important;
+            }
+        }
     </style>
+    <script>
+
+
+
+    </script>
 </head>
 <body>
 
@@ -453,19 +326,17 @@
     <section id="ChiTietSanPham" style="padding-right:10%">
         <div class="sanphamchitiet">
             
-            <div class="main_product" style="display:flex; padding-left:10%;  margin-top:5%">
-                <div class="main_product-img" style="background-image:url(Images/setsang.png); width:5%;height:5%;padding:5%">
-
-                </div>
-                <div class="main_product-img" style="background-image:url(Images/setsang.png);width:30%;height:30%;margin-left:20px; padding-top:30%">
+            <div class="main_product" style=" padding-left:10%;  margin-top:5%">
+                <div class="main_product-img" style="background-image:url(Images/setsang.png);">
 
                 </div>
 
-                <div class="main_product-info" style="width:60%; margin-left:5%;margin-top:20px ">
-                    <h1 style="font-size:36px">SET ĂN SÁNG ĐONG ĐẦY</h1>
+                <div class="main_product-info">
+                    <h1 >SET ĂN SÁNG ĐONG ĐẦY</h1>
                     <p>Thương hiệu: <a href="#">Khác</a> | Loại: <a href="#">Khác</a></p>
                     <h2>200,000đ</h2>
-                    <p>
+                    <p class="main_product-desc">
+
                         1. SET GỒM 6 SẢN PHẨM<br />
                         - Ngũ cốc nguyên hạt 400g (tự chọn: Super Berries, Super Nutty, Original Mix, Choco Bana, Matcha Maca) hoặc bộ 8 vị granola x 40g<br />
                         - Yến mạch nguyên hạt cán dẹt 500g<br />
@@ -473,47 +344,24 @@
                         - Bánh gạo lứt 170g<br />
                         - Hạt chia 100g<br />
                         - Bơ đậu phộng 100g<br />
-
-                        2. LỢI ÍCH CỦA GRANOLA HAPPI OHA<br />
-                        - Hàm lượng protein và chất xơ cao.<br />
-                        - Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa.<br />
-                        - Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc.<br />
-                        - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
-
-                        3. LỢI ÍCH CỦA BƠ HẠT HAPPI OHA<br />
-                        - Hàm lượng protein và chất xơ cao.<br />
-                        - Bơ hạt chứa nhiều dưỡng chất như vitamin E và B6, acid folic, niacin, magie, kẽm, đồng và kali rất tốt cho sức khỏe.<br />
-                        - Chứa chất béo tốt giúp giảm cholesterol xấu, giảm nguy cơ mắc bệnh tim mạch và tiểu đường, hỗ trợ ổn định đường huyế và insulin.<br />
-                        - Sản phẩm có hương vị vô cùng thơm ngon, ít béo nên ăn không bị ngán.<br />
-                        - Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.<br />
-
-                        4. LỢI ÍCH CỦA BÁNH GẠO LỨT<br />
-                        - Gạo lứt có chứa rất nhiều chất xơ, giúp cho cơ thể tiêu hóa tốt hơn, no lâu hơn nhưng lại hấp thụ rất ít calo (năng lượng) vào cơ thể. Giúp giảm cân và hỗ trợ chức năng tiêu hóa.<br />
-                        - Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.<br />
-                        - Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.<br />
-
-                        5. ĐẶC ĐIỂM<br />
+                    
+                    <p class="nd1">
+                        2. ĐẶC ĐIỂM<br />
                         ❌KHÔNG đường tinh luyện.<br />
                         ❌KHÔNG chất bảo quản.<br />
                         ❌KHÔNG phụ gia thực phẩm.<br />
                         ❌KHÔNG dùng tinh bột mì.<br />
                         ❌KHÔNG bơ, sữa động vật.<br />
 
-                        6. ĐỐI TƯỢNG<br />
+                        3. ĐỐI TƯỢNG<br />
                         Thích hợp sử dụng cho mọi lứa tuổi, kể cả trẻ nhỏ và người cao tuổi.<br />
                         Đặc biệt phù hợp với chế độ ăn chay, luyện tập gym/yoga, ăn kiêng, eat clean, giảm cân lành mạnh.<br />
 
-                        7. CÁCH DÙNG<br />
+                        4. CÁCH DÙNG<br />
                         - Với Granola: dùng trực tiếp, dùng với bánh mì và bơ hạt, chia pudding sữa hạt, sữa chua và trái cây, sữa tươi, sinh tố, kem.<br />
                         - Với Bơ hạt: Dùng trực tiếp, ăn cùng bánh mì, bánh gạo lứt, hỗn hợp yến mạch và hạt, sinh tố, làm bánh hay dùng kèm các món chay.<br />
+                        </p>
 
-                        8. BẢO QUẢN:<br />
-                        - Bảo quản trong bao bì kín, nơi khô ráo thoáng mát tránh ánh nắng trực tiếp.<br />
-                        - Có thể bảo quản trong ngăn mát tủ lạnh để sử dụng lâu hơn.<br />
-
-                        9. HẠN SỬ DỤNG<br />
-                        - 2 tháng kể từ ngày sản xuất, 6 tháng nếu được bảo quản trong tủ lạnh.<br />
-                        - Sử dụng trong vòng 14 ngày sau khi mở sản phẩm để có chất lượng tốt nhất.<br />
                     </p>
                     <div class="product-size-hotline" style="margin-top:10px">
                         <div class="product-hotline">
@@ -548,90 +396,91 @@
             <div class="chitietsanpham" style="padding-left: 10%; margin-top: 5%">
                 <hr />
                 <div>
-                    <h3 style="margin-top:15px">
-                        CHI TIẾT SẢN PHẨM:<br />
-                    </h3>
+                    <div data-toggle="collapse" data-target="#demo">
+                        <h3 style="font-weight:bold;font-family:'Times New Roman'">CHI TIẾT SẢN PHẨM</h3>
+                    </div>
                 </div>
-                <div style="margin-top:15px">
+                <div id="demo" class="collapse" style="margin-top:15px">
                     <p>- Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.</p>
                     <p>- Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.</p>
 
                 </div>
-                <div style="text-align:center">
-                    <button class="button buttonXT" style="text-align:center">XEM THÊM</button>
-                </div>
+                
             </div>
             <div class="danhgia" style="padding-left: 10%; margin-top: 5%">
                 <hr />
-                <div style="margin-top:15px">
-                    <h3>ĐÁNH GIÁ</h3>
+                <div data-toggle="collapse" data-target="#demo2" style="margin-top:15px">
+                    <h3 style="font-weight:bold;font-family:'Times New Roman'">ĐÁNH GIÁ</h3>
                 </div>
-                <div style="margin-top:15px">
-                    <table style=" text-align:left">
-                        <tr>
-                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                            <td><b>Nguyễn Thị Kim Liên</b></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="margin-top:10px">
-                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                <div id="demo2" class="collapse">
+                    <div style="margin-top:15px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
                     </div>
-                </div>
-                <div style="margin-top:25px">
-                    <table style=" text-align:left">
-                        <tr>
-                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                            <td><b>Nguyễn Thị Kim Liên</b></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="margin-top:10px">
-                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                    <div style="margin-top:25px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
                     </div>
-                </div>
-                <div style="margin-top:25px">
-                    <table style=" text-align:left">
-                        <tr>
-                            <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
-                            <td><b>Nguyễn Thị Kim Liên</b></td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                                <i class="fas fa-star" style="color:yellow"></i>
-                            </td>
-                        </tr>
-                    </table>
-                    <div style="margin-top:10px">
-                        <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                    <div style="margin-top:25px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
                     </div>
+
+                    <div class="pagination" style="text-align:center">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    <hr />
                 </div>
-                <div class="pagination" style="text-align:center">
-                    <a href="#">&laquo;</a>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">&raquo;</a>
-                </div>
-                <hr />
             </div>
             <div id="related-product" style="padding-left: 10%; margin-top: 5%">
                 
@@ -676,6 +525,7 @@
             </div>
             <div id="related-product" style="padding-left: 10%; margin-top: 5%">
                 <!--style="margin-top:-100px"-->
+                <hr />
                 <div class="section-title" style="text-align:center">
                     <h1 style="font-size:36px; margin-bottom:-10px">SẢN PHẨM ĐÃ XEM</h1>
                 </div>
@@ -716,7 +566,7 @@
                 </div>
             </div>
 
-
+</div>
 
 
 
