@@ -155,11 +155,24 @@ ul {
     /* margin-bottom: 40px; */
     margin-left: 8%;
 }
+
 .logo_bo img
 {
 height: 120px;
 width: 120px;
 }
+.logo_gio {
+    margin-top: -10%;
+    margin-left: 10%;
+    /* margin-bottom: 40px; */
+    margin-left: 0%;
+}
+
+    .logo_gio img {
+        height: 120px;
+        width: 120px;
+        margin-left: 10%;
+    }
 /*-------BANNER TRANG CHỦ.................... */
 
 .slider {
@@ -296,14 +309,19 @@ width: 120px;
         margin-top: 17%;
         margin-left: 75%;
     }
-    .logo_bo img
-    {
+    .logo_bo img {
         height: auto;
-    width: 25%;
-    margin-top: 5%;
-    margin-left: 75%;
-
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
     }
+    .logo_gio img {
+        height: auto;
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
+    }
+
      .nav__bars_btn
     {
         display: block;

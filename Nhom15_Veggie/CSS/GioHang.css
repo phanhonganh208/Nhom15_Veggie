@@ -252,6 +252,15 @@ table {
     border-bottom: 1px solid #ececec;
     width: fit-content;
 }
+.product-thumbnail img 
+ 
+{
+    max-width: 50%;
+    margin-left: 10%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
 
 .giohang .product-subtotal {
     width: 10%;
@@ -285,13 +294,6 @@ table {
     border: 2px solid currentColor;
 }
 
-img {
-    max-width: 50%;
-    margin-left: 10%;
-    height: auto;
-    display: inline-block;
-    vertical-align: middle;
-}
 
 .giohang .show-for-small {
     display: none !important;
