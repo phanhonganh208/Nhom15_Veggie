@@ -1610,10 +1610,10 @@ svg:not(:root).svg-inline--fa {
 
     .ttcontainer {
         overflow: auto;
-        margin-right: 3%;
+        margin-right: 2%;
         text-align: center;
         text-align: left;
-        margin-left: 3%;
+        margin-left: 2%;
     }
 
     .ttcartegory-right-top-item {
@@ -1657,7 +1657,7 @@ svg:not(:root).svg-inline--fa {
     }
 
 .tintuc-content-item {
-    width: calc(83%);
+    width: calc(85%);
     text-align: center;
     margin-top: 2%;
     margin-right: 5%;
@@ -1667,7 +1667,7 @@ svg:not(:root).svg-inline--fa {
     margin-bottom: 1%;
     background-color: #fafafa;
     font-size: 14px;
-    height: 10.5%;
+    height: 9.5%;
     margin-top: 1%;
 }
 
@@ -1677,7 +1677,7 @@ svg:not(:root).svg-inline--fa {
             color: darkgreen;
             font-size: 15px;
             width: calc(84%);
-            height: 13%;
+            height: 11%;
         }
 
         .tintuc-content-item img {
@@ -1721,7 +1721,7 @@ svg:not(:root).svg-inline--fa {
 
     .ttcartegory-right-bottom {
         justify-content: space-between;
-        margin: 3% 1% 20% 25%;
+        margin: 3% 1% 20% 10%;
         font-size: 16px;
     }
 
@@ -1739,15 +1739,13 @@ svg:not(:root).svg-inline--fa {
 
     @media screen and (min-width:480px ) {
         .ttcartegory {
-            padding: 1%;
             margin-top: 10%;
             height: 100%;
         }
 
         .ttcontainer {
-            margin-right: 1%;
+
             text-align: left;
-            margin-left: 1.5%;
         }
 
         .ttcartegory-right-top-item {
@@ -1770,7 +1768,6 @@ svg:not(:root).svg-inline--fa {
 
         .tintuc {
             width: 100%;
-            padding: 1%;
             margin-top: -1%;
             margin-bottom: 1%;
         }
@@ -1780,23 +1777,23 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item {
-            width: calc(48%);
-            margin: 1%;
-            padding: 1.5%;
+            width: calc(46.5%);
+            margin: 0.1%;
+            padding: 1%;
             margin-bottom: 1%;
-            font-size: 14px;
+            font-size: 13.5px;
             height: 19%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
-                font-size: 15px;
+                font-size: 14.5px;
                 width: calc(48%);
                 height: 21%;
             }
 
             .tintuc-content-item img {
-                width: 86%;
+                width: 83%;
                 height: 35%;
                 margin-top: 1.5%;
             }
@@ -1807,7 +1804,7 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item-content {
-            font-size: 16px;
+            font-size: 15.5px;
             width: 100%;
             margin: 2%;
         }
@@ -1872,19 +1869,19 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item {
-            width: calc(30%);
+            width: calc(29%);
             margin: 0.5%;
             padding: 2% 1% 2% 1%;
             margin-bottom: 1%;
             font-size: 16px;
-            height: 32%;
+            height: 30%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
                 font-size: 15px;
-                width: calc(31.5%);
-                height: 32%;
+                width: calc(31%);
+                height: 31%;
             }
 
             .tintuc-content-item img {
