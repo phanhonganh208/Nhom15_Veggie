@@ -24,7 +24,10 @@
     margin: 0;
     padding: 0;
 }
-
+.phan_dau_trangchu
+{
+    width: 100%;
+}
 .call-mail {
     font-size: 16px;
     color: #417505;
@@ -137,7 +140,26 @@ ul {
         background: #417505;
         font-size: 18px;
     }
-
+    .logo {
+        margin-top: -5%;
+        /* margin-bottom: 40px; */
+        margin-left: 8%;
+    }
+.logo img
+{
+    height: 120px;
+    width: 120px;
+}
+.logo_bo {
+    margin-top: -5%;
+    /* margin-bottom: 40px; */
+    margin-left: 8%;
+}
+.logo_bo img
+{
+height: 120px;
+width: 120px;
+}
 /*-------BANNER TRANG CHỦ.................... */
 
 .slider {
@@ -170,15 +192,15 @@ ul {
         object-position: 0 50%;
         margin-top: 4%;
     }
+
 /* ..*/
-.navigation-manual {
+.navigation-manual,.navigation-auto {
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
 }
-
 .manual-btn {
     border: 2px solid #417505;
     padding: 5px;
@@ -205,14 +227,6 @@ ul {
 
 #radio3:checked ~ .first {
     margin-left: -40%;
-}
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 460px;
 }
 
     .navigation-auto div {
@@ -242,6 +256,148 @@ ul {
 .general-banner {
 }
 
+
+/* mobi_thao*/
+.nav__bars_btn
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 28px;
+    height: 28px;
+    color: #094125;
+    display: none;
+}
+.nav__input
+{
+    display: none;
+}
+.nav__input:checked ~ .nav-overlay
+{
+    display: block;
+}
+.nav__input:checked ~ .nav_mobie
+{
+    transform: translateX(0%);
+}
+.nav-overlay
+{display: none;}
+.nav_mobie
+{
+    display: none;
+}
+@media (max-width:767px){
+    .phan_dau_trangchu {
+        width: 100%;
+        margin-top: -30%;
+    }
+    .logo img {
+        height: auto;
+        width: 25%;
+        margin-top: 17%;
+        margin-left: 75%;
+    }
+    .logo_bo img
+    {
+        height: auto;
+    width: 25%;
+    margin-top: 0%;
+    margin-left: 75%;
+
+    }
+     .nav__bars_btn
+    {
+        display: block;
+    }
+    .nav-overlay
+    {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadeEffect;
+        background-color: 0,0,0,3;
+    }
+    .nav_mobie {
+        position: fixed;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+        width: fit-content;
+        max-width: 100%;
+        background: rgb(255, 255, 255);
+        font-size: 1em;
+        list-style: none;
+        color:#417505;
+        display: block ;
+        transform: translateX(-100%);
+   
+    }
+    .nav_close {
+        margin-top: 32%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav_list 
+    {
+        
+        margin-left: 5%;
+        margin-top: 50%;
+        color:#417505;
+    }
+    .nav_mobie link 
+    { text-decoration: none;
+        color:#417505;
+
+    }
+    .nav-link
+    {
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+.nav_mobie-list2
+{ list-style: none;
+    margin-left: 5%;
+    color:#417505;
+}
+    .call-mail
+    {
+        display: none;
+    }
+    .log-sign
+    {
+        display: none;
+    }
+    .main-menu
+    {
+        display: none;
+    }
+.slider
+{
+    margin-top: 13%;
+}
+    .slide {
+        width: 20%;
+        transition: 2s;
+        padding: 0 1%;
+    }
+    .slide img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        object-position: 0 ;
+    }
+    .navigation-manual,.navigation-auto {
+        margin-top: 65%;
+    }
+}
 /*TABTABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
 .wrapper {
     *zoom: 1;
@@ -283,9 +439,19 @@ ul {
     margin-top: 5%;
     margin-bottom: -5%;
 }
+@media (max-width:767px)
+{
+    .section-title h2 {
+        text-align: center;
+        font-size: 1.5em;
+        /* color: #000000; */
+        margin-top: 55%;
+        /* margin-bottom: -5%; */
+    }
+}
 
 #trangchusp {
-    padding: 100px 0px;
+    padding: 5%;
 }
 
 .tab {
@@ -418,14 +584,44 @@ input, :before, :after {
     color: #131111;
 }
 
-
+@media (max-width:767px)
+{
+    .inner
+   {
+       margin: 0%;
+   }
+    .tab {
+        margin: 5% 10%;}
+        .tab button
+        {
+            padding: 0;
+        }
+        .tablinks
+        {
+            font-size: 0.8em;
+        }
+        .sptab {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
 /*trang chu ...........................................*/
 
 
 
 /*-----------------TRANG SAN PHAM CHI TIET*/
 
+.banner_giohang
+{
 
+width: 100%;
+background-size: cover;
+height: 300px;
+text-align: center;
+background-repeat: no-repeat;
+position: center;
+margin: 20px 0px 20px 0px;
+}
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
 .duongdan {
@@ -2197,4 +2393,10 @@ a {
 
     .article-content {
         font-size: 1em;
+    }
+    @media (max-width:767px){
+        .footer_trang
+        {
+            display: none;
+        }
     }

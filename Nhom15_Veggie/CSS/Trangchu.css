@@ -118,7 +118,7 @@ element.style {
 }
 
 .tham #tintuc .article-item {
-    background: .tham #fbfbfb;
+    background: #fbfbfb;
     margin-bottom: 0px;
 }
 
@@ -133,7 +133,7 @@ element.style {
         }
 
 .tham #tintuc a, .text-link {
-    color: .tham #094125;
+    color:  #094125;
     text-decoration: none;
     background: transparent;
 }
@@ -159,7 +159,7 @@ element.style {
 
 .tham #tintuc .article-item .article-info .article-title {
     font-size: 20px;
-    color: .tham #131111;
+    color:  #131111;
     display: block;
     font-weight: bold;
 }
@@ -169,7 +169,7 @@ element.style {
 }
 
 .tham #tintuc .article-item {
-    background: .tham #fbfbfb;
+    background:  #fbfbfb;
     margin-bottom: 30px;
 }
 
@@ -192,7 +192,7 @@ element.style {
     .tham #tintuc .article-item .article-info .article-readmore {
         display: block;
         margin: 10px 0px;
-        color: .tham #131111;
+        color:  #131111;
     }
 
 .tham #tintuc svg:not(:root).svg-inline--fa {
@@ -207,7 +207,7 @@ element.style {
     display: inline-block;
     margin-top: 30px;
     border: 1px solid;
-    color: .tham #7f7171;
+    color:  #7f7171;
     width: 150px;
     height: 35px;
     line-height: 35px;
@@ -226,7 +226,7 @@ element.style {
 
 .tham #spnoibat {
     padding-top: 3%;
-    background: .tham #fbfbfb;
+    background:  #fbfbfb;
 }
 
 .tham .wrapper2 {
@@ -272,20 +272,23 @@ element.style {
 }
 
 .tham #spnoibat .product-info .product-price-review > div.product-price .current-price {
-    color: .tham #094125;
+    color:  #094125;
     font-size: 24px;
 }
-
+#tintuc{
+    text-align: left;
+    margin-top: -100px;
+}
 
 .tham .btnTrangChu {
     display: inline-block;
     border-radius: 20px;
     outline: none;
     width: 150px;
-    border: 1px solid .tham #094125;
+    border: 1px solid  #094125;
     line-height: 35px;
-    color: .tham #ffffff;
-    background: .tham #094125;
+    color: #ffffff;
+    background:  #094125;
 }
 
 .tham #spnoibat .product-info .product-action button:last-child {
@@ -330,3 +333,92 @@ a {
     color: #094125
 }
 
+@media (max-width:767px)
+{
+    .spnoibat
+    {
+        background-color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+        .tham #spnoibat {
+            margin-top: -50%;
+        }
+    
+    
+    .tham .section-title h2
+    {
+        font-size: 1.5em;
+    }
+    .tham #spnoibat .product-info .product-title a {
+        font-size: 1em;
+        /* color: black; */
+        /* margin-bottom: 15px; */
+    }
+    .tham .large--one-third {
+        width: 38.333%;
+    }
+    .product-img
+    {padding: 0;}
+    .product-desc
+    {font-size: 0.5em;
+        margin-left: -20%;
+        line-height: 1.5;
+    }
+    .tham .large--two-thirds {
+        width: 58.666%;
+    }
+    .product-action {
+        font-size: 73%;
+    }
+    .tham #spnoibat .button {
+    width: 100%;
+    font-size: 1em;
+    }
+    .gioithieu {
+        margin-top: -35%;
+    }
+    .tham #gioithieu .about-item .about-title {
+        color: black;
+        margin: 0;
+        font-weight: bold;
+        font-size: 0.8em;
+        line-height: 1.3;
+    }
+    .tham #gioithieu .large--three-twelfths {
+        width: 100%;
+    }
+    .anhgioitthieu
+    {
+        display: none;
+    }
+
+    #tintuc{
+        margin-top: -80%;
+        background-color: #fbfbfb;
+    }
+
+    .tham .grid1 {
+        margin-left: 0;
+    }
+    .tham #tintuc .tt_grid1 {
+        margin-left: 0%;
+    }
+    .tham #tintuc .large--one-half {
+        width: 100%;
+    }
+    .tham #tintuc .wrapper2 {
+         padding: 0 ;
+    }
+    .tham #tintuc .article-item {
+        margin-bottom: 30px;
+    }
+    .tham #tintuc .large--one-third {
+        width: 100%;
+    }
+    .tham #tintuc .article-item .article-info {
+        padding: 0% 0%;
+        width: 100%;
+    }
+}
