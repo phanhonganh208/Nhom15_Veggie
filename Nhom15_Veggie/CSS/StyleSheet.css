@@ -24,7 +24,10 @@
     margin: 0;
     padding: 0;
 }
-
+.phan_dau_trangchu
+{
+    width: 100%;
+}
 .call-mail {
     font-size: 16px;
     color: #417505;
@@ -137,7 +140,39 @@ ul {
         background: #417505;
         font-size: 18px;
     }
+    .logo {
+        margin-top: -5%;
+        /* margin-bottom: 40px; */
+        margin-left: 8%;
+    }
+.logo img
+{
+    height: 120px;
+    width: 120px;
+}
+.logo_bo {
+    margin-top: -10%;
+    /* margin-bottom: 40px; */
+    margin-left: 8%;
+}
 
+.logo_bo img
+{
+height: 120px;
+width: 120px;
+}
+.logo_gio {
+    margin-top: -10%;
+    margin-left: 10%;
+    /* margin-bottom: 40px; */
+    margin-left: 0%;
+}
+
+    .logo_gio img {
+        height: 120px;
+        width: 120px;
+        margin-left: 10%;
+    }
 /*-------BANNER TRANG CHỦ.................... */
 
 .slider {
@@ -170,15 +205,15 @@ ul {
         object-position: 0 50%;
         margin-top: 4%;
     }
+
 /* ..*/
-.navigation-manual {
+.navigation-manual,.navigation-auto {
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
 }
-
 .manual-btn {
     border: 2px solid #417505;
     padding: 5px;
@@ -205,14 +240,6 @@ ul {
 
 #radio3:checked ~ .first {
     margin-left: -40%;
-}
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 460px;
 }
 
     .navigation-auto div {
@@ -242,6 +269,153 @@ ul {
 .general-banner {
 }
 
+
+/* mobi_thao*/
+.nav__bars_btn
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 28px;
+    height: 28px;
+    color: #094125;
+    display: none;
+}
+.nav__input
+{
+    display: none;
+}
+.nav__input:checked ~ .nav-overlay
+{
+    display: block;
+}
+.nav__input:checked ~ .nav_mobie
+{
+    transform: translateX(0%);
+}
+.nav-overlay
+{display: none;}
+.nav_mobie
+{
+    display: none;
+}
+@media (max-width:767px){
+    .phan_dau_trangchu {
+        width: 100%;
+        margin-top: -30%;
+    }
+    .logo img {
+        height: auto;
+        width: 25%;
+        margin-top: 17%;
+        margin-left: 75%;
+    }
+    .logo_bo img {
+        height: auto;
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
+    }
+    .logo_gio img {
+        height: auto;
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
+    }
+
+     .nav__bars_btn
+    {
+        display: block;
+    }
+    .nav-overlay
+    {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadeEffect;
+        background-color: 0,0,0,3;
+    }
+    .nav_mobie {
+        position: fixed;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+        width: fit-content;
+        max-width: 100%;
+        background: rgb(255, 255, 255);
+        font-size: 1em;
+        list-style: none;
+        color:#417505;
+        display: block ;
+        transform: translateX(-100%);
+   
+    }
+    .nav_close {
+        margin-top: 32%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav_list 
+    {
+        
+        margin-left: 5%;
+        margin-top: 50%;
+        color:#417505;
+    }
+    .nav_mobie link 
+    { text-decoration: none;
+        color:#417505;
+
+    }
+    .nav-link
+    {
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+.nav_mobie-list2
+{ list-style: none;
+    margin-left: 5%;
+    color:#417505;
+}
+    .call-mail
+    {
+        display: none;
+    }
+    .log-sign
+    {
+        display: none;
+    }
+    .main-menu
+    {
+        display: none;
+    }
+.slider
+{
+    margin-top: 13%;
+}
+    .slide {
+        width: 20%;
+        transition: 2s;
+        padding: 0 1%;
+    }
+    .slide img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        object-position: 0 ;
+    }
+    .navigation-manual,.navigation-auto {
+        margin-top: 65%;
+    }
+}
 /*TABTABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
 .wrapper {
     *zoom: 1;
@@ -282,9 +456,19 @@ ul {
     margin-top: 5%;
     margin-bottom: -5%;
 }
+@media (max-width:767px)
+{
+    .section-title h2 {
+        text-align: center;
+        font-size: 1.5em;
+        /* color: #000000; */
+        margin-top: 55%;
+        /* margin-bottom: -5%; */
+    }
+}
 
 #trangchusp {
-    padding: 100px 0px;
+    padding: 5%;
 }
 
 .tab {
@@ -417,7 +601,27 @@ input, :before, :after {
     color: #131111;
 }
 
-
+@media (max-width:767px)
+{
+    .inner
+   {
+       margin: 0%;
+   }
+    .tab {
+        margin: 5% 10%;}
+        .tab button
+        {
+            padding: 0;
+        }
+        .tablinks
+        {
+            font-size: 0.8em;
+        }
+        .sptab {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
 /*trang chu ...........................................*/
 
 
@@ -425,8 +629,21 @@ input, :before, :after {
 /*-----------------TRANG SAN PHAM CHI TIET*/
 /*----------BANNER--------*/
 
+.banner_giohang
+{
 
+<<<<<<< HEAD
+width: 100%;
+background-size: cover;
+height: 300px;
+text-align: center;
+background-repeat: no-repeat;
+position: center;
+margin: 20px 0px 20px 0px;
+}
+=======
     
+>>>>>>> 091ff6022d6553825805793a6006e0bde83e5f50
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
 .duongdan {
@@ -885,7 +1102,7 @@ svg:not(:root).svg-inline--fa {
 /*----Trái cây sấy-----*/
 .cartegory {
     padding: 1% 4% 4%;
-    margin-bottom:5%;
+    margin-bottom:20%;
 }
 
 .cartegory-top {
@@ -989,7 +1206,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 .cartegory-right-content-item {
-    width: calc(48%);
+    width: calc(47%);
     text-align: center;
     margin-top: 2%;
     margin-right: 1%;
@@ -1009,7 +1226,7 @@ svg:not(:root).svg-inline--fa {
     margin-top: 2%;
 }
 .cartegory-right-content-item:hover {
-    width: calc(50%);
+    width: calc(47%);
     padding: 1%;
     background-color: #ffc764;
     color: white;
@@ -1098,7 +1315,7 @@ svg:not(:root).svg-inline--fa {
     }
 @media screen and (min-width:480px ) {
     .cartegory {
-        padding: 1% 4% 4%;
+        padding: 1% 3% 2%;
     }
 
     .cartegory-top {
@@ -1111,14 +1328,16 @@ svg:not(:root).svg-inline--fa {
         }
 
     .cartegory-left {
-        width: 28%;
-        font-size: 18px;
+        width: 23%;
+        font-size: 17px;
         margin-left: 1%;
-        padding: 2.5%;
+
     }
 
         .cartegory-left ul li ul li {
-            margin-left: -10%;
+            margin-left: -15%;
+            margin-top:5%;
+            margin-bottom:5%;
         }
     .cartegory-right {
         width: 70%;
@@ -1142,7 +1361,7 @@ svg:not(:root).svg-inline--fa {
         margin-top: 1%;
     }
     .cartegory-right-content-item {
-        width: calc(48%);
+        width: calc(47%);
         margin-top: 2%;
         margin-right: 1%;
         padding: 1%;
@@ -1160,7 +1379,7 @@ svg:not(:root).svg-inline--fa {
         margin-top: 2%;
     }
     .cartegory-right-content-item:hover {
-        width: calc(50%);
+        width: calc(47%);
         padding: 1%;
         font-size: 17px;
         height: 29%;
@@ -1194,7 +1413,7 @@ svg:not(:root).svg-inline--fa {
 }
 @media screen and (min-width:1024px ) {
     .cartegory {
-        padding: 1% 5%;
+        padding: 1% 4%;
     }
 
     .cartegory-top {
@@ -1207,7 +1426,7 @@ svg:not(:root).svg-inline--fa {
         }
 
     .cartegory-left {
-        width: 16%;
+        width: 12%;
         font-size: 18px;
         padding: 1%;
     }
@@ -1241,7 +1460,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .cartegory-right-content-item {
-        width: calc(32%);
+        width: calc(30%);
         margin-right: 1%;
         padding: 1%;
         font-size: 18px;
@@ -1260,7 +1479,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .cartegory-right-content-item:hover {
-        width: calc(32%);
+        width: calc(31%);
         padding: 1%;
         font-size: 18px;
         height: 47%;
@@ -1299,7 +1518,7 @@ svg:not(:root).svg-inline--fa {
 }
 /*Bơ*/
 .cartegory-right-content-item-bo {
-    width: calc(48%);
+    width: calc(47%);
     text-align: center;
     margin-top: 2%;
     margin-right: 1%;
@@ -1318,7 +1537,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 .cartegory-right-content-item-bo:hover {
-    width: calc(50%);
+    width: calc(47%);
     padding: 1%;
     background-color: #ffc764;
     color: white;
@@ -1331,7 +1550,7 @@ svg:not(:root).svg-inline--fa {
 }
 @media screen and (min-width:480px ) {
     .cartegory-right-content-item-bo {
-        width: calc(48%);
+        width: calc(47%);
         margin-top: 2%;
         margin-right: 1%;
         padding: 1%;
@@ -1346,7 +1565,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .cartegory-right-content-item-bo:hover {
-        width: calc(50%);
+        width: calc(47%);
         padding: 1%;
         font-size: 17px;
         height: 20%;
@@ -1358,7 +1577,7 @@ svg:not(:root).svg-inline--fa {
 }
 @media screen and (min-width:1024px ) {
     .cartegory-right-content-item-bo {
-        width: calc(32%);
+        width: calc(28%);
         margin-right: 1%;
         padding: 1%;
         font-size: 18px;
@@ -1373,7 +1592,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .cartegory-right-content-item-bo:hover {
-        width: calc(32%);
+        width: calc(29%);
         padding: 1%;
         font-size: 18px;
         height: 31%;
@@ -1392,10 +1611,10 @@ svg:not(:root).svg-inline--fa {
 
     .ttcontainer {
         overflow: auto;
-        margin-right: 3%;
+        margin-right: 2%;
         text-align: center;
         text-align: left;
-        margin-left: 3%;
+        margin-left: 2%;
     }
 
     .ttcartegory-right-top-item {
@@ -1439,7 +1658,7 @@ svg:not(:root).svg-inline--fa {
     }
 
 .tintuc-content-item {
-    width: calc(83%);
+    width: calc(85%);
     text-align: center;
     margin-top: 2%;
     margin-right: 5%;
@@ -1449,7 +1668,7 @@ svg:not(:root).svg-inline--fa {
     margin-bottom: 1%;
     background-color: #fafafa;
     font-size: 14px;
-    height: 10.5%;
+    height: 9.5%;
     margin-top: 1%;
 }
 
@@ -1459,7 +1678,7 @@ svg:not(:root).svg-inline--fa {
             color: darkgreen;
             font-size: 15px;
             width: calc(84%);
-            height: 13%;
+            height: 11%;
         }
 
         .tintuc-content-item img {
@@ -1503,7 +1722,7 @@ svg:not(:root).svg-inline--fa {
 
     .ttcartegory-right-bottom {
         justify-content: space-between;
-        margin: 3% 1% 20% 25%;
+        margin: 3% 1% 20% 10%;
         font-size: 16px;
     }
 
@@ -1521,15 +1740,13 @@ svg:not(:root).svg-inline--fa {
 
     @media screen and (min-width:480px ) {
         .ttcartegory {
-            padding: 1%;
             margin-top: 10%;
             height: 100%;
         }
 
         .ttcontainer {
-            margin-right: 1%;
+
             text-align: left;
-            margin-left: 1.5%;
         }
 
         .ttcartegory-right-top-item {
@@ -1552,7 +1769,6 @@ svg:not(:root).svg-inline--fa {
 
         .tintuc {
             width: 100%;
-            padding: 1%;
             margin-top: -1%;
             margin-bottom: 1%;
         }
@@ -1562,23 +1778,23 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item {
-            width: calc(48%);
-            margin: 1%;
-            padding: 1.5%;
+            width: calc(46.5%);
+            margin: 0.1%;
+            padding: 1%;
             margin-bottom: 1%;
-            font-size: 14px;
+            font-size: 13.5px;
             height: 19%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
-                font-size: 15px;
+                font-size: 14.5px;
                 width: calc(48%);
                 height: 21%;
             }
 
             .tintuc-content-item img {
-                width: 86%;
+                width: 83%;
                 height: 35%;
                 margin-top: 1.5%;
             }
@@ -1589,7 +1805,7 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item-content {
-            font-size: 16px;
+            font-size: 15.5px;
             width: 100%;
             margin: 2%;
         }
@@ -1654,19 +1870,19 @@ svg:not(:root).svg-inline--fa {
         }
 
         .tintuc-content-item {
-            width: calc(30%);
+            width: calc(29%);
             margin: 0.5%;
             padding: 2% 1% 2% 1%;
             margin-bottom: 1%;
             font-size: 16px;
-            height: 32%;
+            height: 30%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
                 font-size: 15px;
-                width: calc(31.5%);
-                height: 32%;
+                width: calc(31%);
+                height: 31%;
             }
 
             .tintuc-content-item img {
@@ -1887,4 +2103,10 @@ svg:not(:root).svg-inline--fa {
 
     .article-content {
         font-size: 1em;
+    }
+    @media (max-width:767px){
+        .footer_trang
+        {
+            display: none;
+        }
     }
