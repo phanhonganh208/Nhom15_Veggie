@@ -647,17 +647,15 @@ margin: 20px 0px 20px 0px;
 >>>>>>> 091ff6022d6553825805793a6006e0bde83e5f50
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
-.duongdan {
+.duongdan{
     text-align: center;
     color: white;
     font-size: 20px;
     margin-top: 20px
 }
-
     .duongdan a {
         color: white;
     }
-
         .duongdan a:hover {
             color: #F7C551;
         }
@@ -1139,6 +1137,10 @@ svg:not(:root).svg-inline--fa {
 
     .cartegory-left ul li ul li {
         margin-left: -10%;
+        
+    }
+    .cartegory-left ul li ul li a{
+        text-decoration: none;
     }
 
         .cartegory-left ul li ul li a:hover {
@@ -1270,6 +1272,7 @@ svg:not(:root).svg-inline--fa {
 
     .cartegory-right-bottom a {
         color: black;
+        text-decoration:none;
     }
 
         .cartegory-right-bottom a:hover {
@@ -1309,11 +1312,14 @@ svg:not(:root).svg-inline--fa {
 .cartegory-left-li ul {
     display: none;
 }
+.cartegory-left-li a{
+    text-decoration:none;
+}
 
 
-    .cartegory-left-li.block ul {
-        display: block;
-    }
+.cartegory-left-li.block ul {
+    display: block;
+}
 @media screen and (min-width:480px ) {
     .cartegory {
         padding: 1% 3% 2%;
@@ -1604,11 +1610,12 @@ svg:not(:root).svg-inline--fa {
     }
 }
     /*----TIN TỨC----*/
-    .ttcartegory {
-        padding: 5% 0 0;
-        margin-top: 5%;
-        height: 100%;
-    }
+.ttcartegory {
+    
+    padding: 5% 0 0;
+    margin-top: 5%;
+    height: 100%;
+}
 
     .ttcontainer {
         overflow: auto;
@@ -1659,6 +1666,7 @@ svg:not(:root).svg-inline--fa {
     }
 
 .tintuc-content-item {
+   
     width: calc(85%);
     text-align: center;
     margin-top: 2%;
@@ -1703,23 +1711,26 @@ svg:not(:root).svg-inline--fa {
         text-align: left;
     }
 
-    .tintuc-content-item h3 {
-        width: 100%;
-        margin: 2%;
-        text-align: left;
+.tintuc-content-item h3 {
+    width: 100%;
+    margin: 2%;
+    text-align: left;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+    .tintuc-content-item h3 a {
         color: darkgreen;
+        text-decoration: none;
     }
 
-        .tintuc-content-item h3 a {
-            color: darkgreen;
-        }
-
-    .tintuc-content-item h4 a {
-        width: 100%;
-        margin: 2%;
-        text-align: left;
-        color: darkgreen;
-    }
+.tintuc-content-item h4 a {
+    width: 100%;
+    margin: 2%;
+    text-align: left;
+    color: darkgreen;
+    text-decoration: none;
+}
 
     .ttcartegory-right-bottom {
         justify-content: space-between;
@@ -1729,6 +1740,7 @@ svg:not(:root).svg-inline--fa {
 
         .ttcartegory-right-bottom a {
             color: black;
+            text-decoration: none;
         }
 
             .ttcartegory-right-bottom a:hover {
@@ -1824,6 +1836,7 @@ svg:not(:root).svg-inline--fa {
         .ttcartegory-right-bottom {
             margin: 3% 1% 10% 40%;
             font-size: 16px;
+            text-decoration: none;
         }
     }
 
