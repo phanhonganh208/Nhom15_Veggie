@@ -1,0 +1,213 @@
+﻿
+    .blog {
+        line-height: 1.5;
+        color: #333;
+        background-color: #fff;
+    }
+
+.blog-header {
+    text-align:center; 
+    color:white;
+    font-size:30px;
+}
+
+    .blog-content {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+
+    .aside-item {
+        border: 1px #ebebeb solid;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+        .aside-item .aside-title {
+            border-radius: 15px;
+            background: #417505;
+            padding: 6px 20px;
+            position: relative;
+            margin-bottom: 1.5rem !important;
+        }
+
+            .aside-item .aside-title h2 {
+                font-size: 17px;
+                color: #FFF;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 24px;
+                margin: 0;
+                display: inline-block;
+                padding-right: 10px;
+                background: none;
+                font-family: 'Quicksand', sans-serif;
+            }
+
+    .title-head {
+        font-size: 1.875em;
+        color: #333;
+        font-weight: 400;
+        text-decoration: none;
+        position: relative;
+    }
+
+    .blog-link {
+        color: #363636;
+        text-decoration: none;
+        background: transparent;
+    }
+
+    .blog-list .blog-bar {
+        min-height: 80px;
+        overflow: hidden;
+        padding: 20px 0px;
+        border-bottom: 1px solid #ebebeb;
+    }
+
+        .blog-list .blog-bar .thumb-left {
+            width: 80px;
+            max-width: 80px;
+            height: auto;
+            display: block;
+            float: left;
+        }
+
+            .blog-list .blog-bar .thumb-left a {
+                background: #ebebeb;
+                overflow: hidden;
+            }
+
+
+        .blog-list .blog-bar .name-right {
+            display: block;
+            float: left;
+            width: calc(100% - 100px);
+            margin-left: 10px;
+            text-align: left;
+        }
+
+            .blog-list .blog-bar .name-right h3 {
+                line-height: 18px;
+                margin-bottom: 7px;
+            }
+
+            .blog-list .blog-bar .name-right h3 {
+                font-weight: 700;
+                position: relative;
+                line-height: 24px;
+                margin-top: -7px;
+                margin-bottom: 3px;
+            }
+
+            .blog-list .blog-bar .name-right .post-time {
+                margin-bottom: 3px;
+            }
+
+    .article {
+        width: 75%;  
+        padding-left: 30px; 
+        padding-right: 30px;
+    }
+
+    .article-title {
+        font-size: 30px;
+    }
+
+
+    .post-time {
+        color: #898989;
+        font-size: 1em;
+        text-align: left;
+    }
+
+
+    .rte {
+        color: #363636;
+        font-weight: 100;
+    }
+
+    .rte img {
+        width: 60%;
+    }
+
+    .content-details {
+        font-weight: 100;
+        line-height: 2;
+        font-size: 18px;
+    }
+
+
+    .article-content {
+        font-size: 1em;
+    }
+
+
+
+
+@media screen and (min-width:480px ) and (max-width: 768px) {
+    .blog-header {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+    .blog-content {
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .aside-item {
+        display: none;
+    }
+
+    .article {
+        width: 75%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.rte img {
+    width: 60%;
+}
+
+.content-details {
+    font-weight: 100;
+    line-height: 2;
+    font-size: 16px;
+}
+
+
+@media screen and (min-width:768px ) and (max-width: 1024px) {
+    .blog-header {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+    }
+    .blog-content {
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+    }
+    .aside-item {
+        border: 1px #ebebeb solid;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    .article {
+        width: 75%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .rte img {
+        width: 60%;
+    }
+
+    .content-details {
+        font-weight: 100;
+        line-height: 2;
+        font-size: 18px;
+    }
+}
