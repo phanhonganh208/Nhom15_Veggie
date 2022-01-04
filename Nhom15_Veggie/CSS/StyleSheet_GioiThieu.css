@@ -1,0 +1,278 @@
+﻿
+.staff {
+    margin-top: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+}
+
+.text-center mb-50 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(48, 86, 49);
+    font-family: Roboto;
+}
+
+.hr-row {
+    align-content: center;
+    display: inline-block;
+}
+
+
+.item-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50px
+}
+
+.hr {
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 50px;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.eman {
+    margin-top: 10px;
+    font-size: 16pt;
+    color: #417505;
+    text-align: center;
+}
+
+.regen {
+    color: #000000;
+    margin-top: 0px;
+    font-size: 13pt;
+    text-align: center;
+}
+
+.story-img {
+    float: right;
+    margin-left: 20px;
+    width: 450px;
+    height: 400px;
+}
+
+.gioithieu {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+}
+
+.gioithieu-content p {
+    padding-top: 30px;
+    padding-bottom: 220px;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15pt;
+}
+
+.gioithieu-content1 {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: center;
+    line-height: 1.5;
+    color: #417505;
+    font-size: 25px
+}
+
+.gioithieu-content2 {
+    padding-top: 60px;
+    padding-bottom: 150px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+    .gioithieu-content2 .header {
+        text-align: center;
+        color: #417505;
+        font-size: 15pt;
+    }
+
+    .gioithieu-content2 .content {
+        line-height: 2;
+        margin-left: 15px;
+        font-size: 15pt;
+    }
+
+
+@media screen and (min-width:480px )  {
+
+    .staff {
+        margin-top: 2%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+
+    .item-img {
+        width: 130px;
+        height: 143px;
+        border-radius: 30px;
+    }
+
+    .hr {
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-top: 20px;
+        float: left;
+        margin-bottom: 20px;
+    }
+
+    .eman {
+        margin-top: 5px;
+        font-size: 12pt;
+        color: #417505;
+        text-align: center;
+    }
+
+    .regen {
+        color: #000000;
+        margin-top: 0px;
+        font-size: 10pt;
+        text-align: center;
+    }
+
+    .story-img {
+        float: right;
+        margin-left: 20px;
+        width: 40%;
+        height: 40%;
+    }
+
+    .gioithieu h2 {
+        font-size: 18px;
+    }
+
+    .gioithieu-content h2 {
+        font-size: 18px;
+    }
+
+
+    .gioithieu {
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 2%;
+    }
+
+    .gioithieu-content p {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        font-size: 12pt;
+    }
+
+    .gioithieu-content1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .gioithieu-content2 .content {
+        margin-top: 5px;
+        font-size: 12pt;
+        margin-bottom: 0;
+    }
+
+
+    @media screen and (min-width:1024px ) {
+        .staff {
+            margin-top: 2%;
+            padding-left: 4%;
+            padding-right: 4%;
+            text-align: center;
+        }
+
+        .text-center mb-50 {
+            font-size: 40px;
+            text-align: center;
+            color: rgb(48, 86, 49);
+            font-family: Roboto;
+        }
+
+        .hr-row {
+            align-content: center;
+            display: inline-block;
+        }
+
+
+        .item-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50px
+        }
+
+        .hr {
+            margin-left: 30px;
+            margin-right: 40px;
+            margin-top: 50px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        .eman {
+            margin-top: 10px;
+            font-size: 16pt;
+            color: #417505;
+            text-align: center;
+        }
+
+        .regen {
+            color: #000000;
+            margin-top: 0px;
+            font-size: 13pt;
+            text-align: center;
+        }
+
+        .story-img {
+            float: right;
+            margin-left: 20px;
+            width: 450px;
+            height: 400px;
+        }
+
+        .gioithieu {
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 2%;
+        }
+
+        .gioithieu-content p {
+            padding-top: 30px;
+            padding-bottom: 220px;
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 15pt;
+        }
+
+        .gioithieu-content1 {
+            padding-top: 100px;
+            padding-bottom: 60px;
+            text-align: center;
+            line-height: 1.5;
+            color: #417505;
+            font-size: 25px
+        }
+
+        .gioithieu-content2 {
+            padding-top: 60px;
+            padding-bottom: 150px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+
+            .gioithieu-content2 .header {
+                text-align: center;
+                color: #417505;
+                font-size: 15pt;
+            }
+
+            .gioithieu-content2 .content {
+                line-height: 2;
+                margin-left: 15px;
+                font-size: 15pt;
+            }
+    }
+}

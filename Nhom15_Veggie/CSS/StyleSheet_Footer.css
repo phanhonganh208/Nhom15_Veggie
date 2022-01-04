@@ -1,0 +1,264 @@
+﻿/*---------FOOTER---------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-subscribe {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    background: #094125;
+    padding: 30px 40px;
+    color: white;
+}
+
+    .footer-subscribe .grid {
+        display: flex;
+        align-items: center;
+    }
+
+.large--one-half {
+    width: 50%;
+}
+
+.footer-subscribe form {
+    border-bottom: 1px solid #e2e2e2;
+    margin-left: 50px;
+}
+
+    .footer-subscribe form .input-group-field {
+        background: none;
+        border: 0px;
+        outline: none;
+        color: #fff;
+    }
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+
+.footer-img {
+    text-align:center;
+    width:200px;
+    height:200px; 
+    margin-top: 80px;
+}
+
+
+
+.footer-container {
+    margin: 0 3%;
+    margin-top: 7%;
+    position: page;
+    background-color: #F0F0F0;
+    /* height: auto; */
+    padding: 2% 2%;
+    display: flex;
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+}
+
+.row {
+    margin: 0 5%;
+}
+
+
+
+.links h3 {
+    position: relative;
+    color: #417505;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+
+    .links h3:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100px;
+        height: 2px;
+    }
+
+
+.links {
+    position: center;
+    width: 25%;
+}
+
+
+    .links ul li {
+        list-style: none;
+    }
+
+        .links ul li a {
+            color: #000000;
+            text-decoration: none;
+            margin-bottom: 1%;
+            display: inline-block;
+        }
+
+
+            .links ul li a:hover {
+                color: #F7C551;
+            }
+
+    .links span {
+        margin-bottom: 5px;
+    }
+
+    .links p {
+        line-height: 1.5;
+    }
+
+        .links p a {
+            color: #000000;
+            text-decoration: none;
+            margin-bottom: 5px;
+            display: inline-block;
+        }
+
+            .links p a:hover {
+                color: #F7C551;
+            }
+
+
+
+.fb-post {
+    width: 100%;
+    height: 130px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.img-inner {
+    width: 100%;
+    height: 130px;
+}
+
+@media screen and (min-width:480px ) and (max-width: 768px) {
+    .footer-subscribe {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        background: #094125;
+        padding: 1% 1%;
+        margin-bottom: 150px;
+        color: white;
+    }
+
+        .footer-subscribe .grid {
+            display: flex;
+            align-items: center;
+            padding: 2%;
+        }
+
+    .large--one-half {
+        width: 50%;
+    }
+
+    .ft-subscribe-info h2 {
+        font-size: 16px;
+    }
+
+    .ft-subscribe-info span {
+        font-size: 13px;
+    }
+
+    .footer-subscribe form {
+        border-bottom: 1px solid #e2e2e2;
+        margin-left: 50px;
+    }
+
+        .footer-subscribe form .input-group-field {
+            background: none;
+            border: 0px;
+            outline: none;
+            color: #fff;
+        }
+
+    svg:not(:root).svg-inline--fa {
+        overflow: visible;
+    }
+
+    .footer-container {
+        margin: 0 0;
+        margin-top: 80px;
+        position: page;
+        background-color: #F0F0F0;
+        /* height: auto; */
+        padding: 0;
+        display: flex;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .row {
+        margin-top: 5%;
+    }
+
+
+
+
+    .links h3 {
+        position: relative;
+        color: #417505;
+        font-weight: 500;
+        margin-bottom: 3%;
+    }
+
+    .links {
+        position: center;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+
+    @media screen and (min-width:768px ) and (max-width: 1024px) {
+        .footer-container {
+            margin: 0 0;
+            margin-top: 80px;
+            position: page;
+            background-color: #F0F0F0;
+            /* height: auto; */
+            padding: 0;
+            display: flex;
+            /* justify-content: space-between; */
+            /* flex-wrap: wrap; */
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .row {
+            margin-top: 5%;
+            margin-right: 0;
+        }
+
+        .links h3 {
+            position: relative;
+            color: #417505;
+            font-weight: 500;
+            margin-bottom: 3%;
+        }
+
+        .links {
+            position: center;
+            width: 50%;
+            margin-bottom: 5%;
+        }
+    }
+}

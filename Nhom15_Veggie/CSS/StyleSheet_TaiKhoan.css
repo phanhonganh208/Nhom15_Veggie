@@ -1,0 +1,217 @@
+﻿/*---------ĐĂNG KÝ----------*/
+
+.back-home {
+    color: white;
+    text-decoration-color: white;
+}
+
+    .back-home:hover {
+        color: aquamarine;
+    }
+
+.aabb {
+    margin-left: 300px;
+    margin-right: 10px;
+    margin-top: 20px;
+    position: center;
+    float: left;
+    width: 400px;
+    height: 650px;
+}
+
+.dk-form-vertical {
+    position: relative;
+    line-height: 24px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Roboto;
+    color: #131111;
+    font-weight: 300;
+    text-align: center;
+    list-style: none;
+    margin-left: -30px;
+}
+
+
+.dk-h1 {
+    color: #094125;
+    padding: 0px 0px 15px 0px;
+    margin: 30px 0px 15px 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.dk-input {
+    border: 1px solid #e2e2e2;
+    width: 400px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .dk-input:hover {
+        color: #F7C551
+    }
+
+.dk-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.42;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    user-select: none;
+    border-radius: 3px;
+    background-color: #094125;
+    color: #fff;
+}
+
+    .dk-btn:hover {
+        background-color: #417505;
+        color: #fff;
+    }
+
+
+.dk-back {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+    .dk-back:hover {
+        color: #F7C551;
+    }
+
+
+
+@media screen and (min-width:480px ) and (max-width: 768px) {
+    .dk-form-vertical {
+        display: flex;
+        flex-direction: column;
+    }
+
+        .dk-form-vertical span {
+            display: none;
+        }
+}
+/*------DANG NHAP--------*/
+
+.dn-form-vertical {
+    padding-top: 20px;
+    position: relative;
+    line-height: 24px;
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: Roboto;
+    color: #131111;
+    font-weight: 300;
+    text-align: center;
+    list-style: none;
+    margin-left: -30px;
+    padding-bottom: 50px;
+}
+
+
+.dn-h1 {
+    color: #094125;
+    padding: 0px 0px 15px 0px;
+    margin: 30px 0px 15px 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.dn-input {
+    border: 1px solid #e2e2e2;
+    width: 400px;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+    .dn-input:hover {
+        color: #F7C551
+    }
+
+.dn-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 8px 10px;
+    width: 400px;
+    font-size: 18px;
+    line-height: 1.42;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    user-select: none;
+    border-radius: 3px;
+    background-color: #094125;
+    color: #fff;
+}
+
+    .dn-btn:hover {
+        background-color: #417505;
+        color: #fff;
+    }
+
+.dn-a {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+    .dn-a:hover {
+        color: #F7C551;
+    }
+
+.logins {
+    width: 400px;
+    text-align: center;
+    display: inline-block;
+}
+
+.socials-login {
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+    .socials-login a {
+        padding: 4px 30px;
+        color: #fff;
+        line-height: 1.5em;
+        text-decoration: none;
+        border-radius: 2px;
+        white-space: nowrap;
+        display: inline-block;
+        margin-top: 8px;
+        width: 300px;
+    }
+
+    .socials-login span.fa {
+        margin-right: 3px;
+    }
+
+.bg-facebook {
+    background: #3a5899;
+}
+
+    .bg-facebook:hover, .bg-facebook:focus {
+        background: #1d418d;
+    }
+
+
+.bg-google-plus {
+    background: #db4437;
+}
+
+    .bg-google-plus:hover, .bg-google-plus:focus {
+        background: #bb2a1d;
+    }
