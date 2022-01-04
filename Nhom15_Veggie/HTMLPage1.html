@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Liên Hệ </title>
+    <link rel="stylesheet" href="CSS/LienHe.css" type="text/css" media="screen" />
+
+    <style>
+        .g-grid-col1{
+            width:50%;
+        }
+        .g-grid{
+            flex-direction:row;
+        }
+        .g-grid-col {
+            display: table;
+            width:40%;
+        }
+
+        .grid-lienhe {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: -30px;
+        }
+
+        .grid__item {
+            box-sizing: border-box;
+            float: left;
+            min-height: 1px;
+            padding-left: 30px;
+            vertical-align: top;
+            width: 100%;
+            margin-top: 10px
+        }
+
+        .hidden-label {
+            position: absolute;
+            height: 0;
+            width: 0;
+            margin-bottom: 0;
+            overflow: hidden;
+            clip: rect(1px, 1px, 1px, 1px);
+        }
+
+        .grid-lienhe {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: -30px;
+        }
+
+        .form-vertical textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .input {
+            font-size: 16px;
+            line-height: 1.6;
+            font-family: Roboto;
+            color: #131111;
+            font-weight: 300;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .label[for] {
+            cursor: pointer;
+        }
+
+        .form-vertical input, .form-vertical select, .form-vertical textarea {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input.input-full, textarea.input-full, select.input-full {
+            width: 100%;
+        }
+
+        .large--one-third {
+            width: 33.333%;
+        }
+    </style>
+</head>
+<body>
+    <section id="lienhe">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-title">
+                            <div class="contact-icon" style="font-size: 36px;">
+                                <i class="fas fa-map-marker-alt" style="font-size:36px;color:#094125"></i>
+                            </div>
+                            <h4>
+                                Địa chỉ
+                            </h4>
+                        </div>
+                        <div class="contact-info">
+                            669 QL1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-title">
+                            <div class="contact-icon" style="font-size: 36px;">
+                                <i class="fas fa-phone" style="font-size:36px;color:#094125"></i>
+                            </div>
+                            <h4>
+                                Số điện thoại
+                            </h4>
+                        </div>
+                        <div class="contact-info">
+                            <a href="tel:+84 39 5762954" style="color: #131111">+84 39 5762954 </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" style="font-size:36px;color:#094125"></i>
+                        </div>
+                        <div class="contact-title">
+                            <h4>
+                                Email
+                            </h4>
+                        </div>
+                        <div class="contact-info">
+                            <a href="mailto:veggie2021@gmail.com" style="color: #131111">veggie2021@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-head" style="border-bottom:1px solid #e2e2e2">
+            <h1 class="text-center" style="text-align:center; width: fit-content">LIÊN HỆ</h1>
+
+        </div>
+
+
+        <div class="g-grid" style="padding:20px; display:flex">
+            <div class="g-grid-col1">
+                <ul class="list_contact">
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_1.png" alt="Địa chỉ">
+                        <h5>
+                            Địa chỉ
+                        </h5>
+                        <p class="des-contact">
+                            669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_2.png" alt="Điện thoại">
+                        <h5>
+                            Điện thoại
+                        </h5>
+                        <p class="des-contact">
+                            +(84) 395 762 954
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_3.png" alt="Shopee">
+                        <h5>
+                            Shopee
+                        </h5>
+                        <p class="des-contact">
+                            veggie
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_4.png" alt="Email">
+                        <h5>
+                            Email
+                        </h5>
+                        <p class="des-contact">
+                            veggie2021@gmail.com
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_5.png" alt="Facebook">
+                        <h5>
+                            Facebook
+                        </h5>
+                        <p class="des-contact">
+                            VEGGIE Eat Clean And Healthy
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_6.png" alt="Instagram">
+                        <h5>
+                            Instagram
+                        </h5>
+                        <p class="des-contact">
+                            @veggie
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="g-grid-col2">
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+
+                    <label for="ContactFormName" class="hidden-label">Họ tên của bạn</label>
+                    <input type="text" id="ContactFormName" class="input-full" name="contact[name]" placeholder="Họ tên của bạn" autocapitalize="words" value="">
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <label for="ContactFormEmail" class="hidden-label">Địa chỉ email của bạn</label>
+                    <input type="email" id="ContactFormEmail" class="input-full" name="contact[email]" placeholder="Địa chỉ email của bạn" autocorrect="off" autocapitalize="off" value="">
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+
+                    <label for="ContactFormPhone" class="hidden-label">Số điện thoại của bạn</label>
+                    <input type="tel" id="ContactFormPhone" class="input-full" name="contact[phone]" placeholder="Số điện thoại của bạn" pattern="[0-9\-]*" value="">
+                </div>
+                <div class="grid__item">
+                    <label for="ContactFormMessage" class="hidden-label">Nội dung</label>
+                    <textarea rows="10" id="ContactFormMessage" class="input-full" name="contact[body]" placeholder="Nội dung"></textarea>
+
+                </div>
+                <div class="grid__item text-center">
+                    <input type="submit" class="btn btnContactSubmit" value="Gửi">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+</html>

@@ -139,6 +139,7 @@
                 color: #ffffff;
                 background: #094125;
             }
+            .but
 
         #ChiTietSanPham .quantity {
             display: inline-block;
@@ -228,54 +229,33 @@
             margin-top: 20px
         }*/
         .main_product {
-            flex-direction: column;
+            flex-direction: row;
         }
 
         .main_product-img {
-            width: 95%;
-            height: 95%;
-            padding-top: 95%;
+            width: 30%;
+            height: 30%;
+            padding-top:30%;
         }
 
-        .nd1 {
-            display: none
-        }
 
         .main_product-info {
-            width: 95%;
+            width: 65%;
           
         }
         .buttonThemXoa {
             display: flex;
             flex-direction: row;
         }
-
-        .cartegory-right-content-item_1 {
-            display: none;
+        .section-title h1 {
+            font-weight: bold;
+            font-family: 'Times New Roman';
         }
 
-        .cartegory-right-content-item_11 {
-            display: none;
-        }
-        /* Dành cho điện thoại */
-       /* @media only screen and (max-width:46.1875em) {
-            .main_product {
-                display: flex;
-                flex-direction: column-reverse;
-            }
-
-            #breadcrumb-wrapper {
-                height: 250px !important;
-            }
-
-                #breadcrumb-wrapper .breadcrumb-big h2 {
-                    font-size: 20px !important;
-                    line-height: normal !important;
-                }
-        }*/
         /* Dành cho máy tính bảng */
-        @media screen and (min-width:480px ) {
+        @media only screen and (min-width: 768px) and (max-width: 1024px) {
             .main_product {
+                display:flex;
                 flex-direction: column;
             }
 
@@ -292,32 +272,49 @@
             .main_product-info {
                 width: 95%;
             }
-
-
-            #breadcrumb-wrapper.breadcrumb-w-img {
-                background-attachment: scroll !important;
+            .no1{
+                display:none;
             }
-
-            #breadcrumb-wrapper {
-                height: 250px !important;
+            .no2{
+                display:none;
             }
         }
-        @media screen and (min-width:1024px ){
-            .main_product{
-                flex-direction:row;
+        @media only screen and (min-width: 480px) and (max-width:768px) {
+            .main_product {
+                flex-direction: column;
             }
+
             .main_product-img {
-                width: 40%;
-                
-                padding-top: 40%;
+                width: 95%;
+                padding-top: 95%;
             }
-            .main_product-info{
-                width:50%
+
+            .main_product-info {
+                width: 95%
             }
-            .action{
-                display:flex;flex-direction:row;
+            .nd1 {
+                display: none
             }
-            
+
+            .action {
+                display: flex;
+                flex-direction: row;
+            }
+            .section-title h1 {
+                font-weight: bold;
+                font-family: 'Times New Roman';
+                font-size:24px
+            }
+            .no1 {
+                display: none;
+            }
+
+            .no2 {
+                display: none;
+            }
+            .buttonThemMua{
+                flex-direction:column
+            }
         }
         
     </style>
@@ -409,7 +406,7 @@
                 </div>
 
                 <div class="main_product-info">
-                    <h1 >SET ĂN SÁNG ĐONG ĐẦY</h1>
+                    <h1 >NHO KHÔ</h1>
                     <p>Thương hiệu: <a href="#">Khác</a> | Loại: <a href="#">Khác</a></p>
                     <h2>200,000đ</h2>
                     <p class="main_product-desc">
@@ -459,12 +456,12 @@
                                 <input type="button" value="+" class="plus">
                             </div>
                         </div>
-                        <div class="buttonThemMua" style="display:flex;flex-direction:row">
-                            <div class="product-actions clearfix" style="margin-left:10px">
+                        <div class="buttonThemMua" style="">
+                            <div class="product-actions clearfix" style="margin-top:10px">
                                 <button class="button button1">THÊM VÀO GIỎ HÀNG</button>
 
                             </div>
-                            <div class="product-actions clearfix" style="margin-left:10px">
+                            <div class="product-actions clearfix" style="margin-top:10px">
                                 <button class="button button2">MUA NGAY</button>
                             </div>
                         </div>
@@ -563,7 +560,7 @@
             <div id="related-product" style="padding-left: 10%; margin-top: 5%">
                 <hr />
                 <div class="section-title" style="text-align:center">
-                    <h1 style="font-size:36px; margin-bottom:10px">SẢN PHẨM LIÊN QUAN</h1>
+                    <h1 style="margin-bottom:10px">SẢN PHẨM LIÊN QUAN</h1>
                 </div>
                 <div class="section-content">
                     <div class="cartegory-right-content row">
@@ -588,14 +585,16 @@
                                 <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                             </div>
                         </div>
-                        <div class="cartegory-right-content-item_11">
-                            <img src="Images/mo.png" alt="" />
-                            <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
-                            <p>100.000 <sup>đ</sup></p>
-                            <div style="margin-top:20px;">
-                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                        <div class="cartegory-right-content-item">
+                            <div class="no1">
+                                <img src="Images/mo.png" alt="" />
+                                <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                                <p>100.000 <sup>đ</sup></p>
+                                <div style="margin-top:20px;">
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -605,7 +604,7 @@
                 <!--style="margin-top:-100px"-->
                 <hr />
                 <div class="section-title" style="text-align:center">
-                    <h1 style="font-size:36px; margin-bottom:-10px">SẢN PHẨM ĐÃ XEM</h1>
+                    <h1 style="margin-bottom:-10px">SẢN PHẨM ĐÃ XEM</h1>
                 </div>
                 <div class="section-content">
                     <div class="cartegory-right-content row">
@@ -621,7 +620,7 @@
 
                         </div>
                         <div class="cartegory-right-content-item">
-                            <img src="Images/namvietquat.png" alt="" />
+                            <img src="Images/mo.png" alt="" />
                             <h4>NAM VIỆT QUẤT</h4>
                             <p>150.000 <sup>đ</sup></p>
                             <div style="margin-top:20px;">
@@ -630,14 +629,16 @@
                                 <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
                             </div>
                         </div>
-                        <div class="cartegory-right-content-item_1">
-                            <img src="Images/mo.png" alt="" />
-                            <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
-                            <p>100.000 <sup>đ</sup></p>
-                            <div style="margin-top:20px;">
-                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
-                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
-                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                        <div class="cartegory-right-content-item">
+                            <div class="no2">
+                                <img src="Images/namvietquat.png" alt="" />
+                                <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                                <p>100.000 <sup>đ</sup></p>
+                                <div style="margin-top:20px;">
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                </div>
                             </div>
                         </div>
                     </div>
