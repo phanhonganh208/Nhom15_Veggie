@@ -295,6 +295,26 @@ width: 120px;
 {
     display: block;
 }
+
+
+/* mobi_thao*/
+.nav__bars_btn
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 28px;
+    height: 28px;
+    color: #094125;
+    display: none;
+}
+.nav__input
+{
+    display: none;
+}
+.nav__input:checked ~ .nav-overlay
+{
+    display: block;
+}
 .nav__input:checked ~ .nav_mobie
 {
     transform: translateX(0%);
@@ -423,14 +443,6 @@ width: 120px;
         margin-top: 65%;
     }
 }
-@media screen and (min-width:480px ) and (max-width: 768px){
-    .general-banner{
-        width: 100%;
-    }
-}
-
-
-
 /*TABTABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
 .wrapper {
     *zoom: 1;
