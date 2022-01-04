@@ -1,0 +1,765 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TRANG CHI TIẾT SẢN PHẨM</title>
+    <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/3b47ca6d18.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
+    <link rel="shortcut icon" href="Images/logo.png" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <style>
+        * {
+            font-family: 'Times New Roman'
+        }
+
+        #breadcrumb-wrapper.breadcrumb-w-img {
+            width:100%;
+            height: 300px;
+            padding: 30px 0;
+            background: url(Images/breadcrumb_bg1.png);
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-overlay {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0, 0, 0, 0.5);
+                z-index: 1;
+            }
+
+            #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                z-index: 1;
+                width: 100%;
+            }
+
+
+                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
+                    font-size: 24px;
+                    color: #fff;
+                    padding: 0px;
+                    margin: 0px 0px 5px 0px;
+                }
+
+                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a {
+                    display: inline-block;
+                    position: relative;
+                }
+
+                #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
+                    color: #fff;
+                }
+
+        a, .text-link {
+            color: #094125;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        .main_product {
+            display: flex;
+        }
+
+        .main_product-img {
+            width: 95%;
+            padding-top: 40%;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0 auto;
+            margin-top: 20px
+        }
+
+        .main_product-info a {
+            color: #094125;
+            text-decoration: none;
+            background: transparent;
+        }
+
+        #ChiTietSanPham .button {
+            display: inline-block;
+            border-radius: 20px;
+            outline: none;
+            width: 170px;
+            border: 1px solid #094125;
+            line-height: 35px;
+            color: #ffffff;
+            background: #094125;
+            cursor: pointer;
+            overflow: visible;
+        }
+
+        #ChiTietSanPham .button1 {
+            color: #ffffff;
+            background: #094125;
+        }
+
+            #ChiTietSanPham .button1:hover {
+                background-color: #FFFFFF;
+                color: #094125;
+            }
+
+        #ChiTietSanPham .button2 {
+            color: #ffffff;
+            background: #094125;
+        }
+
+            #ChiTietSanPham .button2:hover {
+                background-color: #FFFFFF;
+                color: #094125;
+            }
+
+        #ChiTietSanPham .buttonXT {
+            background-color: #FFFFFF;
+            color: #094125;
+        }
+
+            #ChiTietSanPham .buttonXT:hover {
+                color: #ffffff;
+                background: #094125;
+            }
+
+        #ChiTietSanPham .quantity {
+            display: inline-block;
+        }
+
+            #ChiTietSanPham .quantity .input-text.qty {
+                width: 35px;
+                height: 39px;
+                padding: 0 5px;
+                text-align: center;
+                background-color: transparent;
+                border: 1px solid #efefef;
+            }
+
+            #ChiTietSanPham .quantity.buttons_added {
+                text-align: left;
+                position: relative;
+                white-space: nowrap;
+                vertical-align: top;
+            }
+
+                #ChiTietSanPham .quantity.buttons_added input {
+                    display: inline-block;
+                    margin: 0;
+                    vertical-align: top;
+                    box-shadow: none;
+                }
+
+                #ChiTietSanPham .quantity.buttons_added .minus,
+                .quantity.buttons_added .plus {
+                    padding: 7px 10px 8px;
+                    height: 41px;
+                    background-color: #ffffff;
+                    border: 1px solid #efefef;
+                    cursor: pointer;
+                }
+
+                #ChiTietSanPham .quantity.buttons_added .minus {
+                    border-right: 0;
+                }
+
+                #ChiTietSanPham .quantity.buttons_added .plus {
+                    border-left: 0;
+                }
+
+                #ChiTietSanPham .quantity.buttons_added .minus:hover,
+                .quantity.buttons_added .plus:hover {
+                    background: #eeeeee;
+                }
+
+        .quantity input::-webkit-outer-spin-button,
+        .quantity input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            margin: 0;
+        }
+
+        .quantity.buttons_added .minus:focus,
+        .quantity.buttons_added .plus:focus {
+            outline: none;
+        }
+
+
+        .pagination {
+            display: inline-block;
+            margin-left: 40%;
+            margin-top: 20px;
+        }
+
+            .pagination a {
+                color: black;
+                float: left;
+                padding: 8px 16px;
+                text-decoration: none;
+            }
+
+        /*.main_product-img {
+            width: 40%;
+            height: 40%;
+            margin-left: 20px;
+            padding-top: 40%
+        }*/
+/*
+        .main_product-info {
+            width: 60%;
+            margin-left: 5%;
+            margin-top: 20px
+        }*/
+        .main_product {
+            flex-direction: column;
+        }
+
+        .main_product-img {
+            width: 95%;
+            height: 95%;
+            padding-top: 95%;
+        }
+
+        .nd1 {
+            display: none
+        }
+
+        .main_product-info {
+            width: 95%;
+          
+        }
+        .buttonThemXoa {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .cartegory-right-content-item_1 {
+            display: none;
+        }
+
+        .cartegory-right-content-item_11 {
+            display: none;
+        }
+        /* Dành cho điện thoại */
+       /* @media only screen and (max-width:46.1875em) {
+            .main_product {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+
+            #breadcrumb-wrapper {
+                height: 250px !important;
+            }
+
+                #breadcrumb-wrapper .breadcrumb-big h2 {
+                    font-size: 20px !important;
+                    line-height: normal !important;
+                }
+        }*/
+        /* Dành cho máy tính bảng */
+        @media screen and (min-width:480px ) {
+            .main_product {
+                flex-direction: column;
+            }
+
+            .main_product-img {
+                width: 95%;
+                height: 95%;
+                padding-top: 95%;
+            }
+
+            .nd1 {
+                display: none
+            }
+
+            .main_product-info {
+                width: 95%;
+            }
+
+
+            #breadcrumb-wrapper.breadcrumb-w-img {
+                background-attachment: scroll !important;
+            }
+
+            #breadcrumb-wrapper {
+                height: 250px !important;
+            }
+        }
+        @media screen and (min-width:1024px ){
+            .main_product{
+                flex-direction:row;
+            }
+            .main_product-img {
+                width: 40%;
+                padding-top: 40%;
+            }
+            .main_product-info{
+                width:60%;
+                margin-left:30px
+            }
+            .action{
+                display:flex;flex-direction:row;
+            }
+            .nd1{
+                display:block
+            }
+           /* .cartegory-right-content-item_1 {
+                display: block;
+            }
+
+            .cartegory-right-content-item_11 {
+                display: block;
+            }*/
+        }
+        
+    </style>
+    <script>
+
+
+
+    </script>
+</head>
+<body>
+
+    <div class="call-mail">
+        <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
+        <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
+        <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+        Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
+    </div>
+    <div class="log-sign">
+        <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+        <i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i>
+    </div>
+    <br><br>
+    <br><br>
+
+    <!-- phần menu #####     MENU    MENU     MENU ###########-->
+    <div>
+        <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+        <div class='main-menu' style="margin-left: 30%;">
+            <ul>
+                <li> <a href='TrangCHu.html'><b>TRANG CHỦ</b></a> </li>
+                <li>
+                    <a href='#'><b>SẢN PHẨM</b> </a>
+                    <!--sub menu-->
+                    <ul class='sub-menu'>
+                        <li><a href='#'>Gananola</a></li>
+                        <li><a href='#'>Bánh ăn kiêng</a></li>
+                        <li><a href='#'>Hạt dinh dưỡng</a></li>
+                        <li><a href='#'>Sản phẩm khác</a></li>
+                    </ul>
+                </li>
+                <li> <a href='#'><b>BLOG</b></a> </li>
+                <li> <a href='LienHe.html'><b>LIÊN HỆ</b></a> </li>
+                <li> <a href='#'><b>GIỚI THIỆU</b></a> </li>
+                <li>
+                    <!--Thanh SEARCH-->
+                    <div class="search-container">
+                        <form action="/action_page.php">
+                            <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                            <button type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <!--Cái logo-->
+    <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+
+
+
+    <section id="breadcrumb-wrapper" class="breadcrumb-w-img">
+        <div class="breadcrumb-overlay"></div>
+        <div class="breadcrumb-content" style="text-align:center">
+            <div class="wrapper">
+                <div class="inner text-center">
+                    <div class="breadcrumb-big">
+                        <h2>
+                            SET ĂN SÁNG ĐONG ĐẦY
+                        </h2>
+
+                    </div>
+                    <div class="breadcrumb-small">
+                        <a href="/" title="Quay trở về trang chủ">Trang chủ</a>
+                        <span aria-hidden="true">/</span>
+                        <a href="/collections/granola" title="">GRANOLA</a>
+                        <span aria-hidden="true">/</span>
+                        <span>SET ĂN SÁNG ĐONG ĐẦY</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="ChiTietSanPham" style="padding-right:10%">
+        <div class="sanphamchitiet">
+            
+            <div class="main_product" style=" padding-left:10%;  margin-top:5%">
+                <div class="main_product-img" style="background-image:url(Images/setsang.png);">
+
+                </div>
+
+                <div class="main_product-info">
+                    <h1><strong>SET ĂN SÁNG ĐONG ĐẦY</strong></h1>
+                    <p>Thương hiệu: <a href="#">Khác</a> | Loại: <a href="#">Khác</a></p>
+                    <h2>200,000đ</h2>
+                    <p class="main_product-desc">
+
+                        1. SET GỒM 6 SẢN PHẨM<br />
+                        - Ngũ cốc nguyên hạt 400g (tự chọn: Super Berries, Super Nutty, Original Mix, Choco Bana, Matcha Maca) hoặc bộ 8 vị granola x 40g<br />
+                        - Yến mạch nguyên hạt cán dẹt 500g<br />
+                        - Bánh biscotti 3 vị 100g (original, choco, matcha)<br />
+                        - Bánh gạo lứt 170g<br />
+                        - Hạt chia 100g<br />
+                        - Bơ đậu phộng 100g<br />
+                    
+                    <p class="nd1">
+                        2. ĐẶC ĐIỂM<br />
+                        ❌KHÔNG đường tinh luyện.<br />
+                        ❌KHÔNG chất bảo quản.<br />
+                        ❌KHÔNG phụ gia thực phẩm.<br />
+                        ❌KHÔNG dùng tinh bột mì.<br />
+                        ❌KHÔNG bơ, sữa động vật.<br />
+
+                        3. ĐỐI TƯỢNG<br />
+                        Thích hợp sử dụng cho mọi lứa tuổi, kể cả trẻ nhỏ và người cao tuổi.<br />
+                        Đặc biệt phù hợp với chế độ ăn chay, luyện tập gym/yoga, ăn kiêng, eat clean, giảm cân lành mạnh.<br />
+
+                        4. CÁCH DÙNG<br />
+                        - Với Granola: dùng trực tiếp, dùng với bánh mì và bơ hạt, chia pudding sữa hạt, sữa chua và trái cây, sữa tươi, sinh tố, kem.<br />
+                        - Với Bơ hạt: Dùng trực tiếp, ăn cùng bánh mì, bánh gạo lứt, hỗn hợp yến mạch và hạt, sinh tố, làm bánh hay dùng kèm các món chay.<br />
+                        </p>
+
+                    </p>
+                    <div class="product-size-hotline" style="margin-top:10px">
+                        <div class="product-hotline">
+                            <a href="#"> <span><i class="fas fa-phone" aria-hidden="true"></i></span></a>
+                            Hotline hỗ trợ 24/7: <a href="tel:+84 39 5762954 ">+84 39 5762954 </a>
+                        </div>
+
+                        <div class="social-network-actions text-left">
+                            <div class="fb-like fb_iframe_widget" data-href="" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small"><span style="vertical-align: bottom; width: 150px; height: 28px;"><iframe name="f5c2c2ed7b02a" width="1000px" height="1000px" data-testid="fb:like Facebook Social Plugin" title="fb:like Facebook Social Plugin" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" src="https://www.facebook.com/v10.0/plugins/like.php?action=like&amp;app_id=&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df75b043f9f30b%26domain%3Dthefittuna.com%26is_canvas%3Dfalse%26origin%3Dhttps%253A%252F%252Fthefittuna.com%252Ff2cb0ce1d8fd9b%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fthefittuna.com%2Fproducts%2Fgranola-an-kieng-khong-duong-vi-matcha-500g&amp;layout=button_count&amp;locale=vi_VN&amp;sdk=joey&amp;share=true&amp;show_faces=true&amp;size=small" style="border: none; visibility: visible; width: 150px; height: 28px;" class=""></iframe></span></div>
+                        </div>
+                    </div>
+                    <div class="action" >
+                        <div class="themsoluong">
+                            <b>Số lượng</b>
+                            <div class="quantity buttons_added" width="150px">
+                                <input type="button" value="-" class="minus">
+                                <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+                                <input type="button" value="+" class="plus">
+                            </div>
+                        </div>
+                        <div class="buttonThemMua" style="display:flex;flex-direction:row">
+                            <div class="product-actions clearfix" style="margin-left:10px">
+                                <button class="button button1">THÊM VÀO GIỎ HÀNG</button>
+
+                            </div>
+                            <div class="product-actions clearfix" style="margin-left:10px">
+                                <button class="button button2">MUA NGAY</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="chitietsanpham" style="padding-left: 10%; margin-top: 5%">
+                <hr />
+                <div>
+                    <div data-toggle="collapse" data-target="#demo">
+                        <h3 style="font-weight:bold;font-family:'Times New Roman'">CHI TIẾT SẢN PHẨM</h3>
+                    </div>
+                </div>
+                <div id="demo" class="collapse" style="margin-top:15px">
+                    <p>- Cung cấp nguồn protein cao hơn so với ngũ cốc tinh chế, ngũ cốc nguyên hạt như quinoa, không chứa gluten, giàu chất xơ, cung cấp nhiều vitamin và khoáng chất quan trọng.</p>
+                    <p>- Chứa nhiều chất xơ, giúp nhuận tràng và cải thiện hệ tiêu hóa. Gạo lứt còn tác dụng hỗ trợ điều chỉnh hàm lượng glucose trong máu, giảm cholesterol và giảm thiểu các biến chứng của tiểu đường.</p>
+
+                </div>
+                
+            </div>
+            <div class="danhgia" style="padding-left: 10%; margin-top: 5%">
+                <hr />
+                <div data-toggle="collapse" data-target="#demo2" style="margin-top:15px">
+                    <h3 style="font-weight:bold;font-family:'Times New Roman'">ĐÁNH GIÁ</h3>
+                </div>
+                <div id="demo2" class="collapse">
+                    <div style="margin-top:15px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top:25px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
+                    </div>
+                    <div style="margin-top:25px">
+                        <table style=" text-align:left">
+                            <tr>
+                                <th rowspan="2" style="" width="65px"><img src="Images_hr/Lien.jpg" style="border-radius:50%; width:50px" /></th>
+                                <td><b>Nguyễn Thị Kim Liên</b></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                    <i class="fas fa-star" style="color:yellow"></i>
+                                </td>
+                            </tr>
+                        </table>
+                        <div style="margin-top:10px">
+                            <p>Giúp ngăn ngừa táo bón, làm sạch ruột thông qua việc cung cấp nguồn chất xơ hòa tan tốt cho hệ tiêu hóa. Giúp “khống chế” cơn thèm ăn, duy trì vóc dáng săn chắc. Phù hợp với chế độ ăn chay, ăn kiêng không thiếu chất mà vẫn giữ được năng lượng bền bỉ.</p>
+                        </div>
+                    </div>
+
+                    <div class="pagination" style="text-align:center">
+                        <a href="#">&laquo;</a>
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="related-product" style="padding-left: 10%; margin-top: 5%">
+                <hr />
+                <div class="section-title" style="text-align:center">
+                    <h2 style="margin-bottom:10px; font-weight:bold">SẢN PHẨM LIÊN QUAN</h2>
+                </div>
+                <div class="section-content">
+                    <div class="cartegory-right-content row">
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/nho_baobi.png" alt="" />
+                            <h4>NHO KHO</h4>
+                            <p>90.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
+
+                        </div>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/namvietquat.png" alt="" />
+                            <h4>NAM VIỆT QUẤT</h4>
+                            <p>150.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
+                        </div>
+                        <div class="cartegory-right-content-item_11">
+                            <div class="cartegory-right-content-item">
+                                <img src="Images/mo.png" alt="" />
+                                <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                                <p>100.000 <sup>đ</sup></p>
+                                <div style="margin-top:20px;">
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div id="related-product" style="padding-left: 10%; margin-top: 5%; margin-bottom:10%">
+                <!--style="margin-top:-100px"-->
+                <hr />
+                <div class="section-title" style="text-align:center">
+                    <h2 style="margin-bottom:-10px; font-weight:bold">SẢN PHẨM ĐÃ XEM</h2>
+                </div>
+                <div class="section-content">
+                    <div class="cartegory-right-content row">
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/nho_baobi.png" alt="" />
+                            <h4>NHO KHO</h4>
+                            <p>90.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
+
+                        </div>
+                        <div class="cartegory-right-content-item">
+                            <img src="Images/namvietquat.png" alt="" />
+                            <h4>NAM VIỆT QUẤT</h4>
+                            <p>150.000 <sup>đ</sup></p>
+                            <div style="margin-top:20px;">
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                            </div>
+                        </div>
+                        <div class="cartegory-right-content-item_1">
+                            <div class="cartegory-right-content-item">
+                                <img src="Images/mo.png" alt="" />
+                                <h4>MƠ SẤY KHÔNG ĐƯỜNG</h4>
+                                <p>100.000 <sup>đ</sup></p>
+                                <div style="margin-top:20px;">
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-cart-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a class="fa fa-search-plus" aria-hidden="true"></a></span>
+                                    <span class="cartegory-right-top-item-icon"><a>Mua ngay</a></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+</div>
+
+
+
+
+    </section>
+    <!--Gửi mail cho chúng tôi-->
+    <div style="margin-top: 130px" class="footer-subscribe">
+        <div class="grid">
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-subscribe-info">
+                    <h2 style="margin-bottom:20PX">ĐĂNG KÝ NHẬN TIN TỪ CHÚNG TÔI</h2>
+                    <span>Vui lòng nhập email để nhận các thông tin mới nhất từ chúng tôi</span>
+                </div>
+            </div>
+            <div class="grid__item large--one-half medium--one-half small--one-whole">
+                <div class="ft-sub-wrapper">
+
+                    <form accept-charset="UTF-8" action="/account/contact" class="contact-form" method="post">
+                        <input name="form_type" type="hidden" value="customer">
+                        <input name="utf8" type="hidden" value="✓">
+
+                        <div class="input-group">
+                            <input type="email" value="" placeholder="Email của bạn " name="contact[email]" id="Email" class="input-group-field" aria-label="email@example.com">
+                            <input type="hidden" name="contact[tags]" value="newsletter">
+                            <span class="input-group-btn">
+                                <button type="submit" name="subscribe" id="subscribe" value="GỬI"><i class="fas fa-long-arrow-alt-right"></i></button>
+                            </span>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="text-align:center; margin-top:120px;margin-bottom:-100px;">
+        <img src="Images/logo.png" style="text-align:center;width:200px;height:200px; margin-top: 80px" />
+    </div>
+    <!--<footer class="footer-container" style="margin-top:100px">-->
+        <!--Bắt Đâu Nội Dung Liên Hệ-->
+        <!--<div style="margin-left: 100px" class="links">
+            <h3><b>THÔNG TIN LIÊN HỆ</b></h3>
+            <p style="line-height: 1.5">
+                <span><i class="fa fa-map-marker" style="color: #417505"></i></span>
+                <span style="margin-bottom: 5px">
+                    Số 669, QL1, Khu phố 3, Phường Linh Xuân,
+                    Quận Thủ Đức, Tp. Hồ Chí Minh<br />
+                </span>
+                <span style="margin-bottom: 10px"><i class="fa fa-phone" style="color: #417505"></i></span>
+                <span>+84 39 576265</span><br />
+
+                <span style="margin-bottom: 10px"><i class="fa fa-envelope" style="color: #417505"></i></span>
+                <span>veggie2021@gmail.com</span>
+            </p>
+
+
+        </div>-->
+        <!--Kết Thúc Nội Dung Liên Hệ-->
+        <!--Bắt Đầu Nội Dung Giới Thiệu-->
+        <!--<div class="links">
+            <h3><b>MUA HÀNG</b></h3>
+            <p>
+                <a>Granola</a><br />
+                <a>Trái cây</a><br />
+                <a>Bơ hạt</a><br />
+                <a>Hạt khô</a><br />
+            </p>
+
+        </div>-->
+
+        <!--Kết Thúc Nội Dung Giới Thiệu-->
+        <!--Bắt Đầu Nội Dung Đường Dẫn-->
+        <!--<div class="links">
+            <h3><b>HỖ TRỢ KHÁCH HÀNG</b></h3>
+            <p>
+                <a href="LienHe.html">Liên hệ</a><br />
+                <a href="GioiThieu.html">Giới thiệu</a><br />
+                <a href="ChinhSachDoiTra.html">Chính sách đổi trả</a><br />
+                <a href="ChinhSachBaoMat.html">Chính sách bảo mật</a><br />
+                <a href="DieuKhoanDichVu.html">Điều khoản dịch vụ</a><br />
+            </p>
+
+        </div>-->
+        <!--Kết Thúc Nội Dung Đường Dẫn-->
+
+
+        <!--<div style="margin-right: 100px" class="links">
+            <h3><b>KẾT NỐI VỚI CHÚNG TÔI</b></h3>
+            <div>
+                <span><i class="fab fa-facebook-square" style="font-size: 30px; color: #094125"></i></span>
+                <span><i class="fab fa-instagram" style="font-size: 30px; color: #094125"></i></span>
+                <span><i class="fab fa-youtube" style="font-size: 30px; color: #094125"></i></span>
+            </div>
+
+            <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
+            <div class="fb-post"
+                 data-href="https://www.facebook.com/EatCleanCungHome/posts/196949835845520"
+                 data-width="500">
+            </div>
+            <div class="img-inner dark">
+                <img width="340" height="130" src="https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti.png 600w, https://nofavn.com/wp-content/uploads/2021/09/logoSaleNoti-510x193.png 510w" sizes="(max-width: 600px) 100vw, 600px">
+            </div>
+        </div>
+    </footer>-->
+    <div style="text-align: center; background-color: #A9A9A9; color: black ">  Copyrights © 2021 by Veggie </div>
+
+</body>
+</html>

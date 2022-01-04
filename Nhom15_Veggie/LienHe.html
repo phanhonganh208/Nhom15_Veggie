@@ -3,12 +3,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <script src="https://kit.fontawesome.com/c51dceb443.js" crossorigin="anonymous"></script>
     <title>Liên hệ</title>
     <link rel="shortcut icon" href="Images/logo.png" />
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="CSS/StyleSheet_Footer.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="CSS/LienHe.css" type="text/css" media="screen" />
     <style>
         #breadcrumb-wrapper.breadcrumb-w-img {
             height: 300px;
@@ -57,58 +61,111 @@
                 #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
                     color: #fff;
                 }
+
+        .grid {
+            display: flex;
+            flex-direction: column;
+        }
+
     </style>
 </head>
 <body>
 
-    <div class="dung_cho_coppy">
-        <div class="call-mail">
-            <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
-            <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
-            <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
-            Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
-        </div>
-        <div class="log-sign">
-            <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;<a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
-            <a href="GioHang.html"><i class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i></a>
-        </div>
-        <br><br>
-        <br><br>
-
-        <!-- phần menu #####     MENU    MENU     MENU ###########-->
-        <div>
-            <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
-            <div class='main-menu' style="margin-left: 20%;">
-                <ul>
-                    <li class="muc_lon"> <a href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
-                    <li class="muc_lon">
-                        <a href='#'><b>SẢN PHẨM</b> </a>
-                        <!--sub menu-->
-                        <ul class='sub-menu'>
-                            <li><a href='Granola.html'>Granola</a></li>
-                            <li><a href='TraiCaySay.html'>Trái cây</a></li>
-                            <li><a href='Bo.html'>Bơ hạt</a></li>
-                            <li><a href='Hat1.html'>Hạt khô</a></li>
-                        </ul>
-                    </li>
-                    <li class="muc_lon"> <a href='TinTuc.html'><b>BLOG</b></a> </li>
-                    <li class="muc_lon"> <a href='CongThucNauAn.html'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
-                    <li class="muc_lon"> <a href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
-                    <li class="muc_lon"> <a href='GioiThieu.html'><b>GIỚI THIỆU</b></a> </li>
-                    <li>
-                        <!--Thanh SEARCH-->
-                        <div class="search-container">
-                            <form action="/action_page.php">
-                                <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
-                                <a href=""><i class="fas fa-search"></i></a>
-                            </form>
-                        </div>
-                </ul>
+    <div class="de_COPY">
+        <label for="nav_mobie_input" class="nav__bars_btn">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </label>
+        <div class="phan_dau_trangchu">
+            <div class="call-mail">
+                <i class="fa fa-phone" style=" font-size:16px; color:#417505" ></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
+                <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
+                <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
+                Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
             </div>
+            <div class="log-sign">
+                <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;
+                <a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;|&nbsp;
+                <a href="GioHang.html"><i  class="fa fa-shopping-cart" style="font-size:18px;color:#417505"></i></a>  
+            </div>
+            <br><br>
+            <br><br>
+            <!--PHÂN SLIDE-->
+            <!-- phần menu #####     MENU    MENU     MENU ########### -->
+            <div >
+                <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
+                <div class='main-menu' style="margin-left: 20%;">
+                    <ul>
+                        <li class="muc_lon"> <a href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
+                        <li class="muc_lon">
+                            <a href='#'><b>SẢN PHẨM</b> </a>
+                            <!--sub menu-->
+                            <ul class='sub-menu'>
+                                <li><a href='Granola.html'>Granola</a></li>
+                                <li><a href='TraiCaySay.html'>Trái cây</a></li>
+                                <li><a href='Bo.html'>Bơ hạt</a></li>
+                                <li><a href='Hat1.html'>Hạt khô</a></li>
+                            </ul>
+                        </li>
+                        <li class="muc_lon"> <a href='TinTuc.html'><b>BLOG</b></a> </li>
+                        <li class="muc_lon"> <a href='CongThucNauAn.html'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
+                        <li class="muc_lon"> <a href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
+                        <li class="muc_lon"> <a href='GioiThieu.html'><b>GIỚI THIỆU</b></a> </li>
+                        <li>
+                            <!--Thanh SEARCH-->
+                            <div class="search-container">
+                                <form action="/action_page.php">
+                                    <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                                    <a href=""><i class="fas fa-search"></i></a>
+                                </form>
+                            </div>
+                        
+                    </ul>
+                </div>
+                <input type="checkbox" name="" class="nav__input" id="nav_mobie_input">
+                <label for="nav_mobie_input" class="nav-overlay"></label>
+                <nav class="nav_mobie">
+                    <label  for="nav_mobie_input" class="nav_close">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                    </label>
+                  <ul class="nav_list">
+                        <li class=" "> <a class="nav-link" href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
+                        <li  class=" ">
+                            <a  class="nav-link" href='#'><b>SẢN PHẨM</b> </a>
+                            <!--sub menu-->
+                            <ul class="nav_mobie-list2">
+                                <li><a href='Granola.html'>Granola</a></li>
+                                <li><a href='TraiCaySay.html'>Trái cây</a></li>
+                                <li><a href='Bo.html'>Bơ hạt</a></li>
+                                <li><a href='Hat1.html'>Hạt khô</a></li>
+                            </ul>
+                        </li>
+                        <li  class=" "> <a class="nav-link" href='TinTuc.html'><b>BLOG</b></a> </li>
+                        <li  class=" "> <a class="nav-link" href='CongThucNauAn.html'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
+                        <li  class=" "> <a class="nav-link" href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
+                        <li class=" "> <a class="nav-link" href='GioiThieu.html'><b>GIỚI THIỆU</b></a> </li>
+                        <li><a href="GioHang.html"><i  class="fa fa-shopping-cart" style="font-size:18px;"">GIỎ HÀNG</i></a>  </li>
+                        <BR></BR>
+                        <li>
+                            <!--Thanh SEARCH-->
+                            <div class="search-container">
+                                <form action="/action_page.php">
+                                    <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                                    <a href=""><i class="fas fa-search"></i></a>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                    <br>
+                    <hr>
+                    <br>
+                    <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;
+                    <a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;
+                </nav>
+            </div>
+    
+            <!--Cái logo-->
+            <div class="logo_bo"><img src="./Images/logo.png" alt="Veggie"></div>
         </div>
-
-        <!--Cái logo-->
-        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img src="Images/logo.png" width="120" height="120" alt="Veggie"></div>
 
     </div>
     <!--Phần Liên Hệ-->
@@ -136,214 +193,214 @@
         </div>
     </section>
 
-
-    <div class="wrapper">
-        <div class="grid">
-            <div class="grid__item large--one-third medium--one-third small--one-whole">
-                <div class="contact-item">
-                    <div class="contact-title">
-                        <div class="contact-icon" style="font-size: 36px;">
-                            <i class="fas fa-map-marker-alt"></i>
+    <section id="lienhe">
+        <div class="wrapper">
+            <div class="grid">
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-title">
+                            <div class="contact-icon" style="font-size: 36px;">
+                                <i class="fas fa-map-marker-alt" style="font-size:36px;color:#094125"></i>
+                            </div>
+                            <h4>
+                                Địa chỉ
+                            </h4>
                         </div>
-                        <h4>
+                        <div class="contact-info">
+                            669 QL1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-title">
+                            <div class="contact-icon" style="font-size: 36px;">
+                                <i class="fas fa-phone"style="font-size:36px;color:#094125"></i>
+                            </div>
+                            <h4>
+                                Số điện thoại
+                            </h4>
+                        </div>
+                        <div class="contact-info">
+                            <a href="tel:+84 39 5762954" style="color: #131111">+84 39 5762954 </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid__item large--one-third medium--one-third small--one-whole">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope" style="font-size:36px;color:#094125"></i>
+                        </div>
+                        <div class="contact-title">
+                            <h4>
+                                Email
+                            </h4>
+                        </div>
+                        <div class="contact-info">
+                            <a href="mailto:veggie2021@gmail.com" style="color: #131111">veggie2021@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="page-head" style="border-bottom:1px solid #e2e2e2">
+            <h1 class="text-center" style="text-align:center; width: fit-content">LIÊN HỆ</h1>
+            <div>
+                <hr />
+            </div>
+
+        </div>
+
+
+        <div class="g-grid" style="padding:20px">
+            <div class="g-grid-col">
+                <ul class="list_contact">
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_1.png" alt="Địa chỉ">
+                        <h5>
                             Địa chỉ
-                        </h4>
-                    </div>
-                    <div class="contact-info">
-                        669 QL1A, Khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
-                    </div>
-                </div>
-            </div>
-            <div class="grid__item large--one-third medium--one-third small--one-whole">
-                <div class="contact-item">
-                    <div class="contact-title">
-                        <div class="contact-icon" style="font-size: 36px;">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <h4>
-                            Số điện thoại
-                        </h4>
-                    </div>
-                    <div class="contact-info">
-                        <a href="tel:+84 39 5762954" style="color: #131111">+84 39 5762954 </a>
-                    </div>
-                </div>
-            </div>
-            <div class="grid__item large--one-third medium--one-third small--one-whole">
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope" style="font-size:36px;color:#094125"></i>
-                    </div>
-                    <div class="contact-title">
-                        <h4>
+                        </h5>
+                        <p class="des-contact">
+                            669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_2.png" alt="Điện thoại">
+                        <h5>
+                            Điện thoại
+                        </h5>
+                        <p class="des-contact">
+                            +(84) 395 762 954
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_3.png" alt="Shopee">
+                        <h5>
+                            Shopee
+                        </h5>
+                        <p class="des-contact">
+                            veggie
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_4.png" alt="Email">
+                        <h5>
                             Email
-                        </h4>
+                        </h5>
+                        <p class="des-contact">
+                            veggie2021@gmail.com
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_5.png" alt="Facebook">
+                        <h5>
+                            Facebook
+                        </h5>
+                        <p class="des-contact">
+                            VEGGIE Eat Clean And Healthy
+                        </p>
+                    </li>
+                    <li class="item-contact">
+                        <img src="Images/icon_contact_6.png" alt="Instagram">
+                        <h5>
+                            Instagram
+                        </h5>
+                        <p class="des-contact">
+                            @veggie
+                        </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="g-grid-col-" style="margin-left:10px">
+                <div id="content_UpdatePanel_Recaptcha">
+
+                    <div class="form-box">
+
+                        <h1 class="section-header" style="color:darkgreen">Liên hệ với VEGGIE</h1>
+                        <div class="form-group">
+                            <div class="input-group required mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fa fa-user"></i>
+                                    </span>
+                                </div>
+                                <input name="ctl00$content$input_FullName" type="text" id="content_input_FullName" class="form-control" placeholder="Mời nhập họ tên">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group required mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-phone"></i>
+                                    </span>
+                                </div>
+                                <input name="ctl00$content$input_Mobile" type="text" id="content_input_Mobile" class="form-control" placeholder="Mời nhập số điện thoại">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">*</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group required mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="fas fa-envelope"></i>
+                                    </span>
+                                </div>
+                                <input name="ctl00$content$input_Email" type="text" id="content_input_Email" class="form-control" placeholder="Mời nhập email">
+                                <div class="input-group-append" style="width:32px">
+                                    <span class="input-group-text"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group required mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text">
+                                        <i class="far fa-edit"></i>
+                                    </span>
+                                </div>
+                                <textarea name="ctl00$content$input_Content" id="content_input_Content" class="form-control" placeholder="Mời nhập nội dung liên hệ" style="width:325px;height:75px"></textarea>
+                                <div class="input-group-append">
+                                    <span class="input-group-text">*</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group" style="min-height: 1px; margin: auto; text-align: center;">
+                            <div id="content_recaptchaV2RenderControl" class="g-recaptcha d-none"></div>
+                            <input name="ctl00$content$recaptchaV2StatusControl" type="text" value="Success" id="content_recaptchaV2StatusControl" disabled="disabled" class="aspNetDisabled" style="display: none">
+                            <div>
+                                <span id="content_recaptchaV2ValidatorControl" class="text-danger" style="display:none;">Vui lòng đánh dấu vào ô xác nhận</span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div id="content_ucMessage_SuccessBox" class="alert alert-success alert-dismissible fade show">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <span id="content_ucMessage_SuccessMessage" class="message">Mời quý khách nhập thông tin liên hệ</span>
+                            </div>
+
+
+                        </div>
+                        <div class="button text-right">
+                            <a id="content_LinkButton_Send" class="btn btn-success" href="javascript:__doPostBack('ctl00$content$LinkButton_Send','')" style="color:white">
+                                <i class="fab fa-telegram-plane"></i>
+                                Gửi thư liên hệ
+                            </a>
+                        </div>
                     </div>
-                    <div class="contact-info">
-                        <a href="mailto:veggie2021@gmail.com" style="color: #131111">veggie2021@gmail.com</a>
-                    </div>
+
                 </div>
             </div>
+
         </div>
-    </div>
-
-
-    <div class="page-head" style="border-bottom:1px solid #e2e2e2">
-        <h1 class="text-center" style="text-align:center; width: fit-content">LIÊN HỆ</h1>
-        <div>
-            <hr />
-        </div>
-
-    </div>
-
-
-    <div class="g-grid" style="padding:20px">
-        <div class="g-grid-col">
-            <ul class="list_contact">
-                <li class="item-contact">
-                    <img src="Images/icon_contact_1.png" alt="Địa chỉ">
-                    <h5>
-                        Địa chỉ
-                    </h5>
-                    <p class="des-contact">
-                        669 QL1A, khu phố 3, Thủ Đức, Thành phố Hồ Chí Minh
-                    </p>
-                </li>
-                <li class="item-contact">
-                    <img src="Images/icon_contact_2.png" alt="Điện thoại">
-                    <h5>
-                        Điện thoại
-                    </h5>
-                    <p class="des-contact">
-                        +(84) 395 762 954
-                    </p>
-                </li>
-                <li class="item-contact">
-                    <img src="Images/icon_contact_3.png" alt="Shopee">
-                    <h5>
-                        Shopee
-                    </h5>
-                    <p class="des-contact">
-                        veggie
-                    </p>
-                </li>
-                <li class="item-contact">
-                    <img src="Images/icon_contact_4.png" alt="Email">
-                    <h5>
-                        Email
-                    </h5>
-                    <p class="des-contact">
-                        veggie2021@gmail.com
-                    </p>
-                </li>
-                <li class="item-contact">
-                    <img src="Images/icon_contact_5.png" alt="Facebook">
-                    <h5>
-                        Facebook
-                    </h5>
-                    <p class="des-contact">
-                        VEGGIE Eat Clean And Healthy
-                    </p>
-                </li>
-                <li class="item-contact">
-                    <img src="Images/icon_contact_6.png" alt="Instagram">
-                    <h5>
-                        Instagram
-                    </h5>
-                    <p class="des-contact">
-                        @veggie
-                    </p>
-                </li>
-            </ul>
-        </div>
-
-        <div class="g-grid-col-" style="margin-left:10px">
-            <div id="content_UpdatePanel_Recaptcha">
-
-                <div class="form-box">
-
-                    <h1 class="section-header" style="color:darkgreen">Liên hệ với VEGGIE</h1>
-                    <div class="form-group">
-                        <div class="input-group required mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fa fa-user"></i>
-                                </span>
-                            </div>
-                            <input name="ctl00$content$input_FullName" type="text" id="content_input_FullName" class="form-control" placeholder="Mời nhập họ tên">
-                            <div class="input-group-append">
-                                <span class="input-group-text">*</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group required mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-phone"></i>
-                                </span>
-                            </div>
-                            <input name="ctl00$content$input_Mobile" type="text" id="content_input_Mobile" class="form-control" placeholder="Mời nhập số điện thoại">
-                            <div class="input-group-append">
-                                <span class="input-group-text">*</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group required mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="fas fa-envelope"></i>
-                                </span>
-                            </div>
-                            <input name="ctl00$content$input_Email" type="text" id="content_input_Email" class="form-control" placeholder="Mời nhập email">
-                            <div class="input-group-append" style="width:32px">
-                                <span class="input-group-text"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group required mb-3">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text">
-                                    <i class="far fa-edit"></i>
-                                </span>
-                            </div>
-                            <textarea name="ctl00$content$input_Content" id="content_input_Content" class="form-control" placeholder="Mời nhập nội dung liên hệ" style="width:325px;height:75px"></textarea>
-                            <div class="input-group-append">
-                                <span class="input-group-text">*</span>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="form-group" style="min-height: 1px; margin: auto; text-align: center;">
-                        <div id="content_recaptchaV2RenderControl" class="g-recaptcha d-none"></div>
-                        <input name="ctl00$content$recaptchaV2StatusControl" type="text" value="Success" id="content_recaptchaV2StatusControl" disabled="disabled" class="aspNetDisabled" style="display: none">
-                        <div>
-                            <span id="content_recaptchaV2ValidatorControl" class="text-danger" style="display:none;">Vui lòng đánh dấu vào ô xác nhận</span>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div id="content_ucMessage_SuccessBox" class="alert alert-success alert-dismissible fade show">
-                            <button type="button" class="close" data-dismiss="alert">×</button>
-                            <span id="content_ucMessage_SuccessMessage" class="message">Mời quý khách nhập thông tin liên hệ</span>
-                        </div>
-
-
-                    </div>
-                    <div class="button text-right" style="margin-left:40px">
-                        <a id="content_LinkButton_Send" class="btn btn-success" href="javascript:__doPostBack('ctl00$content$LinkButton_Send','')" style="color:white">
-                            <i class="fab fa-telegram-plane"></i>
-                            Gửi thư liên hệ
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-
+    </section>
 
 
 

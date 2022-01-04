@@ -24,7 +24,10 @@
     margin: 0;
     padding: 0;
 }
-
+.phan_dau_trangchu
+{
+    width: 100%;
+}
 .call-mail {
     font-size: 16px;
     color: #417505;
@@ -137,7 +140,39 @@ ul {
         background: #417505;
         font-size: 18px;
     }
+    .logo {
+        margin-top: -5%;
+        /* margin-bottom: 40px; */
+        margin-left: 8%;
+    }
+.logo img
+{
+    height: 120px;
+    width: 120px;
+}
+.logo_bo {
+    margin-top: -10%;
+    /* margin-bottom: 40px; */
+    margin-left: 8%;
+}
 
+.logo_bo img
+{
+height: 120px;
+width: 120px;
+}
+.logo_gio {
+    margin-top: -10%;
+    margin-left: 10%;
+    /* margin-bottom: 40px; */
+    margin-left: 0%;
+}
+
+    .logo_gio img {
+        height: 120px;
+        width: 120px;
+        margin-left: 10%;
+    }
 /*-------BANNER TRANG CHỦ.................... */
 
 .slider {
@@ -170,15 +205,15 @@ ul {
         object-position: 0 50%;
         margin-top: 4%;
     }
+
 /* ..*/
-.navigation-manual {
+.navigation-manual,.navigation-auto {
     position: absolute;
     width: 100%;
-    margin-top: -40px;
+    margin-top: 30%;
     display: flex;
     justify-content: center;
 }
-
 .manual-btn {
     border: 2px solid #417505;
     padding: 5px;
@@ -205,14 +240,6 @@ ul {
 
 #radio3:checked ~ .first {
     margin-left: -40%;
-}
-
-.navigation-auto {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 460px;
 }
 
     .navigation-auto div {
@@ -249,6 +276,153 @@ ul {
     margin: 20px 0px 20px 0px;
 }
 
+
+/* mobi_thao*/
+.nav__bars_btn
+{
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 28px;
+    height: 28px;
+    color: #094125;
+    display: none;
+}
+.nav__input
+{
+    display: none;
+}
+.nav__input:checked ~ .nav-overlay
+{
+    display: block;
+}
+.nav__input:checked ~ .nav_mobie
+{
+    transform: translateX(0%);
+}
+.nav-overlay
+{display: none;}
+.nav_mobie
+{
+    display: none;
+}
+@media (max-width:767px){
+    .phan_dau_trangchu {
+        width: 100%;
+        margin-top: -30%;
+    }
+    .logo img {
+        height: auto;
+        width: 25%;
+        margin-top: 17%;
+        margin-left: 75%;
+    }
+    .logo_bo img {
+        height: auto;
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
+    }
+    .logo_gio img {
+        height: auto;
+        width: 25%;
+        margin-top: 5%;
+        margin-left: 75%;
+    }
+
+     .nav__bars_btn
+    {
+        display: block;
+    }
+    .nav-overlay
+    {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadeEffect;
+        background-color: 0,0,0,3;
+    }
+    .nav_mobie {
+        position: fixed;
+        margin-left: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        height: 100%;
+        width: fit-content;
+        max-width: 100%;
+        background: rgb(255, 255, 255);
+        font-size: 1em;
+        list-style: none;
+        color:#417505;
+        display: block ;
+        transform: translateX(-100%);
+   
+    }
+    .nav_close {
+        margin-top: 32%;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .nav_list 
+    {
+        
+        margin-left: 5%;
+        margin-top: 50%;
+        color:#417505;
+    }
+    .nav_mobie link 
+    { text-decoration: none;
+        color:#417505;
+
+    }
+    .nav-link
+    {
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+        font-size: 1rem;
+    }
+
+.nav_mobie-list2
+{ list-style: none;
+    margin-left: 5%;
+    color:#417505;
+}
+    .call-mail
+    {
+        display: none;
+    }
+    .log-sign
+    {
+        display: none;
+    }
+    .main-menu
+    {
+        display: none;
+    }
+.slider
+{
+    margin-top: 13%;
+}
+    .slide {
+        width: 20%;
+        transition: 2s;
+        padding: 0 1%;
+    }
+    .slide img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover;
+        object-position: 0 ;
+    }
+    .navigation-manual,.navigation-auto {
+        margin-top: 65%;
+    }
+}
 @media screen and (min-width:480px ) and (max-width: 768px){
     .general-banner{
         width: 100%;
@@ -293,14 +467,23 @@ ul {
 
 .section-title h2 {
     text-align: center;
-    font-size: 36px;
     color: #000000;
     margin-top: 5%;
     margin-bottom: -5%;
 }
+@media (max-width:767px)
+{
+    .section-title h2 {
+        text-align: center;
+        font-size: 1.5em;
+        /* color: #000000; */
+        margin-top: 55%;
+        /* margin-bottom: -5%; */
+    }
+}
 
 #trangchusp {
-    padding: 100px 0px;
+    padding: 5%;
 }
 
 .tab {
@@ -433,27 +616,58 @@ input, :before, :after {
     color: #131111;
 }
 
-
+@media (max-width:767px)
+{
+    .inner
+   {
+       margin: 0%;
+   }
+    .tab {
+        margin: 5% 10%;}
+        .tab button
+        {
+            padding: 0;
+        }
+        .tablinks
+        {
+            font-size: 0.8em;
+        }
+        .sptab {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
 /*trang chu ...........................................*/
 
 
 
 /*-----------------TRANG SAN PHAM CHI TIET*/
+/*----------BANNER--------*/
 
+.banner_giohang
+{
+
+width: 100%;
+background-size: cover;
+height: 300px;
+text-align: center;
+background-repeat: no-repeat;
+position: center;
+margin: 20px 0px 20px 0px;
+}
 
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
-.duongdan {
+.duongdan{
     text-align: center;
     color: white;
     font-size: 20px;
     margin-top: 20px
 }
-
     .duongdan a {
         color: white;
+        text-decoration: none;
     }
-
         .duongdan a:hover {
             color: #F7C551;
         }
@@ -552,320 +766,10 @@ input, :before, :after {
 /*------------PHẦN LIÊN HỆ---------------*/
 
 
-.g-grid {
-    display: grid;
-    grid-template-columns: calc(60% - (30px * 1/2)) calc(40% - (30px * 1/2));
-    grid-column-gap: 30px;
-}
-
-.g-grid-col {
-    padding: 30px;
-    background-color: white;
-    color: #000000;
-}
-
-.list_contact {
-    margin: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-    .list_contact li {
-        width: calc(100% / 3);
-        text-align: center;
-        margin-bottom: 30px;
-        display: list-item;
-    }
-
-        .list_contact li img {
-            width: 44px;
-            vertical-align: middle;
-            border: 0 none;
-        }
-
-.contact-container .form-box h1 {
-    color: var(--color-yellow);
-    margin: 0;
-}
-
-.form-group {
-    margin-bottom: 1rem;
-}
-
-.mb-3, .my-3 {
-    margin-bottom: 1rem;
-}
-
-.input-group {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    width: 100%;
-}
-
-.input-group-prepend {
-    margin-right: -1px;
-}
-
-.input-group.required .input-group-text {
-    background-color: transparent;
-    color: #f00;
-}
-
-.input-group > .custom-select:not(:first-child), .input-group > .form-control:not(:first-child) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-}
-
-.input-group > .form-control:not(:last-child) {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
-
-.input-group-append, .input-group-prepend {
-    display: -ms-flexbox;
-    display: flex;
-}
-
-.input-group-append {
-    margin-left: -1px;
-}
-
-.input-group i {
-    width: 16px;
-    color: #43a047;
-}
-
-.input-group-btn {
-    margin-left: 90%;
-}
-
-.fa, .fas {
-    font-family: "Font Awesome 5 Pro";
-    font-weight: 900;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-}
-
-.input-group > .custom-file, .input-group > .custom-select, .input-group > .form-control, .input-group > .form-control-plaintext {
-    position: relative;
-    -ms-flex: 1 1 0%;
-    flex: 1 1 0%;
-    min-width: 0;
-    margin-bottom: 0;
-}
-
-.input-group.required .input-group-text {
-    background-color: transparent;
-    color: #f00;
-}
-
-.form-control {
-    display: block;
-    width: 100%;
-    height: calc(1.5 em + 0.75 rem + 2 px );
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.alert {
-    text-align: justify;
-    position: relative;
-    padding: 0.75rem 1.25rem;
-    margin-bottom: 1em;
-    border: 1px solid transparent;
-    border-radius: 0.25rem;
-    width: 385px;
-}
-
-.alert-success {
-    color: #155724;
-    background-color: #d4edda;
-    border-color: #c3e6cb;
-}
-
-.alert-dismissible {
-    padding-right: 4rem;
-}
-
-.close:hover {
-    color: #000;
-    text-decoration: none;
-}
-
-.alert-dismissible .close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 0.75rem 1.25rem;
-    color: inherit;
-}
-
-button.close {
-    padding: 0;
-    background-color: transparent;
-    border: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-
-.btn-success {
-    background-color: green;
-    color: #fff;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-    background-color: transparent;
-}
-
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-    margin-left: 10px;
-}
-
-.input-group-text {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 0.375rem 0.75rem;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    text-align: center;
-    white-space: nowrap;
-    background-color: #e9ecef;
-    border-radius: 0.25rem;
-}
-
-
-* {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-
-#left {
-    width: 20%;
-    height: 300px;
-    background: #43a047;
-    float: left;
-    padding: 10px;
-    margin: 10px;
-}
-
-#main {
-    width: 20%;
-    height: 300px;
-    background: #e9ecef;
-    margin-left: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-
-#right {
-    width: 20%;
-    height: 300px;
-    background: #155724;
-    margin-left: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-
-.container {
-    overflow: auto;
-    margin-right: 30px;
-    text-align: center;
-    text-align: left;
-    margin-left: 30px;
-}
-
-.grid {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: -30px;
-}
-
-.large--one-third {
-    width: 33.333%;
-}
-
-.grid__item {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1px;
-    padding-left: 30px;
-    vertical-align: top;
-}
-
-.contact-item {
-    text-align: center;
-    padding: 80px 30px;
-    background: #fafafa;
-    margin: 80px 0px 100px;
-    height: 250px;
-}
-
-.wrapper {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 150px;
-    text-align: center;
-}
-
-.page-head {
-    margin-top: 0%;
-    border-bottom: 1px solid #e2e2e2
-}
-
-
-    .page-head h1 {
-        text-align: center;
-        margin-left: 47%;
-    }
-
 /*----Trái cây sấy-----*/
 .cartegory {
     padding: 1% 4% 4%;
-    margin-bottom:5%;
+    margin-bottom:20%;
 }
 
 .cartegory-top {
@@ -901,6 +805,10 @@ a {
 
     .cartegory-left ul li ul li {
         margin-left: -10%;
+        
+    }
+    .cartegory-left ul li ul li a{
+        text-decoration: none;
     }
 
         .cartegory-left ul li ul li a:hover {
@@ -969,7 +877,7 @@ a {
 }
 
 .cartegory-right-content-item {
-    width: calc(48%);
+    width: calc(47%);
     text-align: center;
     margin-top: 2%;
     margin-right: 1%;
@@ -989,7 +897,7 @@ a {
     margin-top: 2%;
 }
 .cartegory-right-content-item:hover {
-    width: calc(50%);
+    width: calc(47%);
     padding: 1%;
     background-color: #ffc764;
     color: white;
@@ -1032,6 +940,7 @@ a {
 
     .cartegory-right-bottom a {
         color: black;
+        text-decoration:none;
     }
 
         .cartegory-right-bottom a:hover {
@@ -1071,14 +980,17 @@ a {
 .cartegory-left-li ul {
     display: none;
 }
+.cartegory-left-li a{
+    text-decoration:none;
+}
 
 
-    .cartegory-left-li.block ul {
-        display: block;
-    }
+.cartegory-left-li.block ul {
+    display: block;
+}
 @media screen and (min-width:480px ) {
     .cartegory {
-        padding: 1% 4% 4%;
+        padding: 1% 3% 2%;
     }
 
     .cartegory-top {
@@ -1091,14 +1003,16 @@ a {
         }
 
     .cartegory-left {
-        width: 28%;
-        font-size: 18px;
+        width: 23%;
+        font-size: 17px;
         margin-left: 1%;
-        padding: 2.5%;
+
     }
 
         .cartegory-left ul li ul li {
-            margin-left: -10%;
+            margin-left: -15%;
+            margin-top:5%;
+            margin-bottom:5%;
         }
     .cartegory-right {
         width: 70%;
@@ -1122,7 +1036,7 @@ a {
         margin-top: 1%;
     }
     .cartegory-right-content-item {
-        width: calc(48%);
+        width: calc(47%);
         margin-top: 2%;
         margin-right: 1%;
         padding: 1%;
@@ -1140,7 +1054,7 @@ a {
         margin-top: 2%;
     }
     .cartegory-right-content-item:hover {
-        width: calc(50%);
+        width: calc(47%);
         padding: 1%;
         font-size: 17px;
         height: 29%;
@@ -1174,7 +1088,7 @@ a {
 }
 @media screen and (min-width:1024px ) {
     .cartegory {
-        padding: 1% 5%;
+        padding: 1% 4%;
     }
 
     .cartegory-top {
@@ -1187,7 +1101,7 @@ a {
         }
 
     .cartegory-left {
-        width: 16%;
+        width: 12%;
         font-size: 18px;
         padding: 1%;
     }
@@ -1221,7 +1135,7 @@ a {
     }
 
     .cartegory-right-content-item {
-        width: calc(32%);
+        width: calc(30%);
         margin-right: 1%;
         padding: 1%;
         font-size: 18px;
@@ -1240,7 +1154,7 @@ a {
     }
 
     .cartegory-right-content-item:hover {
-        width: calc(32%);
+        width: calc(31%);
         padding: 1%;
         font-size: 18px;
         height: 47%;
@@ -1279,7 +1193,7 @@ a {
 }
 /*Bơ*/
 .cartegory-right-content-item-bo {
-    width: calc(48%);
+    width: calc(47%);
     text-align: center;
     margin-top: 2%;
     margin-right: 1%;
@@ -1298,7 +1212,7 @@ a {
 }
 
 .cartegory-right-content-item-bo:hover {
-    width: calc(50%);
+    width: calc(47%);
     padding: 1%;
     background-color: #ffc764;
     color: white;
@@ -1311,7 +1225,7 @@ a {
 }
 @media screen and (min-width:480px ) {
     .cartegory-right-content-item-bo {
-        width: calc(48%);
+        width: calc(47%);
         margin-top: 2%;
         margin-right: 1%;
         padding: 1%;
@@ -1326,7 +1240,7 @@ a {
     }
 
     .cartegory-right-content-item-bo:hover {
-        width: calc(50%);
+        width: calc(47%);
         padding: 1%;
         font-size: 17px;
         height: 20%;
@@ -1338,7 +1252,7 @@ a {
 }
 @media screen and (min-width:1024px ) {
     .cartegory-right-content-item-bo {
-        width: calc(32%);
+        width: calc(28%);
         margin-right: 1%;
         padding: 1%;
         font-size: 18px;
@@ -1353,7 +1267,7 @@ a {
     }
 
     .cartegory-right-content-item-bo:hover {
-        width: calc(32%);
+        width: calc(29%);
         padding: 1%;
         font-size: 18px;
         height: 31%;
@@ -1364,18 +1278,19 @@ a {
     }
 }
     /*----TIN TỨC----*/
-    .ttcartegory {
-        padding: 5% 0 0;
-        margin-top: 5%;
-        height: 100%;
-    }
+.ttcartegory {
+    
+    padding: 5% 0 0;
+    margin-top: 5%;
+    height: 100%;
+}
 
     .ttcontainer {
         overflow: auto;
-        margin-right: 3%;
+        margin-right: 2%;
         text-align: center;
         text-align: left;
-        margin-left: 3%;
+        margin-left: 2%;
     }
 
     .ttcartegory-right-top-item {
@@ -1419,7 +1334,8 @@ a {
     }
 
 .tintuc-content-item {
-    width: calc(83%);
+   
+    width: calc(85%);
     text-align: center;
     margin-top: 2%;
     margin-right: 5%;
@@ -1429,7 +1345,7 @@ a {
     margin-bottom: 1%;
     background-color: #fafafa;
     font-size: 14px;
-    height: 10.5%;
+    height: 9.5%;
     margin-top: 1%;
 }
 
@@ -1439,7 +1355,7 @@ a {
             color: darkgreen;
             font-size: 15px;
             width: calc(84%);
-            height: 13%;
+            height: 11%;
         }
 
         .tintuc-content-item img {
@@ -1463,32 +1379,36 @@ a {
         text-align: left;
     }
 
-    .tintuc-content-item h3 {
-        width: 100%;
-        margin: 2%;
-        text-align: left;
+.tintuc-content-item h3 {
+    width: 100%;
+    margin: 2%;
+    text-align: left;
+    color: darkgreen;
+    text-decoration: none;
+}
+
+    .tintuc-content-item h3 a {
         color: darkgreen;
+        text-decoration: none;
     }
 
-        .tintuc-content-item h3 a {
-            color: darkgreen;
-        }
-
-    .tintuc-content-item h4 a {
-        width: 100%;
-        margin: 2%;
-        text-align: left;
-        color: darkgreen;
-    }
+.tintuc-content-item h4 a {
+    width: 100%;
+    margin: 2%;
+    text-align: left;
+    color: darkgreen;
+    text-decoration: none;
+}
 
     .ttcartegory-right-bottom {
         justify-content: space-between;
-        margin: 3% 1% 20% 25%;
+        margin: 3% 1% 20% 10%;
         font-size: 16px;
     }
 
         .ttcartegory-right-bottom a {
             color: black;
+            text-decoration: none;
         }
 
             .ttcartegory-right-bottom a:hover {
@@ -1501,15 +1421,13 @@ a {
 
     @media screen and (min-width:480px ) {
         .ttcartegory {
-            padding: 1%;
             margin-top: 10%;
             height: 100%;
         }
 
         .ttcontainer {
-            margin-right: 1%;
+
             text-align: left;
-            margin-left: 1.5%;
         }
 
         .ttcartegory-right-top-item {
@@ -1532,7 +1450,6 @@ a {
 
         .tintuc {
             width: 100%;
-            padding: 1%;
             margin-top: -1%;
             margin-bottom: 1%;
         }
@@ -1542,23 +1459,23 @@ a {
         }
 
         .tintuc-content-item {
-            width: calc(48%);
-            margin: 1%;
-            padding: 1.5%;
+            width: calc(46.5%);
+            margin: 0.1%;
+            padding: 1%;
             margin-bottom: 1%;
-            font-size: 14px;
+            font-size: 13.5px;
             height: 19%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
-                font-size: 15px;
+                font-size: 14.5px;
                 width: calc(48%);
-                height: 21%;
+                height: 20%;
             }
 
             .tintuc-content-item img {
-                width: 86%;
+                width: 83%;
                 height: 35%;
                 margin-top: 1.5%;
             }
@@ -1569,7 +1486,7 @@ a {
         }
 
         .tintuc-content-item-content {
-            font-size: 16px;
+            font-size: 15.5px;
             width: 100%;
             margin: 2%;
         }
@@ -1587,6 +1504,7 @@ a {
         .ttcartegory-right-bottom {
             margin: 3% 1% 10% 40%;
             font-size: 16px;
+            text-decoration: none;
         }
     }
 
@@ -1634,19 +1552,19 @@ a {
         }
 
         .tintuc-content-item {
-            width: calc(30%);
+            width: calc(29%);
             margin: 0.5%;
             padding: 2% 1% 2% 1%;
             margin-bottom: 1%;
             font-size: 16px;
-            height: 32%;
+            height: 30%;
         }
 
             .tintuc-content-item:hover {
                 padding: 1%;
                 font-size: 15px;
-                width: calc(31.5%);
-                height: 32%;
+                width: calc(31%);
+                height: 31%;
             }
 
             .tintuc-content-item img {

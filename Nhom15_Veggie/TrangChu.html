@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="CSS/StyleSheet_Footer.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="CSS/Trangchu.css" type="text/css" media="screen" />
-    <title>Trang chủ</title>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>Trang chủ</title>
     <script src="https://kit.fontawesome.com/3b47ca6d18.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="Images/logo.png" />
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript">
         const itemSliderbar = document.querySelectorAll(".cartegory-left-li")
         itemSliderbar.forEach(function (menu, index) {
@@ -20,19 +20,14 @@
             })
         })
     </script>
-    <style>
-        .sptab {
-            justify-content: space-between;
-            display: flex;
-            flex-wrap: wrap;
-            /*....................*/
-    </style>
 </head>
 <body>
-
+    <label for="nav_mobie_input" class="nav__bars_btn">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+    </label>
     <div class="phan_dau_trangchu">
         <div class="call-mail">
-            <i class="fa fa-phone" style="font-size:16px;color:#417505"></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
+            <i class="fa fa-phone" style=" font-size:16px; color:#417505" ></i>  <a href="#" style="text-decoration:none">+84 283 724 4500</a> &emsp;
             <i class="fa fa-envelope" style="font-size:16px;color:#417505"></i> &nbsp; <a href="#" style="text-decoration:none">veggie2021@gmail.com</a>
             <br> <i class="fa fa-clock-o" style="font-size:16px;color:#417505"></i>
             Mở Cửa 8:00 AM - 6:00 PM Từ Thứ 2 Đến Thứ 7
@@ -45,7 +40,7 @@
         <br><br>
         <br><br>
         <!--PHÂN SLIDE-->
-        <div>
+        <div slide>
             <div class="slider">
                 <div class="slides">
                     <!--radio button-->
@@ -63,20 +58,22 @@
                         <img src="https://theme.hstatic.net/200000274813/1000673375/14/ms_banner_img3.jpg?v=270" height="100%">
                     </div>
 
-
+       
                     <div class="navigation-auto">
                         <div class="auto-btn1"></div>
                         <div class="auto-btn2"></div>
                         <div class="auto-btn3"></div>
                     </div>
-                </div>
-
+                    
                 <div class="navigation-manual">
                     <label for="radio1" class="manual-btn"></label>
                     <label for="radio2" class="manual-btn"></label>
                     <label for="radio3" class="manual-btn"></label>
                 </div>
-            </div>
+          
+        </div>
+                </div>
+
             <script type="text/javascript">
                 var counter = 1;
                 setInterval(function () {
@@ -88,7 +85,7 @@
                 }, 5000);
             </script>
         </div>
-        <!-- phần menu #####     MENU    MENU     MENU ###########-->
+        <!-- phần menu #####     MENU    MENU     MENU ########### -->
         <div style="margin-top: -620px">
             <!--###################PHẦN NÀY SỬA LẠI Margin NHA##########################-->
             <div class='main-menu' style="margin-left: 20%;">
@@ -116,12 +113,53 @@
                                 <a href=""><i class="fas fa-search"></i></a>
                             </form>
                         </div>
+                    
                 </ul>
             </div>
+            <input type="checkbox" name="" class="nav__input" id="nav_mobie_input">
+            <label for="nav_mobie_input" class="nav-overlay"></label>
+            <nav class="nav_mobie">
+                <label  for="nav_mobie_input" class="nav_close">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="times" class="svg-inline--fa fa-times fa-w-11" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512"><path fill="currentColor" d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>
+                </label>
+              <ul class="nav_list">
+                    <li class=" "> <a class="nav-link" href='Trangchu.html'><b>TRANG CHỦ</b></a> </li>
+                    <li  class=" ">
+                        <a  class="nav-link" href='#'><b>SẢN PHẨM</b> </a>
+                        <!--sub menu-->
+                        <ul class="nav_mobie-list2">
+                            <li><a href='Granola.html'>Granola</a></li>
+                            <li><a href='TraiCaySay.html'>Trái cây</a></li>
+                            <li><a href='Bo.html'>Bơ hạt</a></li>
+                            <li><a href='Hat1.html'>Hạt khô</a></li>
+                        </ul>
+                    </li>
+                    <li  class=" "> <a class="nav-link" href='TinTuc.html'><b>BLOG</b></a> </li>
+                    <li  class=" "> <a class="nav-link" href='CongThucNauAn.html'><b>CÔNG THỨC NẤU ĂN</b></a> </li>
+                    <li  class=" "> <a class="nav-link" href="LienHe.html"><b>LIÊN HỆ</b></a> </li>
+                    <li class=" "> <a class="nav-link" href='GioiThieu.html'><b>GIỚI THIỆU</b></a> </li>
+                    <li><a href="GioHang.html"><i  class="fa fa-shopping-cart" style="font-size:18px;"">GIỎ HÀNG</i></a>  </li>
+                    <BR></BR>
+                    <li>
+                        <!--Thanh SEARCH-->
+                        <div class="search-container">
+                            <form action="/action_page.php">
+                                <input style="border-radius: 10px;padding:3px; color: #417505" type="text" placeholder="Tìm sản phẩm" name="search">
+                                <a href=""><i class="fas fa-search"></i></a>
+                            </form>
+                        </div>
+                    </li>
+                </ul>
+                <br>
+                <hr>
+                <br>
+                <a href="dangnhap.html" style="text-decoration:none">Đăng nhập</a> &emsp;
+                <a href="dangky.html" style="text-decoration:none">Đăng kí</a> &nbsp;
+            </nav>
         </div>
 
         <!--Cái logo-->
-        <div style="margin-top: -100px;margin-bottom: 40px; margin-left:120px ;"><img style="margin-top:30" src="./Images/logo.png" width="120" height="120" alt="Veggie"></div>
+        <div class="logo"><img src="./Images/logo.png" alt="Veggie"></div>
     </div>
 
     <div class="than_trang_chu" style="margin-top: 35%;">
@@ -325,8 +363,8 @@
     <div class="tham">
         <!-- ----------------------------SAN PHAM NOI BAT--------------------- -->
         <div class="spnoibat">
-            <section id="spnoibat" style="background-color: #fbfbfb">
-                <div class="wrapper2">
+            <section id="spnoibat">
+                <div class="wrapper2" >
                     <div class="inner">
                         <div class="section-title">
 
@@ -433,7 +471,7 @@
                             </div>
                             <div class="grid1__item large--six-twelfths medium--one-whole small--one-whole">
                                 <div class="about-center wow zoomIn  text-center" data-delay="0.5s" style="visibility: visible; animation-name: zoomIn;">
-                                    <img src="Images/gioithieu.png" alt="">
+                                    <img class="anhgioitthieu" src="Images/gioithieu.png" alt="">
                                 </div>
                             </div>
                             <div class="grid1__item large--three-twelfths medium--one-whole small--one-whole">
@@ -638,7 +676,7 @@
     </div>
 
     <!--Gửi mail cho chúng tôi-->
-    <div class="footer-subscribe">
+    <div class="footer-subscribe" style="margin-top:70px">
         <div class="grid">
             <div class="grid__item large--one-half medium--one-half small--one-whole">
                 <div class="ft-subscribe-info">
@@ -743,6 +781,6 @@
 
     </footer>
     <div style="text-align: center; background-color: #A9A9A9; color: black ">  Copyrights © 2021 by Veggie </div>
-
+</div>
 </body>
 </html>
