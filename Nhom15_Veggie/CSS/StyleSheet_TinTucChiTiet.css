@@ -145,7 +145,7 @@
 
 
 
-@media screen and (min-width:480px ) and (max-width: 768px) {
+@media screen and (max-width:480px ) {
     .blog-header {
         text-align: center;
         color: white;
@@ -178,16 +178,16 @@
 }
 
 
-@media screen and (min-width:768px ) and (max-width: 1024px) {
+@media screen and (min-width:480px ) and (max-width: 1024px) {
     .blog-header {
         text-align: center;
         color: white;
         font-size: 30px;
     }
     .blog-content {
-        margin-left: 100px;
-        margin-right: 100px;
-        margin-bottom: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+        margin-bottom: 50px;
     }
     .aside-item {
         border: 1px #ebebeb solid;

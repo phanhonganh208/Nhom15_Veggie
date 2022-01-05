@@ -15,9 +15,10 @@
     margin-top: 20px;
     position: center;
     float: left;
-    width: 400px;
-    height: 650px;
+    width: 28%;
+    height: 35%;
 }
+
 
 .dk-form-vertical {
     position: relative;
@@ -34,6 +35,7 @@
 
 
 .dk-h1 {
+    font-size: 20px;
     color: #094125;
     padding: 0px 0px 15px 0px;
     margin: 30px 0px 15px 0px;
@@ -42,7 +44,7 @@
 
 .dk-input {
     border: 1px solid #e2e2e2;
-    width: 400px;
+    width: 40%;
     padding: 8px 10px;
     margin-bottom: 15px;
     border-radius: 3px;
@@ -90,15 +92,39 @@
 
 
 
-@media screen and (min-width:480px ) and (max-width: 768px) {
+@media screen and (max-width:480px ) {
     .dk-form-vertical {
         display: flex;
         flex-direction: column;
+        align-content: center;
     }
 
-        .dk-form-vertical span {
-            display: none;
-        }
+    .aabb img {
+        display: none;
+    }
+
+    .dk h1 {
+        font-size: 13px;
+    }
+
+    .dk-input {
+        width: 80%;
+
+    }
+
+    .dk-btn {
+
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .dk-form-vertical span {
+        display: inline-block;
+    }
+
+
 }
 /*------DANG NHAP--------*/
 
@@ -215,3 +241,36 @@
     .bg-google-plus:hover, .bg-google-plus:focus {
         background: #bb2a1d;
     }
+
+
+@media screen and (max-width:480px ) {
+    .dn-form-vertical {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dn h1 {
+        font-size: 13px;
+    }
+
+
+
+    .dn-input {
+        width: 80%;
+    }
+
+    .dn-btn {
+        width: 80%;
+    }
+
+
+    .logins {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .dk-form-vertical span {
+        display: inline-block;
+    }
+}
