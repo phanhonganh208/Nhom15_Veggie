@@ -199,7 +199,7 @@ ul {
     margin-bottom: 1em;
     border: 1px solid transparent;
     border-radius: 0.25rem;
-    width: 385px;
+    width: 90%;
 }
 
 .alert-success {
@@ -341,7 +341,7 @@ a {
     padding: 80px 30px;
     background: #fafafa;
     margin: 80px 0px 100px;
-    height: 250px;
+    /*height: 250px;*/
 }
 
 .wrapper {
@@ -402,7 +402,7 @@ svg:not(:root).svg-inline--fa {
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
     .grid {
         display: flex;
         flex-direction: column;
@@ -415,7 +415,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .page-head {
-        margin-top: -20%
+        margin-top: -4%
     }
 
     .g-grid {
@@ -427,7 +427,7 @@ svg:not(:root).svg-inline--fa {
         padding: 0
     }
 }
-@media only screen and (min-width: 480px) and (max-width:768px) {
+@media only screen and (max-width: 480px)  {
     .grid {
         display: flex;
         flex-direction: column;
@@ -440,7 +440,7 @@ svg:not(:root).svg-inline--fa {
     }
 
     .page-head {
-        margin-top: -10%
+        margin-top: -20%
     }
 
     .g-grid {

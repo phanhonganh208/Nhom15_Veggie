@@ -533,10 +533,12 @@ section-content
 
     .cartegory-right-top-item-icon a {
         color: cadetblue;
+        text-decoration: none;
     }
 
         .cartegory-right-top-item-icon a:hover {
             color: white;
+            
         }
 
 
