@@ -195,7 +195,7 @@ input, :before, :after {
     color: #131111;
 }
 
-@media (max-width:767px)
+@media (max-width:769px)
 {
     .inner
    {

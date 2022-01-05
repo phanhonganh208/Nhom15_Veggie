@@ -388,8 +388,13 @@ h4{
     border-image-slice: 1;
 }
 
-@media(max-width:767px)
+@media(max-width:769px)
 {
+    .giohang {
+        width: 80%;
+        margin: 0;
+        font-size: 1em;
+    }
     .cart-wrapper-sm-touch-scroll
     {
         width: 100%;
@@ -399,7 +404,7 @@ h4{
         color: black;
         margin: 0 0px;
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-bottom: 100%;
     }
 h4 
@@ -411,9 +416,16 @@ h4
         font-weight: initial;
     }
     .sidebar {
-        margin: 20px;
+        margin: 30px 0;
         width: fit-content;
     }
+    .main_vanchuyen {
+         padding: 0%; 
+     margin: 0px; 
+        width: 100%;
+        margin-left: 4.5%;
+    }
+    
 .inputma {
     border-radius: 10px;
     padding: 6px;
