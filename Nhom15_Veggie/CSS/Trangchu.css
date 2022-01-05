@@ -333,7 +333,7 @@ a {
     color: #094125
 }
 
-@media (max-width:767px)
+@media (max-width:769px)
 {
     .spnoibat
     {
@@ -342,9 +342,9 @@ a {
         padding: 0;
     }
 
-        .tham #spnoibat {
-            margin-top: -50%;
-        }
+    .tham #spnoibat {
+        margin-top: 1em;
+    }
     
     
     .tham .section-title h2
@@ -377,7 +377,7 @@ a {
     font-size: 1em;
     }
     .gioithieu {
-        margin-top: -35%;
+        margin-top: -1em;
     }
     .tham #gioithieu .about-item .about-title {
         color: black;

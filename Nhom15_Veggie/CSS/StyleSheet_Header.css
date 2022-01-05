@@ -1,0 +1,428 @@
+
+/*--------HEADER-------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.phan_dau_trangchu {
+    width: 100%;
+}
+
+.call-mail {
+    font-size: 16px;
+    color: #417505;
+    margin-top: 20px;
+    margin-left: 60px;
+}
+
+    .call-mail a {
+        font-size: 16px;
+        color: #417505;
+    }
+
+
+.log-sign {
+    font-size: 16px;
+    color: #417505;
+    margin-top: -40px;
+    margin-left: 80%;
+}
+
+    .log-sign a {
+        font-size: 16px;
+        color: #417505;
+    }
+
+        .log-sign a:hover {
+            color: #F7C551;
+        }
+
+.main-menu {
+    background: rgb(255, 255, 255);
+    height: 50px;
+    padding: 20px;
+    margin-left: 5%;
+}
+
+    .main-menu muc_lon text {
+        padding: 5px;
+        font-size: 17px;
+    }
+
+    .main-menu li {
+        position: relative;
+        color: #417505;
+        font-size: 17px;
+    }
+
+    .main-menu ul li {
+        display: inline-block;
+    }
+
+        .main-menu ul li a {
+            color: #417505;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+            .main-menu ul li a:hover {
+                color: #F7C551;
+                font-size: 18px;
+            }
+
+        .main-menu ul li .sub-menu li {
+            padding: 10px;
+        }
+
+            .main-menu ul li .sub-menu li a {
+                color: white;
+                /* flex: none; */
+                display: block;
+                width: 180px;
+                padding: 2px;
+                text-align: left;
+            }
+
+                .main-menu ul li .sub-menu li a:hover {
+                    color: #F7C551;
+                }
+
+    .main-menu li:hover .sub-menu {
+        display: block;
+    }
+
+
+    .main-menu .sub-menu {
+        top: 10px;
+        /* left: 16px; */
+        padding: 0;
+        position: absolute;
+        display: none;
+        background: rgb(0, 0, 0);
+        border-radius: 20px;
+        width: 150px;
+    }
+
+.search-container input {
+    width: 80%;
+}
+
+.search-container button:hover {
+    background: #417505;
+    font-size: 18px;
+}
+
+.logo {
+    margin-top: -5%;
+    /* margin-bottom: 40px; */
+    margin-left: 8%;
+}
+
+    .logo img {
+        height: 120px;
+        width: 120px;
+    }
+
+    .logo_bo {
+        margin-top: -3%;
+        margin-bottom: -7%;
+        margin-left: 8%;
+    }
+
+    .logo_bo img {
+        height: 120px;
+        width: 120px;
+    }
+
+.logo_gio {
+    margin-top: -10%;
+    margin-left: 10%;
+    /* margin-bottom: 40px; */
+    margin-left: 0%;
+}
+
+    .logo_gio img {
+        height: 120px;
+        width: 120px;
+        margin-left: 10%;
+    }
+/*-------BANNER TRANG CHỦ.................... */
+
+.slider {
+    margin-top: 8%;
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+    .slides input {
+        display: none;
+    }
+
+.slide {
+    width: 20%;
+    transition: 2s;
+}
+
+    .slide img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 0 50%;
+        margin-top: 4%;
+    }
+
+/* ..*/
+.navigation-manual, .navigation-auto {
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #417505;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+    .manual-btn:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .manual-btn:hover {
+        background: #F7C551;
+    }
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+.navigation-auto div {
+    border: 2px solid #417505;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+    .navigation-auto div:not(:last-child) {
+        margin-right: 40px;
+    }
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #417505;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #417505;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #417505;
+}
+
+/*-------BANNER CHUNG---------*/
+.general-banner {
+}
+
+
+/* mobi_thao*/
+.nav__bars_btn {
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 28px;
+    height: 28px;
+    color: #094125;
+    display: none;
+}
+
+.nav__input {
+    display: none;
+}
+
+    .nav__input:checked ~ .nav-overlay {
+        display: block;
+    }
+
+    .nav__input:checked ~ .nav_mobie {
+        transform: translateX(0%);
+    }
+
+.nav-overlay {
+    display: none;
+}
+
+.nav_mobie {
+    display: none;
+}
+
+@media (max-width:769px) {
+    .phan_dau_trangchu {
+        width: 100%;
+        margin-top: -30%;
+    }
+
+    .logo img {
+        height: auto;
+        width: 100px;
+        margin-top: 8%;
+        margin-left: 75%;
+    }
+
+    .logo_bo img {
+        height: auto;
+        width: 221px;
+        max-width: 150px;
+        min-width: 69px;
+        margin-bottom: 40px;
+        margin-top: 100px;
+        margin-left: 75%;
+    }
+@media (max-width:480px) {
+    .logo_bo img {
+        height: auto;
+        width: 32%;
+        max-width: 183px;
+        min-width: 69px;
+        /* margin-bottom: 28px; */
+        margin-top: 10px;
+        margin-left: 75%;
+    }
+}
+    .logo_gio img {
+        height: auto;
+        width: 100px;
+        margin-top: 8%;
+        margin-left: 75%;
+    }
+
+    .nav__bars_btn {
+        display: block;
+    }
+
+    .nav-overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        animation: fadeEffect;
+        background-color: 0,0,0,3;
+    }
+
+    .nav_mobie {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        height: 100%;
+        width: fit-content;
+        max-width: 100%;
+        background: #094125;
+        font-size: 1em;
+        list-style: none;
+        color: #417505;
+        display: block;
+        transform: translateX(-100%);
+    }
+    
+
+    nav_mobie a {
+        color: white;
+    }
+
+    .nav_close {
+        margin-top: 1%;
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        top: 1rem;
+        color: #fff;
+        right: 1rem;
+    }
+
+    .nav_list {
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+
+    .nav_mobie link {
+        text-decoration: none;
+        color: #417505;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        display: block;
+        padding: 8px 0;
+        font-size: 1rem;
+        color: wheat;
+    }
+
+    .nav_mobie-list2 a {
+        margin-top: 2%;
+        list-style: none;
+        margin-left: 5%;
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+    .call-mail {
+        display: none;
+    }
+
+    .log-sign {
+        display: none;
+    }
+
+    .main-menu {
+        display: none;
+    }
+
+    .slider {
+        margin-top: 20%;
+    }
+
+    .slide {
+        width: 20%;
+        transition: 2s;
+        padding: 0 1%;
+    }
+
+        .slide img {
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+            object-position: 0;
+        }
+        .fa-search:before {
+            content: "\f002";
+            color: wheat;
+        }
+        .dndk
+        {
+            color: wheat;
+        }
+    .navigation-manual, .navigation-auto {
+            margin-top: 240px;
+}
+}
