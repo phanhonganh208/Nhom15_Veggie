@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/3b47ca6d18.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="CSS/StyleSheet_Header.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="CSS/StyleSheet_Footer.css" type="text/css" media="screen" />
     <link rel="shortcut icon" href="Images/logo.png" />
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -256,7 +257,7 @@
         }
 
         /* Dành cho máy tính bảng */
-        @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        @media only screen and (min-width: 480px) and (max-width: 1024px) {
             .main_product {
                 display: flex;
                 flex-direction: column;
@@ -285,11 +286,11 @@
             }
 
             .footer-subscribe {
-                margin-top: 0px
+                margin-top: 20px
             }
         }
 
-        @media only screen and (min-width: 480px) and (max-width:768px) {
+        @media only screen and (max-width: 480px) {
             .main_product {
                 flex-direction: column;
             }
@@ -336,6 +337,10 @@
 
             .row {
                 margin: 0 10%;
+            }
+
+            .action {
+                flex-direction: column
             }
         }
     </style>
@@ -584,7 +589,7 @@
                     <h1 style="margin-bottom:10px">SẢN PHẨM LIÊN QUAN</h1>
                 </div>
                 <div class="section-content">
-                    <div class="cartegory-right-content row">
+                    <div class="cartegory-right-content sprow">
                         <div class="cartegory-right-content-item">
                             <img src="Images/nho_baobi.png" alt="" />
                             <h4>NHO KHO</h4>
@@ -628,7 +633,7 @@
                     <h1 style="margin-bottom:-10px">SẢN PHẨM ĐÃ XEM</h1>
                 </div>
                 <div class="section-content">
-                    <div class="cartegory-right-content row">
+                    <div class="cartegory-right-content sprow">
                         <div class="cartegory-right-content-item">
                             <img src="Images/nho_baobi.png" alt="" />
                             <h4>NHO KHO</h4>
