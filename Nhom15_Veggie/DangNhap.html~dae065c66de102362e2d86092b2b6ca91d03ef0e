@@ -3,7 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
-    <title>Đăng ký</title>
+    <title>Đăng nhập</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/StyleSheet.css" type="text/css" media="screen" />
@@ -78,34 +78,38 @@
         <br />
         <br />
         <br />
-        <h2 style="text-align:center; color:white;">ĐĂNG KÝ</h2>
-        <p class="duongdan"><a href="TrangChu.html">Trang chủ</a> / Đăng ký</p>
+        <h2 style="text-align:center; color:white;">ĐĂNG NHẬP</h2>
+        <p class="duongdan"><a href="TrangChu.html">Trang chủ</a> / Đăng nhập</p>
     </div>
 
 
-    <div class="dk-form-vertical">
-        <h1 class="dk-h1">ĐĂNG KÝ</h1>
-        <span class="aabb"><img src="Images/register.png" width="90%" /></span>
-        <form id="CustomerLoginForm" style="margin-top: 40px" onsubmit="return validateForm()" method="post">
-            <input type="text" name="customer[firstname]" id="CustomerFirstName" class="dk-input" placeholder="Họ" />
+    <div id="CustomerLoginForm" class="dn-form-vertical">
+        <h1 class="dn-h1">ĐĂNG NHẬP</h1>
+        <form onsubmit="return validateForm()">
+            <input id="CustomerEmail" class="dn-input" type="email" placeholder="Email">
             <br />
-            <input type="text" name="customer[name]" id="CustomerName" class="dk-input" placeholder="Tên" />
-            <br />
-            <input type="text" name="customer[email]" id="CustomerEmail" class="dk-input" placeholder="Email">
-            <br />
-            <input type="password" value="" name="customer[password]" id="CustomerPassword" class="dk-input" placeholder="Mật khẩu">
+            <input id="CustomerPassword" class="dn-input" type="password" placeholder="Mật khẩu">
             <p>
-                <input type="button" class="dk-btn" value="Đăng ký">
+                <input type="button" class="dn-btn" onclick="validateForm()" value="Đăng nhập">
+            </p>
+            <div class="logins">
+                <div class="socials-login">
+                    <a class="bg-facebook" href="https://www.facebook.com/login/device-based/regular/login/?login_attempt=1&lwv=110" target="_blank"><span class="fa fa-facebook"></span> Facebook</a>
+                </div>
+                <div class="socials-login">
+                    <a class="bg-google-plus" href="https://accounts.google.com/signin/v2/identifier?hl=vi&passive=true&continue=https%3A%2F%2Fwww.google.com.vn%2F&flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="_blank"><span class="fa fa-google-plus"></span> Google</a>
+                </div>
+            </div>
+            <p>
+                <a class="dn-a" href="DangKy.html" id="customer_register_link">Tạo tài khoản</a>
             </p>
             <p>
-                <a class="dk-back" href="DangNhap.html">Trở về</a>
+                <a class="dn-a" href="QuenMatKhau.html" id="customer_login_link">Quên mật khẩu?</a>
             </p>
         </form>
     </div>
 
-    <!--Gửi mail cho chúng tôi-->
-
-    <div style="margin-top: 350px">
+    <div style="margin-top: 100px">
         <div class="footer-subscribe">
             <div class="grid1">
                 <div class="grid__item large--one-half medium--one-half small--one-whole">
@@ -137,7 +141,6 @@
         <div style="text-align:center; margin-bottom:-100px;">
             <img class="footer-img" src="Images/logo.png" />
         </div>
-
 
 
         <footer class="footer-container">
@@ -210,36 +213,28 @@
 
         </footer>
         <div style="text-align: center; background-color: #A9A9A9; color: black ">  Copyrights © 2021 by Veggie </div>
-    </div>
 
-    <script type="text/javascript">
-        function validateForm() {
-            var fname = document.getElementById("CustomerFirstName").value;
-            var name = document.getElementById("CustomerName").value;
-            var email = document.getElementById("CustomerEmail").value;
-            var pass = document.getElementById("CustomerPassword").value;
+        <script type="text/javascript">
+            function validateForm() {
+                var email = document.getElementById("CustomerEmail").value;
+                var pass = document.getElementById("CustomerPassword").value;
 
-            if (fname == null || name == null || email == null) {
-                alert("Bạn phải điền thông tin!");
-                return false;
+                if (email == null || email == "") {
+                    alert("Bạn phải điền email!");
+                    return false;
+                } else if (pass == null || pass == "") {
+                    alert("Bạn phải điền password!");
+                    return false;
+                } else if (email != null & pass != null) {
+                    alert("Đăng nhập thành công");
+                    location.href = 'TrangChu.html';
+                }
+
             }
-            else if (fname == null || fname == "") {
-                alert("Bạn phải điền họ!");
-                return false;
-            } else if (name == null || name == "") {
-                alert("Bạn phải điền tên!");
-                return false;
-            } else if (email == null || email == "") {
-                alert("Bạn phải điền email!");
-                return false;
-            } else if (pass == null || pass == "") {
-                return false;
-            }
-        }
 
-    </script>
+        </script>
     </div>
-     <!-------------------------------------------------------------------------------->
+ <!-------------------------------------------------------------------------------->
  <input type="checkbox" name="" class="nav__input" id="nav_mobie_input">
  <label for="nav_mobie_input" class="nav-overlay"></label>
  <nav class="nav_mobie">
