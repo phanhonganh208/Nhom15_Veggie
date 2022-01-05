@@ -503,10 +503,12 @@ margin: 20px 0px 20px 0px;
 
     .cartegory-right-top-item-icon a {
         color: cadetblue;
+        text-decoration: none;
     }
 
         .cartegory-right-top-item-icon a:hover {
             color: white;
+            
         }
 
 
