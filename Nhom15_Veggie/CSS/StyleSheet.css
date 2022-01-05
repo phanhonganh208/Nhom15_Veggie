@@ -772,7 +772,7 @@ margin: 20px 0px 20px 0px;
 /*----Trái cây sấy-----*/
 .cartegory {
     padding: 1% 4% 4%;
-    margin-bottom:20%;
+    margin-bottom:10%;
 }
 
 .cartegory-top {
@@ -970,6 +970,10 @@ margin: 20px 0px 20px 0px;
             margin-left: 13%;
         }
 
+.sprow {
+    display: flex;
+    flex-wrap: wrap;
+}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -1284,7 +1288,7 @@ margin: 20px 0px 20px 0px;
 .ttcartegory {
     
     padding: 5% 0 0;
-    margin-top: 5%;
+    margin-top: -1%;
     height: 100%;
 }
 
@@ -1424,7 +1428,7 @@ margin: 20px 0px 20px 0px;
 
     @media screen and (min-width:480px ) {
         .ttcartegory {
-            margin-top: 10%;
+            margin-top: -1%;
             height: 100%;
         }
 
@@ -1514,7 +1518,7 @@ margin: 20px 0px 20px 0px;
     @media screen and (min-width:1024px ) {
         .ttcartegory {
             padding: 5%;
-            margin-top: 5%;
+            margin-top: -1%;
             height: 100%;
         }
 
