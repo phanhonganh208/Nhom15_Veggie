@@ -17,7 +17,9 @@
     --z-fixed: 100;
 }
 
-
+.than_trang_chu {
+   margin-top: 35%;
+}
 
 /*TABTABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
 .wrapper {
@@ -34,6 +36,7 @@
     }
 
 @media screen and (min-width: 480px) {
+
     .wrapper {
         padding: 0 30px;
     }
@@ -55,9 +58,10 @@
 
 .section-title h2 {
     text-align: center;
+    font-size: 36px;
     color: #000000;
-    margin-top: 5%;
-    margin-bottom: -5%;
+    margin-top: 100px;
+    margin-bottom: 10px;
 }
 
 
@@ -66,7 +70,7 @@
 }
 
 .tab {
-    margin: 100px auto 20px;
+    margin: 10px auto 20px;
     text-align: center;
     display: table;
     border-bottom: 1px solid #e2e2e2;
@@ -195,26 +199,54 @@ input, :before, :after {
     color: #131111;
 }
 
-@media (max-width:769px)
-{
-    .inner
-   {
-       margin: 0%;
-   }
-    .tab {
-        margin: 5% 10%;}
-        .tab button
-        {
-            padding: 0;
+@media(max-width:1024px) {
+    .section-title h2 {
+        text-align: center;
+        font-size: 36px;
+        color: #000000;
+        margin-top: 145px;
+        margin-bottom: 10px;
+    }
+
+    @media (max-width:769px) {
+        .section-title h2 {
+            text-align: center;
+            font-size: 36px;
+            color: #000000;
+            margin-top: 203px;
+            /* margin-bottom: 10px; */
         }
-        .tablinks
-        {
+        @media(max-width:480px){
+            .section-title h2 {
+                text-align: center;
+                font-size: 1.5em;
+                color: #000000;
+                margin-top: 135px;
+                /* margin-bottom: 10px; */
+            }
+        }
+
+        .inner {
+            margin: 0%;
+        }
+
+        .tab {
+            margin: 5% 10%;
+        }
+
+            .tab button {
+                padding: 0;
+            }
+
+        .tablinks {
             font-size: 0.8em;
         }
+
         .sptab {
             display: flex;
             flex-wrap: wrap;
         }
+    }
 }
 /*trang chu ...........................................*/
 
@@ -338,17 +370,15 @@ margin: 20px 0px 20px 0px;
     }
 
 
-
-
-
-
+section-content
+{
+    margin-top:100px;
+}
 /*------------PHẦN LIÊN HỆ---------------*/
-
-
 /*----Trái cây sấy-----*/
 .cartegory {
     padding: 1% 4% 4%;
-    margin-bottom:10%;
+    margin-bottom: 10%;
 }
 
 .cartegory-top {

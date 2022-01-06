@@ -62,9 +62,8 @@ table {
     border-bottom: 1px solid #ececec;
     width: fit-content;
 }
-.product-thumbnail img 
- 
-{
+
+.product-thumbnail img {
     max-width: 50%;
     margin-left: 10%;
     height: auto;
@@ -159,7 +158,8 @@ table {
         -moz-appearance: textfield;
         font-size: 1em;
     }
-h4{
+
+h4 {
     color: #094125;
     margin: 0 100px;
     margin-bottom: -10;
@@ -286,8 +286,8 @@ h4{
 }
 
 .main_vanchuyen {
-    padding: 5%;
-    margin: 20px;
+    /* padding: 5%; */
+    /* margin: 20px; */
     background-color: #fff;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -388,17 +388,17 @@ h4{
     border-image-slice: 1;
 }
 
-@media(max-width:769px)
-{
+@media(max-width:769px) {
     .giohang {
         width: 80%;
         margin: 0;
         font-size: 1em;
     }
-    .cart-wrapper-sm-touch-scroll
-    {
+
+    .cart-wrapper-sm-touch-scroll {
         width: 100%;
     }
+
     .wrap_vanchuyen {
         padding: 0% gray;
         color: black;
@@ -407,47 +407,49 @@ h4{
         flex-direction: column;
         margin-bottom: 100%;
     }
-h4 
-{
- 
+
+    h4 {
         color: #094125;
         margin: 0 5%;
         margin-bottom: -10;
         font-weight: initial;
     }
+
     .sidebar {
         margin: 30px 0;
         width: fit-content;
     }
+
     .main_vanchuyen {
-         padding: 0%; 
-     margin: 0px; 
+        padding: 0%;
+        margin: 0px;
         width: 100%;
         margin-left: 4.5%;
     }
-    
-.inputma {
-    border-radius: 10px;
-    padding: 6px;
-    border: 0.1px;
-    margin-left: 15%;
-}
-.giohang .btntieptucxem {
-    color: #417505;
-    background-color: #f9f9f9;
-    position: relative;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 0.5em;
-    letter-spacing: .02em;
-    /* cursor: pointer; */
-    font-weight: bolder;
-    border: 2px solid #417505;
-    margin-right: 0.2em;
-    /* min-height: 2.5em; */
-    /* padding: 0 1.2em; */
-    /* box-sizing: border-box; */
-    margin-top: 5%;
-    /* text-align: center; */
-}
+
+    .inputma {
+        border-radius: 10px;
+        padding: 6px;
+        border: 0.1px;
+        margin-left: 15%;
+    }
+
+    .giohang .btntieptucxem {
+        color: #417505;
+        background-color: #f9f9f9;
+        position: relative;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 0.5em;
+        letter-spacing: .02em;
+        /* cursor: pointer; */
+        font-weight: bolder;
+        border: 2px solid #417505;
+        margin-right: 0.2em;
+        /* min-height: 2.5em; */
+        /* padding: 0 1.2em; */
+        /* box-sizing: border-box; */
+        margin-top: 5%;
+        /* text-align: center; */
+    }
 }
