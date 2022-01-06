@@ -18,7 +18,7 @@
 }
 
 .than_trang_chu {
-   margin-top: 35%;
+    margin-top: 35%;
 }
 
 /*TABTABBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB*/
@@ -204,7 +204,7 @@ input, :before, :after {
         text-align: center;
         font-size: 36px;
         color: #000000;
-        margin-top: 145px;
+        margin-top: 216px;
         margin-bottom: 10px;
     }
 
@@ -216,7 +216,8 @@ input, :before, :after {
             margin-top: 203px;
             /* margin-bottom: 10px; */
         }
-        @media(max-width:480px){
+
+        @media(max-width:480px) {
             .section-title h2 {
                 text-align: center;
                 font-size: 1.5em;
@@ -230,13 +231,10 @@ input, :before, :after {
             margin: 0%;
         }
 
-        .tab {
-            margin: 5% 10%;
-        }
 
-            .tab button {
-                padding: 0;
-            }
+        .tab button {
+            padding: 0;
+        }
 
         .tablinks {
             font-size: 0.8em;
@@ -255,30 +253,30 @@ input, :before, :after {
 /*-----------------TRANG SAN PHAM CHI TIET*/
 /*----------BANNER--------*/
 
-.banner_giohang
-{
-
-width: 100%;
-background-size: cover;
-height: 300px;
-text-align: center;
-background-repeat: no-repeat;
-position: center;
-margin: 20px 0px 20px 0px;
+.banner_giohang {
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    text-align: center;
+    background-repeat: no-repeat;
+    position: center;
+    margin: 20px 0px 20px 0px;
 }
 
 
 /*------CHÍNH SÁCH BẢO MẬT-------*/
-.duongdan{
+.duongdan {
     text-align: center;
     color: white;
     font-size: 20px;
     margin-top: 20px
 }
+
     .duongdan a {
         color: white;
         text-decoration: none;
     }
+
         .duongdan a:hover {
             color: #F7C551;
         }
@@ -293,7 +291,8 @@ margin: 20px 0px 20px 0px;
     .phannoidung p {
         margin: 1%;
     }
-@media screen and (min-width:480px ){
+
+@media screen and (min-width:480px ) {
     .phannoidung {
         font-size: 20px;
         padding: 10%;
@@ -304,6 +303,7 @@ margin: 20px 0px 20px 0px;
             margin: 2%;
         }
 }
+
 @media screen and (min-width:1024px ) {
     .phannoidung {
         font-size: 22px;
@@ -320,20 +320,34 @@ margin: 20px 0px 20px 0px;
     margin: 1%;
 }
 
-    .phannoidung ul {
-        list-style: disc;
-    }
+.phannoidung ul {
+    list-style: disc;
+}
+
 @media screen and (min-width:480px ) {
     .phannoidung ul li {
         margin: 2%;
     }
 }
-    @media screen and (min-width:1024px ) {
-        .phannoidung ul li {
-            margin: 2%;
-        }
+
+@media screen and (min-width:1024px ) {
+    .phannoidung ul li {
+        margin: 2%;
     }
- /*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
+}
+/*-----ĐIỂU KHOẢN DỊCH VỤ-----*/
+.phannoidung ol li {
+    font-size: 20px;
+}
+
+.phannoidung p {
+    margin-left: -1%;
+    margin-bottom: 3%;
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+@media screen and (min-width:480px ) {
     .phannoidung ol li {
         font-size: 20px;
     }
@@ -344,35 +358,24 @@ margin: 20px 0px 20px 0px;
         margin-top: 1%;
         font-size: 20px;
     }
-    @media screen and (min-width:480px ) {
-        .phannoidung ol li {
-            font-size: 20px;
-        }
+}
 
-        .phannoidung p {
-            margin-left: -1%;
-            margin-bottom: 3%;
-            margin-top: 1%;
-            font-size: 20px;
-        }
-    }
-    @media screen and (min-width:1024px ) {
-        .phannoidung ol li {
-            font-size: 20px;
-        }
-
-        .phannoidung p {
-            margin-left: -1%;
-            margin-bottom: 3%;
-            margin-top: 1%;
-            font-size: 20px;
-        }
+@media screen and (min-width:1024px ) {
+    .phannoidung ol li {
+        font-size: 20px;
     }
 
+    .phannoidung p {
+        margin-left: -1%;
+        margin-bottom: 3%;
+        margin-top: 1%;
+        font-size: 20px;
+    }
+}
 
-section-content
-{
-    margin-top:100px;
+
+section-content {
+    margin-top: 100px;
 }
 /*------------PHẦN LIÊN HỆ---------------*/
 /*----Trái cây sấy-----*/
@@ -409,20 +412,20 @@ section-content
     padding: 1%;
     vertical-align: baseline;
     text-align: left;
-    margin-top:5%;
+    margin-top: 5%;
 }
 
     .cartegory-left ul li ul li {
         margin-left: -10%;
-        
-    }
-    .cartegory-left ul li ul li a{
-        text-decoration: none;
     }
 
-        .cartegory-left ul li ul li a:hover {
-            color: orange;
+        .cartegory-left ul li ul li a {
+            text-decoration: none;
         }
+
+            .cartegory-left ul li ul li a:hover {
+                color: orange;
+            }
 
     .cartegory-left li {
         list-style-type: none;
@@ -442,24 +445,26 @@ section-content
 .cartegory-right-top-item {
     flex: 1;
     padding: 1% 1%;
-    margin-top:1%;
-
+    margin-top: 1%;
 }
+
 .cartegory-right-top-item-s {
     flex: 1;
     padding: 1% 1%;
     margin-top: 1%;
-    margin-left:-8%;
+    margin-left: -8%;
 }
-.cartegory-right-top-item-s button {
-    width: 100%;
-    padding: 1% 1%;
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    background-color: #ffff;
-    border: 1px solid #dddddd;
-}
+
+    .cartegory-right-top-item-s button {
+        width: 100%;
+        padding: 1% 1%;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        background-color: #ffff;
+        border: 1px solid #dddddd;
+    }
+
 .cartegory-right-top-item button {
     width: 100%;
     padding: 1% 1%;
@@ -470,15 +475,15 @@ section-content
     border: 1px solid #dddddd;
 }
 
-    .cartegory-right-top-item select {
-        width: 100%;
-        padding: 1% 1%;
-        display: flex;
-        justify-content: space-between;
-        cursor: pointer;
-        background-color: #ffff;
-        border: 1px solid #dddddd;
-    }
+.cartegory-right-top-item select {
+    width: 100%;
+    padding: 1% 1%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+}
 
 .cartegory-right-content {
     margin-top: 1%;
@@ -494,17 +499,20 @@ section-content
     color: darkgreen;
     background-color: #fafafa;
     font-size: 14px;
-    height:30%;
+    height: 30%;
 }
-.cartegory-right-content-item-content{
-    margin-top:10%;
-    margin-bottom:10%;
+
+.cartegory-right-content-item-content {
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
+
 .cartegory-right-content-item img {
     width: 95%;
     height: 55%;
     margin-top: 2%;
 }
+
 .cartegory-right-content-item:hover {
     width: calc(47%);
     padding: 1%;
@@ -514,9 +522,9 @@ section-content
     height: 31%;
 }
 
-    .cartegory-right-content-item h2 {
-        margin-top: 1%;
-    }
+.cartegory-right-content-item h2 {
+    margin-top: 1%;
+}
 
 
 .cartegory-right-top-item-icon {
@@ -538,7 +546,6 @@ section-content
 
         .cartegory-right-top-item-icon a:hover {
             color: white;
-            
         }
 
 
@@ -551,7 +558,7 @@ section-content
 
     .cartegory-right-bottom a {
         color: black;
-        text-decoration:none;
+        text-decoration: none;
     }
 
         .cartegory-right-bottom a:hover {
@@ -582,6 +589,7 @@ section-content
     display: flex;
     flex-wrap: wrap;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -595,14 +603,16 @@ section-content
 .cartegory-left-li ul {
     display: none;
 }
-.cartegory-left-li a{
-    text-decoration:none;
+
+.cartegory-left-li a {
+    text-decoration: none;
 }
 
 
 .cartegory-left-li.block ul {
     display: block;
 }
+
 @media screen and (min-width:480px ) {
     .cartegory {
         padding: 1% 3% 2%;
@@ -621,14 +631,14 @@ section-content
         width: 23%;
         font-size: 17px;
         margin-left: 1%;
-
     }
 
         .cartegory-left ul li ul li {
             margin-left: -15%;
-            margin-top:5%;
-            margin-bottom:5%;
+            margin-top: 5%;
+            margin-bottom: 5%;
         }
+
     .cartegory-right {
         width: 70%;
     }
@@ -641,15 +651,18 @@ section-content
         padding: 1% 1%;
         margin-top: 1%;
     }
+
     .cartegory-right-top-item-s {
         flex: 1;
         padding: 1% 1%;
         margin-top: 1%;
         margin-left: -8%;
     }
+
     .cartegory-right-content {
         margin-top: 1%;
     }
+
     .cartegory-right-content-item {
         width: calc(47%);
         margin-top: 2%;
@@ -657,17 +670,19 @@ section-content
         padding: 1%;
         font-size: 16px;
         height: 28%;
-
     }
+
     .cartegory-right-content-item-content {
         margin-top: 6%;
         margin-bottom: 10%;
     }
+
     .cartegory-right-content-item img {
         width: 90%;
         height: 57%;
         margin-top: 2%;
     }
+
     .cartegory-right-content-item:hover {
         width: calc(47%);
         padding: 1%;
@@ -678,6 +693,7 @@ section-content
     .cartegory-right-content-item h2 {
         margin-top: 1%;
     }
+
     .cartegory-right-top-item-icon {
         width: 6%;
         height: 6%;
@@ -686,9 +702,11 @@ section-content
         margin-left: 1%;
         margin-right: 1%;
     }
+
     .cartegory-right-bottom {
         margin: 5% 1% 25% 5%;
     }
+
     .cartegory-left ul li {
         padding: 1% 1%;
     }
@@ -696,11 +714,13 @@ section-content
         .cartegory-left ul li > a {
             font-size: 18px;
         }
-            .cartegory-left ul li ul li a {
-                font-size: 14px;
-                margin-left: 11%;
-            }
+
+        .cartegory-left ul li ul li a {
+            font-size: 14px;
+            margin-left: 11%;
+        }
 }
+
 @media screen and (min-width:1024px ) {
     .cartegory {
         padding: 1% 4%;
@@ -759,7 +779,7 @@ section-content
 
     .cartegory-right-content-item-content {
         margin-top: 5%;
-        margin-bottom:1%;
+        margin-bottom: 1%;
     }
 
     .cartegory-right-content-item img {
@@ -803,7 +823,7 @@ section-content
         .cartegory-left ul li ul li a {
             font-size: 14px;
             margin-left: 11%;
-            margin-top:2%
+            margin-top: 2%
         }
 }
 /*Bơ*/
@@ -820,24 +840,25 @@ section-content
 }
 
 
-.cartegory-right-content-item-bo img {
-    width: 95%;
-    height: 52%;
-    margin-top: 2%;
-}
+    .cartegory-right-content-item-bo img {
+        width: 95%;
+        height: 52%;
+        margin-top: 2%;
+    }
 
-.cartegory-right-content-item-bo:hover {
-    width: calc(47%);
-    padding: 1%;
-    background-color: #ffc764;
-    color: white;
-    font-size: 15px;
-    height: 18%;
-}
+    .cartegory-right-content-item-bo:hover {
+        width: calc(47%);
+        padding: 1%;
+        background-color: #ffc764;
+        color: white;
+        font-size: 15px;
+        height: 18%;
+    }
 
-.cartegory-right-content-item-bo h2 {
-    margin-top: 1%;
-}
+    .cartegory-right-content-item-bo h2 {
+        margin-top: 1%;
+    }
+
 @media screen and (min-width:480px ) {
     .cartegory-right-content-item-bo {
         width: calc(47%);
@@ -848,23 +869,24 @@ section-content
         height: 19%;
     }
 
-    .cartegory-right-content-item-bo img {
-        width: 90%;
-        height: 56%;
-        margin-top: 2%;
-    }
+        .cartegory-right-content-item-bo img {
+            width: 90%;
+            height: 56%;
+            margin-top: 2%;
+        }
 
-    .cartegory-right-content-item-bo:hover {
-        width: calc(47%);
-        padding: 1%;
-        font-size: 17px;
-        height: 20%;
-    }
+        .cartegory-right-content-item-bo:hover {
+            width: calc(47%);
+            padding: 1%;
+            font-size: 17px;
+            height: 20%;
+        }
 
-    .cartegory-right-content-item-bo h2 {
-        margin-top: 1%;
-    }
+        .cartegory-right-content-item-bo h2 {
+            margin-top: 1%;
+        }
 }
+
 @media screen and (min-width:1024px ) {
     .cartegory-right-content-item-bo {
         width: calc(28%);
@@ -875,81 +897,79 @@ section-content
     }
 
 
-    .cartegory-right-content-item-bo img {
-        width: 90%;
-        height: 64%;
-        margin-top: 2%;
-    }
+        .cartegory-right-content-item-bo img {
+            width: 90%;
+            height: 64%;
+            margin-top: 2%;
+        }
 
-    .cartegory-right-content-item-bo:hover {
-        width: calc(29%);
-        padding: 1%;
-        font-size: 18px;
-        height: 31%;
-    }
+        .cartegory-right-content-item-bo:hover {
+            width: calc(29%);
+            padding: 1%;
+            font-size: 18px;
+            height: 31%;
+        }
 
-    .cartegory-right-content-item-bo h2 {
-        margin-top: 1%;
-    }
+        .cartegory-right-content-item-bo h2 {
+            margin-top: 1%;
+        }
 }
-    /*----TIN TỨC----*/
+/*----TIN TỨC----*/
 .ttcartegory {
-    
     padding: 5% 0 0;
     margin-top: -1%;
     height: 100%;
 }
 
-    .ttcontainer {
-        overflow: auto;
-        margin-right: 2%;
-        text-align: center;
-        text-align: left;
-        margin-left: 2%;
-    }
+.ttcontainer {
+    overflow: auto;
+    margin-right: 2%;
+    text-align: center;
+    text-align: left;
+    margin-left: 2%;
+}
 
-    .ttcartegory-right-top-item {
-        flex: 1;
-        padding: 1% 1%;
-        margin: 5%;
-        font-size: 18px;
-    }
+.ttcartegory-right-top-item {
+    flex: 1;
+    padding: 1% 1%;
+    margin: 5%;
+    font-size: 18px;
+}
 
-        .ttcartegory-right-top-item button {
-            width: 100%;
-            padding: 1% 1.5%;
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            background-color: #ffff;
-            border: 1px solid #dddddd;
-        }
-
-        .ttcartegory-right-top-item select {
-            width: 100%;
-            padding: 1% 1.5%;
-            display: flex;
-            justify-content: space-between;
-            cursor: pointer;
-            background-color: #ffff;
-            border: 1px solid #dddddd;
-        }
-
-    .tintuc {
+    .ttcartegory-right-top-item button {
         width: 100%;
-        padding: 2%;
-        margin-top: -1%;
-        margin-bottom: 1%;
-        text-align: center;
+        padding: 1% 1.5%;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        background-color: #ffff;
+        border: 1px solid #dddddd;
     }
 
-    .tintuc-content {
-        margin-top: 1%;
+    .ttcartegory-right-top-item select {
+        width: 100%;
+        padding: 1% 1.5%;
+        display: flex;
         justify-content: space-between;
+        cursor: pointer;
+        background-color: #ffff;
+        border: 1px solid #dddddd;
     }
+
+.tintuc {
+    width: 100%;
+    padding: 2%;
+    margin-top: -1%;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.tintuc-content {
+    margin-top: 1%;
+    justify-content: space-between;
+}
 
 .tintuc-content-item {
-   
     width: calc(85%);
     text-align: center;
     margin-top: 2%;
@@ -964,35 +984,35 @@ section-content
     margin-top: 1%;
 }
 
-        .tintuc-content-item:hover {
-            padding: 4%;
-            background-color: gainsboro;
-            color: darkgreen;
-            font-size: 15px;
-            width: calc(84%);
-            height: 11%;
-        }
-
-        .tintuc-content-item img {
-            width: 90%;
-            height: 35%;
-            margin-top: 1.5%;
-        }
-
-    .tintuc-content-item-date {
-        font-size: 12px;
-        color: gray;
-        margin: 1% 2% 1% 2%;
-        text-align: left;
+    .tintuc-content-item:hover {
+        padding: 4%;
+        background-color: gainsboro;
+        color: darkgreen;
+        font-size: 15px;
+        width: calc(84%);
+        height: 11%;
     }
 
-    .tintuc-content-item-content {
-        font-size: 16px;
-        color: gray;
-        width: 100%;
-        margin: 2%;
-        text-align: left;
+    .tintuc-content-item img {
+        width: 90%;
+        height: 35%;
+        margin-top: 1.5%;
     }
+
+.tintuc-content-item-date {
+    font-size: 12px;
+    color: gray;
+    margin: 1% 2% 1% 2%;
+    text-align: left;
+}
+
+.tintuc-content-item-content {
+    font-size: 16px;
+    color: gray;
+    width: 100%;
+    margin: 2%;
+    text-align: left;
+}
 
 .tintuc-content-item h3 {
     width: 100%;
@@ -1015,244 +1035,244 @@ section-content
     text-decoration: none;
 }
 
+.ttcartegory-right-bottom {
+    justify-content: space-between;
+    margin: 3% 1% 20% 10%;
+    font-size: 16px;
+}
+
+    .ttcartegory-right-bottom a {
+        color: black;
+        text-decoration: none;
+    }
+
+        .ttcartegory-right-bottom a:hover {
+            color: orange;
+        }
+
+.tintuc-content-ite-hr {
+    margin: 10px;
+}
+
+@media screen and (min-width:480px ) {
+    .ttcartegory {
+        margin-top: -1%;
+        height: 100%;
+    }
+
+    .ttcontainer {
+        text-align: left;
+    }
+
+    .ttcartegory-right-top-item {
+        flex: 1;
+        padding: 1%;
+        margin: 3%;
+        font-size: 18px;
+        text-align: left;
+    }
+
+        .ttcartegory-right-top-item button {
+            width: 100%;
+            padding: 1%;
+        }
+
+        .ttcartegory-right-top-item select {
+            width: 100%;
+            padding: 1% 1.5%;
+        }
+
+    .tintuc {
+        width: 100%;
+        margin-top: -1%;
+        margin-bottom: 1%;
+    }
+
+    .tintuc-content {
+        margin-top: 1%;
+    }
+
+    .tintuc-content-item {
+        width: calc(46.5%);
+        margin: 0.1%;
+        padding: 1%;
+        margin-bottom: 1%;
+        font-size: 13.5px;
+        height: 19%;
+    }
+
+        .tintuc-content-item:hover {
+            padding: 1%;
+            font-size: 14.5px;
+            width: calc(48%);
+            height: 20%;
+        }
+
+        .tintuc-content-item img {
+            width: 83%;
+            height: 35%;
+            margin-top: 1.5%;
+        }
+
+    .tintuc-content-item-date {
+        font-size: 12px;
+        margin: 1% 2% 1% 2%;
+    }
+
+    .tintuc-content-item-content {
+        font-size: 15.5px;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .tintuc-content-item h3 {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .tintuc-content-item h4 a {
+        width: 100%;
+        margin: 2%;
+    }
+
     .ttcartegory-right-bottom {
-        justify-content: space-between;
-        margin: 3% 1% 20% 10%;
+        margin: 3% 1% 10% 40%;
+        font-size: 16px;
+        text-decoration: none;
+    }
+}
+
+@media screen and (min-width:1024px ) {
+    .ttcartegory {
+        padding: 5%;
+        margin-top: -1%;
+        height: 100%;
+    }
+
+    .ttcontainer {
+        margin-right: 1%;
+        text-align: left;
+        margin-left: 1%;
+    }
+
+    .ttcartegory-right-top-item {
+        flex: 1;
+        padding: 1%;
+        margin: -1% 1% 1% 1%;
+        font-size: 20px;
+        text-align: left;
+    }
+
+        .ttcartegory-right-top-item button {
+            width: 100%;
+            padding: 1%;
+        }
+
+        .ttcartegory-right-top-item select {
+            width: 100%;
+            padding: 1%;
+        }
+
+    .tintuc {
+        width: 100%;
+        padding: 0%;
+        /* margin-top: -1%; */
+        margin-bottom: 1%;
+        text-align: center;
+    }
+
+    .tintuc-content {
+        margin-top: 1%;
+        padding: 1%;
+    }
+
+    .tintuc-content-item {
+        width: calc(29%);
+        margin: 0.5%;
+        padding: 2% 1% 2% 1%;
+        margin-bottom: 1%;
+        font-size: 16px;
+        height: 30%;
+    }
+
+        .tintuc-content-item:hover {
+            padding: 1%;
+            font-size: 15px;
+            width: calc(31%);
+            height: 31%;
+        }
+
+        .tintuc-content-item img {
+            width: 90%;
+            height: 39%;
+            margin-top: 1.5%;
+        }
+
+    .tintuc-content-item-date {
+        font-size: 14px;
+        margin: 1% 2% 1% 2%;
+    }
+
+    .tintuc-content-item-content {
+        font-size: 18px;
+        width: 100%;
+        margin: 2%;
+    }
+
+    .tintuc-content-item h3 {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .tintuc-content-item h4 a {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .ttcartegory-right-bottom {
+        margin: 1% 1% 3% 70%;
         font-size: 16px;
     }
+}
+/*----TRANG GIỚI THIỆU----*/
 
-        .ttcartegory-right-bottom a {
-            color: black;
-            text-decoration: none;
-        }
 
-            .ttcartegory-right-bottom a:hover {
-                color: orange;
-            }
+/*----TRANG CÔNG THỨC NẤU ĂN----*/
+.cook {
+    padding: 100px 0 0;
+}
 
-    .tintuc-content-ite-hr {
-        margin: 10px;
+.recipe {
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.recipe-item {
+    width: 100%;
+    text-align: left;
+    margin-top: 50px;
+    font-size: 13px;
+    height: 350px;
+    background-color: khaki;
+    color: black;
+    padding: 100px 0 0;
+}
+
+    .recipe-item h1 {
+        font-size: 55px;
+        margin-left: 65px;
     }
 
-    @media screen and (min-width:480px ) {
-        .ttcartegory {
-            margin-top: -1%;
-            height: 100%;
-        }
-
-        .ttcontainer {
-
-            text-align: left;
-        }
-
-        .ttcartegory-right-top-item {
-            flex: 1;
-            padding: 1%;
-            margin: 3%;
-            font-size: 18px;
-            text-align: left;
-        }
-
-            .ttcartegory-right-top-item button {
-                width: 100%;
-                padding: 1%;
-            }
-
-            .ttcartegory-right-top-item select {
-                width: 100%;
-                padding: 1% 1.5%;
-            }
-
-        .tintuc {
-            width: 100%;
-            margin-top: -1%;
-            margin-bottom: 1%;
-        }
-
-        .tintuc-content {
-            margin-top: 1%;
-        }
-
-        .tintuc-content-item {
-            width: calc(46.5%);
-            margin: 0.1%;
-            padding: 1%;
-            margin-bottom: 1%;
-            font-size: 13.5px;
-            height: 19%;
-        }
-
-            .tintuc-content-item:hover {
-                padding: 1%;
-                font-size: 14.5px;
-                width: calc(48%);
-                height: 20%;
-            }
-
-            .tintuc-content-item img {
-                width: 83%;
-                height: 35%;
-                margin-top: 1.5%;
-            }
-
-        .tintuc-content-item-date {
-            font-size: 12px;
-            margin: 1% 2% 1% 2%;
-        }
-
-        .tintuc-content-item-content {
-            font-size: 15.5px;
-            width: 100%;
-            margin: 2%;
-        }
-
-        .tintuc-content-item h3 {
-            width: 100%;
-            margin: 2%;
-        }
-
-        .tintuc-content-item h4 a {
-            width: 100%;
-            margin: 2%;
-        }
-
-        .ttcartegory-right-bottom {
-            margin: 3% 1% 10% 40%;
-            font-size: 16px;
-            text-decoration: none;
-        }
+    .recipe-item span img {
+        width: 250px;
+        height: 250px;
+        margin: -50px 150px 150px 150px;
+        text-align: center;
     }
 
-    @media screen and (min-width:1024px ) {
-        .ttcartegory {
-            padding: 5%;
-            margin-top: -1%;
-            height: 100%;
-        }
-
-        .ttcontainer {
-            margin-right: 1%;
-            text-align: left;
-            margin-left: 1%;
-        }
-
-        .ttcartegory-right-top-item {
-            flex: 1;
-            padding: 1%;
-            margin: -1% 1% 1% 1%;
-            font-size: 20px;
-            text-align: left;
-        }
-
-            .ttcartegory-right-top-item button {
-                width: 100%;
-                padding: 1%;
-            }
-
-            .ttcartegory-right-top-item select {
-                width: 100%;
-                padding: 1%;
-            }
-
-        .tintuc {
-            width: 100%;
-            padding: 1%;
-            margin-top: -1%;
-            margin-bottom: 1%;
-        }
-
-        .tintuc-content {
-            margin-top: 1%;
-            padding: 1%;
-        }
-
-        .tintuc-content-item {
-            width: calc(29%);
-            margin: 0.5%;
-            padding: 2% 1% 2% 1%;
-            margin-bottom: 1%;
-            font-size: 16px;
-            height: 30%;
-        }
-
-            .tintuc-content-item:hover {
-                padding: 1%;
-                font-size: 15px;
-                width: calc(31%);
-                height: 31%;
-            }
-
-            .tintuc-content-item img {
-                width: 90%;
-                height: 39%;
-                margin-top: 1.5%;
-            }
-
-        .tintuc-content-item-date {
-            font-size: 14px;
-            margin: 1% 2% 1% 2%;
-        }
-
-        .tintuc-content-item-content {
-            font-size: 18px;
-            width: 100%;
-            margin: 2%;
-        }
-
-        .tintuc-content-item h3 {
-            width: 100%;
-            margin: 2%;
-        }
-
-        .tintuc-content-item h4 a {
-            width: 100%;
-            margin: 2%;
-        }
-
-        .ttcartegory-right-bottom {
-            margin: 1% 1% 3% 70%;
-            font-size: 16px;
-        }
-    }
-    /*----TRANG GIỚI THIỆU----*/
-
-
-    /*----TRANG CÔNG THỨC NẤU ĂN----*/
-    .cook {
-        padding: 100px 0 0;
-    }
-
-    .recipe {
-        margin-top: 20px;
-        justify-content: space-between;
-    }
-
-    .recipe-item {
-        width: 100%;
-        text-align: left;
-        margin-top: 50px;
-        font-size: 13px;
-        height: 350px;
-        background-color: khaki;
-        color: black;
-        padding: 100px 0 0;
-    }
-
-        .recipe-item h1 {
-            font-size: 55px;
-            margin-left: 65px;
-        }
-
-        .recipe-item span img {
-            width: 250px;
-            height: 250px;
-            margin: -50px 150px 150px 150px;
-            text-align: center;
-        }
 
 
 
+/*------TRANG TIN TỨC CHI TIẾT---------*/
 
-    /*------TRANG TIN TỨC CHI TIẾT---------*/
-  
 
