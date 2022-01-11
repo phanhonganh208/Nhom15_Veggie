@@ -483,6 +483,7 @@ section-content {
     cursor: pointer;
     background-color: #ffff;
     border: 1px solid #dddddd;
+
 }
 
 .cartegory-right-content {
@@ -500,6 +501,7 @@ section-content {
     background-color: #fafafa;
     font-size: 14px;
     height: 30%;
+    
 }
 
 .cartegory-right-content-item-content {
@@ -1158,7 +1160,7 @@ section-content {
     .ttcartegory-right-top-item {
         flex: 1;
         padding: 1%;
-        margin: -1% 1% 1% 1%;
+        margin: 1% 1% 1% 1%;
         font-size: 20px;
         text-align: left;
     }
@@ -1176,7 +1178,7 @@ section-content {
     .tintuc {
         width: 100%;
         padding: 0%;
-        /* margin-top: -1%; */
+        margin-top: -1%;
         margin-bottom: 1%;
         text-align: center;
     }
@@ -1192,7 +1194,7 @@ section-content {
         padding: 2% 1% 2% 1%;
         margin-bottom: 1%;
         font-size: 16px;
-        height: 30%;
+        height: 29.5%;
     }
 
         .tintuc-content-item:hover {
