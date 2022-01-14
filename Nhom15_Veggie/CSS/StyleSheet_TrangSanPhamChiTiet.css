@@ -1,0 +1,346 @@
+﻿* {
+    font-family: 'Times New Roman'
+}
+
+
+
+    #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+
+        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-big h2 {
+            font-size: 24px;
+            color: #fff;
+            padding: 0px;
+            margin: 0px 0px 5px 0px;
+        }
+
+        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a {
+            display: inline-block;
+            position: relative;
+        }
+
+        #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small a, #breadcrumb-wrapper.breadcrumb-w-img .breadcrumb-content .breadcrumb-small span {
+            color: #fff;
+        }
+
+a, .text-link {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+.main_product {
+    display: flex;
+}
+
+.main_product-img {
+    width: 95%;
+    padding-top: 40%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    margin-top: 20px
+}
+
+.main_product-info a {
+    color: #094125;
+    text-decoration: none;
+    background: transparent;
+}
+
+#ChiTietSanPham .button {
+    display: inline-block;
+    border-radius: 20px;
+    outline: none;
+    width: 170px;
+    border: 1px solid #094125;
+    line-height: 35px;
+    color: #ffffff;
+    background: #094125;
+    cursor: pointer;
+    overflow: visible;
+}
+
+#ChiTietSanPham .button1 {
+    color: #ffffff;
+    background: #094125;
+}
+
+    #ChiTietSanPham .button1:hover {
+        background-color: #FFFFFF;
+        color: #094125;
+    }
+
+#ChiTietSanPham .button2 {
+    color: #ffffff;
+    background: #094125;
+}
+
+    #ChiTietSanPham .button2:hover {
+        background-color: #FFFFFF;
+        color: #094125;
+    }
+
+#ChiTietSanPham .buttonXT {
+    background-color: #FFFFFF;
+    color: #094125;
+}
+
+    #ChiTietSanPham .buttonXT:hover {
+        color: #ffffff;
+        background: #094125;
+    }
+
+.but
+
+#ChiTietSanPham .quantity {
+    display: inline-block;
+}
+
+#ChiTietSanPham .quantity .input-text.qty {
+    width: 35px;
+    height: 39px;
+    padding: 0 5px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid #efefef;
+}
+
+#ChiTietSanPham .quantity.buttons_added {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+    #ChiTietSanPham .quantity.buttons_added input {
+        display: inline-block;
+        margin: 0;
+        vertical-align: top;
+        box-shadow: none;
+    }
+
+    #ChiTietSanPham .quantity.buttons_added .minus,
+    .quantity.buttons_added .plus {
+        padding: 7px 10px 8px;
+        height: 41px;
+        background-color: #ffffff;
+        border: 1px solid #efefef;
+        cursor: pointer;
+    }
+
+    #ChiTietSanPham .quantity.buttons_added .minus {
+        border-right: 0;
+    }
+
+    #ChiTietSanPham .quantity.buttons_added .plus {
+        border-left: 0;
+    }
+
+    #ChiTietSanPham .quantity.buttons_added .minus:hover,
+    .quantity.buttons_added .plus:hover {
+        background: #eeeeee;
+    }
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+    outline: none;
+}
+
+
+.pagination {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+.main_product {
+    flex-direction: row;
+}
+
+.main_product-img {
+    width: 30%;
+    height: 30%;
+    padding-top: 30%;
+}
+
+
+.main_product-info {
+    width: 65%;
+}
+
+.buttonThemXoa {
+    display: flex;
+    flex-direction: row;
+}
+
+.tab_product {
+    overflow: hidden;
+}
+
+    .tab_product button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+        .tab_product button:hover {
+            background-color: #ddd;
+        }
+
+        .tab_product button.active {
+            background-color: #ccc;
+        }
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+    margin-left: 150px;
+}
+
+.tablinks {
+    font-size: 26px;
+    font-family: 'Times New Roman'
+}
+
+.tab {
+    margin-left: 150px;
+    margin-top: 50px
+}
+/* Dành cho máy tính bảng */
+@media only screen and (min-width: 480px) and (max-width: 1024px) {
+    .main_product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_product-img {
+        width: 95%;
+        height: 95%;
+        padding-top: 95%;
+    }
+
+    .nd1 {
+        display: none
+    }
+
+    .main_product-info {
+        width: 95%;
+    }
+
+    .no1 {
+        display: none;
+    }
+
+    .no2 {
+        display: none;
+    }
+
+    .footer-subscribe {
+        margin-top: 20px
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .main_product {
+        flex-direction: column;
+    }
+
+    .main_product-img {
+        width: 95%;
+        padding-top: 95%;
+    }
+
+    .main_product-info {
+        width: 95%
+    }
+
+    .nd1 {
+        display: none
+    }
+
+    .action {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .section-title h1 {
+        font-weight: bold;
+        font-family: 'Times New Roman';
+        font-size: 24px
+    }
+
+    .no1 {
+        display: none;
+    }
+
+    .no2 {
+        display: none;
+    }
+
+    .buttonThemMua {
+        flex-direction: column
+    }
+
+    .footer-subscribe {
+        margin-top: 20px
+    }
+
+    .row {
+        margin: 0 10%;
+    }
+
+    .action {
+        flex-direction: column
+    }
+
+    .tab {
+        margin-left: 30px;
+        margin-top: 50px
+    }
+
+    .tablinks {
+        font-size: 15px;
+        font-family: 'Times New Roman';
+    }
+
+    .tabcontent {
+        margin-left: 30px;
+    }
+}
