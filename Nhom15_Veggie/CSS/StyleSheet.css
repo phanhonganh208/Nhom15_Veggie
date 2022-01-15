@@ -378,6 +378,19 @@ section-content {
     margin-top: 100px;
 }
 /*------------PHẦN LIÊN HỆ---------------*/
+.contact-item {
+    text-align: center;
+    padding: 80px 30px;
+    background: #fafafa;
+    margin: 80px 0px 100px;
+    height: 90px;
+}
+
+    .contact-item:hover {
+        background: #ffffff;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
+        padding-bottom: 45px;
+    }
 /*----Trái cây sấy-----*/
 .cartegory {
     padding: 1% 4% 4%;

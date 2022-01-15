@@ -324,13 +324,6 @@ a {
     vertical-align: top;
 }
 
-.contact-item {
-    text-align: center;
-    padding: 80px 30px;
-    background: #fafafa;
-    margin: 80px 0px 100px;
-    /*height: 250px;*/
-}
 
 .wrapper {
     max-width: 100%;
@@ -445,3 +438,16 @@ svg:not(:root).svg-inline--fa {
         padding: 0
     }
 }
+.contact-item {
+    text-align: center;
+    padding: 80px 30px;
+    background: #fafafa;
+    margin: 80px 0px 100px;
+    height: 90px;
+}
+
+    .contact-item:hover {
+        background: #ffffff;
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.2);
+        padding-bottom: 45px;
+    }
